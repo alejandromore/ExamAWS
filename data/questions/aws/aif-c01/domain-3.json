@@ -1,0 +1,172 @@
+[
+  {
+    "id": "aif-d3-q001",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233208.png",
+    "type": "single-choice",
+    "question": "Una empresa desea mejorar el rendimiento de un modelo fundacional (FM) en Amazon Bedrock para el sector médico. La empresa dispone de datos de diagnóstico clínico sin etiquetar, sin información de identificación personal (PII). ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Preentrenamiento continuo",
+      "Fine-tune",
+      "Prompt engineering",
+      "Amazon Bedrock Agents"
+    ],
+    "answer": 0,
+    "explanation": "El preentrenamiento continuo es apropiado cuando se desea adaptar un modelo fundacional a un dominio usando datos no etiquetados. En este caso, los datos clínicos sin PII pueden ayudar al modelo a incorporar conocimiento del sector médico sin requerir ejemplos etiquetados de entrada/salida.",
+    "tags": ["amazon-bedrock", "foundation-models", "continued-pretraining", "domain-adaptation"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d3-q002",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233214.png",
+    "type": "single-choice",
+    "question": "Un científico de datos está utilizando un modelo de IA generativa para generar texto. ¿Cuál es el propósito de establecer parámetros de inferencia como la longitud de respuesta y las secuencias de detención?",
+    "options": [
+      "Para controlar la salida generada por el modelo y garantizar que la salida cumpla con los criterios deseados.",
+      "Para ajustar los parámetros del modelo para un mejor rendimiento.",
+      "Para especificar el formato de datos de entrada para el modelo.",
+      "Para seleccionar el modelo pre-entrenado que se utilizará para la inferencia."
+    ],
+    "answer": 0,
+    "explanation": "Los parámetros de inferencia controlan cómo se genera la respuesta durante la invocación del modelo. La longitud máxima y las secuencias de detención ayudan a limitar la salida y a terminarla cuando cumple un patrón deseado.",
+    "tags": ["generative-ai", "inference-parameters", "prompting"],
+    "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d3-q003",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233221.png",
+    "type": "single-choice",
+    "question": "Una compañía de seguros está desarrollando una aplicación que usará IA para la clasificación de documentos mediante un modelo de lenguaje grande (LLM). La compañía cuenta con un conjunto de datos de 10 000 documentos con sus correspondientes clasificaciones. Estas clasificaciones incluyen «Tarjeta de seguro», «Factura» y más. El modelo debe aprender la tarea de clasificación e incorporar el conocimiento de todo el conjunto de datos. ¿Qué solución cumplirá estos requisitos con el tamaño de mensaje MÁS PEQUEÑO?",
+    "options": [
+      "Single-shot prompting",
+      "Few-shot prompting",
+      "Ajuste fino (fine-tuning) basado en instrucciones",
+      "Preentrenamiento continuo"
+    ],
+    "answer": 2,
+    "explanation": "El ajuste fino basado en instrucciones permite entrenar el modelo con un conjunto de ejemplos etiquetados para que aprenda la tarea de clasificación. Después del ajuste, no es necesario incluir muchos ejemplos en cada prompt, por lo que el tamaño del mensaje puede ser menor.",
+    "tags": ["fine-tuning", "classification", "llm", "prompt-size"],
+    "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d3-q004",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233228.png",
+    "type": "single-choice",
+    "question": "Una empresa necesita entrenar un modelo fundacional (FM) con datos empresariales. El conjunto de datos ocupa 1 GB. El entrenamiento y la evaluación no deberían durar más de 3 semanas. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Generación aumentada por recuperación (RAG)",
+      "Ajuste fino de la adaptación del dominio",
+      "Ajuste fino basado en instrucciones",
+      "Prompt engineering"
+    ],
+    "answer": 1,
+    "explanation": "Para un conjunto de datos empresarial grande, como 1 GB, y un objetivo de adaptación del modelo a conocimiento de dominio, la adaptación de dominio mediante fine-tuning es más adecuada que prompt engineering o RAG cuando el requisito explícito es entrenar el FM. El ajuste fino basado en instrucciones suele usarse para ejemplos etiquetados de tareas específicas.",
+    "tags": ["fine-tuning", "domain-adaptation", "foundation-models"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d3-q005",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233233.png",
+    "type": "single-choice",
+    "question": "Un bufete de abogados utiliza una base de conocimiento de Amazon Bedrock como solución de generación aumentada por recuperación (RAG). Esta base de conocimiento contiene años de requisitos regulatorios. El bufete necesita una solución para investigar los requisitos regulatorios vigentes durante un período determinado. El contenido de muchos documentos incorporados a la base de conocimiento no incluye fechas. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Cree e implemente una función de AWS Lambda para solicitar contenido de los documentos específicos de la base de conocimientos.",
+      "Cree e implemente contenedores en Amazon Elastic Container Service (Amazon ECS) para solicitar contenido de los documentos específicos de la base de conocimientos.",
+      "Cree e implemente contenedores en Amazon Elastic Kubernetes Service (Amazon EKS) para solicitar contenido de los documentos específicos de la base de conocimientos.",
+      "Ingiera metadatos en la base de conocimiento y recupere contenido solo de documentos etiquetados con fechas específicas."
+    ],
+    "answer": 3,
+    "explanation": "Agregar metadatos de fecha a los documentos permite filtrar la recuperación de la base de conocimiento por período sin crear lógica personalizada en Lambda, ECS o EKS. Esto reduce la sobrecarga operativa y mejora la precisión del contexto recuperado.",
+    "tags": ["amazon-bedrock", "knowledge-bases", "rag", "metadata-filtering"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d3-q006",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233240.png",
+    "type": "single-choice",
+    "question": "Un especialista en IA generativa realiza ingeniería de indicaciones. Este especialista proporciona indicaciones sobre el resultado deseado sin ejemplos. ¿Qué técnica describe esto?",
+    "options": [
+      "Chain-of-thought",
+      "Few-shot prompting",
+      "Zero-shot prompting",
+      "Single-shot prompting"
+    ],
+    "answer": 2,
+    "explanation": "Zero-shot prompting consiste en pedir al modelo que realice una tarea sin darle ejemplos. Few-shot y single-shot sí incluyen ejemplos; chain-of-thought busca que el modelo razone en pasos.",
+    "tags": ["prompt-engineering", "zero-shot"],
+    "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d3-q007",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233245.png",
+    "type": "single-choice",
+    "question": "Una empresa quiere evaluar la calidad de un texto de resumen generado por máquina comparándolo con textos de referencia. ¿Qué métrica cumplirá estos requisitos?",
+    "options": [
+      "Robustez semántica",
+      "Exactitud (Accuracy)",
+      "Error absoluto medio",
+      "Recall-Oriented Understudy for Gisting Evaluation (ROUGE)"
+    ],
+    "answer": 3,
+    "explanation": "ROUGE es una métrica común para evaluar resúmenes generados automáticamente al comparar la superposición de palabras, frases o n-gramas con resúmenes de referencia.",
+    "tags": ["model-evaluation", "rouge", "summarization"],
+    "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d3-q008",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233251.png",
+    "type": "single-choice",
+    "question": "¿Qué servicio de AWS es adecuado para almacenar embeddings vectoriales y realizar búsquedas semánticas?",
+    "options": [
+      "OpenSearch Service",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache",
+      "Una base de datos MySQL en una instancia de Amazon EC2"
+    ],
+    "answer": 0,
+    "explanation": "Amazon OpenSearch Service admite capacidades de búsqueda vectorial y semántica, por lo que es adecuado para almacenar embeddings y recuperar resultados similares por significado.",
+    "tags": ["opensearch", "embeddings", "semantic-search", "vector-search"],
+    "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d3-q009",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233257.png",
+    "type": "single-choice",
+    "question": "Una empresa proporcionó el siguiente mensaje a su modelo de lenguaje grande (LLM): La actuación en la película fue realmente mala. // Sentimiento negativo. Esta película tuvo mucha buena acción. // Sentimiento positivo. Esta película estuvo bien. // Sentimiento neutral. ¡Qué obra tan terrible! // ¿Qué técnica de incitación describe esto?",
+    "options": [
+      "Few-shot prompt",
+      "Zero-shot prompt",
+      "Tree-of-thought",
+      "Chain-of-thought"
+    ],
+    "answer": 0,
+    "explanation": "El prompt incluye varios ejemplos etiquetados de sentimientos antes de pedir al modelo que clasifique un nuevo texto. Dar varios ejemplos en el prompt corresponde a few-shot prompting.",
+    "tags": ["prompt-engineering", "few-shot", "sentiment-analysis"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d3-q010",
+    "domainId": "domain-3",
+    "source": "images/Captura de pantalla 2026-08-12 233303.png",
+    "type": "single-choice",
+    "question": "Una empresa tiene un modelo de lenguaje y quiere que el modelo divida tareas complejas en una serie de pasos y muestre sus pasos intermedios. ¿Qué técnica de ingeniería rápida cumplirá estos requisitos?",
+    "options": [
+      "Zero-shot prompting",
+      "Few-shot prompting",
+      "Chain-of-thought prompting",
+      "Prompt templates"
+    ],
+    "answer": 2,
+    "explanation": "Chain-of-thought prompting guía al modelo para que descomponga tareas complejas en pasos intermedios y produzca razonamiento paso a paso.",
+    "tags": ["prompt-engineering", "chain-of-thought"],
+    "answerSource": "visible-or-inferred"
+  }
+]

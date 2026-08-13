@@ -238,7 +238,7 @@
         <article class="domain-card ${selected ? "selected" : ""} ${disabled ? "disabled" : ""}" data-domain-id="${domain.id}">
           <div class="domain-meta">
             <strong>${escapeHtml(domain.title)}</strong>
-            <span>${domain.weight}%</span>
+            <span>${domain.kind === "practice-exam" ? "Simulador" : `${domain.weight}%`}</span>
           </div>
           <p class="small">${questions.length ? `${questions.length} preguntas · ${answered} practicadas · ${correct} dominadas` : "Pendiente de cargar banco JSON"}</p>
           <div class="progress-shell" aria-label="Progreso del dominio"><div class="progress-bar" style="width:${questions.length ? (answered / questions.length) * 100 : 0}%"></div></div>
@@ -248,6 +248,13 @@
     const mistakeCount = selectedQuestions.filter(q => questionStats(q.id).lastCorrect === false).length;
     const totalAnswered = selectedQuestions.filter(q => questionStats(q.id).attempts > 0).length;
     const totalCorrect = selectedQuestions.filter(q => questionStats(q.id).lastCorrect === true).length;
+    const selectedDomain = getDomain();
+    if (selectedDomain.kind === "practice-exam" && state.mode !== "practice" && state.mode !== "exam") {
+      state.mode = "exam";
+    }
+    const modeOptions = selectedDomain.kind === "practice-exam"
+      ? `<option value="practice" ${state.mode === "practice" ? "selected" : ""}>Prueba: feedback inmediato</option><option value="exam" ${state.mode === "exam" ? "selected" : ""}>Examen: simulación sin feedback hasta el final</option>`
+      : `<option value="practice" ${state.mode === "practice" ? "selected" : ""}>Práctica: feedback inmediato</option><option value="exam" ${state.mode === "exam" ? "selected" : ""}>Examen: feedback al final y temporizador</option><option value="review" ${state.mode === "review" ? "selected" : ""}>Revisión: prioriza errores</option>`;
 
     renderShell(`
       <button id="backRoadmapBtn" class="btn btn-light" type="button">← Roadmap</button>
@@ -269,7 +276,7 @@
 
         <aside class="controls">
           <div class="stat-card">
-            <span>Dominio seleccionado</span>
+            <span>${getDomain().kind === "practice-exam" ? "Banco seleccionado" : "Dominio seleccionado"}</span>
             <strong>${selectedQuestions.length}</strong>
             <p class="small">preguntas disponibles · ${mistakeCount} para revisión de errores</p>
           </div>
@@ -282,9 +289,7 @@
           <div class="control-group">
             <label for="modeSelect">Modo de entrenamiento</label>
             <select id="modeSelect">
-              <option value="practice" ${state.mode === "practice" ? "selected" : ""}>Práctica: feedback inmediato</option>
-              <option value="exam" ${state.mode === "exam" ? "selected" : ""}>Examen: feedback al final y temporizador</option>
-              <option value="review" ${state.mode === "review" ? "selected" : ""}>Revisión: prioriza errores</option>
+              ${modeOptions}
             </select>
           </div>
 
@@ -308,6 +313,10 @@
         const domainId = card.dataset.domainId;
         if (!(domainQuestions[domainId] || []).length) return;
         state.selectedDomainId = domainId;
+        if (domain.kind === "practice-exam") {
+          state.mode = "exam";
+          state.questionCount = (domainQuestions[domainId] || []).length;
+        }
         await renderSetup();
       });
     });

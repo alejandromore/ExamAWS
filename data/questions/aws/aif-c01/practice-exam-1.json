@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "aif-pe1-q001",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000141.png",
+    "type": "single-choice",
+    "question": "Una empresa está desarrollando un modelo basado en redes neuronales para clasificar documentos de texto en diferentes categorías. Quiere garantizar que el comportamiento y las predicciones del modelo se expliquen a las partes interesadas. ¿Qué método cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Desarrollar un método de explicabilidad personalizado que sea específico para la arquitectura del modelo elegida.",
+      "Confíe únicamente en las métricas de rendimiento y precisión del modelo.",
+      "Utilice un método de explicabilidad independiente del modelo, como las Explicaciones Aditivas de Shapley (SHAP).",
+      "Inspeccione manualmente los pesos y las características del modelo para comprender su mecánica interna."
+    ],
+    "answer": 2,
+    "explanation": "SHAP es un método de explicabilidad independiente del modelo que ayuda a explicar contribuciones de características con menor sobrecarga que crear métodos personalizados o inspeccionar pesos manualmente.",
+    "tags": [
+      "explainability",
+      "shap",
+      "responsible-ai"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q002",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000147.png",
+    "type": "single-choice",
+    "question": "Una empresa necesita un sistema de base de datos relacional para almacenar vectores de embedding relacionados con transacciones en tiempo real. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "Amazon OpenSearch Service",
+      "Amazon DocumentDB (con compatibilidad MongoDB)",
+      "Amazon RDS for PostgreSQL",
+      "Amazon Redshift"
+    ],
+    "answer": 2,
+    "explanation": "Amazon RDS for PostgreSQL es relacional y puede almacenar embeddings mediante extensiones como pgvector, adecuado para cargas transaccionales.",
+    "tags": [
+      "embeddings",
+      "rds",
+      "postgresql",
+      "pgvector"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q003",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000152.png",
+    "type": "multiple-choice",
+    "question": "Una empresa de atención médica está desarrollando su propio algoritmo de aprendizaje automático para entrenar un modelo que prediga resultados de salud basándose en datos genéticos. La empresa se somete a auditorías de cumplimiento que exigen transparencia en el entrenamiento y el rendimiento del modelo. ¿Qué servicios o funciones de AWS cumplirán estos requisitos? (Seleccione todas las opciones pertinentes.)",
+    "options": [
+      "Amazon SageMaker Model Cards",
+      "Amazon SageMaker Ground Truth",
+      "Amazon Augmented AI (Amazon A2I)",
+      "Amazon SageMaker Clarify",
+      "AWS AI Service Cards"
+    ],
+    "answer": [
+      0,
+      3
+    ],
+    "explanation": "SageMaker Model Cards documenta detalles de entrenamiento, evaluación y rendimiento; SageMaker Clarify ayuda con explicabilidad y sesgo para transparencia y auditoría.",
+    "tags": [
+      "sagemaker",
+      "model-cards",
+      "clarify",
+      "compliance"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q004",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000158.png",
+    "type": "multiple-choice",
+    "question": "Una empresa está explorando soluciones de diseño centradas en el ser humano para un modelo de ML que está desarrollando. ¿Qué soluciones forman parte del diseño del aprendizaje de refuerzo basado en la retroalimentación humana (RLHF)? (Seleccione DOS).",
+    "options": [
+      "Ajuste fino supervisado de un modelo de lenguaje",
+      "Utilizando un modelo de recompensa",
+      "Evaluación de un modelo de recompensa mediante el uso del error cuadrático medio (MSE)",
+      "Ajuste fino supervisado de un modelo de regresión",
+      "Ingeniería de características"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "RLHF normalmente incluye ajuste fino supervisado del modelo de lenguaje y entrenamiento/uso de un modelo de recompensa basado en preferencias humanas.",
+    "tags": [
+      "rlhf",
+      "human-feedback",
+      "reward-model"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q005",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000204.png",
+    "type": "single-choice",
+    "question": "Una escuela desea desarrollar una aplicación para ayudar a los estudiantes a resolver problemas matemáticos en exámenes de práctica mediante un modelo fundacional (MF). La aplicación debe ayudar a los estudiantes proporcionando el razonamiento y una explicación paso a paso de por qué una respuesta en el examen de práctica es correcta o incorrecta. ¿Qué técnica mejorará de manera MÁS confiable el rendimiento del FM?",
+    "options": [
+      "Few shot",
+      "Retrieval augmented generation (RAG)",
+      "Chain of thought",
+      "Single shot"
+    ],
+    "answer": 2,
+    "explanation": "Chain-of-thought prompting induce razonamiento paso a paso, útil en problemas matemáticos y explicaciones.",
+    "tags": [
+      "prompt-engineering",
+      "chain-of-thought"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q006",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000209.png",
+    "type": "single-choice",
+    "question": "Una empresa desea implementar un modelo de IA para detectar transacciones fraudulentas. Antes de lanzarlo, debe probar su rendimiento. ¿Qué etapa del proceso de desarrollo del modelo se centra en evaluar el rendimiento del modelo?",
+    "options": [
+      "Preprocesamiento de datos",
+      "Evaluación del modelo",
+      "Monitoreo de modelos",
+      "Implementación del modelo"
+    ],
+    "answer": 1,
+    "explanation": "La evaluación del modelo mide el rendimiento antes del despliegue usando métricas apropiadas.",
+    "tags": [
+      "model-evaluation",
+      "ml-lifecycle"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q007",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000214.png",
+    "type": "single-choice",
+    "question": "Un ingeniero de ML implementó un modelo fundacional (FM) y observó que el formato de su respuesta necesita mejoras. El ingeniero de ML desea implementar una técnica para mejorar el formato de las respuestas del FM. ¿Qué técnica satisfará estos requisitos de forma MÁS rentable?",
+    "options": [
+      "Retrieval augmented generation (RAG)",
+      "Ajuste fino (Fine-tuning)",
+      "Feature engineering",
+      "Prompt engineering"
+    ],
+    "answer": 3,
+    "explanation": "Para mejorar el formato de salida, prompt engineering suele ser la opción más rentable porque no requiere reentrenar ni ajustar el modelo.",
+    "tags": [
+      "prompt-engineering",
+      "foundation-models"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q008",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000220.png",
+    "type": "single-choice",
+    "question": "Una empresa de servicios públicos está desarrollando un modelo de IA que predice la demanda de electricidad. La empresa cuenta con un amplio conjunto de datos etiquetados de datos históricos de demanda que incluyen factores que la afectan, como las condiciones meteorológicas. ¿Qué tipo de método de aprendizaje debería utilizar la empresa para el modelo?",
+    "options": [
+      "Aprendizaje supervisado",
+      "Aprendizaje por refuerzo",
+      "Aprendizaje no supervisado",
+      "Aprendizaje semisupervisado"
+    ],
+    "answer": 0,
+    "explanation": "Con datos históricos etiquetados y un objetivo conocido para predecir demanda, corresponde usar aprendizaje supervisado.",
+    "tags": [
+      "supervised-learning",
+      "forecasting"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q009",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000224.png",
+    "type": "single-choice",
+    "question": "Una empresa debe proporcionar información sobre sus modelos de aprendizaje automático personalizados para fines de auditoría. Esta información debe incluir detalles sobre el entrenamiento y el rendimiento del modelo. ¿Qué servicio o característica de AWS cumplirá este requisito?",
+    "options": [
+      "SageMaker Ground Truth",
+      "Agentes de Amazon Bedrock",
+      "Amazon Bedrock Guardrails",
+      "Amazon SageMaker Model Cards"
+    ],
+    "answer": 3,
+    "explanation": "SageMaker Model Cards permite documentar información de modelos, incluidos detalles de entrenamiento, evaluación y rendimiento para gobernanza y auditoría.",
+    "tags": [
+      "sagemaker",
+      "model-cards",
+      "audit"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q010",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000229.png",
+    "type": "single-choice",
+    "question": "Un desarrollador necesita una solución de moderación de contenido para un caso de uso que involucra pinturas, bocetos y animaciones. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Utilice Amazon SageMaker Canvas para crear y ajustar un modelo de moderación de contenido.",
+      "Utilice Amazon SageMaker JumpStart para ajustar un modelo de detección de objetos de código abierto.",
+      "Utilice Amazon Bedrock para ajustar un modelo de integraciones multimodales para casos de uso de moderación específicos.",
+      "Utilice Amazon Rekognition con adaptadores personalizados para casos de uso de moderación específicos."
+    ],
+    "answer": 3,
+    "explanation": "Amazon Rekognition ofrece moderación de contenido administrada para imágenes y videos, y los adaptadores personalizados permiten ajustar casos específicos.",
+    "tags": [
+      "rekognition",
+      "content-moderation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q011",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000235.png",
+    "type": "single-choice",
+    "question": "Un desarrollador está creando una aplicación web para que los presentadores de podcasts la usen para resumir episodios. Primero, deben subir las transcripciones de las grabaciones a la aplicación web. Después, recibirán un correo electrónico con un resumen de dos párrafos del episodio. Usarán los resúmenes para promocionar el material en redes sociales. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "Amazon Comprehend",
+      "Amazon Textract",
+      "Amazon Bedrock",
+      "Amazon Transcribe"
+    ],
+    "answer": 2,
+    "explanation": "Amazon Bedrock proporciona acceso a modelos fundacionales generativos que pueden resumir transcripciones en texto promocional.",
+    "tags": [
+      "bedrock",
+      "summarization"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q012",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000239.png",
+    "type": "multiple-choice",
+    "question": "Un arquitecto de la nube está desarrollando un motor de recomendaciones para el sitio web de una empresa de comercio electrónico. La empresa utiliza embeddings vectoriales para calcular la similitud entre productos. La solución necesita almacenar millones de embeddings vectoriales y admitir consultas de similitud en tiempo real con baja latencia. ¿Qué servicios de AWS cumplirán estos requisitos? (Seleccione DOS).",
+    "options": [
+      "Amazon OpenSearch Service",
+      "Amazon RDS for Oracle",
+      "Amazon S3",
+      "Amazon Redshift",
+      "Amazon DocumentDB (con compatibilidad MongoDB)"
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "Amazon OpenSearch Service y Amazon DocumentDB admiten búsquedas vectoriales/similitud para embeddings con baja latencia.",
+    "tags": [
+      "vector-search",
+      "opensearch",
+      "documentdb"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q013",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000245.png",
+    "type": "single-choice",
+    "question": "Una empresa recopiló lecturas de temperatura cada hora durante los últimos 30 días. Quiere entrenar un modelo de aprendizaje automático para predecir la temperatura durante las próximas 24 horas. ¿Qué algoritmo cumplirá este requisito?",
+    "options": [
+      "Algoritmo de clasificación",
+      "Algoritmo de pronóstico (forecasting algorithm)",
+      "Algoritmo de detección de anomalías",
+      "Algoritmo de clustering"
+    ],
+    "answer": 1,
+    "explanation": "Predecir valores futuros de una serie temporal, como lecturas horarias de temperatura, es un caso de pronóstico.",
+    "tags": [
+      "forecasting",
+      "time-series"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q014",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000249.png",
+    "type": "single-choice",
+    "question": "Un científico de datos invocó un modelo de embeddings utilizando la frase \"la película fue realmente genial\". ¿Cuál es el resultado del modelo?",
+    "options": [
+      "Un valor que evalúa la plausibilidad de la frase.",
+      "Una palabra que indica el sentimiento de la frase.",
+      "Una imagen que representa la frase",
+      "Una matriz de valores numéricos"
+    ],
+    "answer": 3,
+    "explanation": "Un modelo de embeddings convierte texto en una representación vectorial o matriz/lista de valores numéricos que captura significado semántico.",
+    "tags": [
+      "embeddings",
+      "nlp"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q015",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000254.png",
+    "type": "single-choice",
+    "question": "Una empresa desea utilizar un modelo de lenguaje grande (LLM) para aprender el lenguaje específico de su dominio. La empresa dispone de una gran cantidad de datos sin etiquetar que contienen lenguaje específico del dominio. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Capacitar a un nuevo LLM utilizando los datos de la empresa.",
+      "Realizar preentrenamiento continuo sobre el LLM utilizando los datos de la empresa.",
+      "Perfeccione el LLM utilizando los datos de la empresa.",
+      "Proporcionar los datos de la empresa como contexto en la solicitud del LLM."
+    ],
+    "answer": 1,
+    "explanation": "El preentrenamiento continuo adapta un LLM a lenguaje de dominio usando grandes volúmenes de datos sin etiquetar, con menos esfuerzo que entrenar desde cero.",
+    "tags": [
+      "continued-pretraining",
+      "llm"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q016",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000427.png",
+    "type": "single-choice",
+    "question": "Una empresa de noticias quiere aumentar su tasa de clics proporcionando las noticias más relevantes a cada suscriptor. ¿Qué servicio de AWS cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Amazon Kendra",
+      "Amazon Personalize",
+      "Amazon Bedrock",
+      "Amazon Comprehend"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Personalize permite crear recomendaciones personalizadas para usuarios, como noticias relevantes para cada suscriptor.",
+    "tags": [
+      "amazon-personalize",
+      "recommendations"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q017",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000432.png",
+    "type": "single-choice",
+    "question": "Un administrador de AWS debe proteger los recursos de aprendizaje automático en un entorno de AWS. Debe configurar los permisos adecuados para usar Amazon S3 y Amazon SageMaker a nivel de usuario, grupo y rol federado. ¿Qué servicio o característica de AWS puede usar el administrador para otorgar estos permisos?",
+    "options": [
+      "AWS Secrets Manager",
+      "Gestión de identidades y accesos de AWS (IAM)",
+      "AWS KMS",
+      "Política de bucket de S3"
+    ],
+    "answer": 1,
+    "explanation": "AWS IAM administra permisos para usuarios, grupos y roles, incluidos roles federados, sobre servicios como S3 y SageMaker.",
+    "tags": [
+      "iam",
+      "security"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q018",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000437.png",
+    "type": "single-choice",
+    "question": "Una empresa de atención médica debe cumplir con una política de cumplimiento. Esta política establece que los datos almacenados en Amazon S3 no deben viajar por internet al transferirse a una instancia de Amazon EC2 de aprendizaje automático para fines de entrenamiento de modelos. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Transit gateway",
+      "S3 access point",
+      "VPC flow logs",
+      "Gateway endpoint"
+    ],
+    "answer": 3,
+    "explanation": "Un VPC gateway endpoint para Amazon S3 permite acceder a S3 desde una VPC sin que el tráfico salga a internet.",
+    "tags": [
+      "s3",
+      "vpc-endpoint",
+      "compliance"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q019",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000441.png",
+    "type": "single-choice",
+    "question": "¿Cuál es un ejemplo de datos estructurados?",
+    "options": [
+      "Un archivo .json que contiene un registro de la actividad del usuario de un sitio web con atributos anidados de grabación, como información del usuario y tráfico de red.",
+      "Un documento .xml que almacena configuraciones para el software de atención médica, en el que cada configuración está etiquetada y organizada jerárquicamente.",
+      "Un archivo de texto simple que contiene una serie de publicaciones de blog, incluida la publicación y sus metadatos.",
+      "Un archivo .csv que contiene registros de empleados con campos para ID de empleado, nombre, departamento y salario."
+    ],
+    "answer": 3,
+    "explanation": "Un CSV tabular con campos definidos representa datos estructurados; JSON y XML suelen considerarse semiestructurados.",
+    "tags": [
+      "structured-data"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q020",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000446.png",
+    "type": "single-choice",
+    "question": "Una empresa aloja sus modelos de aprendizaje automático en AWS. Necesita documentación sobre seguridad y cumplimiento normativo en AWS. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "Trusted Advisor",
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Artifact"
+    ],
+    "answer": 3,
+    "explanation": "AWS Artifact proporciona acceso bajo demanda a informes de cumplimiento, acuerdos y documentación de seguridad de AWS.",
+    "tags": [
+      "aws-artifact",
+      "compliance"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q021",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000450.png",
+    "type": "multiple-choice",
+    "question": "Un científico de datos está construyendo un modelo ML para predecir el volumen de ventas anual de un producto específico que vende una empresa. ¿Qué métricas de evaluación de modelos cumplirán este requisito? (Seleccione DOS).",
+    "options": [
+      "Recall",
+      "Error absoluto medio (MAE)",
+      "Error porcentual absoluto medio (MAPE)",
+      "Precisión",
+      "Accuracy (Exactitud)"
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "explanation": "Predecir volumen de ventas es un problema de regresión; MAE y MAPE evalúan errores numéricos de predicción.",
+    "tags": [
+      "regression",
+      "mae",
+      "mape"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q022",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000455.png",
+    "type": "multiple-choice",
+    "question": "¿Qué estrategias ayudan a mitigar las alucinaciones en las respuestas generadas por un modelo grande del lenguaje (LLM)? (Seleccione DOS).",
+    "options": [
+      "Utilice un modelo fundacional (FM) con un menor número de parámetros.",
+      "Utilice una indicación clara que establezca el curso de acción esperado para el modelo cuando se enfrenta a respuestas desconocidas o inciertas.",
+      "Aplicar una temperatura más alta durante la inferencia.",
+      "Incorpore información contextual al mensaje mediante el uso de recuperación y generación aumentada (RAG) con fuentes de datos validadas.",
+      "Imponer límites en la cantidad de tokens de salida y definir secuencias de detención durante la inferencia."
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Instrucciones claras reducen respuestas inventadas ante incertidumbre, y RAG fundamenta respuestas en fuentes validadas.",
+    "tags": [
+      "hallucinations",
+      "rag",
+      "prompt-engineering"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q023",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000459.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (FM) de IA generativa para desarrollar una solución textual específica para cada dominio. La solución se utilizará internamente para generar entradas de blog y contenido de marketing que se publicará en el sitio web externo de la empresa. ¿Qué servicio o marco de AWS puede utilizar la empresa para evaluar el nivel de propiedad requerido para la solución de IA?",
+    "options": [
+      "Matriz de alcance de seguridad de IA generativa",
+      "Trusted Advisor",
+      "Amazon Macie",
+      "Amazon Inspector"
+    ],
+    "answer": 0,
+    "explanation": "La matriz de alcance de seguridad de IA generativa ayuda a evaluar el nivel de responsabilidad/propiedad requerido según el caso de uso.",
+    "tags": [
+      "generative-ai",
+      "security-scoping-matrix"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q024",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000506.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (FM) de IA generativa para desarrollar una solución textual específica para cada dominio. La solución se utilizará internamente para generar entradas de blog y contenido de marketing que se publicará en el sitio web externo de la empresa. ¿Cuál es el riesgo que debe considerar la empresa al utilizar IA generativa?",
+    "options": [
+      "Ataques de inyección (prompt injection attack)",
+      "Reclamaciones por infracción de la propiedad intelectual (PI)",
+      "Violación de la normativa de privacidad de datos",
+      "Aumento del coste operativo"
+    ],
+    "answer": 1,
+    "explanation": "Al publicar contenido generado por IA en un sitio externo, debe considerarse el riesgo de derechos de autor o infracción de propiedad intelectual.",
+    "tags": [
+      "intellectual-property",
+      "generative-ai-risk"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q025",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000511.png",
+    "type": "single-choice",
+    "question": "Una empresa aplica un diseño centrado en el ser humano para su aplicación de IA mediante el aprendizaje por refuerzo basado en la retroalimentación humana (RLHF). La empresa desea crear un conjunto de datos de entrenamiento fiable para mejorar un modelo de lenguaje grande (LLM) que está desarrollando mediante la incorporación de la retroalimentación humana. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Utilice Amazon SageMaker Ground Truth.",
+      "SageMaker Pipelines",
+      "Utilice los algoritmos integrados de Amazon SageMaker.",
+      "SageMaker Autopilot"
+    ],
+    "answer": 0,
+    "explanation": "SageMaker Ground Truth permite crear datasets etiquetados de alta calidad mediante anotación y retroalimentación humana.",
+    "tags": [
+      "ground-truth",
+      "rlhf"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q026",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000516.png",
+    "type": "single-choice",
+    "question": "Una empresa comenzó recientemente a desarrollar soluciones de aprendizaje automático (ML) con Amazon SageMaker. No cuenta con personal cualificado para desarrollar scripts para la limpieza y preparación de datos. ¿Qué función de SageMaker puede utilizar la empresa para la limpieza y preparación de datos con requisitos MÍNIMOS para escribir scripts?",
+    "options": [
+      "SageMaker Clarify",
+      "SageMaker Feature Store",
+      "SageMaker Data Wrangler",
+      "SageMaker Pipelines"
+    ],
+    "answer": 2,
+    "explanation": "SageMaker Data Wrangler proporciona una interfaz visual para preparar, transformar y limpiar datos con mínima necesidad de escribir código.",
+    "tags": [
+      "data-wrangler",
+      "data-preparation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q027",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000521.png",
+    "type": "single-choice",
+    "question": "Una empresa quiere desarrollar un chatbot que pueda entablar conversaciones en lenguaje natural con los clientes. La empresa quiere implementar una solución gestionada. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "Amazon Transcribe",
+      "Amazon Polly",
+      "Amazon Lex",
+      "Amazon SageMaker"
+    ],
+    "answer": 2,
+    "explanation": "Amazon Lex es un servicio gestionado para crear interfaces conversacionales y chatbots con lenguaje natural.",
+    "tags": [
+      "amazon-lex",
+      "chatbot"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q028",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000526.png",
+    "type": "single-choice",
+    "question": "¿Qué métrica puede evaluar el desempeño del modelo fundacional (FM) en el contexto del resumen de texto?",
+    "options": [
+      "F1 Score",
+      "Recall",
+      "La precisión de la clasificación",
+      "ROUGE-N"
+    ],
+    "answer": 3,
+    "explanation": "ROUGE-N se usa comúnmente para evaluar tareas de resumen comparando n-gramas entre el resumen generado y el de referencia.",
+    "tags": [
+      "rouge",
+      "summarization"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q029",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000532.png",
+    "type": "single-choice",
+    "question": "Una empresa aloja varias aplicaciones web en instancias de Amazon EC2. Estas aplicaciones necesitan realizar llamadas a modelos fundacionales (FM) en Amazon Bedrock. Para fines de auditoría, la empresa desea utilizar un mecanismo que registre automáticamente todas las llamadas realizadas por las aplicaciones web a Amazon Bedrock. El mecanismo debe registrar el usuario y el rol de cada llamada a la API y las marcas de tiempo de las llamadas de inferencia. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "Amazon CloudWatch",
+      "Amazon Macie",
+      "Trusted Advisor",
+      "AWS CloudTrail"
+    ],
+    "answer": 3,
+    "explanation": "AWS CloudTrail registra llamadas a la API, identidad del usuario o rol, marcas de tiempo y eventos para auditoría.",
+    "tags": [
+      "cloudtrail",
+      "auditing",
+      "bedrock"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q030",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000537.png",
+    "type": "single-choice",
+    "question": "Un especialista en IA quiere entrenar un modelo para navegar en un entorno complejo e impredecible aprendiendo estrategias efectivas mediante prueba y error. ¿Qué técnica de ML puede utilizar el especialista en IA para satisfacer estos requisitos?",
+    "options": [
+      "Aprendizaje supervisado",
+      "Aprendizaje por refuerzo",
+      "Aprendizaje no supervisado",
+      "Aprendizaje por transferencia"
+    ],
+    "answer": 1,
+    "explanation": "El aprendizaje por refuerzo entrena agentes mediante prueba y error para maximizar recompensas en un entorno.",
+    "tags": [
+      "reinforcement-learning"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q031",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000544.png",
+    "type": "multiple-choice",
+    "question": "¿Cuáles son las desventajas o limitaciones de trabajar con IA generativa? (Seleccione DOS).",
+    "options": [
+      "Validación cruzada",
+      "Alucinación",
+      "Zero-shot prompting",
+      "Baja capacidad de recuperación",
+      "Límite de conocimiento"
+    ],
+    "answer": [
+      1,
+      4
+    ],
+    "explanation": "Los modelos generativos pueden producir información inventada y están limitados por el conocimiento disponible durante su entrenamiento.",
+    "tags": [
+      "hallucination",
+      "knowledge-limit"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q032",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000548.png",
+    "type": "single-choice",
+    "question": "Un ingeniero de ML quiere un modelo fundacional (FM) que pueda participar en un entorno de chatbot de múltiples turnos. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Ajuste fino de la adaptación del dominio",
+      "Retrieval augmented generation (RAG)",
+      "Prompt engineering",
+      "Ajuste fino basado en instrucciones"
+    ],
+    "answer": 3,
+    "explanation": "El ajuste fino basado en instrucciones mejora la capacidad del modelo para seguir instrucciones y responder de forma conversacional.",
+    "tags": [
+      "instruction-fine-tuning",
+      "chatbot"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q033",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000553.png",
+    "type": "single-choice",
+    "question": "Una empresa global de comunicaciones está desarrollando una herramienta asistida por IA para ampliar las capacidades del chat con los clientes. Todas las respuestas generadas en el chat deben ser positivas, amigables e imparciales. ¿Qué enfoque de evaluación identificará los modelos fundamentales (MF) que cumplirán estos requisitos a gran escala?",
+    "options": [
+      "Utilice las AI Service Cards para revisar el rendimiento de referencia de ejemplo de cada modelo.",
+      "Utilice Amazon SageMaker Clarify para cuantificar la toxicidad del modelo en un conjunto de datos de prueba.",
+      "Utilice Amazon SageMaker Clarify para detectar sesgos en un conjunto de datos históricos de chat de clientes.",
+      "Utilice Amazon Augmented AI (Amazon A2I) para revisar las respuestas antes de enviarlas a los clientes."
+    ],
+    "answer": 1,
+    "explanation": "SageMaker Clarify permite evaluar modelos a escala con métricas como toxicidad para seleccionar modelos apropiados para chat.",
+    "tags": [
+      "clarify",
+      "toxicity",
+      "model-evaluation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q034",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000558.png",
+    "type": "single-choice",
+    "question": "Una empresa financiera está desarrollando un modelo de aprendizaje automático que predice la elegibilidad de los clientes para préstamos. La empresa busca una solución que pueda identificar sesgos tanto en los datos de entrenamiento como en las predicciones del modelo. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "SageMaker Model Monitor",
+      "Amazon Rekognition",
+      "Amazon SageMaker Clarify",
+      "SageMaker Ground Truth"
+    ],
+    "answer": 2,
+    "explanation": "Amazon SageMaker Clarify ayuda a detectar sesgos en datos de entrenamiento y en predicciones del modelo.",
+    "tags": [
+      "clarify",
+      "bias"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q035",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000602.png",
+    "type": "single-choice",
+    "question": "Un desarrollador está incorporando un chatbot existente a una aplicación mediante IA generativa. El desarrollador encuentra palabras ofensivas en el historial de chat de la aplicación. ¿Qué servicio de AWS puede utilizar el desarrollador para moderar el contenido y evitar palabras ofensivas?",
+    "options": [
+      "Amazon Polly",
+      "Amazon Comprehend",
+      "Amazon SageMaker Clarify",
+      "Amazon Macie"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Comprehend puede analizar texto y detectar contenido tóxico u ofensivo para apoyar la moderación de contenido.",
+    "tags": [
+      "comprehend",
+      "content-moderation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q036",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000653.png",
+    "type": "single-choice",
+    "question": "Una empresa de comercio electrónico planea implementar un sistema de recomendaciones con inteligencia artificial que utiliza datos de clientes. Estos datos se almacenan en Amazon S3. La empresa busca cumplir con las normativas de gobernanza de datos y privacidad para identificar y proteger la información personal identificable (PII). ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon Macie",
+      "Trusted Advisor",
+      "AWS Config"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Macie descubre y protege datos confidenciales, incluida PII, almacenados en Amazon S3.",
+    "tags": [
+      "macie",
+      "pii",
+      "s3"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q037",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000658.png",
+    "type": "single-choice",
+    "question": "Una empresa de dispositivos médicos añadió recientemente resúmenes de productos generados por IA a su catálogo de productos en línea. La empresa busca incorporar terminología específica del sector para mejorar los resultados generados. Un equipo de aprendizaje automático tiene acceso a un gran volumen de estándares e investigaciones específicos del sector sin etiquetar. ¿Qué técnica de ML cumplirá estos requisitos?",
+    "options": [
+      "Utilice la generación aumentada de recuperación (RAG) para incluir terminología relevante.",
+      "Utilice la ingeniería de indicaciones (prompt engineering) para incluir una muestra editada en la siguiente indicación.",
+      "Personalice el modelo fundacional (FM) mediante un entrenamiento previo continuo en el conjunto de datos.",
+      "Personalice el modelo fundacional (FM) mediante el uso de un ajuste fino basado en instrucciones en el conjunto de datos de la industria."
+    ],
+    "answer": 2,
+    "explanation": "El entrenamiento previo continuo usa grandes volúmenes de datos no etiquetados para adaptar el modelo a terminología y conocimiento de un dominio.",
+    "tags": [
+      "continued-pretraining",
+      "domain-adaptation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q038",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000702.png",
+    "type": "single-choice",
+    "question": "Una empresa de redes sociales observa un aumento en la cantidad de contenido creativo que se sube a su plataforma. Este tipo de contenido incluye dibujos animados, animaciones y dibujos. La empresa desea moderar este tipo de contenido. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Utilice la moderación de contenido en Amazon Rekognition.",
+      "Ajuste un modelo de Amazon Titan en Amazon Bedrock.",
+      "Cree un modelo de moderación de contenido utilizando Amazon SageMaker Canvas.",
+      "Cree un modelo de moderación de contenido utilizando Amazon SageMaker Studio."
+    ],
+    "answer": 0,
+    "explanation": "Amazon Rekognition proporciona capacidades gestionadas de moderación de imágenes y videos con baja sobrecarga operativa.",
+    "tags": [
+      "rekognition",
+      "content-moderation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q039",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000708.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (MF) de IA generativa para desarrollar una solución textual específica para cada dominio. La solución se utilizará internamente para generar entradas de blog y contenido de marketing que se publicará en el sitio web externo de la empresa. ¿Qué servicio de AWS puede utilizar la empresa para elegir un FM de IA generativo?",
+    "options": [
+      "Amazon Augmented AI (Amazon A2I)",
+      "Amazon Personalize",
+      "Amazon Bedrock",
+      "Amazon Lex"
+    ],
+    "answer": 2,
+    "explanation": "Amazon Bedrock permite acceder y elegir entre distintos modelos fundacionales para crear aplicaciones de IA generativa.",
+    "tags": [
+      "bedrock",
+      "foundation-models"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q040",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000714.png",
+    "type": "single-choice",
+    "question": "Una empresa manufacturera desea crear un asistente virtual para sus empleados internos. Este asistente virtual debe responder preguntas técnicas basándose únicamente en la documentación de ingeniería patentada de la empresa. La empresa desea minimizar las alucinaciones con los modelos y reducir el esfuerzo asociado con la preparación de datos. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Implementar la generación aumentada de recuperación (RAG).",
+      "Utilice un modelo fundacional (FM) que se entrenó con datos relevantes para el dominio de fabricación.",
+      "Perfeccionar un modelo fundacional (FM) utilizando la base de conocimientos de la empresa.",
+      "Utilice el aprendizaje en contexto escribiendo instrucciones significativas para el modelo dentro de la instrucción."
+    ],
+    "answer": 0,
+    "explanation": "RAG permite fundamentar las respuestas en documentación interna sin reentrenar ni ajustar el modelo, reduciendo alucinaciones y sobrecarga operativa.",
+    "tags": [
+      "rag",
+      "knowledge-base",
+      "hallucinations"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q041",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000719.png",
+    "type": "single-choice",
+    "question": "Una empresa quiere utilizar Amazon Bedrock para crear borradores de documentos. ¿Cuál es el PRIMER paso que debe dar la empresa?",
+    "options": [
+      "Seleccione una cuota de token de entrada para la generación.",
+      "Seleccione una base de datos vectorial.",
+      "Seleccione un embeddings para la generación.",
+      "Seleccione un modelo fundacional (FM)."
+    ],
+    "answer": 3,
+    "explanation": "Para generar texto con Amazon Bedrock primero se debe elegir el modelo fundacional adecuado para la tarea.",
+    "tags": [
+      "bedrock",
+      "foundation-models"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q042",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000724.png",
+    "type": "single-choice",
+    "question": "Una empresa está desarrollando una aplicación ML que puede evaluar los comentarios de los clientes y clasificarlos como positivos o negativos. ¿Qué modelo ML debería utilizar la aplicación?",
+    "options": [
+      "Modelo de clasificación de imágenes",
+      "Modelo de regresión",
+      "Modelo de clasificación binaria",
+      "Modelo de clasificación multiclase"
+    ],
+    "answer": 2,
+    "explanation": "La aplicación clasifica cada comentario en una de dos clases posibles: positivo o negativo.",
+    "tags": [
+      "binary-classification",
+      "sentiment-analysis"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q043",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000729.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (FM) de IA generativa para desarrollar una solución textual específica para cada dominio. La solución se utilizará internamente para generar entradas de blog y contenido de marketing que se publicará en el sitio web externo de la empresa. ¿Cómo puede la empresa evaluar la calidad del contenido generado antes de publicarlo en línea?",
+    "options": [
+      "Incorporar la evaluación humana",
+      "Few-shot prompt engineering",
+      "Utilice la generación aumentada de recuperación (RAG)",
+      "Implementar guardrails"
+    ],
+    "answer": 0,
+    "explanation": "La revisión humana permite validar calidad, exactitud, tono y adecuación del contenido antes de publicarlo externamente.",
+    "tags": [
+      "human-evaluation",
+      "generative-ai"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q044",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000733.png",
+    "type": "single-choice",
+    "question": "¿Qué servicio o característica de AWS puede enviar predicciones de ML de baja confianza a un humano para su revisión?",
+    "options": [
+      "Amazon A2I",
+      "AWS Lambda",
+      "CloudWatch",
+      "SageMaker Experiments"
+    ],
+    "answer": 0,
+    "explanation": "Amazon Augmented AI (Amazon A2I) permite crear flujos de revisión humana para predicciones de ML de baja confianza.",
+    "tags": [
+      "amazon-a2i",
+      "human-in-the-loop"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q045",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000738.png",
+    "type": "single-choice",
+    "question": "Una empresa está desarrollando una aplicación de IA generativa para una tarea recurrente de resumen de documentos. Inicialmente, el modelo fundacional (FM) generaba resúmenes con formatos y calidad inconsistentes. Un ingeniero de solicitudes está desarrollando una plantilla de solicitudes para mejorar la coherencia y el formato. ¿Qué solución mejorará la calidad de salida?",
+    "options": [
+      "Incluya un resumen generado automáticamente basado en las indicaciones iniciales.",
+      "Incluya un enlace al repositorio de documentos que contiene los documentos que se resumirán.",
+      "Describa los formatos de encabezado de información en los documentos que se van a resumir.",
+      "Incluya un resumen seleccionado que demuestre el formato y estilo deseados."
+    ],
+    "answer": 3,
+    "explanation": "Proporcionar un ejemplo curado guía al modelo sobre el formato, estilo y nivel de calidad esperado.",
+    "tags": [
+      "prompt-engineering",
+      "few-shot",
+      "summarization"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q046",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000813.png",
+    "type": "single-choice",
+    "question": "Una empresa tiene usuarios que desarrollan modelos de aprendizaje automático en Amazon SageMaker Canvas. Una vez desarrollados, los modelos deben ser revisados y aprobados por un equipo de científicos de datos que trabaja en SageMaker Studio. ¿Qué servicio de AWS puede proporcionar a los científicos de datos acceso a los modelos de ML con la MEJOR sobrecarga operativa?",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon ECR",
+      "SageMaker Model Registry",
+      "SageMaker JumpStart"
+    ],
+    "answer": 2,
+    "explanation": "SageMaker Model Registry permite registrar, revisar, aprobar y gestionar versiones de modelos entre Canvas y Studio.",
+    "tags": [
+      "sagemaker",
+      "model-registry",
+      "mlops"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q047",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000819.png",
+    "type": "single-choice",
+    "question": "Un científico de datos está trabajando en un modelo de generación de texto que utiliza embeddings para representar el contenido como vectores. ¿Cuál es el propósito de utilizar incrustaciones en este contexto?",
+    "options": [
+      "Para convertir el texto de entrada en palabras individuales o unidades de subpalabras.",
+      "Codificar el texto de entrada en una secuencia de tokens numéricos.",
+      "Aplicar mecanismos de atención al texto de entrada.",
+      "Capturar relaciones semánticas entre palabras basándose en la representación vectorial de las palabras."
+    ],
+    "answer": 3,
+    "explanation": "Los embeddings representan texto como vectores que preservan similitud y relaciones semánticas.",
+    "tags": [
+      "embeddings",
+      "semantic-similarity"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q048",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000824.png",
+    "type": "single-choice",
+    "question": "¿Qué control mejorará la seguridad de las cargas de trabajo de IA y ML?",
+    "options": [
+      "Establecer un entorno de red y computación abierto.",
+      "Utilice el cifrado de datos y el principio del mínimo privilegio para controlar el acceso.",
+      "Proteja las credenciales mediante el uso de preguntas secretas.",
+      "Eliminar cargas de trabajo anteriores para mantener versiones estables."
+    ],
+    "answer": 1,
+    "explanation": "El cifrado protege los datos y el mínimo privilegio limita el acceso solo a lo necesario.",
+    "tags": [
+      "security",
+      "encryption",
+      "least-privilege"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q049",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000828.png",
+    "type": "single-choice",
+    "question": "¿Cuál es el propósito principal de utilizar plantillas de indicaciones en la ingeniería de indicaciones (prompt engineering)?",
+    "options": [
+      "Entrenar un modelo para generalizar y hacer predicciones sobre clases o tareas no vistas.",
+      "Ofrecer un modelo con un formato consistente y estructurado para entradas y salidas.",
+      "Enseñar a un modelo una nueva clase o tarea con una cantidad limitada de datos.",
+      "Guiar un modelo dividiendo una pregunta compleja en partes más pequeñas y lógicas."
+    ],
+    "answer": 1,
+    "explanation": "Las plantillas de prompt estandarizan instrucciones, entradas y formato de salida para obtener respuestas más consistentes.",
+    "tags": [
+      "prompt-templates",
+      "prompt-engineering"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q050",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000833.png",
+    "type": "single-choice",
+    "question": "Una empresa desea desarrollar una solución interna que resuma varios correos electrónicos y extensas notas de reuniones. Para ello, desea utilizar modelos fundamentales (FM) en Amazon Bedrock. ¿Qué propiedad del modelo debe considerarse PRIMERO al elegir un modelo?",
+    "options": [
+      "Top P",
+      "Secuencias de parada",
+      "Ventana de contexto",
+      "Temperatura"
+    ],
+    "answer": 2,
+    "explanation": "Para resumir documentos largos, el modelo debe admitir suficiente longitud de entrada en su ventana de contexto.",
+    "tags": [
+      "context-window",
+      "summarization",
+      "bedrock"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q051",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000842.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (FM) de IA generativa para desarrollar una solución textual específica para cada dominio. La solución se utilizará internamente para generar entradas de blog y contenido de marketing que se publicará en el sitio web externo de la empresa. ¿Cuál es la desventaja de utilizar un FM de IA generativo para generar publicaciones de blog?",
+    "options": [
+      "Inexactitud en el contenido generado",
+      "Capacidad de respuesta del FM de IA generativa",
+      "Capacidad para resumir información",
+      "Aumento del tiempo de comercialización"
+    ],
+    "answer": 0,
+    "explanation": "Los modelos generativos pueden producir contenido incorrecto o alucinaciones, por lo que se requiere validación antes de publicar.",
+    "tags": [
+      "generative-ai",
+      "hallucination",
+      "content-accuracy"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q052",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000847.png",
+    "type": "single-choice",
+    "question": "Un especialista en IA está entrenando un modelo de regresión ML y observando el sesgo y la variación durante el entrenamiento. ¿Qué patrón de sesgo y varianza provocará un sobreajuste (overfitting) del modelo?",
+    "options": [
+      "Alto sesgo, baja varianza",
+      "Bajo sesgo, baja varianza",
+      "Bajo sesgo, alta varianza",
+      "Alto sesgo, alta varianza"
+    ],
+    "answer": 2,
+    "explanation": "El sobreajuste ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento: tiene bajo sesgo pero alta varianza.",
+    "tags": [
+      "overfitting",
+      "bias-variance"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q053",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000852.png",
+    "type": "multiple-choice",
+    "question": "Una empresa cuenta con un amplio repositorio de documentos PDF. Cada documento contiene múltiples imágenes, diagramas y tablas escaneadas relacionadas con las operaciones comerciales. La empresa desea crear un sistema de búsqueda semántica que permita la recuperación rápida de imágenes según el contenido y el contexto. La solución debe analizar las imágenes para extraer contenido e identificar objetos. La empresa no desea depender de nombres de archivo ni del etiquetado manual. ¿Qué combinación de servicios de AWS cumplirá estos requisitos con la menor sobrecarga operativa? (Seleccione DOS).",
+    "options": [
+      "Amazon EC2",
+      "Amazon Lex",
+      "Amazon Textract",
+      "Amazon Translate",
+      "Amazon Rekognition"
+    ],
+    "answer": [
+      2,
+      4
+    ],
+    "explanation": "Amazon Textract extrae texto, tablas y datos de documentos escaneados, mientras que Amazon Rekognition identifica objetos y contenido en imágenes.",
+    "tags": [
+      "textract",
+      "rekognition",
+      "document-processing"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q054",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000857.png",
+    "type": "single-choice",
+    "question": "¿Qué concepto describe el desarrollo de algoritmos y modelos estadísticos que los sistemas informáticos utilizan para realizar tareas complejas sin instrucciones explícitas?",
+    "options": [
+      "Machine Learning",
+      "Algoritmos integrados de Amazon SageMaker",
+      "Inferencia",
+      "Programación orientada a objetos (POO)"
+    ],
+    "answer": 0,
+    "explanation": "Machine Learning permite que los sistemas aprendan patrones a partir de datos para realizar tareas sin programación explícita para cada caso.",
+    "tags": [
+      "machine-learning"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q055",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000902.png",
+    "type": "single-choice",
+    "question": "Una empresa está desarrollando un modelo de aprendizaje automático (ML) para generar respuestas en lenguaje natural para un chatbot de atención al cliente. Se debe evaluar la capacidad del modelo para generar respuestas lo más similares posible a las de los expertos en la materia (SME). La empresa cuenta con un conjunto de datos de preguntas y respuestas de muestra validadas por los SME. ¿Qué métrica debe utilizar la empresa para evaluar el desempeño del modelo?",
+    "options": [
+      "F1 score",
+      "Perplejidad",
+      "Error cuadrático medio (MSE)",
+      "BERTScore"
+    ],
+    "answer": 3,
+    "explanation": "BERTScore mide similitud semántica entre texto generado y respuestas de referencia validadas.",
+    "tags": [
+      "bertscore",
+      "model-evaluation"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q056",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000909.png",
+    "type": "single-choice",
+    "question": "Un ingeniero de ML está entrenando un modelo de red neuronal profunda en un gran conjunto de datos. ¿Cuál es el proceso de utilizar el modelo entrenado para hacer predicciones sobre datos nuevos no vistos?",
+    "options": [
+      "Entrenamiento",
+      "Inferencia",
+      "Validación",
+      "Ingeniería de características"
+    ],
+    "answer": 1,
+    "explanation": "La inferencia usa un modelo ya entrenado para generar predicciones sobre datos nuevos.",
+    "tags": [
+      "inference",
+      "ml-lifecycle"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q057",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000915.png",
+    "type": "single-choice",
+    "question": "Una empresa regional de servicios públicos busca desarrollar una aplicación de IA generativa que genere consejos personalizados de ahorro energético para sus clientes. La empresa desarrolló una aplicación para crear un mensaje introduciendo las sugerencias del cliente en una plantilla. Estas se limitan a seleccionar opciones de una serie de listas predefinidas, como el código postal, el tamaño del hogar y los temas de interés. La seguridad de los sistemas de la empresa y de los datos de los clientes es fundamental. ¿Qué solución proporcionará el MAYOR beneficio de seguridad contra ataques de inyección rápida?",
+    "options": [
+      "Actualice la aplicación con un cuadro de texto para solicitudes personalizadas de los clientes.",
+      "Agregue instrucciones a la plantilla de solicitud sobre cómo manejar solicitudes no relacionadas.",
+      "Aumente la frecuencia de las actualizaciones de software en todo el sistema.",
+      "Refinar la plantilla del mensaje basándose en una evaluación del modelo de toxicidad."
+    ],
+    "answer": 1,
+    "explanation": "Añadir instrucciones explícitas de rechazo o manejo de solicitudes fuera de alcance ayuda a mitigar intentos de prompt injection; texto libre aumentaría el riesgo.",
+    "tags": [
+      "prompt-injection",
+      "security"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q058",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000920.png",
+    "type": "single-choice",
+    "question": "Un representante de ventas almacena los contratos de clientes en formato PDF en un bucket de Amazon S3. Necesita una solución para resumir el contenido de los documentos y responder preguntas basándose en la información contenida. No tiene experiencia en programación. ¿Qué servicio de AWS cumplirá estos requisitos?",
+    "options": [
+      "Amazon Textract",
+      "SageMaker Canvas",
+      "Amazon QuickSight",
+      "Amazon Kendra"
+    ],
+    "answer": 1,
+    "explanation": "SageMaker Canvas proporciona capacidades sin código para usuarios empresariales, incluida interacción con modelos y documentos para obtener resúmenes y respuestas sin programar.",
+    "tags": [
+      "sagemaker-canvas",
+      "no-code",
+      "document-qa"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q059",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000926.png",
+    "type": "multiple-choice",
+    "question": "Una empresa financiera se ha expandido recientemente a nivel mundial y busca desarrollar una aplicación de chat asistida por IA para ampliar su capacidad de atención al cliente. La empresa está sujeta a múltiples regulaciones y marcos de cumplimiento normativo. Debe incorporar principios de IA responsable en la solución. ¿Qué enfoques se alinean con los principios de la IA responsable? (Seleccione DOS).",
+    "options": [
+      "Entrenamiento con datos históricos sin procesar",
+      "Respuestas de prueba para detectar fugas de datos",
+      "Utilice únicamente modelos de código abierto",
+      "Monitorizar las respuestas para detectar sesgos",
+      "Utilice todos los datos de clientes disponibles"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "La IA responsable incluye proteger privacidad/seguridad de datos y detectar/mitigar sesgos en respuestas del sistema.",
+    "tags": [
+      "responsible-ai",
+      "bias",
+      "data-leakage"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q060",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000931.png",
+    "type": "single-choice",
+    "question": "Un científico de datos está desarrollando un modelo de IA para predecir el volumen de ventas a partir de un conjunto de datos de mercado. Tras procesar los datos, el científico de datos busca determinar qué parámetros del mercado afectarían más al volumen de ventas. Posteriormente, incorporará los parámetros al modelo. ¿Qué paso del ciclo de vida de ML describe esto?",
+    "options": [
+      "Recopilación de datos",
+      "Selección de características",
+      "Validación del modelo",
+      "Monitorización"
+    ],
+    "answer": 1,
+    "explanation": "La selección de características identifica las variables más relevantes para incluirlas en el modelo.",
+    "tags": [
+      "feature-selection",
+      "ml-lifecycle"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q061",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000937.png",
+    "type": "multiple-choice",
+    "question": "¿Qué factores pueden afectar la latencia al invocar un modelo de lenguaje grande (LLM)? (Seleccione dos).",
+    "options": [
+      "Configuración del parámetro Top K",
+      "Configuración del parámetro Top P",
+      "Número de tokens en la respuesta",
+      "Configuración del parámetro de temperatura",
+      "Número de tokens en el mensaje"
+    ],
+    "answer": [
+      2,
+      4
+    ],
+    "explanation": "La latencia depende principalmente de cuántos tokens procesa como entrada y cuántos tokens genera como salida.",
+    "tags": [
+      "llm-latency",
+      "tokens"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q062",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000942.png",
+    "type": "single-choice",
+    "question": "¿Cuál es el propósito principal de la IA generativa?",
+    "options": [
+      "Para mejorar el procesamiento del lenguaje natural (NLP)",
+      "Para crear nuevo contenido",
+      "Para mejorar la visión por computadora",
+      "Para hacer predicciones basadas en datos existentes"
+    ],
+    "answer": 1,
+    "explanation": "La IA generativa se centra en producir contenido nuevo, como texto, imágenes, audio, video o código.",
+    "tags": [
+      "generative-ai"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q063",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000947.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (FM) de IA generativa para desarrollar una solución textual específica para cada dominio. La solución se utilizará internamente para generar entradas de blog y contenido de marketing que se publicará en el sitio web externo de la empresa. ¿Qué técnica puede utilizar la empresa para garantizar que el contenido generado incluya terminología específica de la industria?",
+    "options": [
+      "Ajuste fino basado en instrucciones (Instruction-based fine-tuning)",
+      "Ajuste fino de la adaptación del dominio",
+      "Aprendizaje supervisado",
+      "Aprendizaje por refuerzo a partir de la retroalimentación humana (RLHF)"
+    ],
+    "answer": 1,
+    "explanation": "La adaptación de dominio ajusta el modelo con datos específicos de una industria para que use terminología y patrones propios de ese dominio.",
+    "tags": [
+      "domain-adaptation",
+      "fine-tuning"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q064",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000952.png",
+    "type": "single-choice",
+    "question": "¿Qué tipo de ataque de inyección rápida implica pedirle a un modelo de lenguaje grande (LLM) que no siga sus instrucciones estructuradas y que proporcione una salida sobre un tema prohibido o dañino?",
+    "options": [
+      "Ignorar la plantilla de solicitud",
+      "Prompting persona switches",
+      "Exploiting friendliness",
+      "Cambiar la entrada"
+    ],
+    "answer": 0,
+    "explanation": "Este ataque intenta que el modelo ignore las instrucciones o restricciones del prompt del sistema o plantilla para producir contenido no permitido.",
+    "tags": [
+      "prompt-injection",
+      "llm-security"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-pe1-q065",
+    "domainId": "practice-exam-1",
+    "source": "images/Captura de pantalla 2026-08-13 000957.png",
+    "type": "single-choice",
+    "question": "Una empresa desea crear un asistente virtual para atender las consultas de sus clientes. Este asistente virtual proporcionará respuestas en lenguaje natural. Las respuestas se basarán en documentos almacenados en Amazon S3. La empresa desea utilizar un servicio administrado. No desea configurar parámetros para los modelos, las incrustaciones, las funciones conversacionales ni los almacenes de vectores. ¿Qué solución satisfará estos requisitos de la manera MÁS eficiente desde el punto de vista operativo?",
+    "options": [
+      "SageMaker JumpStart",
+      "Amazon Lex",
+      "Amazon Q Business",
+      "Amazon Comprehend"
+    ],
+    "answer": 2,
+    "explanation": "Amazon Q Business es un asistente generativo administrado que puede conectarse a fuentes como Amazon S3 y responder sin configurar embeddings, almacenes vectoriales o parámetros de modelos.",
+    "tags": [
+      "amazon-q-business",
+      "managed-generative-ai",
+      "s3"
+    ],
+    "answerSource": "inferred-from-aws-knowledge"
+  }
+]

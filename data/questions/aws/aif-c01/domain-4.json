@@ -1,0 +1,138 @@
+[
+  {
+    "id": "aif-d4-q001",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233429.png",
+    "type": "single-choice",
+    "question": "Una empresa está desarrollando un modelo basado en redes neuronales para clasificar documentos de texto en diferentes categorías. Quiere garantizar que el comportamiento y las predicciones del modelo se expliquen a las partes interesadas. ¿Qué método cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Confíe únicamente en las métricas de rendimiento y precisión del modelo.",
+      "Inspeccione manualmente los pesos y las características del modelo para comprender su mecánica interna.",
+      "Desarrollar un método de explicabilidad personalizado que sea específico para la arquitectura del modelo elegida.",
+      "Utilice un método de explicabilidad independiente del modelo, como las Explicaciones Aditivas de Shapley (SHAP)."
+    ],
+    "answer": 3,
+    "explanation": "SHAP es un método de explicabilidad independiente del modelo que ayuda a explicar la contribución de las características a una predicción. Usar un método estándar como SHAP reduce la sobrecarga frente a inspeccionar manualmente pesos o crear explicabilidad personalizada.",
+    "tags": ["responsible-ai", "explainability", "shap", "transparency"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q002",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233435.png",
+    "type": "single-choice",
+    "question": "Una empresa que opera en una industria altamente regulada desea implementar un modelo de lenguaje grande (LLM) para su caso de uso de generación de contenido. ¿Cuál es el desafío para un LLM con un diseño centrado en el ser humano?",
+    "options": [
+      "La baja potencia computacional de los sistemas de IA",
+      "Transparencia y explicabilidad del modelo",
+      "Falta de precisión predictiva",
+      "El elevado número de parámetros del modelo"
+    ],
+    "answer": 1,
+    "explanation": "En industrias reguladas, un diseño centrado en el ser humano requiere que las partes interesadas puedan comprender, evaluar y supervisar las decisiones o salidas del sistema. La transparencia y la explicabilidad son desafíos clave para LLMs complejos.",
+    "tags": ["responsible-ai", "human-centered-design", "explainability", "llm"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q003",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233440.png",
+    "type": "single-choice",
+    "question": "Un desarrollador está incorporando un chatbot existente a una aplicación mediante IA generativa. El desarrollador encuentra palabras ofensivas en el historial de chat de la aplicación. ¿Qué servicio de AWS puede utilizar el desarrollador para moderar el contenido y evitar palabras ofensivas?",
+    "options": [
+      "Amazon Macie",
+      "Amazon Polly",
+      "Amazon SageMaker Clarify",
+      "Amazon Comprehend"
+    ],
+    "answer": 3,
+    "explanation": "Amazon Comprehend puede analizar texto y detectar contenido tóxico u ofensivo para casos de moderación. Macie se enfoca en datos sensibles, Polly en texto a voz y SageMaker Clarify en sesgo/explicabilidad.",
+    "tags": ["content-moderation", "amazon-comprehend", "responsible-ai"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q004",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233445.png",
+    "type": "single-choice",
+    "question": "¿Qué servicio o característica de AWS puede enviar predicciones de ML de baja confianza a un humano para su revisión?",
+    "options": [
+      "CloudWatch",
+      "AWS Lambda",
+      "Amazon A2I",
+      "SageMaker Experiments"
+    ],
+    "answer": 2,
+    "explanation": "Amazon Augmented AI (Amazon A2I) permite incorporar revisión humana en flujos de trabajo de ML, por ejemplo cuando una predicción tiene baja confianza o requiere validación manual.",
+    "tags": ["human-in-the-loop", "amazon-a2i", "responsible-ai"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q005",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233451.png",
+    "type": "single-choice",
+    "question": "Una empresa utiliza un modelo fundacional de generación de texto (FM) en Amazon Bedrock para un chatbot orientado al cliente. La empresa quiere evitar que el FM responda preguntas sobre temas sensibles que los clientes puedan plantear. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Entrene un clasificador de texto en Amazon SageMaker para detectar y filtrar preguntas no deseadas.",
+      "Defina un tema denegado en Amazon Bedrock Guardrails. Invoque el FM con los guardrails habilitados.",
+      "Utilice la función de extracción de entidades de Amazon Comprehend para sugerir y filtrar preguntas no deseadas.",
+      "Utilice el algoritmo integrado BlazingText de Amazon SageMaker para entrenar un modelo de detección de temas sensibles."
+    ],
+    "answer": 1,
+    "explanation": "Amazon Bedrock Guardrails permite configurar temas denegados y políticas de seguridad para bloquear o redirigir respuestas sobre temas sensibles. Es una opción administrada y de menor sobrecarga que entrenar clasificadores personalizados.",
+    "tags": ["amazon-bedrock", "guardrails", "content-safety", "responsible-ai"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q006",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233457.png",
+    "type": "single-choice",
+    "question": "¿Cuál es el riesgo legal relacionado con los resultados sesgados o discriminatorios de un sistema de IA generativa?",
+    "options": [
+      "Violaciones antimonopolio",
+      "Incumplimiento de las leyes de protección al consumidor",
+      "Violaciones de la privacidad de datos",
+      "Infracciones de propiedad intelectual"
+    ],
+    "answer": 1,
+    "explanation": "Los resultados sesgados o discriminatorios pueden afectar injustamente a consumidores o usuarios y generar incumplimiento de normas de protección al consumidor, equidad o no discriminación. Las otras opciones se relacionan con riesgos distintos, como privacidad, propiedad intelectual o competencia.",
+    "tags": ["responsible-ai", "bias", "legal-risk", "consumer-protection"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q007",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233503.png",
+    "type": "single-choice",
+    "question": "Un equipo de desarrollo de IA en AWS está diseñando un modelo de aprendizaje automático para predecir la aprobación de solicitudes de crédito. Para garantizar que el modelo siga las directrices de IA responsable, ¿cuál de las siguientes acciones deberían tomar?",
+    "options": [
+      "Utilizar solo datos históricos sin realizar ninguna verificación de sesgos, ya que representan decisiones pasadas.",
+      "Implementar herramientas como SageMaker Clarify para identificar y mitigar posibles sesgos en los datos y en el modelo.",
+      "Diseñar el modelo sin preocuparse por la interpretabilidad, ya que lo más importante es la precisión.",
+      "Permitir que el modelo tome decisiones finales sin intervención humana, para evitar influencias externas."
+    ],
+    "answer": 1,
+    "explanation": "Para un caso sensible como aprobación de crédito, las prácticas de IA responsable requieren evaluar y mitigar sesgos, además de favorecer transparencia e interpretabilidad. SageMaker Clarify ayuda a detectar sesgo en datos/modelos y explicar predicciones.",
+    "tags": ["sagemaker-clarify", "bias", "responsible-ai", "credit-risk"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-q008",
+    "domainId": "domain-4",
+    "source": "images/Captura de pantalla 2026-08-12 233509.png",
+    "type": "single-choice",
+    "question": "Un científico de datos necesita comprender las predicciones injustas en tiempo real de un modelo basado en atributos como la raza, el género y la edad. El modelo está implementado en Amazon SageMaker. ¿Qué servicio o característica de AWS cumplirá este requisito?",
+    "options": [
+      "SageMaker Model Monitor",
+      "SageMaker Clarify",
+      "SageMaker Ground Truth",
+      "SageMaker Data Wrangler"
+    ],
+    "answer": 1,
+    "explanation": "SageMaker Clarify ayuda a detectar sesgo y explicar predicciones de modelos de ML. Es la característica adecuada para analizar predicciones potencialmente injustas asociadas a atributos sensibles como raza, género o edad.",
+    "tags": ["sagemaker-clarify", "bias", "fairness", "responsible-ai"],
+    "answerSource": "inferred-from-aws-knowledge"
+  }
+]

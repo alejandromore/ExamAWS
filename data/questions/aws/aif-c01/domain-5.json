@@ -1,0 +1,138 @@
+[
+  {
+    "id": "aif-d5-q001",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235422.png",
+    "type": "single-choice",
+    "question": "El equipo de gobernanza de una empresa desea realizar un seguimiento de la calificación de riesgo de cada modelo de lenguaje grande (LLM) que utiliza sin ninguna personalización del producto. La empresa utiliza Amazon SageMaker para alojar e implementar los LLM. ¿Qué característica de SageMaker cumplirá estos requisitos?",
+    "options": [
+      "SageMaker Model Registry",
+      "SageMaker Model Cards",
+      "SageMaker Clarify",
+      "SageMaker Experiments"
+    ],
+    "answer": 1,
+    "explanation": "SageMaker Model Cards proporcionan documentación estandarizada para modelos, incluyendo información de uso previsto, rendimiento, limitaciones, consideraciones de riesgo y detalles de gobernanza sin requerir una solución personalizada.",
+    "tags": ["sagemaker", "model-cards", "governance", "risk-management"],
+    "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d5-q002",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235427.png",
+    "type": "single-choice",
+    "question": "Una empresa almacena datos de clientes en Amazon S3. Su política de cumplimiento establece que no se puede utilizar información de identificación personal (PII) ni información médica protegida (PHI) para el entrenamiento de modelos de aprendizaje automático. ¿Qué servicio de AWS puede utilizar la empresa para descubrir y monitorear datos confidenciales?",
+    "options": [
+      "Amazon Inspector",
+      "AWS Config",
+      "AWS Audit Manager",
+      "Amazon Macie"
+    ],
+    "answer": 3,
+    "explanation": "Amazon Macie usa machine learning y coincidencia de patrones para descubrir, clasificar y monitorear datos sensibles, como PII, almacenados en Amazon S3. Es el servicio adecuado para identificar datos que no deben utilizarse en entrenamiento.",
+    "tags": ["amazon-macie", "s3", "pii", "phi", "data-protection"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-q003",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235432.png",
+    "type": "single-choice",
+    "question": "Una empresa está entrenando un modelo con datos confidenciales almacenados en Amazon S3. Debe evitar que los datos de entrenamiento lleguen a internet. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Amazon Macie",
+      "PrivateLink",
+      "Gestión de identidades y accesos de AWS (IAM)",
+      "Amazon Inspector"
+    ],
+    "answer": 1,
+    "explanation": "AWS PrivateLink permite conectividad privada a servicios compatibles sin exponer el tráfico a internet público. Para datos confidenciales usados en entrenamiento, ayuda a mantener el acceso dentro de la red privada.",
+    "tags": ["privatelink", "network-security", "s3", "data-protection"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-q004",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235438.png",
+    "type": "single-choice",
+    "question": "Una empresa que desarrolla aplicaciones de IA busca asesoramiento sobre estándares y marcos globales. Quiere asegurarse de que sus aplicaciones de IA se ajusten a los estándares globales. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "AWS CloudTrail",
+      "Trusted Advisor",
+      "Organización Internacional de Normalización (ISO)",
+      "Amazon Inspector"
+    ],
+    "answer": 2,
+    "explanation": "La Organización Internacional de Normalización (ISO) publica estándares globales que pueden guiar marcos de calidad, seguridad, gestión de riesgos y gobernanza aplicables a soluciones de IA. Los otros servicios son herramientas AWS específicas, no organismos de estándares globales.",
+    "tags": ["iso", "governance", "standards", "compliance"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-q005",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235444.png",
+    "type": "single-choice",
+    "question": "Una empresa está implementando una solución de IA generativa. Necesita identificar los protocolos y marcos de seguridad pertinentes para cumplir con los requisitos de gobernanza. Estos requisitos le ayudarán a evaluar los riesgos, la gobernanza y los controles de las aplicaciones de IA generativa. ¿Qué servicio o marco cumplirá estos requisitos?",
+    "options": [
+      "AWS SAM",
+      "Generative AI Security Scoping Matrix",
+      "Marco de ciclo de vida de resiliencia de AWS para IA generativa",
+      "AWS Artifact"
+    ],
+    "answer": 1,
+    "explanation": "La Generative AI Security Scoping Matrix ayuda a clasificar y evaluar el alcance de seguridad de soluciones de IA generativa, incluyendo riesgos, gobernanza y controles. AWS SAM es para serverless, AWS Artifact provee reportes/acuerdos de cumplimiento y no es una matriz específica de scoping de IA generativa.",
+    "tags": ["generative-ai", "security", "governance", "risk-management"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-q006",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235449.png",
+    "type": "single-choice",
+    "question": "Una empresa desea aplicar una sola capa de cifrado del lado del servidor a nivel de objeto a los datos almacenados en un bucket de Amazon S3. Los científicos de datos utilizarán los datos para entrenar modelos de aprendizaje automático (ML). Los científicos de datos desean controlar la rotación de las claves de cifrado. ¿Qué solución cumplirá estos requisitos con la MENOR sobrecarga operativa?",
+    "options": [
+      "Cifrado del lado del cliente con Amazon S3 Encryption Client",
+      "Cifrado del lado del servidor con claves AWS KMS (SSE-KMS)",
+      "Cifrado del lado del servidor con claves proporcionadas por el cliente (SSE-C)",
+      "Cifrado de doble capa del lado del servidor con claves AWS KMS (DSSE-KMS)"
+    ],
+    "answer": 1,
+    "explanation": "SSE-KMS aplica cifrado del lado del servidor en S3 usando claves de AWS KMS. Con claves administradas por el cliente se puede controlar la rotación con menor sobrecarga que administrar claves proporcionadas por el cliente. DSSE-KMS aplica doble capa, pero el requisito pide una sola capa.",
+    "tags": ["s3", "encryption", "sse-kms", "kms", "data-security"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-q007",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235454.png",
+    "type": "single-choice",
+    "question": "Una empresa quiere rastrear la cantidad de invocaciones de API que se realizan en su modelo Amazon Bedrock. ¿Qué servicio de AWS cumplirá este requisito?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS Artifact",
+      "Amazon Inspector"
+    ],
+    "answer": 0,
+    "explanation": "Amazon CloudWatch recopila métricas y logs operacionales. Para Amazon Bedrock, CloudWatch permite monitorear métricas como invocaciones y uso del modelo. AWS Config, Artifact e Inspector cubren otros objetivos de cumplimiento o seguridad.",
+    "tags": ["amazon-bedrock", "cloudwatch", "monitoring", "api-invocations"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-q008",
+    "domainId": "domain-5",
+    "source": "images/Captura de pantalla 2026-08-12 235500.png",
+    "type": "single-choice",
+    "question": "¿Qué control mejorará la seguridad de las cargas de trabajo de IA y ML?",
+    "options": [
+      "Utilice el cifrado de datos y el principio del mínimo privilegio para controlar el acceso.",
+      "Establecer un entorno de red y computación abierto.",
+      "Proteja las credenciales mediante el uso de preguntas secretas.",
+      "Eliminar cargas de trabajo anteriores para mantener versiones estables."
+    ],
+    "answer": 0,
+    "explanation": "El cifrado de datos protege la confidencialidad de la información y el principio de mínimo privilegio reduce el riesgo de acceso no autorizado. Ambos son controles fundamentales para proteger cargas de trabajo de IA y ML.",
+    "tags": ["security", "least-privilege", "encryption", "ml-workloads"],
+    "answerSource": "inferred-from-aws-knowledge"
+  }
+]

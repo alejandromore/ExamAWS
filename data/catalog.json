@@ -22,7 +22,9 @@
       "title": "AWS Certified AI Practitioner",
       "vendor": "AWS",
       "level": "Foundational",
-      "roadmapIds": ["ai-practitioner"],
+      "roadmapIds": [
+        "ai-practitioner"
+      ],
       "description": "Fundamentos de IA/ML, IA generativa, modelos fundacionales y servicios de AWS relacionados.",
       "passingScore": 70,
       "examDurationMinutes": 120,
@@ -45,22 +47,30 @@
           "id": "domain-3",
           "title": "Dominio 3: Aplicaciones de modelos fundacionales",
           "weight": 28,
-          "dataUrl": null,
-          "questionCount": 0
+          "dataUrl": "data/questions/aws/aif-c01/domain-3.json",
+          "questionCount": 10
         },
         {
           "id": "domain-4",
           "title": "Dominio 4: Directrices para IA responsable",
           "weight": 14,
-          "dataUrl": null,
-          "questionCount": 0
+          "dataUrl": "data/questions/aws/aif-c01/domain-4.json",
+          "questionCount": 8
         },
         {
           "id": "domain-5",
           "title": "Dominio 5: Seguridad, cumplimiento y gobernanza de soluciones de IA",
           "weight": 14,
-          "dataUrl": null,
-          "questionCount": 0
+          "dataUrl": "data/questions/aws/aif-c01/domain-5.json",
+          "questionCount": 8
+        },
+        {
+          "id": "practice-exam-1",
+          "title": "Examen de prueba 1: AIF-C01 completo",
+          "weight": 0,
+          "dataUrl": "data/questions/aws/aif-c01/practice-exam-1.json",
+          "questionCount": 65,
+          "kind": "practice-exam"
         }
       ]
     },
@@ -70,15 +80,41 @@
       "title": "AWS Certified Cloud Practitioner",
       "vendor": "AWS",
       "level": "Foundational",
-      "roadmapIds": ["solutions-architect"],
+      "roadmapIds": [
+        "solutions-architect"
+      ],
       "description": "Fundamentos de nube AWS, seguridad, servicios, facturación y soporte.",
       "passingScore": 70,
       "examDurationMinutes": 90,
       "domains": [
-        { "id": "domain-1", "title": "Conceptos de nube", "weight": 24, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-2", "title": "Seguridad y cumplimiento", "weight": 30, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-3", "title": "Tecnología y servicios de nube", "weight": 34, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-4", "title": "Facturación, precios y soporte", "weight": 12, "dataUrl": null, "questionCount": 0 }
+        {
+          "id": "domain-1",
+          "title": "Conceptos de nube",
+          "weight": 24,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-2",
+          "title": "Seguridad y cumplimiento",
+          "weight": 30,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-3",
+          "title": "Tecnología y servicios de nube",
+          "weight": 34,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-4",
+          "title": "Facturación, precios y soporte",
+          "weight": 12,
+          "dataUrl": null,
+          "questionCount": 0
+        }
       ]
     },
     {
@@ -87,15 +123,41 @@
       "title": "AWS Certified Solutions Architect - Associate",
       "vendor": "AWS",
       "level": "Associate",
-      "roadmapIds": ["solutions-architect"],
+      "roadmapIds": [
+        "solutions-architect"
+      ],
       "description": "Diseño de arquitecturas seguras, resilientes, de alto rendimiento y optimizadas en costo.",
       "passingScore": 72,
       "examDurationMinutes": 130,
       "domains": [
-        { "id": "domain-1", "title": "Diseño de arquitecturas seguras", "weight": 30, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-2", "title": "Diseño de arquitecturas resilientes", "weight": 26, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-3", "title": "Diseño de arquitecturas de alto rendimiento", "weight": 24, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-4", "title": "Diseño de arquitecturas optimizadas en costo", "weight": 20, "dataUrl": null, "questionCount": 0 }
+        {
+          "id": "domain-1",
+          "title": "Diseño de arquitecturas seguras",
+          "weight": 30,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-2",
+          "title": "Diseño de arquitecturas resilientes",
+          "weight": 26,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-3",
+          "title": "Diseño de arquitecturas de alto rendimiento",
+          "weight": 24,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-4",
+          "title": "Diseño de arquitecturas optimizadas en costo",
+          "weight": 20,
+          "dataUrl": null,
+          "questionCount": 0
+        }
       ]
     },
     {
@@ -104,15 +166,41 @@
       "title": "AWS Certified Solutions Architect - Professional",
       "vendor": "AWS",
       "level": "Professional",
-      "roadmapIds": ["solutions-architect"],
+      "roadmapIds": [
+        "solutions-architect"
+      ],
       "description": "Estrategia avanzada de arquitectura multi-cuenta, migraciones, continuidad, seguridad y optimización.",
       "passingScore": 75,
       "examDurationMinutes": 180,
       "domains": [
-        { "id": "domain-1", "title": "Diseñar para complejidad organizacional", "weight": 26, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-2", "title": "Diseñar nuevas soluciones", "weight": 29, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-3", "title": "Mejora continua de soluciones existentes", "weight": 25, "dataUrl": null, "questionCount": 0 },
-        { "id": "domain-4", "title": "Acelerar migraciones y modernización", "weight": 20, "dataUrl": null, "questionCount": 0 }
+        {
+          "id": "domain-1",
+          "title": "Diseñar para complejidad organizacional",
+          "weight": 26,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-2",
+          "title": "Diseñar nuevas soluciones",
+          "weight": 29,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-3",
+          "title": "Mejora continua de soluciones existentes",
+          "weight": 25,
+          "dataUrl": null,
+          "questionCount": 0
+        },
+        {
+          "id": "domain-4",
+          "title": "Acelerar migraciones y modernización",
+          "weight": 20,
+          "dataUrl": null,
+          "questionCount": 0
+        }
       ]
     }
   ]
