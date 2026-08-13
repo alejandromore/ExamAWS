@@ -1,0 +1,31 @@
+{
+  "id": "solutions-architect",
+  "title": "Roadmap Solution Architect en AWS",
+  "description": "Ruta sugerida para pasar de fundamentos cloud a diseño profesional de arquitecturas AWS.",
+  "steps": [
+    {
+      "order": 1,
+      "examId": "aws-clf-c02",
+      "code": "CLF-C02",
+      "title": "AWS Certified Cloud Practitioner",
+      "goal": "Base de nube AWS, servicios principales, seguridad, precios y soporte.",
+      "status": "planned"
+    },
+    {
+      "order": 2,
+      "examId": "aws-saa-c03",
+      "code": "SAA-C03",
+      "title": "AWS Certified Solutions Architect - Associate",
+      "goal": "Diseñar arquitecturas seguras, resilientes, eficientes y optimizadas en costo.",
+      "status": "planned"
+    },
+    {
+      "order": 3,
+      "examId": "aws-sap-c02",
+      "code": "SAP-C02",
+      "title": "AWS Certified Solutions Architect - Professional",
+      "goal": "Diseño avanzado para organizaciones complejas, migraciones, modernización y mejora continua.",
+      "status": "planned"
+    }
+  ]
+}

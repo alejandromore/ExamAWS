@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS Certification Practice</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Plan de certificación AWS</p>
+      <h1>Practice Trainer</h1>
+      <p class="subtitle">Roadmaps, bancos JSON y entrenamiento por dominio para certificaciones AWS.</p>
+    </div>
+    <div class="header-actions">
+      <button id="resetProgressBtn" class="btn btn-ghost" type="button">Reiniciar progreso</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="setupView" class="card">
+      <p>Cargando catálogo...</p>
+    </section>
+    <section id="quizView" class="card hidden"></section>
+    <section id="resultsView" class="card hidden"></section>
+  </main>
+
+  <footer class="footer">
+    <span>Contenido local · Catálogo en <code>data/catalog.json</code> · Preguntas en <code>data/questions/</code></span>
+  </footer>
+
+  <script src="src/app.js"></script>
+</body>
+</html>

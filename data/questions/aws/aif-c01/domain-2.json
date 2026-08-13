@@ -1,0 +1,206 @@
+[
+  {
+    "id": "aif-d2-q001",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225705.png",
+    "type": "single-choice",
+    "question": "Una empresa está explorando modelos fundamentales (FM) para crear una solución personalizada para datos específicos de un dominio. La empresa no desea gestionar la infraestructura subyacente. Quiere contar con capacidades de protección contra infracciones. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Utilice un FM de Hugging Face que está disponible en Amazon SageMaker.",
+      "Utilice un FM que esté disponible en Amazon SageMaker JumpStart.",
+      "Utilice un FM que esté disponible en AWS Deep Learning Containers.",
+      "Utilice un Amazon Titan FM que esté disponible en Amazon Bedrock."
+    ],
+    "answer": 3,
+    "explanation": "Amazon Bedrock permite usar modelos fundacionales administrados sin gestionar infraestructura. Los modelos Amazon Titan disponibles en Bedrock son apropiados para soluciones generativas administradas y pueden incluir protecciones/garantías de AWS aplicables frente a infracciones según el servicio y los términos vigentes.",
+    "tags": ["generative-ai", "foundation-models", "amazon-bedrock", "amazon-titan"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q002",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225711.png",
+    "type": "single-choice",
+    "question": "Una empresa desea utilizar la IA para mejorar sus operaciones comerciales. Quiere empezar a explorar modelos fundamentales (MF) que se adapten a su caso de uso específico. ¿Qué solución cumplirá estos requisitos con el MENOR esfuerzo operativo?",
+    "options": [
+      "Ajuste un FM mediante Amazon SageMaker JumpStart.",
+      "Desarrollar un nuevo FM.",
+      "Utilice un modelo de procesamiento de lenguaje natural (NLP) establecido que se implementa en una instancia de Amazon EC2.",
+      "Seleccione una FM utilizando Amazon Bedrock."
+    ],
+    "answer": 3,
+    "explanation": "Amazon Bedrock ofrece una forma administrada de explorar y seleccionar modelos fundacionales de varios proveedores con baja carga operativa. Desarrollar un FM, ejecutarlo en EC2 o ajustar modelos agrega más esfuerzo operacional.",
+    "tags": ["generative-ai", "foundation-models", "amazon-bedrock"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q003",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225717.png",
+    "type": "single-choice",
+    "question": "Una empresa desea implementar, perfeccionar y evaluar un modelo fundacional (MF) pre-entrenado. Quiere utilizar un centro de modelos popular, como Hugging Face, para su plataforma de IA generativa. ¿Qué solución cumplirá este requisito con la MENOR sobrecarga operativa?",
+    "options": [
+      "SageMaker Model Registry",
+      "SageMaker JumpStart",
+      "Amazon A2I",
+      "Amazon Q"
+    ],
+    "answer": 1,
+    "explanation": "SageMaker JumpStart proporciona modelos preentrenados y soluciones listas para usar, incluidos modelos de hubs populares como Hugging Face, y facilita implementación, ajuste y evaluación con menor sobrecarga operativa.",
+    "tags": ["generative-ai", "sagemaker-jumpstart", "hugging-face"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q004",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225722.png",
+    "type": "single-choice",
+    "question": "Una empresa financiera entrenó previamente su propio modelo de lenguaje grande (LLM) con datos propietarios. ¿Qué servicio de AWS puede utilizar la empresa para implementar el LLM?",
+    "options": [
+      "Amazon SageMaker",
+      "Amazon Comprehend",
+      "Amazon Bedrock",
+      "Amazon Lex"
+    ],
+    "answer": 0,
+    "explanation": "Amazon SageMaker permite construir, entrenar, ajustar e implementar modelos de ML personalizados, incluidos modelos grandes que la empresa ya entrenó. Comprehend y Lex son servicios especializados; Bedrock se centra en modelos fundacionales administrados y personalización dentro del servicio.",
+    "tags": ["llm", "deployment", "amazon-sagemaker"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q005",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225728.png",
+    "type": "single-choice",
+    "question": "Un científico de datos quiere un compañero de codificación de IA que pueda usarse con Amazon SageMaker Studio para brindar sugerencias de código para mejorar la productividad de la codificación. ¿Qué servicio o aplicación de AWS cumplirá este requisito?",
+    "options": [
+      "PartyRock, playground de Amazon Bedrock",
+      "Inferencia de AWS",
+      "Amazon Q Developer",
+      "Amazon Bedrock"
+    ],
+    "answer": 2,
+    "explanation": "Amazon Q Developer es el asistente generativo de AWS para desarrolladores. Puede proporcionar sugerencias y ayuda de código en entornos compatibles, incluido trabajo de desarrollo asociado a SageMaker Studio.",
+    "tags": ["amazon-q-developer", "coding-assistant", "sagemaker-studio"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q006",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225733.png",
+    "type": "single-choice",
+    "question": "Una empresa creó un chatbot con IA que responde a las preguntas de los empleados. Algunos empleados informan que las respuestas generadas no tienen sentido según la pregunta formulada. ¿Qué concepto describe esto?",
+    "options": [
+      "Underfitting",
+      "Alucinación",
+      "Overfitting",
+      "Bias"
+    ],
+    "answer": 1,
+    "explanation": "Una alucinación ocurre cuando un modelo generativo produce una respuesta que parece plausible, pero es incorrecta, irrelevante o no está fundamentada en la pregunta o en los datos disponibles.",
+    "tags": ["generative-ai", "hallucination"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q007",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225739.png",
+    "type": "single-choice",
+    "question": "Una empresa necesita identificar modelos de IA generativos que puedan interpretar el contenido de una imagen. ¿Qué tipo de modelo cumplirá estos requisitos?",
+    "options": [
+      "Modelo de lenguaje grande (LLM)",
+      "Modelo multimodal",
+      "Modelo de procesamiento del lenguaje natural (NLP)",
+      "Modelo de difusión"
+    ],
+    "answer": 1,
+    "explanation": "Los modelos multimodales pueden procesar más de un tipo de dato, por ejemplo texto e imágenes. Por eso son adecuados para interpretar contenido visual y combinarlo con lenguaje natural.",
+    "tags": ["generative-ai", "multimodal-models"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q008",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225744.png",
+    "type": "single-choice",
+    "question": "Una empresa quiere añadir capacidades de generación de audio a su aplicación de resúmenes de libros. ¿Qué servicio de AWS cumplirá este requisito con el MENOR esfuerzo operativo?",
+    "options": [
+      "Amazon Comprehend",
+      "Amazon SageMaker",
+      "Amazon Bedrock",
+      "Amazon Polly"
+    ],
+    "answer": 3,
+    "explanation": "Amazon Polly es un servicio administrado de texto a voz que permite convertir texto en audio de forma sencilla. Para una aplicación de resúmenes de libros, ofrece la menor sobrecarga operativa para generar audio hablado.",
+    "tags": ["aws-ai-services", "text-to-speech", "amazon-polly"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q009",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225751.png",
+    "type": "single-choice",
+    "question": "¿Qué servicio de AWS puede crear interfaces conversacionales en una aplicación mediante voz y texto?",
+    "options": [
+      "Amazon Polly",
+      "Amazon Lex",
+      "Amazon Comprehend",
+      "Amazon Personalize"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Lex permite crear interfaces conversacionales y chatbots que interactúan por voz y texto. Polly convierte texto a voz, Comprehend analiza texto y Personalize genera recomendaciones.",
+    "tags": ["aws-ai-services", "chatbots", "amazon-lex"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q010",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225801.png",
+    "type": "single-choice",
+    "question": "¿Cuál es una limitación de la IA generativa cuando se aplica a la resolución de problemas empresariales?",
+    "options": [
+      "Falta de escalabilidad",
+      "Incapacidad para procesar grandes conjuntos de datos",
+      "Generación de salidas sesgadas",
+      "Casos de uso comercial limitados"
+    ],
+    "answer": 2,
+    "explanation": "Una limitación importante de la IA generativa es que puede producir resultados sesgados si los datos de entrenamiento, el diseño del sistema o las instrucciones reflejan sesgos. La mitigación requiere evaluación, controles y gobernanza.",
+    "tags": ["generative-ai", "limitations", "bias", "responsible-ai"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q011",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225806.png",
+    "type": "single-choice",
+    "question": "Una empresa quiere proporcionar a sus empleados un chatbot que pueda responder preguntas sobre información confidencial interna. Esta información está disponible actualmente en cientos de documentos de la empresa. ¿Qué servicio administrado de AWS debería utilizar la empresa para implementar la solución de chatbot con la MENOR sobrecarga operativa?",
+    "options": [
+      "Amazon Q Business",
+      "SageMaker JumpStart",
+      "PartyRock",
+      "Amazon Bedrock"
+    ],
+    "answer": 0,
+    "explanation": "Amazon Q Business es un asistente generativo administrado para empresas que puede conectarse a fuentes de datos corporativas y responder preguntas respetando controles de acceso. Es la opción de menor sobrecarga para un chatbot empresarial sobre documentos internos.",
+    "tags": ["amazon-q-business", "enterprise-chatbot", "rag"],
+    "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-q012",
+    "domainId": "domain-2",
+    "source": "images/Captura de pantalla 2026-08-12 225812.png",
+    "type": "single-choice",
+    "question": "Una empresa desea implementar una solución para realizar búsquedas semánticas en documentos PDF que contienen imágenes. La empresa planea extraer imágenes de los PDF, analizarlas para obtener información contextual y usar esta información para realizar búsquedas semánticas. ¿Qué solución cumplirá estos requisitos?",
+    "options": [
+      "Utilizar la tokenización",
+      "Usar embeddings",
+      "Utilice modelos de lenguaje grandes (LLM)",
+      "Prompt engineering"
+    ],
+    "answer": 1,
+    "explanation": "Los embeddings representan texto, imágenes u otra información contextual como vectores que capturan significado semántico. Esto permite comparar similitud y realizar búsquedas semánticas en el contenido analizado.",
+    "tags": ["semantic-search", "embeddings", "vector-search", "multimodal"],
+    "answerSource": "inferred-from-aws-knowledge"
+  }
+]

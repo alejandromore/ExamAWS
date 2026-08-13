@@ -1,0 +1,239 @@
+[
+  {
+    "id": "aif-d1-q001",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223035.png",
+    "type": "single-choice",
+    "question": "¿Qué tipo de ML implica entrenar un modelo para maximizar la recompensa acumulativa en función de la retroalimentación que se recibe del entorno?",
+    "options": [
+      "Aprendizaje no supervisado",
+      "Aprendizaje por refuerzo",
+      "Aprendizaje supervisado",
+      "Aprendizaje semisupervisado"
+    ],
+    "answer": 1,
+    "explanation": "El aprendizaje por refuerzo es un modelo de aprendizaje continuo basado en ensayo y error. Se centra en maximizar la recompensa basándose en la retroalimentación del entorno, en forma de recompensa y penalización.",
+    "tags": [
+      "machine-learning",
+      "reinforcement-learning"
+    ]
+  },
+  {
+    "id": "aif-d1-q002",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223131.png",
+    "type": "single-choice",
+    "question": "Una empresa de redes sociales quiere utilizar inteligencia artificial para detectar imágenes y contenidos de vídeo dañinos en su plataforma. ¿Qué servicio de AWS cumplirá este requisito con la menor sobrecarga operativa?",
+    "options": [
+      "Amazon Textract",
+      "Amazon SageMaker",
+      "Amazon Transcribe",
+      "Amazon Rekognition"
+    ],
+    "answer": 3,
+    "explanation": "Amazon Rekognition es un servicio de visión artificial que puede detectar contenido explícito o sugerente en imágenes y vídeos. Puede usar Amazon Rekognition para detectar contenido dañino en diferentes tipos de medios. Esta solución requiere la menor sobrecarga operativa, ya que no necesita administrar el modelo de aprendizaje automático subyacente.",
+    "tags": [
+      "aws-ai-services",
+      "computer-vision",
+      "rekognition"
+    ]
+  },
+  {
+    "id": "aif-d1-q003",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223158.png",
+    "type": "single-choice",
+    "question": "Se está entrenando un modelo ML en un conjunto de datos grande. ¿Cuál es el objetivo del entrenamiento de modelos?",
+    "options": [
+      "Implementar el modelo en un entorno de producción.",
+      "Crear un nuevo algoritmo para ML.",
+      "Limpiar y preprocesar los datos sin procesar antes de modelar.",
+      "Optimizar los valores de los parámetros del modelo para que se ajusten a los datos de entrenamiento."
+    ],
+    "answer": 3,
+    "explanation": "El entrenamiento de modelos se refiere al proceso de optimizar los parámetros de un modelo para que se ajusten mejor a los datos de entrenamiento. El objetivo es encontrar valores de parámetros que minimicen la diferencia entre los valores predichos y los reales.",
+    "tags": [
+      "machine-learning",
+      "training"
+    ]
+  },
+  {
+    "id": "aif-d1-q004",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223223.png",
+    "type": "single-choice",
+    "question": "Una empresa legal está desarrollando una solución para extraer texto de un conjunto de datos de grabaciones de voz. ¿Qué servicio de AWS cumplirá este requisito?",
+    "options": [
+      "Amazon Comprehend",
+      "Amazon Transcribe",
+      "Amazon Translate",
+      "Amazon Rekognition"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Transcribe es un servicio que ofrece funciones de reconocimiento automático de voz. Permite extraer texto de un conjunto de datos de grabaciones de voz.",
+    "tags": [
+      "aws-ai-services",
+      "speech-to-text",
+      "transcribe"
+    ]
+  },
+  {
+    "id": "aif-d1-q005",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223249.png",
+    "type": "single-choice",
+    "question": "Una empresa con una plataforma de aprendizaje en línea quiere crear un motor de recomendaciones para sugerir cursos relevantes según los intereses de los usuarios y su historial de aprendizaje. ¿Qué servicio de AWS cumplirá los requisitos para construir e implementar el motor de recomendaciones?",
+    "options": [
+      "Amazon Rekognition",
+      "Amazon SageMaker",
+      "AWS Lambda",
+      "Amazon Comprehend"
+    ],
+    "answer": 1,
+    "explanation": "SageMaker es un servicio completamente administrado que permite crear, entrenar e implementar modelos de aprendizaje automático rápidamente. SageMaker es compatible con numerosos algoritmos y marcos de trabajo, incluidos aquellos adecuados para crear motores de recomendación.",
+    "tags": [
+      "aws-ai-services",
+      "sagemaker",
+      "recommendations"
+    ]
+  },
+  {
+    "id": "aif-d1-q006",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223343.png",
+    "type": "single-choice",
+    "question": "Una empresa desea crear una solución de aprendizaje automático que oriente a los representantes de ventas a decidir si presentar una propuesta de venta a un cliente específico. El modelo considerará datos de entrada sobre el cliente y las especificaciones de la propuesta. El resultado será \"aprobar\" o \"rechazar\" cada propuesta de venta. La empresa ya cuenta con datos históricos etiquetados. ¿Qué técnica de ML cumplirá estos requisitos?",
+    "options": [
+      "Reducción de dimensionalidad",
+      "Regresión",
+      "Agrupamiento",
+      "Clasificación"
+    ],
+    "answer": 3,
+    "explanation": "La clasificación es una técnica de aprendizaje automático supervisado que generaliza la predicción de la clase correcta de una muestra. La clasificación utiliza conjuntos de datos etiquetados. En este caso, el modelo determinará si la propuesta de venta pertenece a la clase de aprobación o de rechazo.",
+    "tags": [
+      "machine-learning",
+      "classification",
+      "supervised-learning"
+    ]
+  },
+  {
+    "id": "aif-d1-q007",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223412.png",
+    "type": "single-choice",
+    "question": "Una inmobiliaria quiere desarrollar un modelo de aprendizaje automático para predecir los precios de venta de propiedades residenciales en función de diversos factores, como la ubicación, el tamaño, el número de habitaciones y las comodidades. ¿Qué técnica de ML cumplirá este requisito?",
+    "options": [
+      "Clasificación",
+      "Regresión",
+      "Aprendizaje por refuerzo",
+      "Agrupamiento"
+    ],
+    "answer": 1,
+    "explanation": "La regresión es una técnica de aprendizaje automático supervisado que permite predecir un valor numérico continuo (precio de venta) basándose en las características de entrada. El objetivo es modelar la relación entre las características de entrada y la variable objetivo (precio de venta).",
+    "tags": [
+      "machine-learning",
+      "regression",
+      "supervised-learning"
+    ]
+  },
+  {
+    "id": "aif-d1-q008",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223447.png",
+    "type": "single-choice",
+    "question": "Un ingeniero de ML está entrenando un modelo de red neuronal profunda en un gran conjunto de datos. ¿Cuál es el proceso de utilizar el modelo entrenado para hacer predicciones sobre datos nuevos no vistos?",
+    "options": [
+      "Inferencia",
+      "Capacitación",
+      "Ingeniería de características",
+      "Validación"
+    ],
+    "answer": 0,
+    "explanation": "La inferencia se refiere al proceso de usar un modelo de aprendizaje automático entrenado para realizar predicciones sobre datos nuevos e inéditos. Una vez entrenado un modelo con un conjunto de datos, se puede usar para inferencia y generar predicciones o clasificaciones a partir de nuevos datos de entrada.",
+    "tags": [
+      "machine-learning",
+      "inference"
+    ]
+  },
+  {
+    "id": "aif-d1-q009",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223507.png",
+    "type": "single-choice",
+    "question": "¿A qué se refiere el sesgo en el contexto del aprendizaje automático?",
+    "options": [
+      "El error sistemático o tendencia de un modelo a realizar predicciones incorrectas para ciertos tipos de datos.",
+      "La complejidad de la arquitectura de un modelo.",
+      "La diferencia entre los valores previstos y los reales.",
+      "La aleatoriedad o ruido en los datos de entrenamiento."
+    ],
+    "answer": 0,
+    "explanation": "El sesgo en el aprendizaje automático se refiere al error sistemático o la tendencia de un modelo a realizar predicciones incorrectas para ciertos tipos de datos. El sesgo puede ocurrir por diversas razones, como las suposiciones del modelo, las limitaciones de los datos de entrenamiento o los sesgos inherentes del algoritmo. Es necesario reducir el sesgo para construir modelos precisos y justos.",
+    "tags": [
+      "machine-learning",
+      "bias",
+      "responsible-ai"
+    ]
+  },
+  {
+    "id": "aif-d1-q010",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223542.png",
+    "type": "single-choice",
+    "question": "Una empresa desea analizar los datos de compra de sus clientes. Quiere agruparlos en segmentos para mejorar sus campañas de marketing dirigidas. Quiere utilizar un conjunto de datos sin etiquetar. ¿Qué técnica de ML cumplirá estos requisitos?",
+    "options": [
+      "Aprendizaje supervisado",
+      "Aprendizaje por transferencia",
+      "Ajuste fino (fine-tuning)",
+      "Aprendizaje no supervisado"
+    ],
+    "answer": 3,
+    "explanation": "Para el aprendizaje no supervisado, se proporcionan al modelo datos de entrada sin etiquetar. El algoritmo que utiliza el modelo identifica patrones y relaciones entre los datos. Se puede usar el aprendizaje no supervisado para agrupar a los clientes en segmentos.",
+    "tags": [
+      "machine-learning",
+      "unsupervised-learning",
+      "clustering"
+    ]
+  },
+  {
+    "id": "aif-d1-q011",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223558.png",
+    "type": "single-choice",
+    "question": "Una empresa implementó un modelo de visión artificial. Quiere monitorear continuamente su rendimiento y detectar cualquier desviación o degradación con el tiempo. ¿Qué servicio o característica de AWS cumplirá estos requisitos?",
+    "options": [
+      "Amazon A2I",
+      "SageMaker Model Monitor",
+      "Amazon SageMaker Clarify",
+      "AWS CloudTrail"
+    ],
+    "answer": 1,
+    "explanation": "SageMaker Model Monitor monitorea continuamente el rendimiento de los modelos de aprendizaje automático implementados. Puede detectar desviaciones del rendimiento base del modelo, desviaciones de datos y otros problemas que podrían afectar la precisión y la fiabilidad del modelo a lo largo del tiempo.",
+    "tags": [
+      "aws-ai-services",
+      "sagemaker",
+      "model-monitoring"
+    ]
+  },
+  {
+    "id": "aif-d1-q012",
+    "domainId": "domain-1",
+    "source": "images/Captura de pantalla 2026-08-12 223647.png",
+    "type": "single-choice",
+    "question": "Una empresa utiliza un algoritmo de aprendizaje automático para categorizar correos electrónicos como problemas de red, de seguridad, de hardware u otros. La empresa entrenó el algoritmo con un conjunto de datos etiquetado que contenía ejemplos de correos electrónicos de las cuatro categorías. ¿Qué tipo de algoritmo ML coincide con esta descripción?",
+    "options": [
+      "Aprendizaje semisupervisado",
+      "Aprendizaje por refuerzo",
+      "Aprendizaje no supervisado",
+      "Aprendizaje supervisado"
+    ],
+    "answer": 3,
+    "explanation": "Para el aprendizaje supervisado, se proporciona un modelo con un conjunto de entrenamiento de ejemplos etiquetados. En este escenario, el algoritmo clasifica los correos electrónicos en cuatro clases distintas y predefinidas usando datos etiquetados en la fase de entrenamiento.",
+    "tags": [
+      "machine-learning",
+      "supervised-learning",
+      "classification"
+    ]
+  }
+]

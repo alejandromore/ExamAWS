@@ -1,0 +1,31 @@
+{
+  "id": "ai-practitioner",
+  "title": "Roadmap de certificación de IA en AWS",
+  "description": "Ruta sugerida para construir fundamentos de IA/ML, IA generativa y adopción responsable en AWS.",
+  "steps": [
+    {
+      "order": 1,
+      "examId": "aws-aif-c01",
+      "code": "AIF-C01",
+      "title": "AWS Certified AI Practitioner",
+      "goal": "Comprender conceptos esenciales de IA/ML, IA generativa, servicios administrados y gobernanza básica.",
+      "status": "available"
+    },
+    {
+      "order": 2,
+      "examId": "aws-mla-c01",
+      "code": "MLA-C01",
+      "title": "AWS Certified Machine Learning Engineer - Associate",
+      "goal": "Profundizar en implementación, operación y monitoreo de cargas de trabajo de ML en AWS.",
+      "status": "planned"
+    },
+    {
+      "order": 3,
+      "examId": "aws-mls-c01",
+      "code": "MLS-C01",
+      "title": "AWS Certified Machine Learning - Specialty",
+      "goal": "Diseñar soluciones avanzadas de ML, pipelines, feature engineering y optimización de modelos.",
+      "status": "planned"
+    }
+  ]
+}
