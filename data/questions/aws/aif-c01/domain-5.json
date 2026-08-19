@@ -13,7 +13,12 @@
     ],
     "answer": 1,
     "explanation": "SageMaker Model Cards proporcionan documentación estandarizada para modelos, incluyendo información de uso previsto, rendimiento, limitaciones, consideraciones de riesgo y detalles de gobernanza sin requerir una solución personalizada.",
-    "tags": ["sagemaker", "model-cards", "governance", "risk-management"],
+    "tags": [
+      "sagemaker",
+      "model-cards",
+      "governance",
+      "risk-management"
+    ],
     "answerSource": "visible-or-inferred"
   },
   {
@@ -30,7 +35,13 @@
     ],
     "answer": 3,
     "explanation": "Amazon Macie usa machine learning y coincidencia de patrones para descubrir, clasificar y monitorear datos sensibles, como PII, almacenados en Amazon S3. Es el servicio adecuado para identificar datos que no deben utilizarse en entrenamiento.",
-    "tags": ["amazon-macie", "s3", "pii", "phi", "data-protection"],
+    "tags": [
+      "amazon-macie",
+      "s3",
+      "pii",
+      "phi",
+      "data-protection"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -47,7 +58,12 @@
     ],
     "answer": 1,
     "explanation": "AWS PrivateLink permite conectividad privada a servicios compatibles sin exponer el tráfico a internet público. Para datos confidenciales usados en entrenamiento, ayuda a mantener el acceso dentro de la red privada.",
-    "tags": ["privatelink", "network-security", "s3", "data-protection"],
+    "tags": [
+      "privatelink",
+      "network-security",
+      "s3",
+      "data-protection"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -64,7 +80,12 @@
     ],
     "answer": 2,
     "explanation": "La Organización Internacional de Normalización (ISO) publica estándares globales que pueden guiar marcos de calidad, seguridad, gestión de riesgos y gobernanza aplicables a soluciones de IA. Los otros servicios son herramientas AWS específicas, no organismos de estándares globales.",
-    "tags": ["iso", "governance", "standards", "compliance"],
+    "tags": [
+      "iso",
+      "governance",
+      "standards",
+      "compliance"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -81,7 +102,12 @@
     ],
     "answer": 1,
     "explanation": "La Generative AI Security Scoping Matrix ayuda a clasificar y evaluar el alcance de seguridad de soluciones de IA generativa, incluyendo riesgos, gobernanza y controles. AWS SAM es para serverless, AWS Artifact provee reportes/acuerdos de cumplimiento y no es una matriz específica de scoping de IA generativa.",
-    "tags": ["generative-ai", "security", "governance", "risk-management"],
+    "tags": [
+      "generative-ai",
+      "security",
+      "governance",
+      "risk-management"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -98,7 +124,13 @@
     ],
     "answer": 1,
     "explanation": "SSE-KMS aplica cifrado del lado del servidor en S3 usando claves de AWS KMS. Con claves administradas por el cliente se puede controlar la rotación con menor sobrecarga que administrar claves proporcionadas por el cliente. DSSE-KMS aplica doble capa, pero el requisito pide una sola capa.",
-    "tags": ["s3", "encryption", "sse-kms", "kms", "data-security"],
+    "tags": [
+      "s3",
+      "encryption",
+      "sse-kms",
+      "kms",
+      "data-security"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -115,7 +147,12 @@
     ],
     "answer": 0,
     "explanation": "Amazon CloudWatch recopila métricas y logs operacionales. Para Amazon Bedrock, CloudWatch permite monitorear métricas como invocaciones y uso del modelo. AWS Config, Artifact e Inspector cubren otros objetivos de cumplimiento o seguridad.",
-    "tags": ["amazon-bedrock", "cloudwatch", "monitoring", "api-invocations"],
+    "tags": [
+      "amazon-bedrock",
+      "cloudwatch",
+      "monitoring",
+      "api-invocations"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -132,7 +169,585 @@
     ],
     "answer": 0,
     "explanation": "El cifrado de datos protege la confidencialidad de la información y el principio de mínimo privilegio reduce el riesgo de acceso no autorizado. Ambos son controles fundamentales para proteger cargas de trabajo de IA y ML.",
-    "tags": ["security", "least-privilege", "encryption", "ml-workloads"],
+    "tags": [
+      "security",
+      "least-privilege",
+      "encryption",
+      "ml-workloads"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d5-jem-001",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una startup opera un chatbot basado en un modelo base (FM) de **Amazon Bedrock**. El chatbot necesita leer archivos en un bucket de **Amazon S3** protegido con claves administradas por S3 (SSE-S3), pero cada intento de lectura falla. ¿Qué acción resolverá el problema?",
+    "options": [
+      "Usar prompt engineering para indicar al modelo dónde buscar los datos en **Amazon S3**",
+      "Eliminar detalles sensibles de los datos en S3",
+      "Otorgar al rol de IAM que asume **Amazon Bedrock** permiso para descifrar los datos con la clave de cifrado correcta",
+      "Actualizar la política del bucket S3 para permitir acceso público por internet"
+    ],
+    "answer": 2,
+    "explanation": "Los fallos de lectura son un problema de permisos: el rol de IAM que asume **Amazon Bedrock** debe tener autorización para acceder y descifrar los objetos cifrados. Otorgar permiso de descifrado con la clave correcta resuelve el acceso.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-002",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cómo puede una empresa usar modelos de lenguaje grande de forma segura en **Amazon Bedrock**?",
+    "options": [
+      "Configurar roles y políticas de IAM basados en privilegio mínimo (least privilege)",
+      "Habilitar **AWS Audit Manager** para ejecutar trabajos automáticos de evaluación de modelos",
+      "Habilitar trabajos automáticos de evaluación de modelos de **Amazon Bedrock**",
+      "Usar **Amazon CloudWatch** Logs para hacer los modelos explicables y monitorear sesgos"
+    ],
+    "answer": 0,
+    "explanation": "Configurar roles y políticas de IAM con privilegio mínimo restringe qué usuarios y aplicaciones pueden acceder a modelos y acciones de **Amazon Bedrock**, siendo la base para usar LLM de forma segura.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-003",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Un chatbot construido sobre un modelo de **Amazon SageMaker** JumpStart ajustado debe cumplir varios marcos regulatorios. ¿Cuáles dos capacidades ayudan a la empresa a demostrar cumplimiento?",
+    "options": [
+      "Optimización de costos",
+      "Protección de datos",
+      "Auto escalado elástico",
+      "Detección de amenazas",
+      "Menor time to market"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "La protección de datos (salvaguardar información sensible) y la detección de amenazas (identificar riesgos de seguridad) son controles que los reguladores esperan, por lo que apoyan directamente la demostración de cumplimiento.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M09",
+      "module:M05",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-004",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa planea construir una aplicación LLM con **Amazon Bedrock** usando datos de clientes almacenados en **Amazon S3**. Su política indica que cada equipo solo puede acceder a registros de sus propios clientes. ¿Qué solución cumple estos requisitos?",
+    "options": [
+      "Crear un único rol de servicio de **Amazon Bedrock** con acceso completo a **Amazon S3** y roles de IAM por equipo limitados a carpetas de clientes",
+      "Crear un rol de servicio personalizado de **Amazon Bedrock** por equipo que otorgue acceso solo a los datos de clientes de ese equipo",
+      "Crear un rol de servicio con acceso a **Amazon S3** y exigir que los equipos indiquen el cliente en cada solicitud a **Amazon Bedrock**",
+      "Redactar datos personales en **Amazon S3** y actualizar la política del bucket para permitir acceso por equipo"
+    ],
+    "answer": 1,
+    "explanation": "Crear un rol de servicio personalizado de **Amazon Bedrock** por equipo, limitado a los datos de clientes de ese equipo, aplica la política mediante privilegio mínimo e impide que equipos accedan a datos de otros.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-005",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo construye y entrena modelos de ML en notebooks de **Amazon SageMaker** Studio, manteniendo sus datos en un bucket de **Amazon S3**. Necesita controlar cómo se mueven los datos entre **Amazon S3** y los notebooks. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Usar **Amazon Macie** para monitorear SageMaker Studio",
+      "Configurar SageMaker para usar una VPC con un endpoint de **Amazon S3**",
+      "Usar **Amazon Inspector** para monitorear SageMaker Studio",
+      "Configurar SageMaker para usar S3 Glacier Deep Archive"
+    ],
+    "answer": 1,
+    "explanation": "Configurar **Amazon SageMaker** para usar una VPC con un endpoint de **Amazon S3** crea una ruta privada y administrada para que los datos fluyan entre S3 y los notebooks sin atravesar internet público.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-006",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Para satisfacer reguladores, una empresa debe ejecutar entrenamiento e inferencia de **Amazon SageMaker AI** en un entorno aislado sin conectividad a internet. ¿Qué solución cumple estos requisitos?",
+    "options": [
+      "Asociar roles de IAM apropiados a los trabajos de SageMaker AI",
+      "Cifrar los datos en reposo usando cifrado para capacidades geoespaciales de SageMaker",
+      "Ejecutar los trabajos de entrenamiento e inferencia de SageMaker AI con aislamiento de red (network isolation)",
+      "Ejecutar los trabajos con SageMaker Experiments"
+    ],
+    "answer": 2,
+    "explanation": "Ejecutar trabajos de **Amazon SageMaker AI** con aislamiento de red elimina el acceso a internet para esos trabajos, manteniéndolos en el entorno aislado que exigen las regulaciones.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-007",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa ejecuta modelos personalizados en **Amazon Bedrock** para una aplicación de IA generativa y quiere que los artefactos del modelo producidos durante trabajos de personalización se cifren con una clave que la empresa controle. ¿Qué servicio de AWS cumple estos requisitos?",
+    "options": [
+      "**Amazon Macie**",
+      "AWS Secrets Manager",
+      "AWS Key Management Service (**AWS KMS**)",
+      "**Amazon Inspector**"
+    ],
+    "answer": 2,
+    "explanation": "AWS Key Management Service (**AWS KMS**) permite crear y controlar una clave de cifrado propia y usarla para cifrar los artefactos producidos por trabajos de personalización de **Amazon Bedrock**.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-008",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Una empresa debe registrar cada llamada a su API de **Amazon Bedrock** y conservar esos registros de forma segura durante cinco años con el menor costo posible. ¿Qué dos opciones (un servicio de AWS y una clase de almacenamiento de S3) debe combinar?",
+    "options": [
+      "**Amazon CloudWatch**",
+      "**AWS CloudTrail**",
+      "**Amazon S3** Intelligent-Tiering",
+      "**AWS Audit Manager**",
+      "**Amazon S3** Standard"
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "explanation": "**AWS CloudTrail** registra solicitudes de API a servicios de AWS, incluido **Amazon Bedrock**, y **Amazon S3** Intelligent-Tiering mueve automáticamente los logs entre niveles de acceso para mantener bajo el costo de retención a largo plazo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M09",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-009",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un hospital construye un sistema de IA que ayuda a médicos a diagnosticar enfermedades a partir de historias clínicas e imágenes médicas. Por ley, los datos sensibles de pacientes deben permanecer dentro del país donde se almacenan. ¿Qué estrategia de gobernanza de datos garantiza cumplimiento y protege la privacidad?",
+    "options": [
+      "Calidad de datos (data quality)",
+      "Enriquecimiento de datos (data enrichment)",
+      "Residencia de datos (data residency)",
+      "Descubribilidad de datos (data discoverability)"
+    ],
+    "answer": 2,
+    "explanation": "La residencia de datos (data residency) garantiza que los datos se almacenen y procesen solo dentro de una ubicación geográfica específica, cumpliendo directamente el requisito de que la información del paciente no salga del país.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-010",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Cuando los modelos se entrenan en AWS, ¿qué técnica de machine learning ayuda a mantener privados y conformes los datos de entrenamiento subyacentes?",
+    "options": [
+      "Transfer learning",
+      "Aprendizaje no supervisado (unsupervised learning)",
+      "Aprendizaje federado (federated learning)",
+      "Aprendizaje por refuerzo (reinforcement learning)"
+    ],
+    "answer": 2,
+    "explanation": "El aprendizaje federado (federated learning) entrena un modelo compartido entre múltiples titulares de datos sin mover los datos crudos a una ubicación central, permitiendo que cada participante conserve sus datos privados en su lugar.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-011",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Un hospital quiere ajustar un modelo base (FM) con servicios de AWS manteniendo sus datos privados y dentro de la Región de AWS donde se almacenan. ¿Cuáles dos pasos logran esto de forma MÁS rentable?",
+    "options": [
+      "Alojar el modelo on-premises con AWS Outposts",
+      "Usar **AWS PrivateLink** con una VPC",
+      "Alojar la API de **Amazon Bedrock** on-premises",
+      "Usar la API de **Amazon Bedrock**"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Invocar la API de **Amazon Bedrock** mantiene el ajuste fino dentro del servicio administrado en la misma Región de AWS, y enrutar ese tráfico por una VPC con **AWS PrivateLink** lo mantiene en la red privada de AWS, cumpliendo privacidad sin infraestructura adicional.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-012",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una tienda en línea opera un chatbot de IA en su sitio web que permite a clientes realizar pedidos las 24 horas. ¿Qué vulnerabilidad de entrada debe abordar la empresa antes del lanzamiento?",
+    "options": [
+      "Filtración de datos (data leakage)",
+      "Inyección de prompts (prompt injection)",
+      "Alucinaciones del modelo de lenguaje grande (LLM)",
+      "Deriva de concepto (concept drift)"
+    ],
+    "answer": 1,
+    "explanation": "La inyección de prompts (prompt injection) es una vulnerabilidad de entrada donde un usuario crea entradas maliciosas para anular o manipular las instrucciones del chatbot, por lo que la empresa debe sanitizar y restringir entradas antes del lanzamiento.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-013",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco ajusta un LLM en **Amazon Bedrock** para preguntas sobre préstamos y debe garantizar que el modelo nunca revele datos privados de clientes. ¿Qué solución encaja?",
+    "options": [
+      "Aumentar el parámetro Top K",
+      "Usar **Amazon Bedrock** Guardrails",
+      "Eliminar información de identificación personal (PII) de los datos antes del ajuste fino",
+      "Cifrar los datos en **Amazon S3** antes del ajuste fino"
+    ],
+    "answer": 2,
+    "explanation": "Eliminar PII antes del ajuste fino impide que el modelo ingiera datos privados, por lo que no puede reproducirlos después. Es la salvaguarda más confiable.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-014",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa analiza documentos confidenciales con un modelo de terceros en **Amazon Bedrock** y le preocupa la privacidad de los datos. ¿Qué afirmación explica cómo **Amazon Bedrock** mantiene esos datos privados?",
+    "options": [
+      "Las entradas del usuario son confidenciales, pero las salidas del modelo se comparten con los proveedores del modelo de terceros",
+      "Las entradas y salidas se anonimizan y luego se comparten con los proveedores del modelo de terceros",
+      "Las entradas del usuario y las salidas del modelo NO se comparten con ningún proveedor de modelos de terceros",
+      "Las entradas y salidas se redactan antes de compartirse con los proveedores del modelo de terceros"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** procesa los datos dentro del entorno de AWS y no comparte entradas de usuario ni salidas del modelo con proveedores de modelos de terceros, manteniendo privados los documentos confidenciales de la empresa.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-015",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco necesita que su chatbot de IA generativa sea factual por razones regulatorias. ¿Qué solución ayuda a evitar que el modelo base (FM) subyacente produzca respuestas alucinadas?",
+    "options": [
+      "Usar **AWS Config** para consultar metadatos de cumplimiento con lenguaje natural",
+      "Usar **AWS Audit Manager** para preparar informes de auditoría y cumplimiento de TI",
+      "Configurar **Amazon Bedrock** Guardrails para evaluar entradas de usuarios y respuestas del modelo",
+      "Usar **Amazon Inspector** para escanear cargas de trabajo en busca de vulnerabilidades"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** Guardrails permite definir políticas que evalúan entradas y respuestas del modelo, incluyendo verificaciones de contextual grounding, ayudando a mantener respuestas factuales y reducir alucinaciones para cumplimiento.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-016",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere asegurar que su sistema de IA sea justo y explicable y decide exigir capacitación a su equipo de desarrollo de IA. ¿Qué capacitación cumple este requisito?",
+    "options": [
+      "Capacitación en habilidades avanzadas de programación",
+      "Capacitación en privacidad de datos y protocolos de cifrado",
+      "Capacitación en conciencia de sesgo e IA responsable",
+      "Capacitación en algoritmos avanzados de ML"
+    ],
+    "answer": 2,
+    "explanation": "Capacitar al equipo en conciencia de sesgo e IA responsable proporciona el conocimiento y las prácticas necesarias para construir sistemas justos y explicables, cumpliendo el requisito.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-017",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere acceder a las APIs de **Amazon Bedrock** de forma privada desde su cuenta de AWS, manteniendo sus datos fuera de internet público. ¿Qué solución cumple estos requisitos?",
+    "options": [
+      "Usar AWS Glue para configurar cifrado de datos en el catálogo de datos de la empresa",
+      "Usar **AWS PrivateLink** para configurar una conexión privada entre la VPC de la empresa y **Amazon Bedrock**",
+      "Usar **Amazon CloudFront** para restringir acceso al contenido privado de la empresa",
+      "Usar AWS Lake Formation para gestionar gobernanza centralizada de datos y compartición entre cuentas"
+    ],
+    "answer": 1,
+    "explanation": "**AWS PrivateLink** configura una conexión privada entre la VPC de la empresa y las APIs de **Amazon Bedrock**, manteniendo llamadas y transferencias de datos dentro de la red de AWS sin exponerse a internet público.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-018",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un chatbot de IA generativa sobre un modelo base (FM) de **Amazon Bedrock** es vulnerable a inyección de prompts. ¿Cómo puede la empresa asegurarlo con el MENOR esfuerzo?",
+    "options": [
+      "Ajustar el FM para evitar respuestas dañinas",
+      "Aplicar filtros de contenido y temas denegados de **Amazon Bedrock** Guardrails",
+      "Cambiar a un modelo base diferente",
+      "Agregar más ejemplos few-shot al prompt"
+    ],
+    "answer": 1,
+    "explanation": "Los filtros de contenido y temas denegados de **Amazon Bedrock** Guardrails se configuran sin reentrenar para bloquear prompts y respuestas inseguros, mitigando inyección de prompts con el menor esfuerzo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M09",
+      "module:M08",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-019",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa obtiene acreditación de la International Organization for Standardization (ISO) para gestionar riesgos de IA y usar IA de forma responsable. ¿Qué refleja esta acreditación sobre la empresa?",
+    "options": [
+      "Todos los miembros de la empresa están certificados por ISO.",
+      "Todos los sistemas de IA que usa la empresa están certificados por ISO.",
+      "Todos los miembros del equipo de aplicaciones de IA están certificados por ISO.",
+      "El marco de desarrollo de la empresa está certificado por ISO."
+    ],
+    "answer": 3,
+    "explanation": "La acreditación ISO certifica que el marco de desarrollo, procesos y controles de la empresa para gestionar IA cumplen los requisitos del estándar ISO relevante, reflejando gobernanza de IA responsable y consciente de riesgos a nivel organizacional.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-020",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa mantiene reglas que establecen cuánto tiempo se almacena la información y cuándo debe eliminarse. ¿Qué estrategia de gobernanza de datos describe esto?",
+    "options": [
+      "Estándares de calidad de datos",
+      "Retención de datos (data retention)",
+      "Almacenamiento de logs",
+      "Desidentificación de datos"
+    ],
+    "answer": 1,
+    "explanation": "La retención de datos (data retention) es el conjunto de políticas que define cuánto tiempo se almacenan los datos y cuándo deben eliminarse, que es exactamente lo que describen las reglas de la empresa.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-021",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa despliega agentes de IA en **Amazon Bedrock** que necesitan acceder a múltiples sistemas backend en nombre de usuarios. Quiere que cada agente se autentique con su propia identidad en lugar de compartir un conjunto de credenciales. ¿Qué característica de AWS cumple este requisito?",
+    "options": [
+      "AWS Secrets Manager",
+      "**Amazon Bedrock** AgentCore Identity",
+      "**Amazon Macie**",
+      "**AWS CloudTrail**"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Bedrock** AgentCore Identity proporciona gestión de identidad para agentes de IA, permitiendo que cada agente se autentique con una identidad distinta al acceder a sistemas backend, aplicando privilegio mínimo y evitando credenciales compartidas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-022",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una institución financiera entrena modelos de ML con datos de múltiples sistemas internos. Los reguladores exigen rastrear cada dato de entrenamiento hasta su fuente original y demostrar que fue recopilado y procesado conforme a la política. ¿Qué práctica cumple este requisito?",
+    "options": [
+      "Aumento de datos (data augmentation)",
+      "Seguimiento de linaje de datos (data lineage tracking)",
+      "Normalización de datos (data normalization)",
+      "Balanceo de datos (data balancing)"
+    ],
+    "answer": 1,
+    "explanation": "El seguimiento de linaje de datos (data lineage tracking) documenta el origen, movimiento y transformación de los datos a lo largo de su ciclo de vida, permitiendo rastrear cada dato de entrenamiento hasta su fuente y demostrar manejo conforme a la política.",
+    "tags": [
+      "difficulty:intermediate",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-023",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa usa modelos de IA entrenados con datos de clientes y necesita definir reglas sobre cuánto tiempo se conservan los datasets de entrenamiento, cuándo se archivan y cuándo deben eliminarse. ¿Qué estrategia de gobernanza de datos describe esto?",
+    "options": [
+      "Residencia de datos (data residency)",
+      "Gestión del ciclo de vida de datos (data lifecycle management)",
+      "Registro de datos (data logging)",
+      "Monitoreo de datos (data monitoring)"
+    ],
+    "answer": 1,
+    "explanation": "La gestión del ciclo de vida de datos (data lifecycle management) define reglas sobre cómo se crean, almacenan, archivan y eliminan los datos, que es lo que establecer calendarios de retención y eliminación para datasets de entrenamiento describe.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-024",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "El equipo de gobernanza de datos de una empresa quiere observar continuamente cómo se accede y usa el dato de entrenamiento de IA en toda la organización para detectar patrones de uso no autorizado. ¿Qué estrategia de gobernanza de datos describe esto?",
+    "options": [
+      "Retención de datos",
+      "Residencia de datos",
+      "Observación y monitoreo de datos (data observation and monitoring)",
+      "Registro de datos (data logging)"
+    ],
+    "answer": 2,
+    "explanation": "La observación y monitoreo de datos (data observation and monitoring) implica vigilar continuamente cómo se accede y usa la información para detectar anomalías y patrones no autorizados, que es la estrategia que aborda la necesidad del equipo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-025",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa que construye sistemas de IA en AWS quiere registrar cada acceso a sus datasets de entrenamiento con fines de auditoría. ¿Qué servicio de AWS proporciona esta capacidad de registro?",
+    "options": [
+      "**AWS Config**",
+      "**AWS CloudTrail**",
+      "AWS Trusted Advisor",
+      "**Amazon Inspector**"
+    ],
+    "answer": 1,
+    "explanation": "**AWS CloudTrail** registra llamadas de API a servicios de AWS, incluidos eventos de acceso a datos en servicios como **Amazon S3**, creando una pista de auditoría que documenta quién accedió, cuándo y qué hizo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-026",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una institución financiera entrena modelos de ML con datos de múltiples sistemas. Los reguladores exigen rastrear cada dato de entrenamiento hasta su origen. ¿Qué práctica cumple este requisito?",
+    "options": [
+      "Aumento de datos (data augmentation)",
+      "Seguimiento de linaje de datos (data lineage tracking)",
+      "Normalización de datos (data normalization)",
+      "Balanceo de datos (data balancing)"
+    ],
+    "answer": 1,
+    "explanation": "El seguimiento de linaje de datos (data lineage tracking) documenta el origen, movimiento y transformación de los datos, permitiendo rastrear cada dato de entrenamiento hasta su fuente y demostrar manejo conforme.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d5-jem-027",
+    "domainId": "domain-5",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo está estableciendo un ciclo de vida seguro de gobernanza de datos para el dataset detrás de una carga de trabajo de IA en AWS. Ordene las siguientes etapas de la primera a la última para reflejar el orden correcto del ciclo de vida de gobernanza de datos.\n\n¿Cuál orden es correcto?",
+    "options": [
+      "1) Descubrir y clasificar los datos para identificar registros sensibles o regulados → 2) Cifrar el dataset en reposo y exigir cifrado en tránsito antes de usarlo para entrenamiento o inferencia → 3) Restringir quién puede usar los datos con políticas de IAM de privilegio mínimo → 4) Monitorear y registrar continuamente el acceso para detectar actividad inusual o no autorizada → 5) Auditar logs y controles contra requisitos de cumplimiento y producir evidencia para revisores",
+      "1) Cifrar el dataset en reposo y exigir cifrado en tránsito → 2) Restringir acceso con políticas de IAM de privilegio mínimo → 3) Monitorear y registrar acceso continuamente → 4) Auditar logs y controles contra cumplimiento → 5) Descubrir y clasificar los datos para identificar registros sensibles o regulados",
+      "1) Auditar logs y controles contra cumplimiento → 2) Monitorear y registrar acceso continuamente → 3) Restringir acceso con políticas de IAM → 4) Cifrar el dataset en reposo y en tránsito → 5) Descubrir y clasificar los datos",
+      "1) Cifrar el dataset en reposo y en tránsito → 2) Descubrir y clasificar los datos → 3) Restringir acceso con políticas de IAM de privilegio mínimo → 4) Monitorear y registrar acceso continuamente → 5) Auditar logs y controles contra cumplimiento"
+    ],
+    "answer": 0,
+    "explanation": "Primero se descubren y clasifican los datos para saber qué es sensible y cómo debe protegerse. Luego se cifran en reposo y tránsito, se restringe el acceso con IAM de privilegio mínimo, se monitorea y registra el acceso para detectar uso indebido, y finalmente se auditan logs y controles para producir evidencia de cumplimiento. Cada etapa depende de la anterior.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
   }
 ]

@@ -13,7 +13,12 @@
     ],
     "answer": 3,
     "explanation": "Amazon Bedrock permite usar modelos fundacionales administrados sin gestionar infraestructura. Los modelos Amazon Titan disponibles en Bedrock son apropiados para soluciones generativas administradas y pueden incluir protecciones/garantías de AWS aplicables frente a infracciones según el servicio y los términos vigentes.",
-    "tags": ["generative-ai", "foundation-models", "amazon-bedrock", "amazon-titan"],
+    "tags": [
+      "generative-ai",
+      "foundation-models",
+      "amazon-bedrock",
+      "amazon-titan"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -30,7 +35,11 @@
     ],
     "answer": 3,
     "explanation": "Amazon Bedrock ofrece una forma administrada de explorar y seleccionar modelos fundacionales de varios proveedores con baja carga operativa. Desarrollar un FM, ejecutarlo en EC2 o ajustar modelos agrega más esfuerzo operacional.",
-    "tags": ["generative-ai", "foundation-models", "amazon-bedrock"],
+    "tags": [
+      "generative-ai",
+      "foundation-models",
+      "amazon-bedrock"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -47,7 +56,11 @@
     ],
     "answer": 1,
     "explanation": "SageMaker JumpStart proporciona modelos preentrenados y soluciones listas para usar, incluidos modelos de hubs populares como Hugging Face, y facilita implementación, ajuste y evaluación con menor sobrecarga operativa.",
-    "tags": ["generative-ai", "sagemaker-jumpstart", "hugging-face"],
+    "tags": [
+      "generative-ai",
+      "sagemaker-jumpstart",
+      "hugging-face"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -64,7 +77,11 @@
     ],
     "answer": 0,
     "explanation": "Amazon SageMaker permite construir, entrenar, ajustar e implementar modelos de ML personalizados, incluidos modelos grandes que la empresa ya entrenó. Comprehend y Lex son servicios especializados; Bedrock se centra en modelos fundacionales administrados y personalización dentro del servicio.",
-    "tags": ["llm", "deployment", "amazon-sagemaker"],
+    "tags": [
+      "llm",
+      "deployment",
+      "amazon-sagemaker"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -81,7 +98,11 @@
     ],
     "answer": 2,
     "explanation": "Amazon Q Developer es el asistente generativo de AWS para desarrolladores. Puede proporcionar sugerencias y ayuda de código en entornos compatibles, incluido trabajo de desarrollo asociado a SageMaker Studio.",
-    "tags": ["amazon-q-developer", "coding-assistant", "sagemaker-studio"],
+    "tags": [
+      "amazon-q-developer",
+      "coding-assistant",
+      "sagemaker-studio"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -98,7 +119,10 @@
     ],
     "answer": 1,
     "explanation": "Una alucinación ocurre cuando un modelo generativo produce una respuesta que parece plausible, pero es incorrecta, irrelevante o no está fundamentada en la pregunta o en los datos disponibles.",
-    "tags": ["generative-ai", "hallucination"],
+    "tags": [
+      "generative-ai",
+      "hallucination"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -115,7 +139,10 @@
     ],
     "answer": 1,
     "explanation": "Los modelos multimodales pueden procesar más de un tipo de dato, por ejemplo texto e imágenes. Por eso son adecuados para interpretar contenido visual y combinarlo con lenguaje natural.",
-    "tags": ["generative-ai", "multimodal-models"],
+    "tags": [
+      "generative-ai",
+      "multimodal-models"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -132,7 +159,11 @@
     ],
     "answer": 3,
     "explanation": "Amazon Polly es un servicio administrado de texto a voz que permite convertir texto en audio de forma sencilla. Para una aplicación de resúmenes de libros, ofrece la menor sobrecarga operativa para generar audio hablado.",
-    "tags": ["aws-ai-services", "text-to-speech", "amazon-polly"],
+    "tags": [
+      "aws-ai-services",
+      "text-to-speech",
+      "amazon-polly"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -149,7 +180,11 @@
     ],
     "answer": 1,
     "explanation": "Amazon Lex permite crear interfaces conversacionales y chatbots que interactúan por voz y texto. Polly convierte texto a voz, Comprehend analiza texto y Personalize genera recomendaciones.",
-    "tags": ["aws-ai-services", "chatbots", "amazon-lex"],
+    "tags": [
+      "aws-ai-services",
+      "chatbots",
+      "amazon-lex"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -166,7 +201,12 @@
     ],
     "answer": 2,
     "explanation": "Una limitación importante de la IA generativa es que puede producir resultados sesgados si los datos de entrenamiento, el diseño del sistema o las instrucciones reflejan sesgos. La mitigación requiere evaluación, controles y gobernanza.",
-    "tags": ["generative-ai", "limitations", "bias", "responsible-ai"],
+    "tags": [
+      "generative-ai",
+      "limitations",
+      "bias",
+      "responsible-ai"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -183,7 +223,11 @@
     ],
     "answer": 0,
     "explanation": "Amazon Q Business es un asistente generativo administrado para empresas que puede conectarse a fuentes de datos corporativas y responder preguntas respetando controles de acceso. Es la opción de menor sobrecarga para un chatbot empresarial sobre documentos internos.",
-    "tags": ["amazon-q-business", "enterprise-chatbot", "rag"],
+    "tags": [
+      "amazon-q-business",
+      "enterprise-chatbot",
+      "rag"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -200,7 +244,1001 @@
     ],
     "answer": 1,
     "explanation": "Los embeddings representan texto, imágenes u otra información contextual como vectores que capturan significado semántico. Esto permite comparar similitud y realizar búsquedas semánticas en el contenido analizado.",
-    "tags": ["semantic-search", "embeddings", "vector-search", "multimodal"],
+    "tags": [
+      "semantic-search",
+      "embeddings",
+      "vector-search",
+      "multimodal"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d2-jem-001",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un marketplace de bienes raíces debe producir miles de descripciones únicas de propiedades al día, en párrafos con estilo y tono uniformes. ¿Qué tipo de modelo generativo cumple estos requisitos?",
+    "options": [
+      "Un modelo de autoencoder variacional (VAE)",
+      "Un modelo de difusión",
+      "Un modelo basado en transformers",
+      "Un modelo de red generativa adversarial (GAN)"
+    ],
+    "answer": 2,
+    "explanation": "Los modelos basados en transformers, como los large language models, generan párrafos de texto coherentes con estilo y tono consistentes y escalan para producir miles de descripciones únicas, lo cual encaja con el requisito.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-002",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una fintech usa **Amazon Bedrock** para un chatbot de soporte y detecta que los costos suben mes a mes. El equipo descubre que el historial completo de cada conversación se incluye en cada prompt. ¿Qué aspecto del modelo de precios por tokens explica esto?",
+    "options": [
+      "El costo se basa en la cantidad de llamadas a la API sin importar el contenido",
+      "El costo aumenta con el total de tokens de entrada y salida procesados por solicitud",
+      "El costo se determina por el tiempo que el modelo tarda en procesar cada solicitud",
+      "El costo depende de la cantidad de usuarios concurrentes"
+    ],
+    "answer": 1,
+    "explanation": "El precio por tokens cobra por el total de tokens de entrada y salida procesados en cada solicitud, así que incluir historiales largos aumenta los tokens de entrada en cada llamada y eleva directamente los costos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-003",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa logística construye un agente de IA que consulta inventario en bodegas, reserva envíos y genera guías de despacho llamando a las APIs de sus proveedores. ¿Qué capacidad de IA agéntica permite al agente interactuar con estos sistemas externos?",
+    "options": [
+      "Gestión de memoria",
+      "Uso de herramientas (tool usage)",
+      "Fine-tuning del modelo",
+      "Caché de prompts"
+    ],
+    "answer": 1,
+    "explanation": "El uso de herramientas (tool usage) es la capacidad de IA agéntica que permite a un agente invocar APIs, servicios y sistemas externos para obtener información o ejecutar acciones, que es cómo el agente consulta inventario, reserva envíos y genera guías mediante las APIs de los proveedores.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-004",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es una ventaja principal de usar los servicios de IA generativa de AWS para construir aplicaciones?",
+    "options": [
+      "Siempre son gratuitos",
+      "Garantizan un 100 % de precisión",
+      "Reducen la barrera de entrada",
+      "Eliminan por completo la necesidad de programar"
+    ],
+    "answer": 2,
+    "explanation": "Los servicios de IA generativa de AWS ofrecen infraestructura administrada, foundation models preentrenados y APIs, lo que reduce la barrera de entrada al eliminar la necesidad de construir y entrenar modelos grandes desde cero.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-005",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una aseguradora recibe un volumen alto de consultas sobre siniestros cada día y planea usar Agents for **Amazon Bedrock** para atenderlas. ¿Cuál es un beneficio clave de usar estos agentes?",
+    "options": [
+      "Generar foundation models (FMs) personalizados para predecir necesidades del cliente",
+      "Elegir un foundation model (FM) según criterios y métricas predefinidos",
+      "Automatizar tareas repetitivas y orquestar flujos de trabajo complejos de varios pasos",
+      "Invocar varios foundation models (FMs) a la vez y fusionar sus resultados"
+    ],
+    "answer": 2,
+    "explanation": "Agents for **Amazon Bedrock** automatizan tareas repetitivas y orquestan flujos de trabajo complejos de varios pasos, lo que permite a la aseguradora gestionar grandes volúmenes de consultas con mayor rapidez y eficiencia.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-006",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una startup edtech desarrolla una app donde los estudiantes escriben una pregunta o toman una foto de un ejercicio, y la app devuelve una respuesta escrita con explicación paso a paso. ¿Qué tipo de modelo debe impulsar la app?",
+    "options": [
+      "Modelo de visión por computadora (Computer Vision)",
+      "Modelo de difusión",
+      "Large multimodal language model",
+      "Modelo de texto a voz (text-to-speech)"
+    ],
+    "answer": 2,
+    "explanation": "Un large multimodal language model puede recibir texto e imágenes como entrada y generar texto como salida, por lo que acepta una pregunta escrita o fotografiada y devuelve una respuesta escrita con explicación.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-007",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué es un token en el contexto de la IA generativa?",
+    "options": [
+      "Una función de seguridad",
+      "Un tipo de red neuronal",
+      "Una unidad de texto procesada por el modelo",
+      "Una métrica de evaluación del modelo"
+    ],
+    "answer": 2,
+    "explanation": "Un token es la unidad básica de texto, como una palabra o subpalabra, que un modelo procesa y genera; ese es el significado del término.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-008",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es la diferencia entre modelos de IA discriminativos y generativos?",
+    "options": [
+      "Los modelos discriminativos son más rápidos que los generativos",
+      "Los modelos discriminativos son más precisos que los generativos",
+      "Los modelos discriminativos clasifican o predicen, mientras que los generativos crean contenido nuevo",
+      "Los modelos discriminativos necesitan más datos que los generativos"
+    ],
+    "answer": 2,
+    "explanation": "Los modelos discriminativos aprenden a clasificar entradas o predecir resultados, mientras que los modelos generativos aprenden a crear contenido nuevo similar a sus datos de entrenamiento; esa es la distinción central entre ambos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-009",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un fabricante de sensores agrícolas IoT quiere que sus dispositivos ejecuten inferencia de modelos de lenguaje localmente, con la latencia más baja posible. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Desplegar large language models (LLMs) optimizados en los dispositivos edge",
+      "Desplegar small language models (SLMs) optimizados en los dispositivos edge",
+      "Llamar de forma asíncrona a una API centralizada de small language model (SLM) desde los dispositivos edge",
+      "Llamar de forma asíncrona a una API centralizada de large language model (LLM) desde los dispositivos edge"
+    ],
+    "answer": 1,
+    "explanation": "Desplegar small language models (SLMs) optimizados en los dispositivos edge mantiene la inferencia local y evita idas y vueltas de red, lo que entrega la latencia más baja posible, y los SLMs son lo suficientemente compactos para ejecutarse en hardware edge con recursos limitados.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-010",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En el contexto de la IA generativa, ¿qué es una alucinación (hallucination)?",
+    "options": [
+      "Una salida visual producida por el modelo",
+      "Un tipo de arquitectura de modelo",
+      "Una salida incorrecta o fabricada presentada como un hecho",
+      "Un método de entrenamiento de un modelo"
+    ],
+    "answer": 2,
+    "explanation": "Una alucinación es una salida incorrecta o fabricada que el modelo presenta como si fuera factual.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-011",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es el beneficio principal de **Amazon SageMaker** JumpStart?",
+    "options": [
+      "Reduce los costos de inferencia",
+      "Proporciona acceso a modelos preentrenados y soluciones",
+      "Ajusta automáticamente los hiperparámetros del modelo",
+      "Administra el etiquetado de datos con una fuerza laboral humana"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker** JumpStart proporciona acceso a modelos preentrenados, algoritmos integrados y soluciones de extremo a extremo, lo que acelera el inicio de proyectos de machine learning e IA generativa.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-012",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa tiene una aplicación que recopila comentarios de empleados de encuestas internas y los procesa con reglas rígidas codificadas a mano. La empresa quiere escalar esta lógica a nuevas filiales y departamentos. ¿Qué ventaja de los modelos de IA generativa aplica a este escenario?",
+    "options": [
+      "Salidas predecibles",
+      "Adaptabilidad",
+      "Menor sensibilidad a cambios en la entrada",
+      "Explicabilidad"
+    ],
+    "answer": 1,
+    "explanation": "La adaptabilidad es la ventaja de IA generativa que aplica aquí: los modelos pueden generalizar patrones aprendidos a nuevas filiales y departamentos con poca reconfiguración manual, evitando reescribir reglas rígidas codificadas a mano.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-013",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una revista digital está probando un asistente de redacción con IA generativa. El tráfico del piloto es bajo, el rendimiento no es prioridad y el uso futuro es impredecible; la revista busca el menor costo. ¿Qué solución cumple estos requisitos?",
+    "options": [
+      "Usar instancias de **Amazon EC2** con GPU",
+      "Usar **Amazon Bedrock** con precios On-Demand",
+      "Usar **Amazon Bedrock** con Provisioned Throughput",
+      "Usar **Amazon SageMaker** JumpStart"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Bedrock** con precios On-Demand cobra solo por las llamadas de inferencia realizadas, sin compromiso de capacidad, lo que mantiene los costos bajos durante un piloto pequeño y escala elásticamente con demanda impredecible.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-014",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué es un foundation model en IA generativa?",
+    "options": [
+      "Un modelo que solo puede generar texto",
+      "Un modelo diseñado específicamente para generación de imágenes",
+      "Un modelo grande preentrenado que puede adaptarse a muchas tareas",
+      "Un modelo que no requiere datos de entrenamiento"
+    ],
+    "answer": 2,
+    "explanation": "Un foundation model es un modelo grande preentrenado con vastas cantidades de datos que puede adaptarse o afinarse (fine-tuning) para muchas tareas posteriores, como generación de texto, resumen y respuesta a preguntas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-015",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo jurídico necesita extraer los puntos clave de contratos extensos para que el personal trabaje más rápido. ¿Qué estrategia de IA generativa cumple este requisito?",
+    "options": [
+      "Regresión",
+      "Resumen (summarization)",
+      "Clustering",
+      "Clasificación"
+    ],
+    "answer": 1,
+    "explanation": "El resumen (summarization) condensa documentos largos en sus ideas clave, de modo que los empleados pueden comprender y actuar rápidamente sobre la información esencial.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-016",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de call center entrega manualmente recomendaciones de productos según la ubicación del cliente y quiere que los foundation models (FMs) automaticen esta tarea. ¿Qué servicio de AWS cumple esta necesidad?",
+    "options": [
+      "**Amazon Macie**",
+      "**Amazon Bedrock**",
+      "**Amazon Textract**",
+      "Amazon Transcribe"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Bedrock** permite a la empresa usar foundation models para generar descripciones de productos y recomendaciones basadas en ubicación sin administrar infraestructura, lo que automatiza la tarea.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-017",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes NO es una etapa del ciclo de vida de un foundation model (FM)?",
+    "options": [
+      "Fine-tuning",
+      "Marketing",
+      "Pre-entrenamiento (pre-training)",
+      "Despliegue (deployment)"
+    ],
+    "answer": 1,
+    "explanation": "Marketing es una actividad de negocio y no forma parte del ciclo de vida técnico del FM, que cubre etapas como selección de datos, pre-entrenamiento, fine-tuning, evaluación y despliegue.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-018",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué afirmación describe una característica definitoria de los modelos de lenguaje basados en transformers?",
+    "options": [
+      "Usan capas convolucionales para aplicar filtros sobre la entrada y capturar patrones locales",
+      "Usan mecanismos de self-attention para capturar relaciones contextuales",
+      "Solo pueden procesar datos de texto",
+      "Procesan una secuencia un elemento a la vez en ciclos repetidos"
+    ],
+    "answer": 1,
+    "explanation": "Los modelos basados en transformers usan mecanismos de self-attention que ponderan la importancia de cada token respecto a los demás, lo que les permite capturar relaciones contextuales en toda la entrada.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-019",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de medios compara modelos Amazon Nova en **Amazon Bedrock** y necesita un modelo multimodal que soporte varios idiomas. ¿Qué modelo Nova cumple estos requisitos de forma MÁS rentable?",
+    "options": [
+      "Nova Pro",
+      "Nova Lite",
+      "Nova Canvas",
+      "Nova Reel"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Nova Lite es un modelo multimodal de bajo costo que soporta varios idiomas, por lo que cumple los requisitos multimodales y multilingües como la opción Nova más rentable.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-020",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una agencia creativa pequeña quiere prototipar en **Amazon Bedrock** con presupuesto ajustado y evitar cualquier compromiso a largo plazo. ¿Qué modelo de precios de **Amazon Bedrock** se ajusta?",
+    "options": [
+      "Provisioned Throughput",
+      "Model customization",
+      "On-Demand",
+      "Spot Instances"
+    ],
+    "answer": 2,
+    "explanation": "El modelo de precios On-Demand cobra solo por lo que se usa, sin compromiso inicial ni a largo plazo, lo que encaja con un presupuesto limitado que necesita flexibilidad.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-021",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa fine-tuneó un large language model (LLM) personalizado en **Amazon Bedrock** y servirá en producción un número estable y predecible de solicitudes por minuto. ¿Qué opción es MÁS rentable?",
+    "options": [
+      "Desplegar el modelo en una instancia de **Amazon EC2** optimizada para cómputo",
+      "Comprar Provisioned Throughput para el modelo en **Amazon Bedrock**",
+      "Usar el modelo con throughput On-Demand en **Amazon Bedrock**",
+      "Almacenar el modelo en **Amazon S3** y hospedarlo con **AWS Lambda**"
+    ],
+    "answer": 1,
+    "explanation": "Para un volumen de solicitudes estable y predecible, Provisioned Throughput en **Amazon Bedrock** ofrece un costo por solicitud más bajo al comprometer un nivel fijo de throughput, lo que lo convierte en la forma más rentable de servir un modelo personalizado.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-022",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una startup sin infraestructura de ML quiere lanzar rápidamente una funcionalidad de IA generativa. ¿Qué ventaja de usar servicios GenAI de AWS como **Amazon Bedrock** es más relevante?",
+    "options": [
+      "La startup debe entrenar su propio foundation model desde cero",
+      "Los servicios GenAI de AWS reducen la barrera de entrada al proporcionar acceso administrado a foundation models preentrenados",
+      "Los servicios GenAI de AWS requieren que la startup administre clústeres de GPU",
+      "Los servicios GenAI de AWS solo están disponibles para clientes enterprise"
+    ],
+    "answer": 1,
+    "explanation": "Los servicios GenAI de AWS como **Amazon Bedrock** proporcionan acceso administrado a foundation models preentrenados mediante APIs, lo que reduce la barrera de entrada al eliminar la necesidad de entrenar modelos, administrar infraestructura o adquirir GPUs, permitiendo a la startup lanzar rápidamente.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-023",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una tienda de moda usa un asistente de IA generativa en **Amazon Bedrock** para recomendar productos y quiere medir su impacto directo en las ventas. ¿Qué métrica cumple este requisito?",
+    "options": [
+      "La cantidad de interacciones de clientes con el asistente de IA",
+      "Puntajes de análisis de sentimiento del feedback de clientes tras las interacciones",
+      "La tasa de conversión de clientes que compran después de interactuar con el asistente de IA",
+      "Tasas de precisión de comprensión del lenguaje natural"
+    ],
+    "answer": 2,
+    "explanation": "La tasa de conversión, la proporción de clientes que compran después de interactuar con el asistente, vincula la interacción con el asistente directamente con resultados de ventas, por lo que mide el impacto directo en ventas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-024",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa edtech construye una app de lectura que permite a los niños agregar ilustraciones a sus cuentos. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Usar **Amazon Polly** para crear un audiolibro a partir del texto del cuento",
+      "Usar **Amazon Rekognition** para analizar contenido de imágenes y detectar atributos de texto",
+      "Usar **Amazon Bedrock** Stable Diffusion 3.5 Large para generar imágenes a partir de entradas de texto",
+      "Crear una plantilla de prompt estándar y usar **Amazon Q Business** para ilustrar los cuentos"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** Stable Diffusion 3.5 Large genera imágenes a partir de prompts de texto, por lo que los niños pueden crear ilustraciones para sus cuentos a partir de descripciones, apoyando la comprensión lectora con elementos visuales.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-025",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de DevOps quiere que un large language model (LLM) escriba scripts de infraestructura a partir de comentarios en lenguaje natural. ¿De qué capacidad del LLM depende esto?",
+    "options": [
+      "Resumen de texto (text summarization)",
+      "Clasificación de texto (text classification)",
+      "Generación de texto (text generation)",
+      "Completado de texto (text completion)"
+    ],
+    "answer": 2,
+    "explanation": "La generación de texto (text generation) es la capacidad del LLM que produce texto nuevo, en este caso scripts de código, a partir de una entrada como comentarios en lenguaje natural, que es exactamente lo que el requisito necesita.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-026",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa farmacéutica construye una aplicación que debe generar datos sintéticos basados en sus datos existentes de ensayos clínicos. ¿Qué tipo de modelo puede usar la empresa para cumplir este requisito?",
+    "options": [
+      "XGBoost",
+      "WaveNet",
+      "Generative adversarial network (GAN)",
+      "Red neuronal residual (ResNet)"
+    ],
+    "answer": 2,
+    "explanation": "Una generative adversarial network (GAN) se compone de dos redes neuronales en competencia: un generador que crea muestras sintéticas similares a los datos reales y un discriminador que intenta distinguir lo real de lo generado. Mediante esta competencia aprende a producir datos sintéticos realistas basados en un conjunto de datos existente, que es exactamente lo que la empresa necesita.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-027",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una productora de contenido audiovisual quiere usar IA generativa para crear clips nuevos y reducir tiempos de producción. ¿Qué solución cumple estos requisitos con MAYOR eficiencia operativa?",
+    "options": [
+      "Usar el modelo Amazon Titan Image Generator en **Amazon Bedrock** para crear imágenes intermedias y luego armar videos con software de edición",
+      "Usar el modelo Amazon Nova Reel en **Amazon Bedrock** para generar videos",
+      "Usar el modelo Amazon Nova Canvas en **Amazon Bedrock** para crear imágenes intermedias y luego armar videos con software de edición",
+      "Usar el modelo Amazon Nova Pro en **Amazon Bedrock** para generar videos"
+    ],
+    "answer": 1,
+    "explanation": "El modelo Amazon Nova Reel en **Amazon Bedrock** está diseñado para creación generativa de video, por lo que permite a la productora generar contenido de video directamente y reducir tiempos de producción de la forma más eficiente operativamente.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-028",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una firma contable invirtió en una solución de IA generativa para automatizar la redacción de informes financieros. ¿Qué métrica mide mejor si esta inversión generó valor financiero?",
+    "options": [
+      "Retorno de la inversión (ROI)",
+      "Precisión del modelo",
+      "Cantidad de parámetros del modelo",
+      "Volumen de datos de entrenamiento"
+    ],
+    "answer": 0,
+    "explanation": "El retorno de la inversión (ROI) mide si los beneficios financieros de la solución de IA, como ahorro de mano de obra y mayor velocidad de entrega, superan los costos de construcción y operación, lo que muestra directamente si la inversión generó valor financiero.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-029",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa resume contratos con un modelo base de **Amazon Bedrock** y ahora entrenó un modelo personalizado para mejor calidad. ¿Qué debe hacer la empresa para usar el modelo personalizado en **Amazon Bedrock**?",
+    "options": [
+      "Desplegar el modelo personalizado en un endpoint de **Amazon SageMaker AI** para inferencia en tiempo real",
+      "Registrar el modelo en el **Amazon SageMaker** Model Registry",
+      "Solicitar acceso al modelo personalizado en **Amazon Bedrock**",
+      "Comprar Provisioned Throughput para el modelo personalizado"
+    ],
+    "answer": 3,
+    "explanation": "Para ejecutar un modelo personalizado (fine-tuned) en **Amazon Bedrock**, la empresa debe comprar Provisioned Throughput para ese modelo, lo que asigna la capacidad dedicada que Bedrock requiere para servir modelos personalizados.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-030",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es el propósito principal de **Amazon Q Business**?",
+    "options": [
+      "Entrenar modelos de ML personalizados",
+      "Almacenar grandes conjuntos de datos",
+      "Proporcionar asistencia empresarial impulsada por IA sobre los datos de la compañía",
+      "Monitorear infraestructura"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Q Business** es un asistente de IA generativa para la empresa; su propósito principal es proporcionar asistencia impulsada por IA sobre los datos internos de una compañía, respondiendo preguntas, generando contenido y resumiendo información respetando controles de acceso.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-031",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un practicante de IA observa que un large language model devuelve respuestas distintas cada vez que recibe la misma entrada. ¿Qué riesgo de la IA describe esto?",
+    "options": [
+      "Alucinaciones (hallucinations)",
+      "No determinismo (nondeterminism)",
+      "Precisión (accuracy)",
+      "Multimodalidad (multimodality)"
+    ],
+    "answer": 1,
+    "explanation": "El no determinismo es la propiedad por la cual un large language model puede devolver respuestas distintas a la misma entrada debido a la aleatoriedad en cómo genera texto, lo que coincide con el comportamiento observado.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-032",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de ciencia de datos quiere desplegar un foundation model (FM) rápidamente dentro de su propia VPC. ¿Qué servicio o funcionalidad de AWS permite al equipo hacerlo?",
+    "options": [
+      "**Amazon Personalize**",
+      "PartyRock, un Playground de **Amazon Bedrock**",
+      "**Amazon SageMaker** JumpStart",
+      "Endpoints de **Amazon SageMaker AI**"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon SageMaker** JumpStart ofrece foundation models preconstruidos que un equipo puede desplegar rápidamente dentro de su propia VPC y comenzar a usar de inmediato, lo que coincide con el requisito.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-033",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere infraestructura administrada para desplegar, escalar y monitorear sus agentes de IA en producción sin gestionar el cómputo y la red subyacentes. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "**Amazon Bedrock** AgentCore",
+      "**Amazon SageMaker** Canvas",
+      "Amazon Kendra",
+      "**Amazon Polly**"
+    ],
+    "answer": 0,
+    "explanation": "**Amazon Bedrock** AgentCore proporciona infraestructura administrada para desplegar, escalar y monitorear agentes de IA en producción, gestionando cómputo, red y preocupaciones operativas para que la empresa se enfoque en la lógica del agente en lugar de la infraestructura.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-034",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En IA generativa, ¿qué es prompt engineering?",
+    "options": [
+      "Un método para comprimir modelos y ejecutarlos más rápido",
+      "El proceso de diseñar prompts de entrada efectivos para guiar las salidas del modelo",
+      "Una técnica para diseñar la arquitectura de red neuronal de un modelo",
+      "El proceso de etiquetar datos de entrenamiento para aprendizaje supervisado"
+    ],
+    "answer": 1,
+    "explanation": "Prompt engineering es la práctica de diseñar y refinar prompts de entrada, por ejemplo agregando contexto, restricciones o ejemplos, para guiar un modelo generativo hacia salidas precisas y relevantes.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-035",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un hospital quiere una herramienta de IA generativa con speech-to-text que ayude a los médicos a dictar y crear notas clínicas. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "**Amazon Q** Developer",
+      "**Amazon Polly**",
+      "AWS HealthScribe",
+      "**Amazon Rekognition**"
+    ],
+    "answer": 2,
+    "explanation": "AWS HealthScribe está diseñado para el sector salud y combina reconocimiento de voz con IA generativa para transcribir conversaciones clínicas y producir notas clínicas estructuradas, lo que cumple la necesidad del hospital.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-036",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cómo afecta reducir el límite máximo de tokens de salida al costo y al rendimiento al usar un foundation model?",
+    "options": [
+      "Aumenta el costo pero no tiene efecto en el tiempo de respuesta",
+      "Disminuye el costo y puede reducir el tiempo de respuesta",
+      "No tiene efecto en el costo ni en el tiempo de respuesta",
+      "Aumenta el tiempo de respuesta pero disminuye el costo"
+    ],
+    "answer": 1,
+    "explanation": "Reducir el límite máximo de tokens de salida significa que se generan menos tokens por solicitud, lo que reduce directamente el costo bajo precios por tokens y también puede reducir el tiempo de respuesta porque el modelo produce menos salida.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-037",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En un large language model (LLM), ¿qué hacen posible los vector embeddings?",
+    "options": [
+      "Dividir texto en fragmentos manejables de datos",
+      "Comparar textos matemáticamente",
+      "Agrupar un conjunto de caracteres para tratarlos como una sola unidad",
+      "Contar cada palabra en la entrada"
+    ],
+    "answer": 1,
+    "explanation": "Los vector embeddings convierten texto en vectores numéricos que capturan significado, por lo que los textos pueden compararse matemáticamente midiendo distancia o similitud, lo que soporta tareas como recuperación y clustering.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-038",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa personalizó un foundation model (FM) de **Amazon Bedrock** y ahora necesita cargar un conjunto de datos para que Bedrock valide las respuestas del modelo. ¿Qué servicio de AWS debe almacenar ese conjunto de datos?",
+    "options": [
+      "Amazon Elastic Block Store (**Amazon EBS**)",
+      "AWS Snowcone",
+      "**Amazon S3**",
+      "Amazon Elastic File System (**Amazon EFS**)"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon S3** es el servicio de almacenamiento de objetos escalable que se integra con **Amazon Bedrock**, por lo que es el lugar correcto para cargar y almacenar el conjunto de datos de validación que Bedrock utilizará.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-039",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de servicios financieros quiere que varios agentes de IA especializados colaboren en solicitudes complejas de clientes. Un agente gestiona consultas de cuentas, otro procesa transacciones y un tercero verifica cumplimiento normativo. ¿Qué concepto de IA agéntica representa esta arquitectura?",
+    "options": [
+      "Aprendizaje por refuerzo de agente único",
+      "Patrón de sistema multiagente (multi-agent system)",
+      "Pipeline de clasificación supervisada",
+      "Flujo de trabajo de inferencia por lotes (batch inference)"
+    ],
+    "answer": 1,
+    "explanation": "Un patrón de sistema multiagente usa varios agentes de IA especializados que se comunican y colaboran para gestionar tareas complejas, con cada agente responsable de una capacidad específica como consultas de cuentas, transacciones o verificación de cumplimiento, lo que coincide con la arquitectura descrita.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-040",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de medios quiere usar un foundation model desarrollado por AWS para generar copy de marketing e imágenes. ¿Qué servicio de AWS proporciona foundation models de primera parte construidos por Amazon?",
+    "options": [
+      "**Amazon Rekognition**",
+      "Amazon Nova",
+      "**Amazon Comprehend**",
+      "**Amazon Polly**"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Nova es una familia de foundation models desarrollados por AWS que pueden generar texto, imágenes y otro contenido, lo que la convierte en la opción adecuada cuando una empresa quiere usar foundation models de primera parte construidos por Amazon para generación de contenido.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-041",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Relaciona cada oferta de IA generativa de AWS con el propósito principal para el que fue diseñada. Empareja cada servicio de la izquierda con la descripción correcta de la derecha.\n\nElementos:\n• Amazon Bedrock\n• Amazon SageMaker JumpStart\n• Amazon Q Business\n• PartyRock\n\n¿Qué mapeo es correcto?",
+    "options": [
+      "**Amazon Bedrock** → Un hub de foundation models preconstruidos y plantillas de solución que los practicantes de ML pueden desplegar y afinar; **Amazon SageMaker** JumpStart → Un asistente de IA generativa administrado que responde preguntas sobre los datos y documentos empresariales conectados; **Amazon Q Business** → Un playground sin código para construir y compartir apps pequeñas de IA generativa sin cuenta de AWS; PartyRock → Acceso unificado por API a foundation models de varios proveedores para construir aplicaciones de IA generativa",
+      "**Amazon Bedrock** → Un playground sin código para construir y compartir apps pequeñas de IA generativa sin cuenta de AWS; **Amazon SageMaker** JumpStart → Un asistente de IA generativa administrado que responde preguntas sobre los datos y documentos empresariales conectados; **Amazon Q Business** → Un hub de foundation models preconstruidos y plantillas de solución que los practicantes de ML pueden desplegar y afinar; PartyRock → Acceso unificado por API a foundation models de varios proveedores para construir aplicaciones de IA generativa",
+      "**Amazon Bedrock** → Acceso unificado por API a foundation models de varios proveedores para construir aplicaciones de IA generativa; **Amazon SageMaker** JumpStart → Un hub de foundation models preconstruidos y plantillas de solución que los practicantes de ML pueden desplegar y afinar; **Amazon Q Business** → Un asistente de IA generativa administrado que responde preguntas sobre los datos y documentos empresariales conectados; PartyRock → Un playground sin código para construir y compartir apps pequeñas de IA generativa sin cuenta de AWS",
+      "**Amazon Bedrock** → Un hub de foundation models preconstruidos y plantillas de solución que los practicantes de ML pueden desplegar y afinar; **Amazon SageMaker** JumpStart → Acceso unificado por API a foundation models de varios proveedores para construir aplicaciones de IA generativa; **Amazon Q Business** → Un asistente de IA generativa administrado que responde preguntas sobre los datos y documentos empresariales conectados; PartyRock → Un playground sin código para construir y compartir apps pequeñas de IA generativa sin cuenta de AWS"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** proporciona acceso serverless por API a foundation models de varios proveedores, **Amazon SageMaker** JumpStart es un hub de modelos preconstruidos y plantillas de solución que los practicantes despliegan y afinan, **Amazon Q Business** es un asistente administrado que razona sobre datos empresariales conectados y PartyRock es un playground sin código para construir y compartir apps de IA generativa rápidamente.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-042",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un analista de retail quiere gráficos de ventas de productos top por tienda del último año generados automáticamente. ¿Qué solución de AWS se ajusta a esta necesidad?",
+    "options": [
+      "**Amazon Q** Developer",
+      "**Amazon Q** in Amazon QuickSight",
+      "**Amazon Q** in AWS Chatbot",
+      "**Amazon Q** in **Amazon EC2**"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Q** in Amazon QuickSight permite a los usuarios hacer preguntas en lenguaje natural y construye automáticamente gráficos y visualizaciones, como ventas totales de productos top, lo que cumple el requisito.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-043",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una agencia de publicidad explora la IA generativa. ¿Cuál de estas tareas es un caso de uso de IA generativa?",
+    "options": [
+      "Mejorar la seguridad de red usando un sistema de detección de intrusiones",
+      "Pronosticar tendencias del mercado bursátil a partir de datos financieros históricos",
+      "Generar imágenes fotorrealistas a partir de descripciones de texto para una campaña publicitaria",
+      "Acelerar consultas a bases de datos con indexación optimizada"
+    ],
+    "answer": 2,
+    "explanation": "La IA generativa crea contenido nuevo, y producir imágenes fotorrealistas a partir de descripciones de texto para una campaña publicitaria es generación de contenido, un caso de uso clásico de IA generativa.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-044",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Al elegir un foundation model (FM) en **Amazon Bedrock**, un equipo de investigación necesita saber cuánto texto puede incluir en un solo prompt. ¿Qué propiedad del modelo les indica esto?",
+    "options": [
+      "Temperature",
+      "Model size",
+      "Context window",
+      "Batch size"
+    ],
+    "answer": 2,
+    "explanation": "La context window define cuántos tokens puede recibir un foundation model a la vez, por lo que determina cuánta información cabe en un solo prompt.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-045",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En el ciclo de vida de un modelo de IA generativa, ¿qué etapa ejecuta pruebas para verificar la precisión del modelo?",
+    "options": [
+      "Pre-entrenamiento (pre-training)",
+      "Fine-tuning",
+      "Evaluación (evaluation)",
+      "Despliegue (deployment)"
+    ],
+    "answer": 2,
+    "explanation": "La etapa de evaluación prueba el modelo contra datos de validación o hold-out usando métricas como precisión antes de pasar al despliegue.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-046",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de suscripción mensual opera un chatbot de soporte con IA generativa y quiere medir su efecto financiero en las operaciones. ¿Qué métrica debe rastrear la empresa?",
+    "options": [
+      "Cantidad de consultas de clientes atendidas",
+      "Costo por conversación con el cliente",
+      "Tiempo promedio de atención (AHT)",
+      "Costo de entrenar los modelos de IA"
+    ],
+    "answer": 1,
+    "explanation": "El costo por conversación con el cliente cuantifica directamente el gasto operativo de usar el chatbot, por lo que la empresa puede medir su efecto financiero y compararlo con alternativas como agentes humanos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-047",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "El asistente de IA de un bufete jurídico en **Amazon Bedrock** debe combinar la pregunta del usuario, cláusulas relevantes de contratos recuperadas de una base de conocimiento, las reglas de cumplimiento de la firma y el historial de conversación en una sola llamada al modelo. ¿Qué práctica gobierna cómo se ensamblan y priorizan estos elementos?",
+    "options": [
+      "Fine-tuning",
+      "Hyperparameter tuning",
+      "Context engineering",
+      "Feature engineering"
+    ],
+    "answer": 2,
+    "explanation": "Context engineering gobierna cómo se ensamblan, priorizan y estructuran todos los elementos de información, como documentos recuperados, reglas del sistema, entrada del usuario e historial de conversación, antes de pasarlos al modelo, asegurando que tenga el contexto correcto para responder con precisión.",
+    "tags": [
+      "difficulty:intermediate",
+      "module:M06",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d2-jem-048",
+    "domainId": "domain-2",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles dos afirmaciones sobre el espacio latente (latent space) de un modelo son correctas?",
+    "options": [
+      "Debe almacenarse en un tipo específico de base de datos",
+      "Captura la comprensión interna del modelo sobre las relaciones entre conceptos",
+      "Solo aplica a datos de imagen",
+      "Permite calcular similitud semántica entre distintas entradas",
+      "Es una tabla de consulta legible por humanos"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "El espacio latente de un modelo es la representación interna donde organiza conceptos, por lo que tanto captura las relaciones que el modelo ha aprendido como permite calcular similitud semántica entre distintas entradas.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M04",
+      "jemjaf"
+    ]
   }
 ]

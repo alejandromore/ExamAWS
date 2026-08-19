@@ -13,7 +13,12 @@
     ],
     "answer": 3,
     "explanation": "SHAP es un método de explicabilidad independiente del modelo que ayuda a explicar la contribución de las características a una predicción. Usar un método estándar como SHAP reduce la sobrecarga frente a inspeccionar manualmente pesos o crear explicabilidad personalizada.",
-    "tags": ["responsible-ai", "explainability", "shap", "transparency"],
+    "tags": [
+      "responsible-ai",
+      "explainability",
+      "shap",
+      "transparency"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -30,7 +35,12 @@
     ],
     "answer": 1,
     "explanation": "En industrias reguladas, un diseño centrado en el ser humano requiere que las partes interesadas puedan comprender, evaluar y supervisar las decisiones o salidas del sistema. La transparencia y la explicabilidad son desafíos clave para LLMs complejos.",
-    "tags": ["responsible-ai", "human-centered-design", "explainability", "llm"],
+    "tags": [
+      "responsible-ai",
+      "human-centered-design",
+      "explainability",
+      "llm"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -47,7 +57,11 @@
     ],
     "answer": 3,
     "explanation": "Amazon Comprehend puede analizar texto y detectar contenido tóxico u ofensivo para casos de moderación. Macie se enfoca en datos sensibles, Polly en texto a voz y SageMaker Clarify en sesgo/explicabilidad.",
-    "tags": ["content-moderation", "amazon-comprehend", "responsible-ai"],
+    "tags": [
+      "content-moderation",
+      "amazon-comprehend",
+      "responsible-ai"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -64,7 +78,11 @@
     ],
     "answer": 2,
     "explanation": "Amazon Augmented AI (Amazon A2I) permite incorporar revisión humana en flujos de trabajo de ML, por ejemplo cuando una predicción tiene baja confianza o requiere validación manual.",
-    "tags": ["human-in-the-loop", "amazon-a2i", "responsible-ai"],
+    "tags": [
+      "human-in-the-loop",
+      "amazon-a2i",
+      "responsible-ai"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -81,7 +99,12 @@
     ],
     "answer": 1,
     "explanation": "Amazon Bedrock Guardrails permite configurar temas denegados y políticas de seguridad para bloquear o redirigir respuestas sobre temas sensibles. Es una opción administrada y de menor sobrecarga que entrenar clasificadores personalizados.",
-    "tags": ["amazon-bedrock", "guardrails", "content-safety", "responsible-ai"],
+    "tags": [
+      "amazon-bedrock",
+      "guardrails",
+      "content-safety",
+      "responsible-ai"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -98,7 +121,12 @@
     ],
     "answer": 1,
     "explanation": "Los resultados sesgados o discriminatorios pueden afectar injustamente a consumidores o usuarios y generar incumplimiento de normas de protección al consumidor, equidad o no discriminación. Las otras opciones se relacionan con riesgos distintos, como privacidad, propiedad intelectual o competencia.",
-    "tags": ["responsible-ai", "bias", "legal-risk", "consumer-protection"],
+    "tags": [
+      "responsible-ai",
+      "bias",
+      "legal-risk",
+      "consumer-protection"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -115,7 +143,12 @@
     ],
     "answer": 1,
     "explanation": "Para un caso sensible como aprobación de crédito, las prácticas de IA responsable requieren evaluar y mitigar sesgos, además de favorecer transparencia e interpretabilidad. SageMaker Clarify ayuda a detectar sesgo en datos/modelos y explicar predicciones.",
-    "tags": ["sagemaker-clarify", "bias", "responsible-ai", "credit-risk"],
+    "tags": [
+      "sagemaker-clarify",
+      "bias",
+      "responsible-ai",
+      "credit-risk"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -132,7 +165,582 @@
     ],
     "answer": 1,
     "explanation": "SageMaker Clarify ayuda a detectar sesgo y explicar predicciones de modelos de ML. Es la característica adecuada para analizar predicciones potencialmente injustas asociadas a atributos sensibles como raza, género o edad.",
-    "tags": ["sagemaker-clarify", "bias", "fairness", "responsible-ai"],
+    "tags": [
+      "sagemaker-clarify",
+      "bias",
+      "fairness",
+      "responsible-ai"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
+  },
+  {
+    "id": "aif-d4-jem-001",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena de supermercados usa modelos de ML para proyectar la demanda semanal de productos perecederos. Un analista debe preparar un informe que permita a los gerentes entender cómo las variables de entrada influyen en las predicciones del modelo. ¿Qué debe incluir para cumplir con los requisitos de transparencia y explicabilidad?",
+    "options": [
+      "Muestras del conjunto de entrenamiento",
+      "Tablas de convergencia del entrenamiento",
+      "Gráficos de dependencia parcial (PDP)",
+      "El código fuente completo del entrenamiento"
+    ],
+    "answer": 2,
+    "explanation": "Los gráficos de dependencia parcial (PDP) muestran cómo una o más variables de entrada se relacionan con la salida predicha del modelo, lo que permite explicar la influencia de cada característica y dar transparencia sobre cómo el modelo llega a sus proyecciones de demanda.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-002",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un laboratorio agrícola necesita clasificar muestras de suelo en 15 tipos según sus propiedades químicas. El equipo debe poder documentar con claridad la lógica interna del algoritmo para justificar cada clasificación ante auditores. ¿Qué algoritmo satisface este requisito?",
+    "options": [
+      "Regresión logística",
+      "Árboles de decisión",
+      "Redes neuronales",
+      "Regresión lineal"
+    ],
+    "answer": 1,
+    "explanation": "Los árboles de decisión expresan su lógica interna mediante reglas de división legibles, lo que permite documentar paso a paso cómo el modelo pasa de las propiedades del suelo a una de las 15 categorías. Esa interpretabilidad encaja con el requisito de auditoría.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-003",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una plataforma de streaming planea usar un modelo de lenguaje grande (LLM) para moderar comentarios en vivo y quiere evaluar si trata de forma desigual a ciertos grupos de usuarios. ¿Qué fuente de datos permite hacer esta evaluación con el menor esfuerzo administrativo?",
+    "options": [
+      "Registros de moderación históricos",
+      "Contenido generado por los usuarios",
+      "Conjuntos de datos de referencia (benchmark)",
+      "Políticas internas de moderación de contenido"
+    ],
+    "answer": 2,
+    "explanation": "Los conjuntos de datos de referencia (benchmark) están curados y estandarizados específicamente para evaluar sesgos y equidad en modelos, lo que permite comparar resultados de forma consistente con muy poco esfuerzo administrativo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-004",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de telecomunicaciones entrenará su propio LLM con datos corporativos privados y quiere minimizar la huella de carbono del entrenamiento. ¿Qué tipo de instancia de **Amazon EC2** tiene el MENOR impacto ambiental para entrenar LLM?",
+    "options": [
+      "Serie P de **Amazon EC2**",
+      "Serie Trn de **Amazon EC2**",
+      "Serie G de **Amazon EC2**",
+      "Serie C de **Amazon EC2**"
+    ],
+    "answer": 1,
+    "explanation": "Las instancias de la serie Trn de **Amazon EC2** usan AWS Trainium, diseñado específicamente para entrenar modelos grandes de forma eficiente en energía, por lo que tienen el menor impacto ambiental entre las opciones listadas.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M04",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-005",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un centro comercial instaló cámaras y usa un modelo de ML para detectar comportamientos sospechosos en el estacionamiento. El sistema marca con mucha más frecuencia a personas de un grupo étnico específico. ¿Qué tipo de sesgo está afectando las predicciones del modelo?",
+    "options": [
+      "Sesgo de medición",
+      "Sesgo de muestreo",
+      "Sesgo de confirmación",
+      "Sesgo del observador"
+    ],
+    "answer": 1,
+    "explanation": "El sesgo de muestreo ocurre cuando los datos de entrenamiento no representan a toda la población, lo que puede hacer que el modelo marque desproporcionadamente a ciertos grupos étnicos. El patrón de alertas desbalanceadas apunta a datos de entrenamiento que subrepresentaron algunos grupos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-006",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Una aseguradora planea desplegar un LLM para automatizar el procesamiento de reclamaciones y quiere hacerlo de forma responsable para evitar daños. ¿Cuáles dos acciones debe tomar la empresa?",
+    "options": [
+      "Incluir métricas de equidad al evaluar el modelo",
+      "Ajustar el parámetro de temperatura del modelo",
+      "Modificar los datos de entrenamiento para reducir sesgos",
+      "Evitar el sobreajuste en los datos de entrenamiento",
+      "Aplicar técnicas de prompt engineering"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "explanation": "Incluir métricas de equidad verifica que el modelo trate los casos de forma justa, y modificar los datos de entrenamiento ataca el sesgo en su origen. Ambas acciones reducen directamente el riesgo de daño.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M08",
+      "module:M04",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-007",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de ciencia de datos publica artefactos de modelos personalizados para otras áreas de la empresa, pero conserva el código y los datos de entrenamiento. Necesita una forma estandarizada de documentar y auditar cada modelo que comparte. ¿Qué solución debe usar?",
+    "options": [
+      "Escribir la documentación en archivos PDF almacenados en **Amazon S3**",
+      "Subir los scripts de entrenamiento a un repositorio Git",
+      "Crear **Amazon SageMaker** Model Cards con usos previstos y detalles de entrenamiento e inferencia",
+      "Usar AWS AI Service Cards para describir los modelos"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon SageMaker** Model Cards ofrecen un formato estandarizado para documentar usos previstos, entrenamiento e inferencia de cada modelo, creando un registro consistente que otras áreas pueden auditar.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-008",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco quiere construir un sistema de ML para ayudar a su equipo de riesgo a asignar líneas de crédito entre distintos grupos demográficos. ¿Qué debe hacer para desarrollar un modelo imparcial?",
+    "options": [
+      "Reducir el tamaño del conjunto de entrenamiento",
+      "Asegurar que las predicciones reproduzcan resultados históricos",
+      "Construir un modelo separado para cada grupo demográfico",
+      "Medir el desbalance de clases en los datos de entrenamiento y ajustar el proceso de entrenamiento en consecuencia"
+    ],
+    "answer": 3,
+    "explanation": "Medir el desbalance de clases y adaptar el entrenamiento —por ejemplo con remuestreo o pesos de clase— ayuda a que el modelo trate equitativamente a grupos subrepresentados y reduce predicciones sesgadas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-009",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cooperativa de crédito desarrolla un modelo de ML para aprobar microcréditos. Necesita detectar sesgos en el modelo y también explicar sus predicciones. ¿Qué solución cumple ambos requisitos?",
+    "options": [
+      "**Amazon SageMaker** Data Wrangler",
+      "**Amazon SageMaker** Clarify",
+      "**Amazon SageMaker** Model Cards",
+      "AWS AI Service Cards"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker** Clarify detecta sesgos en datos y predicciones del modelo y además ofrece explicabilidad de esas predicciones, cubriendo los dos requisitos del caso.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-010",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de software B2B quiere una aplicación de puntuación de prospectos que permita a los vendedores ver y ajustar el peso de cada variable de entrada según su experiencia comercial. ¿Qué tipo de modelo de ML satisface este requisito?",
+    "options": [
+      "Modelo k-nearest neighbors (k-NN)",
+      "Modelo de regresión logística",
+      "Modelo de deep learning basado en componentes principales",
+      "Red neuronal"
+    ],
+    "answer": 1,
+    "explanation": "Un modelo de regresión logística asigna un peso explícito (coeficiente) a cada variable de entrada, lo que permite a los vendedores ver la contribución de cada característica y ajustar esos pesos con su conocimiento del dominio.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-011",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué técnica puede usar una empresa para reducir sesgo y toxicidad en una aplicación de IA generativa durante la etapa de postprocesamiento del ciclo de vida de ML?",
+    "options": [
+      "Aumento de datos (data augmentation)",
+      "Human-in-the-loop",
+      "Ingeniería de características (feature engineering)",
+      "Entrenamiento adversarial (adversarial training)"
+    ],
+    "answer": 1,
+    "explanation": "Human-in-the-loop incorpora revisión humana en la etapa de postprocesamiento para detectar y corregir salidas sesgadas o tóxicas antes de que lleguen al usuario, reduciendo directamente esos riesgos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-012",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una auditoría reveló que el modelo ajustado de aprobación de crédito de un banco favorece a un grupo demográfico sobre otros. ¿Cuál es la corrección MÁS rentable?",
+    "options": [
+      "Usar Retrieval Augmented Generation (RAG) con el modelo ajustado",
+      "Agregar datos de entrenamiento más diversos y representativos y volver a ajustar el modelo",
+      "Preentrenar un modelo completamente nuevo con datos más diversos",
+      "Aplicar **Amazon Bedrock** Guardrails para bloquear salidas sesgadas"
+    ],
+    "answer": 1,
+    "explanation": "Agregar datos más diversos y representativos y volver a ajustar el modelo existente enseña al modelo a tratar los grupos de forma equitativa, siendo la corrección más rentable.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-013",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de recursos humanos implementó un sistema de IA para filtrar currículums entrenado con un dataset que no representaba todos los grupos demográficos. ¿Qué dimensión central de IA responsable está involucrada en esta situación?",
+    "options": [
+      "Transparencia",
+      "Equidad (fairness)",
+      "Privacidad y seguridad",
+      "Explicabilidad"
+    ],
+    "answer": 1,
+    "explanation": "Entrenar con un dataset que no representa a todos los grupos demográficos puede producir predicciones sesgadas, lo cual es una preocupación de equidad (fairness). Esta dimensión se centra en resultados justos entre grupos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-014",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Una plataforma de videojuegos en línea usa **Amazon Bedrock** Guardrails para filtrar entradas y salidas dañinas de usuarios y del modelo. ¿Cuáles dos categorías de contenido pueden filtrar los guardrails?",
+    "options": [
+      "Política",
+      "Odio (Hate)",
+      "Apuestas (Gambling)",
+      "Violencia (Violence)"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "**Amazon Bedrock** Guardrails incluyen filtros de contenido configurables para categorías dañinas como Odio (Hate) y Violencia (Violence), aplicables tanto a entradas de usuarios como a respuestas del modelo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M08",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-015",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una clínica privada quiere usar IA generativa para responder preguntas médicas de pacientes en su portal web. ¿Qué servicio de AWS debe usar para apoyar prácticas de IA responsable en la aplicación?",
+    "options": [
+      "**Amazon Inspector**",
+      "**Amazon Bedrock** Guardrails",
+      "**Amazon Rekognition**",
+      "AWS Trusted Advisor"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Bedrock** Guardrails permiten definir y aplicar controles de seguridad, contenido y sesgo sobre las respuestas de IA generativa, lo que apoya IA responsable en una aplicación que responde preguntas médicas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-016",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa desplegó un modelo de IA generativa para segmentar clientes y lleva meses en producción. El equipo nota respuestas inconsistentes y quiere evaluar sesgo y deriva del modelo. ¿Qué servicio o característica de AWS cumple este requisito?",
+    "options": [
+      "**Amazon SageMaker** Feature Store",
+      "**Amazon SageMaker** Clarify",
+      "**Amazon SageMaker** Model Monitor",
+      "**Amazon SageMaker** Model Cards"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon SageMaker** Model Monitor recopila datos continuamente de un modelo desplegado y detecta deriva de datos, deriva de concepto y cambios de sesgo a lo largo del tiempo, lo que permite identificar las inconsistencias del modelo en producción.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M07",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-017",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Una empresa está incorporando IA a su proceso de selección de personal y quiere reducir riesgos de sesgo y mantener decisiones de contratación equitativas. ¿Cuáles dos dimensiones centrales de IA responsable debe priorizar?",
+    "options": [
+      "Equidad (fairness)",
+      "Flexibilidad",
+      "Tolerancia",
+      "Código abierto (open source)",
+      "Transparencia"
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "La equidad (fairness) mantiene resultados justos entre grupos demográficos, mitigando directamente el sesgo. La transparencia hace visibles las decisiones de la IA para poder explicarlas y auditarlas. Ambas son dimensiones centrales de IA responsable.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-018",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un científico de datos construye un modelo de ML para predecir el riesgo de abandono de clientes y quiere dar a los gerentes transparencia y explicabilidad sobre cada predicción. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Presentar los valores de Shapley del modelo",
+      "Proporcionar la medida de precisión (accuracy) del modelo",
+      "Proporcionar la matriz de confusión del modelo",
+      "Proporcionar un endpoint de inferencia seguro"
+    ],
+    "answer": 0,
+    "explanation": "Los valores de Shapley cuantifican cuánto contribuye cada característica a una predicción individual, dando transparencia y explicabilidad sobre por qué el modelo produjo un resultado específico.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-019",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa tiene un modelo de ML y quiere comprender cómo llega a sus predicciones. ¿Qué término describe entender las predicciones de un modelo?",
+    "options": [
+      "Interpretabilidad del modelo (model interpretability)",
+      "Entrenamiento del modelo (model training)",
+      "Rendimiento del modelo (model performance)",
+      "Interoperabilidad del modelo (model interoperability)"
+    ],
+    "answer": 0,
+    "explanation": "La interpretabilidad del modelo (model interpretability) se refiere a comprender cómo un modelo llega a sus predicciones, que es exactamente lo que busca la empresa.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-020",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una fintech usa un modelo de IA generativa para asignar límites de gasto a tarjetas de crédito nuevas y quiere hacer más transparente el proceso de decisión para los clientes. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Reemplazar el modelo de ML por un sistema basado en reglas",
+      "Aplicar técnicas de IA explicable (XAI) para mostrar qué factores influyeron en la decisión",
+      "Construir una interfaz interactiva con explicaciones técnicas detalladas del sistema",
+      "Aumentar la precisión del modelo para reducir la necesidad de transparencia"
+    ],
+    "answer": 1,
+    "explanation": "Las técnicas de IA explicable (XAI) revelan los factores específicos que influyeron en cada decisión de límite de gasto, haciendo transparente el razonamiento del modelo para los clientes.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-021",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una agencia de marketing usa **Amazon SageMaker** para desplegar un modelo que detecta temas en publicaciones de redes sociales. La empresa necesita mostrar cómo las diferentes variables de entrada influyen en el comportamiento del modelo. ¿Qué característica de SageMaker cumple este requisito?",
+    "options": [
+      "SageMaker Ground Truth",
+      "SageMaker Clarify",
+      "SageMaker Feature Store",
+      "SageMaker Canvas"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker** Clarify ofrece explicabilidad del modelo, incluyendo atribución de características, lo que permite mostrar cómo las variables de entrada influyen en el comportamiento del modelo desplegado.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-022",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una entidad financiera construyó un modelo de ML que aprueba o rechaza solicitudes de hipoteca. Por regulación, su proceso de decisión debe ser transparente y explicable, y la empresa debe documentarlo para auditorías. ¿Qué solución cumple estos requisitos?",
+    "options": [
+      "**Amazon Textract**",
+      "**Amazon SageMaker** Model Cards",
+      "AWS CloudFormation",
+      "**Amazon Comprehend**"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker** Model Cards documentan el uso previsto, rendimiento y detalles de decisión del modelo, proporcionando transparencia, explicabilidad y un registro auditable para cumplir requisitos regulatorios.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-023",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles dos características de **Amazon Bedrock** ayudan con el filtrado de contenido y la seguridad?",
+    "options": [
+      "Guardrails para filtrar contenido",
+      "Opciones de personalización del modelo",
+      "Capacidades de gestión de prompts",
+      "Detección de marcas de agua (watermark detection) para contenido generado por IA",
+      "Integración con bases de conocimiento (knowledge base)"
+    ],
+    "answer": [
+      0,
+      3
+    ],
+    "explanation": "**Amazon Bedrock** Guardrails filtran contenido dañino o no deseado en prompts y respuestas, y la detección de marcas de agua identifica contenido generado por IA, apoyando transparencia y prevención de uso indebido. Juntas abordan filtrado y seguridad.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M08",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-024",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un hospital usa un modelo de ML para marcar resultados de laboratorio anormales. Para garantizar prácticas de IA responsable, quiere que profesionales médicos revisen cualquier predicción incierta antes de enviar el resultado al paciente. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "**Amazon SageMaker** Clarify",
+      "Amazon Augmented AI (Amazon A2I)",
+      "**Amazon SageMaker** Model Monitor",
+      "**Amazon Bedrock** Guardrails"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Augmented AI (Amazon A2I) habilita flujos de revisión humana donde las predicciones por debajo de un umbral de confianza se envían a revisores calificados, permitiendo que profesionales médicos verifiquen resultados inciertos antes de que lleguen al paciente.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-025",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes es un riesgo legal que las organizaciones deben considerar al desplegar aplicaciones de IA generativa para clientes?",
+    "options": [
+      "Reducción del tiempo de entrenamiento del modelo",
+      "Mayor utilización de hardware",
+      "Posible daño a usuarios finales por salidas imprecisas o sesgadas",
+      "Menores costos de computación en la nube"
+    ],
+    "answer": 2,
+    "explanation": "El posible daño a usuarios finales por salidas imprecisas o sesgadas es un riesgo legal que las organizaciones deben considerar, ya que clientes que reciban consejos incorrectos, decisiones sesgadas o contenido dañino pueden sufrir consecuencias reales, generando responsabilidad legal, sanciones regulatorias y litigios.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-026",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de ML realiza una evaluación de sesgo y equidad de IA responsable para un modelo de aprobación de seguros, antes y después de ponerlo en producción. Ordene las siguientes actividades del primero al último.\n\n¿Cuál orden es correcto?",
+    "options": [
+      "1) Inspeccionar el dataset de entrenamiento buscando desbalance de clases y subrepresentación de grupos protegidos → 2) Ejecutar métricas de sesgo sobre las predicciones del modelo entrenado comparando resultados entre grupos protegidos → 3) Registrar el uso previsto, resultados de evaluación y riesgo residual en una model card para revisores → 4) Monitorear el endpoint desplegado buscando deriva de sesgo y atribución de características → 5) Definir criterios de equidad y elegir qué atributos, como edad o género, se consideran sensibles",
+      "1) Monitorear el endpoint desplegado buscando deriva de sesgo y atribución de características → 2) Registrar el uso previsto, resultados de evaluación y riesgo residual en una model card para revisores → 3) Ejecutar métricas de sesgo sobre las predicciones del modelo entrenado comparando resultados entre grupos protegidos → 4) Inspeccionar el dataset de entrenamiento buscando desbalance de clases y subrepresentación de grupos protegidos → 5) Definir criterios de equidad y elegir qué atributos, como edad o género, se consideran sensibles",
+      "1) Definir criterios de equidad y elegir qué atributos, como edad o género, se consideran sensibles → 2) Inspeccionar el dataset de entrenamiento buscando desbalance de clases y subrepresentación de grupos protegidos → 3) Ejecutar métricas de sesgo sobre las predicciones del modelo entrenado comparando resultados entre grupos protegidos → 4) Registrar el uso previsto, resultados de evaluación y riesgo residual en una model card para revisores → 5) Monitorear el endpoint desplegado buscando deriva de sesgo y atribución de características",
+      "1) Inspeccionar el dataset de entrenamiento buscando desbalance de clases y subrepresentación de grupos protegidos → 2) Definir criterios de equidad y elegir qué atributos, como edad o género, se consideran sensibles → 3) Ejecutar métricas de sesgo sobre las predicciones del modelo entrenado comparando resultados entre grupos protegidos → 4) Registrar el uso previsto, resultados de evaluación y riesgo residual en una model card para revisores → 5) Monitorear el endpoint desplegado buscando deriva de sesgo y atribución de características"
+    ],
+    "answer": 2,
+    "explanation": "Primero se definen los criterios de equidad y los atributos sensibles, porque toda medición posterior depende de saber qué grupos se comparan y qué significa equidad en este caso de uso. Luego se analizan los datos de entrenamiento (sesgo pre-entrenamiento), se miden las predicciones del modelo (sesgo post-entrenamiento), se documenta todo en una model card y finalmente se monitorea el endpoint en producción buscando deriva.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d4-jem-027",
+    "domainId": "domain-4",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Relacione cada capacidad de IA responsable de AWS con su propósito. Empareje cada capacidad de la izquierda con la descripción correcta de la derecha.\n\nElementos:\n• **Amazon SageMaker** Clarify\n• **Amazon SageMaker** Model Monitor\n• Amazon Augmented AI (Amazon A2I)\n• **Amazon SageMaker** Model Cards\n\n¿Cuál mapeo es correcto?",
+    "options": [
+      "**Amazon SageMaker** Clarify → Supervisa un endpoint desplegado y alerta sobre calidad de datos y deriva de atribución de características; **Amazon SageMaker** Model Monitor → Enruta predicciones con baja confianza a revisores humanos; Amazon A2I → Documenta uso previsto, resultados de evaluación y calificación de riesgo; **Amazon SageMaker** Model Cards → Detecta sesgo y explica predicciones con atribuciones SHAP",
+      "**Amazon SageMaker** Clarify → Supervisa un endpoint desplegado y alerta sobre calidad de datos y deriva de atribución; **Amazon SageMaker** Model Monitor → Detecta sesgo y explica predicciones con atribuciones SHAP; Amazon A2I → Enruta predicciones con baja confianza a revisores humanos; **Amazon SageMaker** Model Cards → Documenta uso previsto, resultados y calificación de riesgo",
+      "**Amazon SageMaker** Clarify → Detecta sesgo en datos y modelos y explica predicciones con atribuciones de características como valores SHAP; **Amazon SageMaker** Model Monitor → Supervisa un endpoint desplegado y alerta sobre calidad de datos y deriva de atribución de características; Amazon A2I → Enruta predicciones con baja confianza a revisores humanos para decisión final; **Amazon SageMaker** Model Cards → Documenta uso previsto, resultados de evaluación y calificación de riesgo en un solo lugar para gobernanza",
+      "**Amazon SageMaker** Clarify → Documenta uso previsto, resultados y calificación de riesgo; **Amazon SageMaker** Model Monitor → Enruta predicciones con baja confianza a revisores humanos; Amazon A2I → Supervisa un endpoint y alerta sobre deriva; **Amazon SageMaker** Model Cards → Detecta sesgo y explica predicciones con atribuciones SHAP"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon SageMaker** Clarify calcula métricas de sesgo y produce atribuciones SHAP para explicar predicciones. **Amazon SageMaker** Model Monitor verifica continuamente un endpoint en vivo y alerta sobre deriva, incluida deriva de atribución. Amazon A2I envía predicciones de baja confianza a revisores humanos. **Amazon SageMaker** Model Cards registran uso previsto, resultados y calificación de riesgo para gobernanza.",
+    "tags": [
+      "difficulty:intermediate",
+      "module:M08",
+      "module:M07",
+      "jemjaf"
+    ]
   }
 ]

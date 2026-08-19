@@ -235,5 +235,1355 @@
       "supervised-learning",
       "classification"
     ]
+  },
+  {
+    "id": "aif-d1-jem-001",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una fintech quiere acelerar el despliegue de un modelo de detección de fraude sin disponer de un dataset propio para entrenar desde cero. ¿Cuál es la principal ventaja de usar un modelo preentrenado en este caso?",
+    "options": [
+      "Siempre supera a cualquier modelo entrenado específicamente para la tarea",
+      "Garantiza la máxima precisión en todos los escenarios de negocio",
+      "Puede usarse de inmediato para inferencia sin aportar datos de entrenamiento propios",
+      "Elimina por completo la necesidad de ajustar el modelo para casos especializados"
+    ],
+    "answer": 2,
+    "explanation": "Un modelo preentrenado ya aprendió patrones de un dataset grande, por lo que puede aplicarse de inmediato para generar predicciones sin que el equipo deba recolectar ni entrenar con sus propios datos, ahorrando tiempo y esfuerzo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-002",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de data science evalúa un clasificador de correos spam. ¿Qué mide el puntaje F1?",
+    "options": [
+      "La velocidad con la que el modelo procesa cada solicitud",
+      "El costo mensual de operar el endpoint de inferencia",
+      "El equilibrio entre precisión y recall del modelo",
+      "La eficiencia energética del entrenamiento en GPU"
+    ],
+    "answer": 2,
+    "explanation": "El F1 es la media armónica entre precisión y recall, por lo que resume qué tan bien el modelo acierta en positivos y qué tan completo es al detectarlos; es especialmente útil cuando las clases están desbalanceadas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-003",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena hotelera necesita publicar las descripciones de sus habitaciones en portugués, inglés y español de forma automática. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "**Amazon Polly**",
+      "Amazon Translate",
+      "**Amazon Comprehend**",
+      "Amazon Transcribe"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Translate** traduce texto entre idiomas con traducción automática neuronal, ideal para convertir descripciones de habitaciones a varios idiomas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-004",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál definición describe mejor la IA agéntica (agentic AI)?",
+    "options": [
+      "IA que genera imágenes a partir de prompts de texto",
+      "IA que planifica, decide y ejecuta acciones de forma autónoma para alcanzar objetivos",
+      "IA que convierte voz en texto",
+      "IA que agrupa puntos de datos similares en clústeres"
+    ],
+    "answer": 1,
+    "explanation": "La IA agéntica puede planificar pasos, tomar decisiones y actuar de manera autónoma para cumplir metas, a menudo usando herramientas, memoria y flujos de varios pasos sin intervención humana constante.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-005",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué afirmación describe mejor la diferencia entre Deep Learning y Machine Learning tradicional?",
+    "options": [
+      "Deep Learning exige features diseñadas manualmente, mientras que ML tradicional no",
+      "Deep Learning usa redes neuronales multicapa que aprenden representaciones directamente de datos crudos",
+      "Deep Learning solo puede aplicarse a datos de texto",
+      "Deep Learning siempre requiere menos datos que ML tradicional"
+    ],
+    "answer": 1,
+    "explanation": "Deep Learning emplea redes con muchas capas que descubren features útiles desde datos crudos, reduciendo la ingeniería manual de variables típica del ML tradicional.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-006",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un analista de RR. HH. sin experiencia en programación quiere predecir la rotación de personal sin escribir código. ¿Qué función de **Amazon SageMaker** satisface este requisito?",
+    "options": [
+      "SageMaker Canvas",
+      "SageMaker Clarify",
+      "SageMaker Model Monitor",
+      "SageMaker Data Wrangler"
+    ],
+    "answer": 0,
+    "explanation": "**Amazon SageMaker Canvas** ofrece una interfaz visual sin código para construir, entrenar y obtener predicciones, ideal para usuarios de negocio que predicen rotación de personal.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-007",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es la diferencia principal entre inferencia por lotes (batch) e inferencia en tiempo real?",
+    "options": [
+      "La inferencia por lotes siempre es más precisa",
+      "La inferencia en tiempo real solo funciona con datasets pequeños",
+      "La inferencia por lotes procesa múltiples entradas juntas; la inferencia en tiempo real procesa cada solicitud al llegar",
+      "La inferencia en tiempo real siempre es más rápida que la inferencia por lotes"
+    ],
+    "answer": 2,
+    "explanation": "Batch inferencing agrupa entradas y las procesa en un job, optimizando throughput cuando no hay urgencia. Real-time inferencing responde solicitud por solicitud al instante, útil para fraude o moderación de contenido.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-008",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una consultora quiere un sistema de IA que investigue tendencias del mercado, redacte un informe ejecutivo y lo envíe por correo a directivos sin intervención humana en cada paso. ¿Qué tipo de aplicación de IA encaja mejor?",
+    "options": [
+      "Reconocimiento de voz",
+      "Clasificación de imágenes",
+      "IA agéntica (Agentic AI)",
+      "Análisis de sentimiento"
+    ],
+    "answer": 2,
+    "explanation": "La IA agéntica puede orquestar flujos de varios pasos —investigar, compilar y enviar— de forma autónoma, alineándose con el requisito de la consultora.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-009",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco entrena un modelo para detectar transacciones fraudulentas, pero las transacciones legítimas superan ampliamente a las fraudulentas. ¿Qué métrica debe usar para evaluar el balance entre detectar fraudes y evitar falsos positivos?",
+    "options": [
+      "Accuracy",
+      "Recall",
+      "Precision",
+      "F1 score"
+    ],
+    "answer": 3,
+    "explanation": "El F1 combina precisión y recall en una sola cifra y penaliza modelos que solo optimizan una de las dos, ideal cuando las clases están desbalanceadas como en detección de fraude.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-010",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En Machine Learning, ¿a qué se refiere más comúnmente el término bias (sesgo)?",
+    "options": [
+      "La velocidad de entrenamiento del modelo",
+      "Un error sistemático que hace que el modelo favorezca ciertos resultados de forma consistente",
+      "La cantidad total de parámetros del modelo",
+      "El proceso de dividir datos en entrenamiento y prueba"
+    ],
+    "answer": 1,
+    "explanation": "El sesgo en ML es un error sistemático donde el modelo inclina sus predicciones hacia ciertos resultados, a menudo por datos no representativos o supuestos incorrectos; identificarlo es clave para modelos justos.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M08",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-011",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una planta de embotellado usa cámaras para detectar automáticamente botellas con defectos en la línea de producción. ¿Qué tipo de aplicación de IA utiliza?",
+    "options": [
+      "Sistema de recomendaciones",
+      "Procesamiento de lenguaje natural (NLP)",
+      "Visión por computadora (Computer Vision)",
+      "Procesamiento de imágenes básico"
+    ],
+    "answer": 2,
+    "explanation": "Computer Vision permite que las máquinas interpreten imágenes y video, base de sistemas de inspección visual automatizada que detectan defectos en producción.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-012",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un supermercado planea pronosticar la demanda semanal de productos perecederos usando el algoritmo DeepAR de **Amazon SageMaker AI**. ¿Qué tipo de datos necesita?",
+    "options": [
+      "Datos de texto",
+      "Datos de series temporales",
+      "Datos de audio",
+      "Datos de imagen"
+    ],
+    "answer": 1,
+    "explanation": "DeepAR es un algoritmo de forecasting que aprende de valores históricos registrados en secuencia temporal, como ventas diarias indexadas por fecha.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-013",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una plataforma de streaming de video quiere recomendar contenido a cada usuario según su historial de visualización. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "**Amazon Personalize**",
+      "Amazon Transcribe",
+      "**Amazon Polly**",
+      "**Amazon Comprehend**"
+    ],
+    "answer": 0,
+    "explanation": "**Amazon Personalize** es un servicio gestionado de recomendaciones que analiza historial e interacciones para personalizar sugerencias en tiempo real.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-014",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En el contexto de IA, ¿qué significa inferencia?",
+    "options": [
+      "Recolectar los datos usados para entrenar el sistema",
+      "Diseñar algoritmos de IA completamente nuevos desde cero",
+      "Fusionar varios modelos en uno solo",
+      "Aplicar un modelo ya entrenado a datos nuevos para producir predicciones o decisiones"
+    ],
+    "answer": 3,
+    "explanation": "Inferencia es la fase en la que un modelo entrenado procesa datos no vistos y genera predicciones, distinta del entrenamiento donde el modelo aprende patrones.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-015",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una productora de podcasts quiere generar automáticamente transcripciones escritas del audio de sus episodios. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "Amazon Transcribe",
+      "Amazon Translate",
+      "**Amazon Polly**",
+      "**Amazon Comprehend**"
+    ],
+    "answer": 0,
+    "explanation": "**Amazon Transcribe** usa reconocimiento automático de voz para convertir audio hablado en texto con marcas de tiempo, ideal para transcribir episodios de podcast.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-016",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de desarrollo busca un asistente de IA que responda preguntas sobre su código, explique funciones existentes y ayude a depurar errores directamente en el IDE. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "**Amazon Comprehend**",
+      "**Amazon Q** Developer",
+      "**Amazon Textract**",
+      "Amazon Transcribe"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Q Developer** se integra con IDEs para responder preguntas sobre código, explicar implementaciones y ayudar en troubleshooting, exactamente lo que necesita el equipo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-017",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa opera decenas de modelos en producción y necesita alertas cuando alguno se desvíe de su comportamiento base. ¿Qué servicio o función de AWS cumple este requisito?",
+    "options": [
+      "**Amazon SageMaker** Data Wrangler",
+      "**Amazon SageMaker** Model Monitor",
+      "**Amazon SageMaker** JumpStart",
+      "**Amazon SageMaker** HyperPod"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker Model Monitor** mide calidad de datos y predicciones en endpoints desplegados y alerta cuando hay desviaciones respecto a la línea base.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-018",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una universidad digital almacena miles de guías, videos y manuales y necesita búsqueda empresarial inteligente sobre ese contenido. ¿Qué servicio de AWS encaja?",
+    "options": [
+      "**Amazon Polly**",
+      "Amazon Kendra",
+      "**Amazon Textract**",
+      "**Amazon Comprehend**"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Kendra** es un servicio de búsqueda empresarial inteligente diseñado para indexar y consultar grandes volúmenes de contenido no estructurado como material educativo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-019",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de telecomunicaciones monitorea niveles de señal en antenas rurales, registrando lecturas cada minuto en **Amazon RDS** para predecir cortes de servicio. ¿Qué tipo de datos debe recolectar?",
+    "options": [
+      "Datos tabulares",
+      "Datos de texto",
+      "Datos de series temporales",
+      "Datos de audio"
+    ],
+    "answer": 2,
+    "explanation": "Las series temporales registran valores en secuencia cronológica, como lecturas de señal cada minuto, necesarias para analizar fluctuaciones y predecir cortes.",
+    "tags": [
+      "difficulty:intermediate",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-020",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es el propósito del ajuste de hiperparámetros (hyperparameter tuning) en el ciclo de vida de ML?",
+    "options": [
+      "Recolectar y limpiar los datos crudos de entrenamiento",
+      "Encontrar la configuración del modelo que produce el mejor rendimiento",
+      "Desplegar el modelo entrenado a un endpoint de producción",
+      "Monitorear drift de datos después del despliegue"
+    ],
+    "answer": 1,
+    "explanation": "Hyperparameter tuning busca la mejor combinación de configuraciones como learning rate, batch size o número de capas, definidas antes del entrenamiento, para maximizar métricas como accuracy.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-021",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En MLOps, ¿a qué se refiere gestionar la deuda técnica (technical debt)?",
+    "options": [
+      "Reducir el costo financiero de instancias de cómputo en la nube",
+      "Atender atajos acumulados, dependencias obsoletas y procesos no documentados que dificultan mantener sistemas ML",
+      "Aumentar el número de parámetros del modelo para mejorar precisión",
+      "Eliminar datasets antiguos que ya no se usan"
+    ],
+    "answer": 1,
+    "explanation": "La deuda técnica en MLOps es el costo acumulado de pipelines frágiles, documentación pobre y componentes acoplados que vuelven difícil mantener y evolucionar sistemas ML; gestionarla implica refactorizar y estandarizar.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-022",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes opciones es un ejemplo de aprendizaje no supervisado?",
+    "options": [
+      "Predecir el precio de viviendas",
+      "Detección de spam en correos",
+      "Agrupar clientes en segmentos de comportamiento",
+      "Clasificación de imágenes de productos"
+    ],
+    "answer": 2,
+    "explanation": "Agrupar clientes por similitud es clustering no supervisado: el algoritmo descubre grupos sin etiquetas predefinidas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-023",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Tras entrenar varios modelos, un equipo necesita un repositorio central para almacenarlos, versionarlos y rastrear su estado de despliegue. ¿Qué servicio o función de AWS cumple esto?",
+    "options": [
+      "**Amazon SageMaker** Model Monitor",
+      "**Amazon SageMaker** Canvas",
+      "**Amazon SageMaker** Model Registry",
+      "**AWS Audit Manager**"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon SageMaker Model Registry** centraliza almacenamiento, versionado y seguimiento del ciclo de vida de modelos ML.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-024",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una app de movilidad urbana procesa miles de solicitudes de rutas diarias. ¿Qué beneficio ofrece AI/ML que un sistema basado solo en reglas no logra fácilmente?",
+    "options": [
+      "Salidas determinísticas idénticas para toda entrada",
+      "Capacidad de escalar y adaptarse a patrones cambiantes en los datos",
+      "Corrección garantizada sin validación",
+      "Eliminación total de costos computacionales"
+    ],
+    "answer": 1,
+    "explanation": "Los sistemas ML aprenden patrones de datos y generalizan ante cambios, escalando a alto volumen sin codificar manualmente cada escenario, ventaja clave sobre reglas estáticas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-025",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un biólogo marino tiene miles de fotos submarinas y quiere identificar y clasificar automáticamente especies sin revisión manual. ¿Qué estrategia cumple este requisito?",
+    "options": [
+      "Reconocimiento de entidades nombradas (NER)",
+      "Inpainting",
+      "Detección de objetos (object detection)",
+      "Detección de anomalías"
+    ],
+    "answer": 2,
+    "explanation": "Object detection localiza y clasifica objetos dentro de imágenes, ideal para encontrar y categorizar especies marinas en fotos submarinas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-026",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de software recibe miles de comentarios libres en encuestas de satisfacción y quiere analizar el sentimiento expresado. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Usar un algoritmo de regresión para ordenar comentarios en categorías predefinidas",
+      "Usar un motor de recomendaciones para detectar sentimiento",
+      "Usar un modelo de lenguaje grande (LLM) con NLP para análisis de sentimiento",
+      "Usar un algoritmo de series temporales para predecir sentimiento histórico"
+    ],
+    "answer": 2,
+    "explanation": "Un LLM con NLP puede interpretar texto no estructurado y determinar si el sentimiento es positivo, negativo o neutral, adecuado para comentarios libres en encuestas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-027",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una startup quiere usar un foundation model pero no tiene datos ni recursos para preentrenarlo. ¿Qué enfoque le permite obtener uno sin entrenarlo desde cero?",
+    "options": [
+      "Usar un modelo preentrenado de código abierto desde un hub de modelos",
+      "Construir un sistema experto basado en reglas",
+      "Recolectar más datos etiquetados y entrenar un árbol de decisión",
+      "Escribir código de inferencia personalizado sin ningún modelo"
+    ],
+    "answer": 0,
+    "explanation": "Los modelos preentrenados open source en hubs como Hugging Face permiten usar o ajustar foundation models sin el costo de preentrenamiento completo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-028",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una aseguradora debe ejecutar inferencia sobre años de registros archivados de siniestros, cada lote de varios GB, sin necesidad de resultados inmediatos. ¿Qué opción de inferencia de **Amazon SageMaker AI** encaja mejor?",
+    "options": [
+      "Serverless inference",
+      "Batch transform",
+      "Real-time inference",
+      "Asynchronous inference"
+    ],
+    "answer": 1,
+    "explanation": "**Batch transform** procesa datasets completos offline sin endpoint persistente, ideal para archivos grandes cuando la urgencia es baja.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-029",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa construye modelos con **Amazon SageMaker** y necesita compartir y gestionar variables (features) entre varios equipos. ¿Qué función de SageMaker cumple esto?",
+    "options": [
+      "**Amazon SageMaker** Data Wrangler",
+      "**Amazon SageMaker** Feature Store",
+      "**Amazon SageMaker** Clarify",
+      "**Amazon SageMaker** Model Cards"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker Feature Store** es un repositorio centralizado para almacenar, compartir y reutilizar features entre equipos y pipelines.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-030",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena de retail quiere construir y desplegar modelos ML en AWS sin escribir código. ¿Qué servicio o función de AWS cumple este requisito?",
+    "options": [
+      "**Amazon Rekognition**",
+      "**Amazon Comprehend**",
+      "**Amazon SageMaker** Canvas",
+      "AWS DeepRacer"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon SageMaker Canvas** permite construir, entrenar y desplegar modelos personalizados con interfaz visual sin código.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-031",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una minera quiere detectar lecturas anómalas en sensores de maquinaria sin contar con ejemplos etiquetados de fallas. ¿Qué método de ML cumple este requisito?",
+    "options": [
+      "Árbol de decisión",
+      "Autoencoders",
+      "Regresión lineal",
+      "Regresión logística"
+    ],
+    "answer": 1,
+    "explanation": "Los autoencoders aprenden a reconstruir patrones normales; lecturas con alto error de reconstrucción se marcan como anomalías sin necesidad de etiquetas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-032",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles servicios de AWS pueden usarse para análisis de documentos y extracción de información? (Seleccione DOS.)",
+    "options": [
+      "**Amazon Textract**",
+      "**Amazon Comprehend**",
+      "**Amazon Polly**",
+      "Amazon Translate",
+      "Amazon Transcribe"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "**Amazon Textract** extrae texto, formularios y tablas de documentos e imágenes con OCR. **Amazon Comprehend** aplica NLP sobre ese texto para identificar entidades, frases clave y sentimiento.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-033",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una plataforma de suscripción entrena un modelo binario para predecir qué usuarios cancelarán su plan. ¿Qué métrica es apropiada para evaluarlo?",
+    "options": [
+      "R-cuadrado (R-squared)",
+      "Error cuadrático medio (MSE)",
+      "F1 score",
+      "Tiempo de entrenamiento del modelo"
+    ],
+    "answer": 2,
+    "explanation": "El F1 combina precisión y recall, adecuado para clasificación binaria de churn donde importa equilibrar falsos positivos y falsos negativos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-034",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de e-commerce construye un modelo que predice retrasos en entregas. ¿Cuál es el orden correcto de las etapas del ciclo de vida de ML?\n\n¿Qué secuencia es correcta?",
+    "options": [
+      "1) Recolectar historial de envíos → 2) Ingeniería de features y limpieza → 3) Entrenar el modelo → 4) Desplegar a endpoint → 5) Definir el problema de negocio y métrica de éxito",
+      "1) Desplegar a endpoint → 2) Entrenar el modelo → 3) Ingeniería de features → 4) Recolectar historial → 5) Definir problema de negocio",
+      "1) Recolectar historial → 2) Definir problema de negocio → 3) Ingeniería de features → 4) Entrenar → 5) Desplegar",
+      "1) Definir el problema de negocio y métrica de éxito → 2) Recolectar historial de envíos → 3) Ingeniería de features y limpieza → 4) Entrenar el modelo → 5) Desplegar a endpoint"
+    ],
+    "answer": 3,
+    "explanation": "El ciclo inicia definiendo el problema y la métrica de éxito, luego recolecta datos, prepara features, entrena y finalmente despliega el modelo validado.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-035",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa necesita un servicio altamente escalable de AWS para monitorear el rendimiento de sus sistemas ML en producción. ¿Qué servicio cumple este requisito?",
+    "options": [
+      "**AWS CloudTrail**",
+      "**AWS Config**",
+      "**Amazon CloudWatch**",
+      "AWS Trusted Advisor"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon CloudWatch** recopila métricas en tiempo real como latencia, errores y uso de recursos, con alarmas y dashboards ideales para observar sistemas ML.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-036",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere modernizar aplicaciones heredadas usando herramientas asistidas por IA para transformar y migrar cargas de trabajo. ¿Qué servicio de AWS cumple este requisito?",
+    "options": [
+      "AWS Transform",
+      "**Amazon Textract**",
+      "Amazon Translate",
+      "Amazon Transcribe"
+    ],
+    "answer": 0,
+    "explanation": "**AWS Transform** usa IA para ayudar a transformar y modernizar aplicaciones legacy, alineándose con el objetivo de migración asistida.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-037",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una clínica rural quiere desplegar una herramienta de apoyo diagnóstico en tablets con poca memoria y sin conexión a internet. ¿Qué restricción favorece más un modelo ML tradicional sobre un foundation model?",
+    "options": [
+      "La necesidad de generar imágenes en tiempo real",
+      "Restricciones operativas de memoria y conectividad",
+      "El requisito de chat multilingüe",
+      "La necesidad de resumir texto de forma abierta"
+    ],
+    "answer": 1,
+    "explanation": "Los modelos ML tradicionales suelen ser más pequeños y ejecutarse en dispositivos edge sin conexión cloud, ideal para tablets limitadas en clínicas rurales.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-038",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Un equipo adopta MLOps para gestionar flujos de ML con mayor confiabilidad. ¿Cuáles dos prácticas debe priorizar? (Seleccione DOS.)",
+    "options": [
+      "Versionado de modelos para reproducibilidad",
+      "Pruebas y validación automatizadas de modelos",
+      "Despliegues exclusivamente manuales",
+      "Documentación mínima",
+      "Sin monitoreo en producción"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "El versionado permite reproducir resultados y revertir cambios. Las pruebas automatizadas verifican rendimiento antes del despliegue; ambas son pilares de MLOps confiable.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-039",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un marketplace en línea quiere segmentar compradores según historial de compras y preferencias para personalizar la experiencia. ¿Qué técnica de ML debe usar?",
+    "options": [
+      "Clasificación",
+      "Regresión",
+      "Clustering",
+      "Generación de contenido"
+    ],
+    "answer": 2,
+    "explanation": "Clustering agrupa compradores con comportamiento similar sin etiquetas predefinidas, descubriendo segmentos naturales para personalización.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-040",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco debe explicar a reguladores cada factor que influyó en decisiones de crédito. Evalúa un modelo de gradient boosting frente a un LLM. ¿Qué factor favorece más el modelo ML tradicional?",
+    "options": [
+      "Requisitos de explicabilidad",
+      "Soporte multilingüe",
+      "Capacidad de generación de contenido",
+      "Necesidad de interfaz conversacional"
+    ],
+    "answer": 0,
+    "explanation": "Modelos tradicionales como gradient boosting permiten trazar cada predicción a features específicas y sus pesos, cumpliendo exigencias regulatorias de explicabilidad.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M08",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-041",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa de paquetería ingiere varios GB de registros de envíos diarios y necesita predicciones de volumen una vez al día sobre el dataset acumulado. ¿Qué tipo de inferencia encaja mejor?",
+    "options": [
+      "Inferencia por lotes (batch inference)",
+      "Inferencia asincrónica",
+      "Inferencia en tiempo real",
+      "Inferencia serverless"
+    ],
+    "answer": 0,
+    "explanation": "Batch inference procesa grandes volúmenes en un job programado, ideal para generar predicciones diarias sobre todo el dataset acumulado sin mantener endpoint persistente.",
+    "tags": [
+      "difficulty:intermediate",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-042",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un modelo de predicción de abandono de clientes es muy preciso en entrenamiento pero falla con clientes nuevos. ¿Qué cambio resolverá esto?",
+    "options": [
+      "Reducir la regularización para permitir patrones más complejos",
+      "Agregar más features al dataset",
+      "Continuar entrenando por más epochs",
+      "Aumentar la regularización para reducir la complejidad del modelo"
+    ],
+    "answer": 3,
+    "explanation": "El modelo está sobreajustando (overfitting): memoriza entrenamiento y no generaliza. Aumentar regularización penaliza pesos grandes y simplifica el modelo para capturar patrones reales.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-043",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa tiene un modelo de clasificación de imágenes y necesita que su app web lo invoque con predicciones en tiempo real, escalando automáticamente. ¿Qué solución cumple esto?",
+    "options": [
+      "Usar **Amazon SageMaker** Serverless Inference para desplegar el modelo",
+      "Usar **Amazon CloudFront** para desplegar el modelo",
+      "Usar Amazon API Gateway para alojar el modelo",
+      "Usar AWS Batch para alojar el modelo"
+    ],
+    "answer": 0,
+    "explanation": "**Amazon SageMaker Serverless Inference** hospeda modelos y sirve predicciones bajo demanda con escalado automático de cómputo, ideal para apps web con tráfico variable.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M07",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-044",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "En métricas de rendimiento de modelos, ¿qué significa el acrónimo AUC?",
+    "options": [
+      "Area Under the Curve (Área bajo la curva)",
+      "Average Usage Cost (Costo promedio de uso)",
+      "Augmented Use Case (Caso de uso aumentado)",
+      "Automated Utility Calculation (Cálculo automatizado de utilidad)"
+    ],
+    "answer": 0,
+    "explanation": "AUC significa Area Under the Curve, específicamente bajo la curva ROC. Mide qué tan bien un clasificador separa clases, de 0.5 (azar) a 1.0 (perfecto).",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-045",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué técnica de ML usa datos de entrenamiento etiquetados con los valores de salida correctos?",
+    "options": [
+      "Aprendizaje supervisado (Supervised learning)",
+      "Aprendizaje no supervisado (Unsupervised learning)",
+      "Aprendizaje por refuerzo (Reinforcement learning)",
+      "Transfer learning"
+    ],
+    "answer": 0,
+    "explanation": "Supervised learning entrena con pares entrada-etiqueta conocida, aprendiendo la relación entre inputs y targets para predecir en datos nuevos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-046",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un hospital entrenó un modelo con historial clínico para predecir en tiempo real si un paciente será readmitido en 30 días. ¿Qué tarea representa inferencia del modelo?",
+    "options": [
+      "Aplicar el modelo entrenado para predecir readmisión de un paciente nuevo",
+      "Recolectar registros históricos de readmisión",
+      "Medir rendimiento del modelo con métricas de evaluación",
+      "Analizar correlaciones entre variables de pacientes"
+    ],
+    "answer": 0,
+    "explanation": "Inferencia es aplicar un modelo ya entrenado a datos nuevos para generar predicciones, como estimar readmisión de un paciente al momento del alta.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-047",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa ejecuta un pipeline ML en **Amazon SageMaker AI** con solicitudes de hasta 1 GB que pueden tardar una hora, pero necesita latencia casi en tiempo real. ¿Qué opción de inferencia cumple estos requisitos?",
+    "options": [
+      "Real-time inference",
+      "Batch transform",
+      "Serverless inference",
+      "Asynchronous inference"
+    ],
+    "answer": 3,
+    "explanation": "**Asynchronous inference** acepta payloads de hasta 1 GB y procesamiento de hasta una hora, encolando solicitudes y devolviendo resultados cuando están listos sin bloquear al cliente.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M03",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-048",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué tipo de machine learning es más apropiado para entrenar un agente que toma decisiones interactuando con su entorno?",
+    "options": [
+      "Aprendizaje supervisado",
+      "Aprendizaje no supervisado",
+      "Aprendizaje por refuerzo (Reinforcement learning)",
+      "Transfer learning"
+    ],
+    "answer": 2,
+    "explanation": "Reinforcement learning entrena un agente que recibe recompensas o penalizaciones por sus acciones en un entorno, aprendiendo una estrategia óptima con el tiempo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-049",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un centro médico quiere leer expedientes clínicos estructurados, extraer detalles relevantes y generar resúmenes concisos. ¿Qué solución encaja?",
+    "options": [
+      "Usar **Amazon Personalize** para modelar engagement y pasar la salida a un modelo general",
+      "Usar **Amazon Comprehend** Medical para extraer entidades clínicas y aplicar lógica basada en reglas para formatear resúmenes",
+      "Usar **Amazon Textract** para digitalizar documentos escaneados y luego extraer palabras clave",
+      "Usar Amazon Kendra para indexar expedientes y aplicar una plantilla"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon Comprehend Medical** extrae entidades y relaciones clínicas de texto médico; combinarlo con reglas permite formatear resúmenes concisos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-050",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un practicante entrenó un modelo de deep learning que clasifica razas de gatos en fotos. ¿Qué métrica ayuda a evaluar su rendimiento?",
+    "options": [
+      "Matriz de confusión (Confusion matrix)",
+      "Matriz de correlación",
+      "Puntaje R2",
+      "Error cuadrático medio (MSE)"
+    ],
+    "answer": 0,
+    "explanation": "La matriz de confusión desglosa verdaderos/falsos positivos y negativos por clase, mostrando dónde el clasificador acierta o confunde razas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-051",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de soporte analiza el tono emocional en tickets de clientes mediante análisis de sentimiento. ¿De qué campo más amplio de IA forma parte?",
+    "options": [
+      "Procesamiento de lenguaje natural (NLP)",
+      "Visión por computadora (Computer Vision)",
+      "Pronóstico de series temporales",
+      "Reconocimiento de voz"
+    ],
+    "answer": 0,
+    "explanation": "El análisis de sentimiento es una tarea de NLP, el campo de IA enfocado en comprender e interpretar lenguaje humano escrito o hablado.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-052",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Un cineasta quiere ampliar su audiencia agregando subtítulos y locuciones en varios idiomas a sus películas. ¿Qué dos pasos juntos cumplen este requisito? (Seleccione DOS.)",
+    "options": [
+      "Usar **Amazon Polly** para generar locuciones en varios idiomas",
+      "Usar Amazon Transcribe y Amazon Translate para producir subtítulos en varios idiomas",
+      "Usar Amazon Translate para generar locuciones en varios idiomas",
+      "Usar **Amazon Textract** y Amazon Translate para producir subtítulos en varios idiomas"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "**Amazon Transcribe** convierte diálogo hablado a texto y **Amazon Translate** lo traduce para subtítulos multilingües. **Amazon Polly** convierte texto traducido a audio para locuciones.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-053",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Dentro del ciclo de vida de ML, ¿cuál es el objetivo principal de la ingeniería de features?",
+    "options": [
+      "Crear nuevas variables de entrada o transformar las existentes para mejorar el rendimiento del modelo",
+      "Recolectar datos crudos adicionales para el proyecto",
+      "Medir qué tan bien rinde el modelo entrenado",
+      "Publicar el modelo en un entorno de producción"
+    ],
+    "answer": 0,
+    "explanation": "Feature engineering transforma datos crudos en inputs útiles para el modelo, creando o modificando variables que mejoran accuracy y capacidad predictiva.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-054",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál es un beneficio de usar Infrastructure as Code (IaC) en MLOps?",
+    "options": [
+      "IaC elimina la necesidad de hyperparameter tuning",
+      "IaC siempre aprovisiona instancias potentes que entrenan modelos más precisos",
+      "IaC agiliza el despliegue de cargas ML escalables y consistentes en la nube",
+      "IaC minimiza gastos desplegando solo instancias de bajo costo"
+    ],
+    "answer": 2,
+    "explanation": "IaC define infraestructura en código versionado, permitiendo aprovisionar entornos ML de forma repetible y consistente entre dev, test y producción.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-055",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles de las siguientes son métricas de negocio para evaluar modelos de IA? (Seleccione DOS.)",
+    "options": [
+      "Puntaje de precisión (Precision score)",
+      "Puntaje de satisfacción del cliente",
+      "Precisión media (Mean Average Precision)",
+      "Time-to-value (Tiempo hasta generar valor)",
+      "Error cuadrático medio (RMSE)"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "La satisfacción del cliente mide valor entregado al usuario final. Time-to-value mide qué tan rápido la solución de IA produce resultados de negocio medibles.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-056",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una fábrica de textiles entrenó un modelo que clasifica fotos de telas como defectuosas o no. El equipo quiere saber qué proporción de imágenes clasificó correctamente. ¿Qué métrica debe usar?",
+    "options": [
+      "Error absoluto medio (MAE)",
+      "Número de epochs de entrenamiento",
+      "Raíz del error cuadrático medio (RMSE)",
+      "Accuracy (Exactitud)"
+    ],
+    "answer": 3,
+    "explanation": "Accuracy mide la proporción de predicciones correctas sobre el total, ideal para saber cuántas fotos de telas se clasificaron bien.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-057",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una tienda en línea quiere agrupar clientes según demografía y comportamiento de compra. ¿Qué algoritmo debe usar?",
+    "options": [
+      "Árbol de decisión",
+      "Máquina de vectores de soporte (SVM)",
+      "K-nearest neighbours (k-NN)",
+      "K-means"
+    ],
+    "answer": 3,
+    "explanation": "K-means es un algoritmo de clustering no supervisado que particiona datos en grupos por similitud, ideal para segmentar clientes sin etiquetas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-058",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "La calidad de inferencia de un modelo cayó tras cuatro meses en producción. El equipo quiere alertas si vuelve a degradarse. ¿Qué solución encaja?",
+    "options": [
+      "Construir un modelo nuevo y monitorear drift con **Amazon SageMaker** Feature Store",
+      "Reentrenar el modelo y monitorear drift con **Amazon SageMaker** Model Monitor",
+      "Reentrenar el modelo y monitorear drift con **Amazon SageMaker** Clarify",
+      "Construir un modelo nuevo y vigilarlo solo con alarmas de **Amazon CloudWatch**"
+    ],
+    "answer": 1,
+    "explanation": "**Amazon SageMaker Model Monitor** detecta drift de datos y calidad de predicciones en producción y envía alertas, permitiendo reentrenar antes de más degradación.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-059",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes es un ejemplo de datos no estructurados?",
+    "options": [
+      "Una tabla de base de datos con columnas de fecha, cantidad y precio de pedidos",
+      "Una hoja de cálculo con IDs, nombres y salarios de empleados",
+      "Una colección de correos de soporte redactados libremente por clientes",
+      "Un archivo CSV con lecturas de sensores indexadas por timestamp"
+    ],
+    "answer": 2,
+    "explanation": "Correos redactados libremente no tienen esquema fijo: varían en longitud, estilo y formato, característica de datos no estructurados.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-060",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una inmobiliaria entrenó un modelo que predice precios de venta y quiere hospedarlo para predicciones sin administrar servidores. ¿Qué solución cumple esto?",
+    "options": [
+      "Desplegar el modelo en una instancia **Amazon EC2**",
+      "Desplegar el modelo con **Amazon CloudFront** e integración **Amazon S3**",
+      "Desplegar el modelo en un endpoint de **Amazon SageMaker AI**",
+      "Desplegar el modelo en un clúster de Amazon EKS"
+    ],
+    "answer": 2,
+    "explanation": "Un endpoint de **Amazon SageMaker AI** es gestionado: AWS administra servidores, escalado y mantenimiento, permitiendo servir predicciones sin gestionar infraestructura.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-061",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa agrícola necesita modelos para varias tareas relacionadas (detección de plagas, estimación de rendimiento, clasificación de suelo). Quiere adaptar modelos preentrenados en lugar de entrenar desde cero. ¿Qué estrategia cumple esto?",
+    "options": [
+      "Aumentar el número de epochs",
+      "Usar transfer learning",
+      "Disminuir el número de epochs",
+      "Usar aprendizaje no supervisado"
+    ],
+    "answer": 1,
+    "explanation": "Transfer learning reutiliza un modelo preentrenado y lo adapta a tareas relacionadas, ahorrando tiempo y datos comparado con entrenar desde cero.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-062",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una constructora quiere estimar el precio de venta de departamentos a partir de metros cuadrados, ubicación y número de habitaciones. ¿Qué algoritmo debe usar?",
+    "options": [
+      "K-means",
+      "Regresión logística",
+      "Regresión lineal",
+      "K-nearest neighbours (k-NN)"
+    ],
+    "answer": 2,
+    "explanation": "Regresión lineal modela la relación entre features y un target numérico continuo, estándar para estimar precios de propiedades.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-063",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco necesita flujos donde personal revise predicciones del modelo ML, con umbrales de confianza configurables que determinen cuándo escalar a revisión humana. ¿Qué servicio de AWS cumple esto?",
+    "options": [
+      "**Amazon SageMaker** Ground Truth",
+      "**Amazon Inspector**",
+      "Amazon Augmented AI (Amazon A2I)",
+      "**AWS Audit Manager**"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon A2I** integra revisión humana en predicciones ML, permitiendo definir umbrales de confianza que envían casos dudosos a revisores humanos.",
+    "tags": [
+      "difficulty:intermediate",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-064",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere construir un modelo ML para predecir satisfacción del cliente con ajuste de hiperparámetros totalmente automatizado. ¿Qué servicio de AWS cumple esto?",
+    "options": [
+      "Amazon Athena",
+      "**Amazon Personalize**",
+      "**Amazon Comprehend**",
+      "**Amazon SageMaker AI**"
+    ],
+    "answer": 3,
+    "explanation": "**Amazon SageMaker AI** incluye Automatic Model Tuning que busca hiperparámetros óptimos automáticamente, ideal para modelos personalizados de satisfacción.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-065",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Una cadena de restaurantes quiere analizar el sentimiento en reseñas escritas de clientes. ¿Qué dos servicios de AWS pueden cumplir esto? (Seleccione DOS.)",
+    "options": [
+      "**Amazon Comprehend**",
+      "**Amazon Polly**",
+      "**Amazon Bedrock**",
+      "**Amazon Lex**",
+      "**Amazon Rekognition**"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "explanation": "**Amazon Comprehend** tiene análisis de sentimiento integrado para determinar tono positivo, negativo o neutral en texto. **Amazon Bedrock** accede a foundation models que también pueden clasificar sentimiento mediante prompting.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M07",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d1-jem-066",
+    "domainId": "domain-1",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes NO es un tipo de machine learning?",
+    "options": [
+      "Aprendizaje supervisado (Supervised learning)",
+      "Aprendizaje no supervisado (Unsupervised learning)",
+      "Aprendizaje por refuerzo (Reinforcement learning)",
+      "Aprendizaje diagnóstico (Diagnostic learning)"
+    ],
+    "answer": 3,
+    "explanation": "Diagnostic learning no es un paradigma reconocido de ML ni aparece en la guía del examen AWS; es la opción que no corresponde.",
+    "tags": [
+      "difficulty:basic",
+      "module:M02",
+      "jemjaf"
+    ]
   }
 ]

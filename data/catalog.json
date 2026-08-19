@@ -34,35 +34,35 @@
           "title": "Dominio 1: Fundamentos de IA y ML",
           "weight": 20,
           "dataUrl": "data/questions/aws/aif-c01/domain-1.json",
-          "questionCount": 12
+          "questionCount": 78
         },
         {
           "id": "domain-2",
           "title": "Dominio 2: Fundamentos de IA generativa",
           "weight": 24,
           "dataUrl": "data/questions/aws/aif-c01/domain-2.json",
-          "questionCount": 12
+          "questionCount": 60
         },
         {
           "id": "domain-3",
           "title": "Dominio 3: Aplicaciones de modelos fundacionales",
           "weight": 28,
           "dataUrl": "data/questions/aws/aif-c01/domain-3.json",
-          "questionCount": 10
+          "questionCount": 64
         },
         {
           "id": "domain-4",
           "title": "Dominio 4: Directrices para IA responsable",
           "weight": 14,
           "dataUrl": "data/questions/aws/aif-c01/domain-4.json",
-          "questionCount": 8
+          "questionCount": 35
         },
         {
           "id": "domain-5",
           "title": "Dominio 5: Seguridad, cumplimiento y gobernanza de soluciones de IA",
           "weight": 14,
           "dataUrl": "data/questions/aws/aif-c01/domain-5.json",
-          "questionCount": 8
+          "questionCount": 35
         },
         {
           "id": "practice-exam-1",

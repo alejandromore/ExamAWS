@@ -13,7 +13,12 @@
     ],
     "answer": 0,
     "explanation": "El preentrenamiento continuo es apropiado cuando se desea adaptar un modelo fundacional a un dominio usando datos no etiquetados. En este caso, los datos clínicos sin PII pueden ayudar al modelo a incorporar conocimiento del sector médico sin requerir ejemplos etiquetados de entrada/salida.",
-    "tags": ["amazon-bedrock", "foundation-models", "continued-pretraining", "domain-adaptation"],
+    "tags": [
+      "amazon-bedrock",
+      "foundation-models",
+      "continued-pretraining",
+      "domain-adaptation"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -30,7 +35,11 @@
     ],
     "answer": 0,
     "explanation": "Los parámetros de inferencia controlan cómo se genera la respuesta durante la invocación del modelo. La longitud máxima y las secuencias de detención ayudan a limitar la salida y a terminarla cuando cumple un patrón deseado.",
-    "tags": ["generative-ai", "inference-parameters", "prompting"],
+    "tags": [
+      "generative-ai",
+      "inference-parameters",
+      "prompting"
+    ],
     "answerSource": "visible-or-inferred"
   },
   {
@@ -47,7 +56,12 @@
     ],
     "answer": 2,
     "explanation": "El ajuste fino basado en instrucciones permite entrenar el modelo con un conjunto de ejemplos etiquetados para que aprenda la tarea de clasificación. Después del ajuste, no es necesario incluir muchos ejemplos en cada prompt, por lo que el tamaño del mensaje puede ser menor.",
-    "tags": ["fine-tuning", "classification", "llm", "prompt-size"],
+    "tags": [
+      "fine-tuning",
+      "classification",
+      "llm",
+      "prompt-size"
+    ],
     "answerSource": "visible-or-inferred"
   },
   {
@@ -64,7 +78,11 @@
     ],
     "answer": 1,
     "explanation": "Para un conjunto de datos empresarial grande, como 1 GB, y un objetivo de adaptación del modelo a conocimiento de dominio, la adaptación de dominio mediante fine-tuning es más adecuada que prompt engineering o RAG cuando el requisito explícito es entrenar el FM. El ajuste fino basado en instrucciones suele usarse para ejemplos etiquetados de tareas específicas.",
-    "tags": ["fine-tuning", "domain-adaptation", "foundation-models"],
+    "tags": [
+      "fine-tuning",
+      "domain-adaptation",
+      "foundation-models"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -81,7 +99,12 @@
     ],
     "answer": 3,
     "explanation": "Agregar metadatos de fecha a los documentos permite filtrar la recuperación de la base de conocimiento por período sin crear lógica personalizada en Lambda, ECS o EKS. Esto reduce la sobrecarga operativa y mejora la precisión del contexto recuperado.",
-    "tags": ["amazon-bedrock", "knowledge-bases", "rag", "metadata-filtering"],
+    "tags": [
+      "amazon-bedrock",
+      "knowledge-bases",
+      "rag",
+      "metadata-filtering"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -98,7 +121,10 @@
     ],
     "answer": 2,
     "explanation": "Zero-shot prompting consiste en pedir al modelo que realice una tarea sin darle ejemplos. Few-shot y single-shot sí incluyen ejemplos; chain-of-thought busca que el modelo razone en pasos.",
-    "tags": ["prompt-engineering", "zero-shot"],
+    "tags": [
+      "prompt-engineering",
+      "zero-shot"
+    ],
     "answerSource": "visible-or-inferred"
   },
   {
@@ -115,7 +141,11 @@
     ],
     "answer": 3,
     "explanation": "ROUGE es una métrica común para evaluar resúmenes generados automáticamente al comparar la superposición de palabras, frases o n-gramas con resúmenes de referencia.",
-    "tags": ["model-evaluation", "rouge", "summarization"],
+    "tags": [
+      "model-evaluation",
+      "rouge",
+      "summarization"
+    ],
     "answerSource": "visible-or-inferred"
   },
   {
@@ -132,7 +162,12 @@
     ],
     "answer": 0,
     "explanation": "Amazon OpenSearch Service admite capacidades de búsqueda vectorial y semántica, por lo que es adecuado para almacenar embeddings y recuperar resultados similares por significado.",
-    "tags": ["opensearch", "embeddings", "semantic-search", "vector-search"],
+    "tags": [
+      "opensearch",
+      "embeddings",
+      "semantic-search",
+      "vector-search"
+    ],
     "answerSource": "visible-or-inferred"
   },
   {
@@ -149,7 +184,11 @@
     ],
     "answer": 0,
     "explanation": "El prompt incluye varios ejemplos etiquetados de sentimientos antes de pedir al modelo que clasifique un nuevo texto. Dar varios ejemplos en el prompt corresponde a few-shot prompting.",
-    "tags": ["prompt-engineering", "few-shot", "sentiment-analysis"],
+    "tags": [
+      "prompt-engineering",
+      "few-shot",
+      "sentiment-analysis"
+    ],
     "answerSource": "inferred-from-aws-knowledge"
   },
   {
@@ -166,7 +205,1162 @@
     ],
     "answer": 2,
     "explanation": "Chain-of-thought prompting guía al modelo para que descomponga tareas complejas en pasos intermedios y produzca razonamiento paso a paso.",
-    "tags": ["prompt-engineering", "chain-of-thought"],
+    "tags": [
+      "prompt-engineering",
+      "chain-of-thought"
+    ],
     "answerSource": "visible-or-inferred"
+  },
+  {
+    "id": "aif-d3-jem-001",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una fintech opera varias aplicaciones de IA generativa en **Amazon Bedrock** y necesita versionar sus prompts, comparar variantes y revertir a una versión anterior si baja la calidad. ¿Qué función de **Amazon Bedrock** cumple estos requisitos?",
+    "options": [
+      "**Amazon Bedrock** Knowledge Bases",
+      "**Amazon Bedrock** Guardrails",
+      "**Amazon Bedrock** Prompt Management",
+      "**Amazon Bedrock** Model Evaluation"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** Prompt Management permite crear, versionar y administrar plantillas de prompts, comparar variantes y revertir a versiones anteriores, ofreciendo el control del ciclo de vida que el equipo necesita para mantener la calidad de los prompts en producción.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-002",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una aseguradora necesita respuestas de mayor calidad de un LLM en casos complejos de siniestros que exigen razonamiento detallado paso a paso. ¿Qué técnica de prompt engineering encaja mejor?",
+    "options": [
+      "Directional stimulus prompting",
+      "Prompt chaining",
+      "Least-to-most prompting",
+      "Chain-of-thought prompting"
+    ],
+    "answer": 3,
+    "explanation": "Chain-of-thought prompting guía al modelo para exponer su razonamiento como una secuencia lógica de pasos dentro de la respuesta, lo que mejora la calidad en problemas complejos como el análisis de siniestros.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-003",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un despacho jurídico usa un foundation model (FM) de **Amazon Bedrock** en una herramienta de búsqueda interna y quiere afinarlo con sus propios datos para mejorar la precisión. ¿Qué enfoque realiza correctamente el fine-tuning?",
+    "options": [
+      "Comprar Provisioned Throughput para **Amazon Bedrock**",
+      "Proporcionar ejemplos etiquetados con un campo prompt y un campo completion",
+      "Preparar el dataset como un archivo .txt con varias líneas de contenido .csv",
+      "Entrenar el modelo con revistas académicas y libros de texto"
+    ],
+    "answer": 1,
+    "explanation": "El fine-tuning en **Amazon Bedrock** requiere un dataset etiquetado donde cada registro empareja un prompt de entrada con la completion esperada, de modo que el modelo aprenda el comportamiento deseado a partir de los datos del despacho.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M03",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-004",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un hospital construye un grafo de conocimiento clínico que también debe almacenar embeddings vectoriales y ejecutar búsquedas por similitud junto con recorridos del grafo. ¿Qué servicio de base de datos de AWS admite consultas de grafo y búsqueda vectorial?",
+    "options": [
+      "**Amazon DynamoDB**",
+      "Amazon Neptune",
+      "Amazon Redshift",
+      "Amazon ElastiCache"
+    ],
+    "answer": 1,
+    "explanation": "Amazon Neptune es una base de datos de grafos que también admite búsqueda por similitud vectorial, permitiendo al hospital almacenar embeddings junto con relaciones clínicas y ejecutar recorridos de grafo y consultas de vecinos más cercanos en la misma base de datos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-005",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena de restaurantes quiere que un modelo generativo preentrenado redacte publicaciones para redes sociales con el tono y estilo de su marca. ¿Qué debe hacer el equipo?",
+    "options": [
+      "Agregar más capas a la arquitectura del modelo para aumentar su complejidad",
+      "Diseñar prompts claros y bien estructurados que incluyan instrucciones y contexto para guiar la salida",
+      "Ajustar la arquitectura e hiperparámetros del modelo para mejorar su rendimiento general",
+      "Recolectar un dataset grande y diverso y preentrenar un nuevo modelo generativo desde cero"
+    ],
+    "answer": 1,
+    "explanation": "Diseñar prompts claros con instrucciones y contexto guía al modelo preentrenado para generar contenido acorde al tono de la marca, sin modificar el modelo en sí.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-006",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una clínica integra un LLM en su sistema de codificación médica y necesita respuestas lo más deterministas y estables posible. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Agregar \"haz tu respuesta determinista\" al final del prompt antes de enviarlo",
+      "Establecer el parámetro temperature en 1 al enviar el prompt",
+      "Establecer el parámetro temperature en 0 al enviar el prompt",
+      "Agregar \"haz tu respuesta determinista\" al inicio del prompt antes de enviarlo"
+    ],
+    "answer": 2,
+    "explanation": "Establecer temperature en 0 fuerza decodificación greedy, de modo que el modelo selecciona el token más probable en cada paso y produce salidas deterministas y estables.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-007",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una inmobiliaria genera imágenes con Amazon Nova Canvas y necesita excluir elementos específicos de los resultados, como muebles no deseados. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Usar un valor de temperature más alto",
+      "Usar un negative prompt",
+      "Usar un prompt más detallado",
+      "Cambiar a otro foundation model (FM)"
+    ],
+    "answer": 1,
+    "explanation": "Un negative prompt especifica los elementos o características que el modelo debe evitar, manteniendo fuera de las imágenes generadas los objetos no deseados.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-008",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un banco usa un LLM preentrenado para un asistente de consultas de productos financieros. El banco necesita respuestas breves y redactadas en un idioma específico. ¿Qué enfoque alinea mejor la salida del LLM con estas expectativas?",
+    "options": [
+      "Elegir un LLM de diferente tamaño",
+      "Aumentar el valor de temperature",
+      "Refinar el prompt",
+      "Aumentar el valor de Top K"
+    ],
+    "answer": 2,
+    "explanation": "Refinar el prompt permite al banco indicar directamente la longitud requerida y el idioma objetivo, de modo que el modelo devuelva respuestas breves en el idioma elegido.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-009",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa logística quiere un asistente de IA que evalúe fuentes de datos específicas, invoque APIs externas y luego genere, compare y priorice opciones de respuesta. ¿Qué función de **Amazon Bedrock** encaja?",
+    "options": [
+      "Prompt Management",
+      "Knowledge Bases",
+      "Agents",
+      "**Amazon Bedrock** Model Evaluation"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** Agents orquestan tareas de varios pasos, incluyendo invocar APIs externas y generar, comparar y priorizar opciones de respuesta, lo que coincide con todas las necesidades planteadas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-010",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de RR. HH. afinó un LLM para responder consultas del portal de empleados y quiere confirmar que el fine-tuning mejoró la precisión. ¿Qué métrica debe usar?",
+    "options": [
+      "Precision",
+      "F1 score",
+      "Time to first token",
+      "Perplexity"
+    ],
+    "answer": 1,
+    "explanation": "El F1 score equilibra precision y recall en un solo valor, reflejando qué tan precisa y completa es la respuesta del modelo, por lo que es la forma adecuada de medir la mejora del fine-tuning.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-011",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un fabricante de autos quiere una interfaz de chat sobre manuales PDF de sus vehículos usando LLMs en **Amazon Bedrock**, al menor costo posible. ¿Qué enfoque encaja mejor?",
+    "options": [
+      "Agregar todos los manuales a cada prompt como contexto",
+      "Subir los manuales a una knowledge base de **Amazon Bedrock** y recuperar solo los pasajes relevantes por consulta",
+      "Hacer fine-tuning de un modelo con los manuales y servir el modelo afinado",
+      "Preentrenar continuamente el modelo base con el contenido de los manuales"
+    ],
+    "answer": 1,
+    "explanation": "Una knowledge base recupera solo los pasajes relevantes a cada pregunta, dando al modelo el contexto correcto de forma económica, sin pagar por enviar manuales completos en cada consulta ni por entrenar el modelo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-012",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un marketplace usa RAG con **Amazon Bedrock** y Stable Diffusion para crear imágenes de productos, pero los resultados son aleatorios y omiten detalles solicitados. El equipo quiere que las imágenes sigan más fielmente los prompts. ¿Qué cambio ayuda?",
+    "options": [
+      "Aumentar el número de generation steps",
+      "Aumentar la escala de classifier-free guidance (CFG)",
+      "Establecer una random seed fija",
+      "Aumentar el peso del negative prompt"
+    ],
+    "answer": 1,
+    "explanation": "La escala CFG controla qué tan fuertemente el modelo sigue el prompt de texto; al aumentarla, la imagen generada se adhiere más a los detalles solicitados.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-013",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una agencia de publicidad usa un foundation model (FM) de generación de imágenes en **Amazon Bedrock** y quiere controlar qué tan detallada o abstracta es cada imagen generada. ¿Qué parámetro del modelo debe ajustar?",
+    "options": [
+      "Model checkpoint",
+      "Generation step",
+      "Batch size",
+      "Token length"
+    ],
+    "answer": 1,
+    "explanation": "El parámetro generation step define cuántos pasos de refinamiento ejecuta el modelo al crear una imagen; más pasos producen imágenes más detalladas y menos pasos, más abstractas, por lo que controla el nivel de detalle.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-014",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "El chatbot de un bufete legal responde preguntas sobre jurisprudencia densa, pero incluso tras varios ajustes de prompt maneja mal la terminología jurídica especializada. ¿Qué lo mejorará de forma más efectiva?",
+    "options": [
+      "Usar few-shot prompting con pares de pregunta y respuesta de ejemplo",
+      "Aplicar domain adaptation fine-tuning sobre el corpus jurídico especializado",
+      "Agregar un paso de Retrieval Augmented Generation (RAG) sobre la jurisprudencia",
+      "Bajar la temperature para que las respuestas sean más enfocadas"
+    ],
+    "answer": 1,
+    "explanation": "El domain adaptation fine-tuning entrena al modelo con el corpus jurídico especializado para que aprenda la terminología legal, que es lo que corrige la mala comprensión del lenguaje técnico denso.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-015",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "El chatbot de una cadena retail usa un LLM en **Amazon Bedrock** para detectar intenciones y el equipo quiere mejorar la precisión con few-shot learning. ¿Qué datos necesita el equipo?",
+    "options": [
+      "Pares de mensajes del usuario y sus intenciones correctas",
+      "Pares de mensajes del usuario y las respuestas correctas del chatbot",
+      "Pares de respuestas del chatbot y las intenciones correctas del usuario",
+      "Pares de intenciones del usuario y las respuestas correctas del chatbot"
+    ],
+    "answer": 0,
+    "explanation": "Few-shot learning proporciona al modelo pares de ejemplo entrada-salida para la tarea, y la detección de intenciones mapea un mensaje del usuario a una intención, por lo que se necesitan pares de mensajes del usuario y sus intenciones correctas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M03",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-016",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una app de periodismo invoca un LLM para reescribir notas con mayor claridad y tiene ejemplos de referencia de las versiones mejoradas. Quiere que la salida del modelo se parezca a esos ejemplos. ¿Qué métrica debe usar?",
+    "options": [
+      "Perplexity del texto generado",
+      "Recall-Oriented Understudy for Gisting Evaluation (ROUGE)",
+      "Semantic robustness score",
+      "Latencia promedio de respuesta"
+    ],
+    "answer": 1,
+    "explanation": "ROUGE mide la superposición de n-gramas y secuencias entre la salida del modelo y los ejemplos de referencia, capturando directamente qué tan parecida es la salida a esas versiones mejoradas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-017",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Para cargas de trabajo de IA, ¿cuál es el principal beneficio de combinar **Amazon Aurora** con la extensión pgvector?",
+    "options": [
+      "Genera modelos de IA automáticamente",
+      "Proporciona modelos de lenguaje preentrenados",
+      "Habilita búsqueda por similitud vectorial dentro de una base de datos relacional",
+      "Proporciona capacidades de cómputo serverless"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Aurora** con la extensión pgvector habilita búsqueda por similitud vectorial dentro de una base de datos relacional, de modo que los embeddings se almacenan junto a datos estructurados y se consultan con SQL conservando las funciones relacionales.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-018",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles dos métricas son ejemplos de métricas de alineación con el negocio para evaluar aplicaciones de IA?",
+    "options": [
+      "Satisfacción del usuario",
+      "BERTScore",
+      "Costo por interacción",
+      "Puntaje ROUGE",
+      "Tiempo de entrenamiento del modelo"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "explanation": "La satisfacción del usuario mide qué tan bien la aplicación de IA cumple las expectativas del usuario final, y el costo por interacción mide el gasto operativo de cada interacción, ambos alineados directamente con objetivos de negocio y definidos como métricas de alineación empresarial.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-019",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué técnica entrena un modelo de IA con un dataset etiquetado para adaptarlo a la terminología y requisitos de una industria específica?",
+    "options": [
+      "Continuous pre-training",
+      "In-context learning",
+      "Fine-tuning",
+      "Model distillation"
+    ],
+    "answer": 2,
+    "explanation": "Fine-tuning continúa entrenando un modelo preentrenado con un dataset etiquetado y específico del dominio, de modo que aprende la terminología y requisitos de la industria directamente de esos datos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-020",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una universidad construye un chatbot de políticas estudiantiles sobre un LLM con un gran conjunto de documentos digitales y quiere optimizar la calidad de las respuestas. ¿Qué técnica encaja mejor?",
+    "options": [
+      "Establecer temperature en 1",
+      "Usar Retrieval Augmented Generation (RAG)",
+      "Hacer fine-tuning del modelo con los documentos de políticas",
+      "Disminuir el token size"
+    ],
+    "answer": 1,
+    "explanation": "RAG recupera pasajes precisos y actuales de los documentos de políticas en el momento de la consulta y fundamenta las respuestas del chatbot en ellos, optimizando la precisión sin sobrecargar la ventana de contexto.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-021",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "La aplicación RAG de un portal de noticias debe sentirse casi en tiempo real, mientras se publican artículos nuevos a diario. ¿Cuáles dos pasos del pipeline pueden ejecutarse como trabajos batch offline?",
+    "options": [
+      "Generar embeddings para cada consulta entrante del usuario",
+      "Generar embeddings para el contenido publicado",
+      "Clasificar y devolver resultados para la consulta de un usuario",
+      "Construir o actualizar el índice de búsqueda vectorial",
+      "Detectar el idioma de cada consulta del usuario"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Generar embeddings del contenido y construir o actualizar el índice de búsqueda dependen solo de los documentos, por lo que pueden ejecutarse en lotes periódicos a medida que llegan artículos nuevos, fuera del camino en tiempo real.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-022",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una plataforma de redes sociales ejecuta análisis de sentimiento con un LLM en **Amazon Bedrock** y quiere que la misma entrada produzca resultados más estables. ¿Qué parámetro de inferencia debe cambiar?",
+    "options": [
+      "Aumentar el valor de temperature",
+      "Aumentar la longitud máxima de generación",
+      "Disminuir el valor de temperature",
+      "Reducir el número máximo de tokens de salida"
+    ],
+    "answer": 2,
+    "explanation": "Bajar temperature reduce la aleatoriedad en la selección de tokens, haciendo las salidas del modelo más deterministas y consistentes para la misma entrada.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-023",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa construye una herramienta de IA generativa y personalizará un foundation model (FM) con sus documentos internos. ¿Qué enfoque cumple este requisito?",
+    "options": [
+      "Classification",
+      "Distillation",
+      "Continued pre-training",
+      "Regression"
+    ],
+    "answer": 2,
+    "explanation": "Continued pre-training entrena adicionalmente un foundation model con los documentos internos de la empresa, de modo que el modelo se adapta al dominio y contenido de la organización.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M06",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-024",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles dos parámetros se usan comúnmente para controlar la diversidad de la salida de un modelo de IA generativa?",
+    "options": [
+      "Model size",
+      "Top-k sampling",
+      "Training dataset size",
+      "Top-p (nucleus) sampling",
+      "Hardware configuration"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Top-k sampling limita la selección a los k tokens más probables, y Top-p (nucleus) sampling selecciona del conjunto más pequeño de tokens cuyas probabilidades suman p; ambos ajustan el pool de candidatos para equilibrar diversidad y calidad del texto generado.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-025",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena hotelera quiere un chatbot de texto para reservas, tarifas y pagos, basado en LLMs más una knowledge base, con el MENOR esfuerzo de desarrollo. ¿Qué solución encaja?",
+    "options": [
+      "Entrenar modelos con **Amazon SageMaker** Autopilot",
+      "Hacer fine-tuning de modelos en **Amazon SageMaker** JumpStart",
+      "Construir un agente RAG con **Amazon Bedrock**",
+      "Construir un servicio de orquestación personalizado con **AWS Lambda** y un modelo autoalojado"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon Bedrock** permite combinar un LLM con una knowledge base usando RAG para entregar respuestas precisas y actuales con mínimo esfuerzo de desarrollo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M06",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-026",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué parámetro de un LLM define cuántos tokens candidatos considera el modelo en cada paso de generación?",
+    "options": [
+      "Maximum tokens",
+      "Temperature",
+      "Top K",
+      "Batch size"
+    ],
+    "answer": 2,
+    "explanation": "El parámetro Top K limita el muestreo en cada paso a los K tokens más probables, controlando directamente cuántos tokens candidatos considera el modelo al generar cada token.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-027",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué métrica se usa comúnmente para evaluar qué tan bien un foundation model (FM) realiza resúmenes de texto?",
+    "options": [
+      "F1 score",
+      "Mean squared error (MSE)",
+      "Recall-Oriented Understudy for Gisting Evaluation (ROUGE)",
+      "Bilingual Evaluation Understudy (BLEU) score"
+    ],
+    "answer": 2,
+    "explanation": "ROUGE mide la superposición entre un resumen generado y resúmenes de referencia, lo que la convierte en la métrica estándar para calidad de resúmenes.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-028",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una telco tiene 100 conversaciones de alta calidad entre agentes y clientes y quiere que las respuestas de su chatbot coincidan con el tono de la empresa. ¿Qué solución cumple este requisito?",
+    "options": [
+      "Usar **Amazon Personalize** para generar las respuestas",
+      "Crear un trabajo de fine-tuning en **Amazon Bedrock**",
+      "Crear un trabajo de pre-training en **Amazon SageMaker** HyperPod",
+      "Alojar el modelo en **Amazon SageMaker AI** y aplicar TensorRT para optimizar inferencia de LLM"
+    ],
+    "answer": 1,
+    "explanation": "Un trabajo de fine-tuning en **Amazon Bedrock** adapta un foundation model con las conversaciones de ejemplo de la empresa, enseñándole el tono corporativo para que el chatbot lo refleje en sus respuestas.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-029",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un practicante de IA compara top-p (nucleus) sampling con muestreo basado en temperature. ¿Qué distingue al top-p sampling?",
+    "options": [
+      "Solo funciona con ciertas arquitecturas de modelos",
+      "Siempre devuelve la misma salida para un prompt dado",
+      "Limita el muestreo a exactamente un token en cada paso",
+      "Muestrea del conjunto más pequeño de tokens principales cuyas probabilidades suman p"
+    ],
+    "answer": 3,
+    "explanation": "Top-p (nucleus) sampling elige el conjunto más pequeño de tokens de mayor probabilidad cuya probabilidad acumulada alcanza p y muestrea de ese conjunto, adaptando el pool de candidatos a la distribución en cada paso en lugar de usar un corte fijo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-030",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una planta de alimentos necesita un dataset de imágenes etiquetadas de alta precisión para un modelo de detección de defectos y quiere minimizar ejemplos mal etiquetados. ¿Qué enfoque cumple mejor estos requisitos?",
+    "options": [
+      "Anotación automatizada con **Amazon Rekognition** Custom Labels",
+      "Validación human-in-the-loop con **Amazon SageMaker** Ground Truth Plus",
+      "Generación sintética de imágenes con un foundation model de **Amazon Bedrock**",
+      "Etiquetado automatizado con active learning en **Amazon SageMaker** Ground Truth"
+    ],
+    "answer": 1,
+    "explanation": "La validación human-in-the-loop con **Amazon SageMaker** Ground Truth Plus enruta las etiquetas por revisores expertos que las verifican y corrigen, produciendo anotaciones de mayor precisión con menos errores.",
+    "tags": [
+      "difficulty:basic",
+      "module:M07",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-031",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un call center de seguros despliega un chatbot con LLM para reducir los pasos que los agentes dan al resolver consultas de pólizas. ¿Qué métrica de negocio muestra mejor si el chatbot está marcando diferencia?",
+    "options": [
+      "Responsabilidad social corporativa",
+      "Cumplimiento regulatorio",
+      "Duración promedio de la llamada",
+      "Tasa de engagement del sitio web"
+    ],
+    "answer": 2,
+    "explanation": "La duración promedio de la llamada refleja directamente cuánto reduce el chatbot los pasos para resolver consultas, por lo que rastrearla mide el impacto de negocio del chatbot.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-032",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una plataforma de gaming quiere comparar la toxicidad de la salida de varios LLM candidatos de **Amazon SageMaker** JumpStart con el MENOR esfuerzo operativo. ¿Qué enfoque de evaluación encaja?",
+    "options": [
+      "Evaluación del modelo con una fuerza laboral de revisión humana",
+      "Evaluación automática del modelo usando métricas de toxicidad integradas",
+      "Calificación humana crowdsourced",
+      "Pruebas A/B de los modelos con usuarios en vivo"
+    ],
+    "answer": 1,
+    "explanation": "La evaluación automática del modelo puntúa salidas con métricas de toxicidad integradas y no requiere reclutar ni coordinar personas, ofreciendo el menor esfuerzo operativo.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "module:M04",
+      "module:M07",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-033",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de ML entrena un foundation model (FM) y quiere elevar su precisión hasta un umbral requerido. ¿Qué debe hacer el equipo?",
+    "options": [
+      "Disminuir el número de epochs",
+      "Disminuir el batch size",
+      "Aumentar el número de epochs",
+      "Aumentar el parámetro temperature"
+    ],
+    "answer": 2,
+    "explanation": "Aumentar el número de epochs permite al modelo entrenar con más pasadas sobre los datos, lo que generalmente mejora la precisión hasta alcanzar el nivel objetivo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-034",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "El LLM de una firma de asesoría financiera sigue produciendo alucinaciones. ¿Qué cambio puede reducirlas?",
+    "options": [
+      "Disminuir el parámetro temperature de inferencia del modelo",
+      "Usar Agents for **Amazon Bedrock** para supervisar el entrenamiento del modelo",
+      "Preprocesar los datos para eliminar cualquier dato que cause alucinaciones",
+      "Cambiar a un foundation model (FM) entrenado para nunca alucinar"
+    ],
+    "answer": 0,
+    "explanation": "Bajar temperature reduce la aleatoriedad en la selección de tokens, de modo que el modelo se apoya en salidas de mayor probabilidad y es menos propenso a producir contenido alucinado.",
+    "tags": [
+      "difficulty:basic",
+      "module:M08",
+      "module:M04",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-035",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una startup edtech opera un asistente de preguntas y respuestas y quiere que el estilo de respuesta coincida con el rango de edad de cada estudiante, que la app ya envía al modelo. ¿Qué enfoque requiere el MENOR esfuerzo?",
+    "options": [
+      "Entrenar un modelo fine-tuned separado para cada rango de edad",
+      "Construir un pipeline RAG con contenido específico por edad",
+      "Postprocesar cada respuesta con un segundo modelo para ajustar el tono",
+      "Agregar al prompt una instrucción de rol y audiencia que indique el rango de edad del usuario"
+    ],
+    "answer": 3,
+    "explanation": "Agregar una instrucción de rol y audiencia al prompt es un cambio simple de prompt engineering que orienta el estilo al rango de edad indicado con casi ningún trabajo extra.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-036",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "Para aplicaciones de IA, ¿cuáles dos capacidades de **Amazon Aurora** con la extensión pgvector son las más importantes?",
+    "options": [
+      "Operaciones SQL estándar",
+      "Búsqueda por similitud vectorial",
+      "Web hosting",
+      "Combinar vectores con datos estructurados",
+      "Manejo de correo electrónico"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "La búsqueda por similitud vectorial permite encontrar el contenido semánticamente más relacionado, paso central en tareas como RAG, y combinar vectores con datos estructurados significa que esas búsquedas corren junto a registros relacionales existentes en la misma base de datos, lo que hace valiosa a Aurora con pgvector para cargas de IA.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-037",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena de farmacias opera un asistente de IA que ayuda a agentes a responder preguntas frecuentes, pero las preguntas cambian constantemente. Los agentes escriben una pregunta y necesitan una respuesta generada actualizada al menor costo. ¿Qué enfoque encaja?",
+    "options": [
+      "Usar RAG con prompt engineering",
+      "Hacer fine-tuning del modelo en un cronograma recurrente",
+      "Preentrenar el modelo con los datos de FAQ y hacer benchmark",
+      "Incrustar todo el conjunto de FAQ en el system prompt"
+    ],
+    "answer": 0,
+    "explanation": "RAG recupera la información más relevante y actual en el momento de la consulta y el prompt engineering moldea la respuesta, manteniendo al asistente preciso a medida que cambian las preguntas sin costo repetido de entrenamiento.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-038",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una tienda de moda quiere que un LLM escriba descripciones cortas de productos centradas en características clave. ¿Qué enfoque de prompt engineering funciona mejor?",
+    "options": [
+      "Escribir un prompt genérico para todos los productos y editar manualmente cada salida",
+      "Crear prompts específicos por categoría que destaquen características clave y especifiquen formato y longitud de salida",
+      "Listar todos los atributos del producto en un solo prompt y pedir una descripción",
+      "Pedir al modelo la descripción más creativa posible y luego recortarla"
+    ],
+    "answer": 1,
+    "explanation": "Prompts específicos por categoría que resaltan características clave y definen formato y longitud orientan al modelo hacia descripciones consistentes, concisas y centradas en características con poco retrabajo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-039",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles son dos casos de uso principales para almacenar embeddings en una base de datos vectorial como **Amazon OpenSearch Service**?",
+    "options": [
+      "Coincidencia exacta de cadenas por palabras clave",
+      "Búsqueda semántica sobre documentos",
+      "Trabajos ETL batch programados",
+      "Recomendaciones basadas en similitud",
+      "Búsquedas transaccionales por clave primaria"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "La búsqueda semántica y las recomendaciones basadas en similitud dependen de comparación de vecinos más cercanos sobre embeddings, que es exactamente lo que proporciona una base de datos vectorial.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-040",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué afirmación describe un riesgo o limitación genuina del prompt engineering para un modelo de IA generativa?",
+    "options": [
+      "Prompt engineering garantiza salidas deterministas, por lo que la validación es innecesaria",
+      "Prompt engineering puede exponer al modelo a ataques de prompt injection",
+      "Prompt engineering actualiza permanentemente los pesos del modelo con cada prompt",
+      "Prompt engineering elimina todo riesgo de envenenamiento de datos y secuestro del modelo"
+    ],
+    "answer": 1,
+    "explanation": "Una limitación real del prompt engineering es que entradas diseñadas aún pueden explotarse mediante prompt injection, donde un atacante manipula el prompt para cambiar el comportamiento del modelo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-041",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa construye una solución de IA generativa en **Amazon Bedrock** y necesita un servicio que proporcione almacenamiento de base de datos vectorial y búsqueda vectorial. ¿Qué servicio de AWS encaja?",
+    "options": [
+      "**Amazon DynamoDB**",
+      "Amazon ElastiCache",
+      "**Amazon OpenSearch Service**",
+      "Amazon Redshift"
+    ],
+    "answer": 2,
+    "explanation": "**Amazon OpenSearch Service** admite almacenamiento vectorial y búsqueda por similitud sobre embeddings, por lo que puede respaldar una solución de IA generativa en **Amazon Bedrock**.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-042",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una agencia de marketing genera contenido extenso con un foundation model y quiere evaluar la calidad a escala sin depender de revisores humanos. ¿Qué enfoque de evaluación usa otro LLM para puntuar las salidas?",
+    "options": [
+      "BLEU scoring",
+      "LLM-as-a-judge",
+      "Benchmark dataset comparison",
+      "Pruebas A/B con usuarios en vivo"
+    ],
+    "answer": 1,
+    "explanation": "LLM-as-a-judge usa un LLM separado para evaluar y puntuar las salidas de otro modelo según criterios definidos, proporcionando evaluación de calidad escalable sin requerir revisores humanos para cada salida.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-043",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Durante una prueba de red team de un foundation model (FM), un ingeniero intenta sortear sus filtros de seguridad para que produzca texto dañino. ¿Cómo se llama esta técnica?",
+    "options": [
+      "Fuzzing de los datos de entrenamiento para encontrar vulnerabilidades",
+      "Jailbreaking",
+      "Prueba de penetración autorizada",
+      "Ataque de denegación de servicio (DoS)"
+    ],
+    "answer": 1,
+    "explanation": "Jailbreaking es el intento de eludir o desactivar los controles de seguridad integrados de un modelo para que produzca contenido restringido o dañino, que es exactamente lo que hace el ingeniero.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-044",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Qué enfoque de prompting se usa para endurecer un modelo contra ataques de prompt injection?",
+    "options": [
+      "Chain-of-thought prompting",
+      "Few-shot prompting",
+      "Adversarial prompting",
+      "Zero-shot prompting"
+    ],
+    "answer": 2,
+    "explanation": "Adversarial prompting diseña y prueba deliberadamente entradas hostiles para que los intentos de inyección puedan detectarse y neutralizarse, endureciendo al modelo contra ellos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M09",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-045",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "multiple-choice",
+    "question": "¿Cuáles dos métricas se usan comúnmente para evaluar la calidad de la salida de modelos de IA generativa?",
+    "options": [
+      "Uso de memoria GPU",
+      "Bilingual Evaluation Understudy (BLEU) score para calidad de traducción",
+      "Throughput de solicitudes por segundo",
+      "Recall-Oriented Understudy for Gisting Evaluation (ROUGE) score para calidad de resúmenes",
+      "Cantidad de parámetros del modelo"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "BLEU evalúa calidad de traducción y ROUGE evalúa calidad de resúmenes comparando texto generado con referencias, por lo que ambas miden la calidad de la salida generativa.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M03",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-046",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una plataforma educativa entrena un LLM personalizado para adolescentes y quiere que la salida coincida con su estilo, incluyendo ortografía creativa y abreviaturas. ¿Qué métrica debe usar para evaluar la salida frente a ejemplos de referencia?",
+    "options": [
+      "BERTScore",
+      "Bilingual Evaluation Understudy (BLEU) score",
+      "Perplexity",
+      "F1 score"
+    ],
+    "answer": 1,
+    "explanation": "BLEU mide superposición de n-gramas a nivel superficial entre la salida del modelo y el texto de referencia, por lo que es adecuada para verificar qué tan fielmente reproduce la ortografía creativa y abreviaturas del estilo juvenil.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-047",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere mantener su foundation model (FM) actualizado reentrenándolo regularmente con los datos más recientes. ¿Qué estrategia de entrenamiento cumple este requisito?",
+    "options": [
+      "Batch learning",
+      "Static training",
+      "Latent training",
+      "Continuous pre-training"
+    ],
+    "answer": 3,
+    "explanation": "Continuous pre-training ingiere periódicamente los datos más recientes y actualiza los pesos del modelo, manteniendo el foundation model al día sin reentrenar desde cero cada vez.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M03",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-048",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un equipo de ingeniería quiere usar **Amazon OpenSearch Service** como base de una aplicación de búsqueda vectorial. ¿Qué capacidad lo hace posible?",
+    "options": [
+      "Búsqueda y ranking de palabras clave full-text (BM25)",
+      "Indexación y consultas geoespaciales",
+      "Búsqueda k-NN de vecinos más cercanos sobre vectores de alta dimensionalidad",
+      "Replicación cross-cluster para recuperación ante desastres"
+    ],
+    "answer": 2,
+    "explanation": "La búsqueda k-NN de vecinos más cercanos permite a **Amazon OpenSearch Service** indexar embeddings y devolver los vectores más similares a una consulta, que es el núcleo de una aplicación de base de datos vectorial como búsqueda semántica.",
+    "tags": [
+      "difficulty:basic",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-049",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una cadena de ferreterías quiere un chatbot que consulte inventario en vivo y diga a los clientes en qué pasillo está un producto. ¿Qué técnica de prompt engineering debe usar?",
+    "options": [
+      "Few-shot prompting",
+      "Chain-of-thought prompting",
+      "Reasoning and acting (ReAct) prompting",
+      "Zero-shot prompting"
+    ],
+    "answer": 2,
+    "explanation": "ReAct prompting entrelaza el razonamiento del modelo con acciones explícitas, como invocar una API de inventario en vivo, y luego usa los datos devueltos para responder, que es lo necesario para verificar stock e informar la ubicación del producto en tiempo real.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-050",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa quiere usar un LLM en **Amazon Bedrock** para etiquetar pasajes de texto como positivos o negativos. ¿Qué estrategia de prompt engineering cumple este requisito?",
+    "options": [
+      "Agregar al prompt una explicación detallada del análisis de sentimiento y cómo funcionan los LLMs",
+      "Proporcionar solo el pasaje nuevo a clasificar, sin ejemplos ni contexto adicional",
+      "Incluir en el prompt algunos pasajes de ejemplo, cada uno etiquetado como positivo o negativo",
+      "Incluir el pasaje nuevo junto con ejemplos de tareas no relacionadas como resumen o traducción"
+    ],
+    "answer": 2,
+    "explanation": "Incluir pasajes de ejemplo etiquetados como positivo o negativo es few-shot prompting, que muestra al modelo el patrón entrada-etiqueta y mejora la precisión de clasificación en un pasaje nuevo.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M06",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-051",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Una empresa ejecuta un foundation model grande en **Amazon Bedrock**, pero el costo de inferencia es demasiado alto. Quiere un modelo más pequeño y económico que retenga la mayor parte de la calidad del modelo grande. ¿Qué enfoque de personalización cumple este requisito?",
+    "options": [
+      "Retrieval Augmented Generation (RAG)",
+      "Model distillation",
+      "Continuous pre-training",
+      "In-context learning"
+    ],
+    "answer": 1,
+    "explanation": "Model distillation entrena un modelo estudiante más pequeño para replicar el comportamiento de un modelo maestro más grande, produciendo un modelo compacto que retiene la mayor parte de la calidad original con menor costo de inferencia.",
+    "tags": [
+      "difficulty:advanced",
+      "module:M05",
+      "module:M06",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-052",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "¿Cómo puede un equipo determinar si un foundation model (FM) cumple efectivamente sus objetivos de negocio?",
+    "options": [
+      "Evaluar el rendimiento del modelo en datasets de benchmark",
+      "Evaluar qué tan bien el modelo se alinea con los casos de uso específicos que debe soportar",
+      "Analizar la arquitectura e hiperparámetros del modelo",
+      "Medir los recursos computacionales que el modelo necesita para despliegue"
+    ],
+    "answer": 1,
+    "explanation": "Evaluar qué tan bien el modelo se alinea con los casos de uso específicos que debe soportar muestra si sus salidas resuelven los problemas reales del negocio, que es cómo se determina si cumple los objetivos empresariales.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-053",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "La aplicación de IA generativa de una empresa usa un foundation model (FM) preentrenado en **Amazon Bedrock** y quiere que sus respuestas incluyan información propia de la empresa, al menor costo. ¿Qué solución encaja?",
+    "options": [
+      "Usar **Amazon Bedrock** Knowledge Bases",
+      "Desplegar un modelo personalizado en **Amazon Bedrock**",
+      "Hacer fine-tuning del FM con la información de la empresa",
+      "Usar **Amazon Bedrock** Agents"
+    ],
+    "answer": 0,
+    "explanation": "**Amazon Bedrock** Knowledge Bases indexa y recupera los documentos de la empresa en el momento de la inferencia e inyecta contexto relevante en el prompt (RAG), agregando la información de forma económica sin entrenamiento.",
+    "tags": [
+      "difficulty:basic",
+      "module:M06",
+      "module:M05",
+      "module:M04",
+      "jemjaf"
+    ]
+  },
+  {
+    "id": "aif-d3-jem-054",
+    "domainId": "domain-3",
+    "source": "https://jemjaf.com/certificaciones/aws/aif-c01/banco/",
+    "type": "single-choice",
+    "question": "Un contador agrega a un prompt en **Amazon Bedrock** la instrucción de mostrar el procedimiento y explicar cada paso al resolver problemas matemáticos. ¿Qué técnica de prompt engineering se está usando?",
+    "options": [
+      "Few-shot prompting",
+      "Tree of thoughts prompting",
+      "Chain-of-thought prompting",
+      "Zero-shot prompting"
+    ],
+    "answer": 2,
+    "explanation": "Chain-of-thought prompting pide al modelo que exponga su razonamiento intermedio paso a paso, que es exactamente lo que hace instruirlo a mostrar el procedimiento, mejorando la precisión en problemas matemáticos.",
+    "tags": [
+      "difficulty:basic",
+      "module:M05",
+      "module:M06",
+      "jemjaf"
+    ]
   }
 ]
