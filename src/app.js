@@ -8,24 +8,28 @@ import {
   getDomain,
   getQuestionsForDomain,
   questionStats,
-  ensureDomainSelection,
-  shuffle
+  ensureDomainSelection
 } from "./state.js";
-import { escapeHtml } from "./utils/helpers.js";
+import { escapeHtml, shuffle } from "./utils/helpers.js";
 import { renderHomeView } from "./views/homeView.js";
 import { renderRoadmapView } from "./views/roadmapView.js";
 import { renderSetupView } from "./views/setupView.js";
 import { renderQuizView, saveExamAnswer, nextQuestion } from "./views/quizView.js";
 import { renderResultsView } from "./views/resultsView.js";
 
-const el = {
-  setup: document.getElementById("setupView"),
-  quiz: document.getElementById("quizView"),
-  results: document.getElementById("resultsView"),
-  reset: document.getElementById("resetProgressBtn")
-};
+let el = {};
+
+function initElements() {
+  el = {
+    setup: document.getElementById("setupView"),
+    quiz: document.getElementById("quizView"),
+    results: document.getElementById("resultsView"),
+    reset: document.getElementById("resetProgressBtn")
+  };
+}
 
 async function init() {
+  initElements();
   try {
     state.catalog = await fetchJson("data/catalog.json");
     await Promise.all(state.catalog.roadmaps.map(async roadmapRef => {
@@ -39,12 +43,15 @@ async function init() {
     bindGlobalEvents();
     renderHome();
   } catch (error) {
-    el.setup.innerHTML = `<div class="feedback incorrect"><h2>Error cargando datos</h2><p>${escapeHtml(error.message)}</p><p>Asegúrate de usar un servidor web local: <code>python -m http.server 8000</code>.</p></div>`;
-    console.error(error);
+    if (el.setup) {
+      el.setup.innerHTML = `<div class="feedback incorrect"><h2>Error cargando datos</h2><p>${escapeHtml(error.message)}</p></div>`;
+    }
+    console.error("Error al inicializar la aplicación:", error);
   }
 }
 
 function showContainer(target) {
+  if (!el.setup || !el.quiz || !el.results) return;
   el.setup.classList.add("hidden");
   el.quiz.classList.add("hidden");
   el.results.classList.add("hidden");
@@ -212,7 +219,7 @@ async function returnToSetup() {
 }
 
 function onKeyDown(event) {
-  if (!state.session || el.quiz.classList.contains("hidden")) return;
+  if (!state.session || !el.quiz || el.quiz.classList.contains("hidden")) return;
   const question = state.session.questions[state.session.current];
   if (["1", "2", "3", "4", "5", "6"].includes(event.key) && !question.checked) {
     const idx = parseInt(event.key, 10) - 1;
@@ -242,14 +249,20 @@ function onKeyDown(event) {
 }
 
 function bindGlobalEvents() {
-  el.reset.addEventListener("click", async () => {
-    if (!confirm("¿Seguro que quieres borrar todo el progreso local?")) return;
-    resetProgress();
-    if (state.view === "exam") await renderSetup();
-    else if (state.view === "roadmap") renderRoadmap();
-    else renderHome();
-  });
+  if (el.reset) {
+    el.reset.addEventListener("click", async () => {
+      if (!confirm("¿Seguro que quieres borrar todo el progreso local?")) return;
+      resetProgress();
+      if (state.view === "exam") await renderSetup();
+      else if (state.view === "roadmap") renderRoadmap();
+      else renderHome();
+    });
+  }
   document.addEventListener("keydown", onKeyDown);
 }
 
-init();
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}

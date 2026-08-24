@@ -1,5 +1,5 @@
-import { state, formatTime, questionStats, saveProgress } from "../state.js";
-import { escapeHtml, letters } from "../utils/helpers.js";
+import { state, questionStats, saveProgress } from "../state.js";
+import { escapeHtml, letters, formatTime } from "../utils/helpers.js";
 import { parseMarkdown } from "../utils/markdown.js";
 import { renderTagBadges } from "../utils/tags.js";
 

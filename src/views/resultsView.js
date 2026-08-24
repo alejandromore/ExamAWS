@@ -1,5 +1,5 @@
-import { state, getExam, formatPercent } from "../state.js";
-import { escapeHtml } from "../utils/helpers.js";
+import { state, getExam } from "../state.js";
+import { escapeHtml, formatPercent } from "../utils/helpers.js";
 import { parseMarkdown } from "../utils/markdown.js";
 import { renderTagBadges } from "../utils/tags.js";
 

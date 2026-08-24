@@ -4,10 +4,9 @@ import {
   getDomain,
   ensureDomainSelection,
   getQuestionsForDomain,
-  questionStats,
-  formatPercent
+  questionStats
 } from "../state.js";
-import { escapeHtml } from "../utils/helpers.js";
+import { escapeHtml, formatPercent } from "../utils/helpers.js";
 
 export async function renderSetupView(container, { onGoBackRoadmap, onStartSession }) {
   state.view = "exam";
