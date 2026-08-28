@@ -1,0 +1,610 @@
+[
+  {
+    "id": "iso42001-d4-q001",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.27 — Cláusula 9.1",
+    "type": "multiple-choice",
+    "question": "Según 9.1, ¿qué debe determinar la organización sobre monitoreo, medición, análisis y evaluación? *(selecciona todas las correctas)*",
+    "options": [
+      "Qué necesita ser monitoreado y medido.",
+      "Los métodos para el monitoreo, medición, análisis y evaluación, según corresponda, para asegurar resultados válidos.",
+      "Cuándo se deben realizar el monitoreo y la medición, y cuándo los resultados deben ser analizados y evaluados.",
+      "Qué proveedor externo certificará los resultados de medición."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "9.1 exige determinar qué monitorear y medir, los métodos que aseguren resultados válidos, cuándo medir y cuándo analizar/evaluar. Además, la información documentada debe estar disponible como evidencia de los resultados, y la organización debe evaluar el desempeño y la eficacia del SGIA.",
+    "tags": ["iso42001", "clause:9.1", "medicion", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q002",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.121-122 — SGIA vs sistema IA en la evaluación",
+    "type": "single-choice",
+    "question": "Al evaluar el desempeño, ¿qué separación de niveles debe mantener el auditor?",
+    "options": [
+      "El desempeño del proveedor frente al de la organización.",
+      "El desempeño técnico del sistema de IA (precisión, deriva, sesgo) frente al desempeño del SGIA (gobernanza, riesgos, cumplimiento, mejora).",
+      "El desempeño del equipo auditor frente al del auditado.",
+      "El desempeño en desarrollo frente al de producción."
+    ],
+    "answer": 1,
+    "explanation": "Un modelo 'bueno' puede estar mal gestionado. En auditoría el criterio principal es el sistema de gestión y su capacidad de control y aprendizaje. Confundir niveles conduce a hallazgos irrelevantes o conclusiones sin criterio.",
+    "tags": ["iso42001", "clause:9.1", "sgia", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q003",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.122 — Indicadores del SGIA",
+    "type": "single-choice",
+    "question": "El material advierte que si los indicadores \"solo describen actividad y no control, el juicio de eficacia queda debilitado\". ¿Qué ejemplo ilustra un indicador de actividad?",
+    "options": [
+      "Reducción del riesgo residual en el sistema crítico X.",
+      "Número de reportes emitidos.",
+      "Porcentaje de decisiones críticas con revisión humana registrada.",
+      "Desviación de la métrica de equidad respecto al umbral definido."
+    ],
+    "answer": 1,
+    "explanation": "'Nº de reportes' describe actividad, no control. Los indicadores del SGIA deben demostrar logro de objetivos, gestión de riesgos y capacidad de mejora, con responsables, umbrales y acciones asociadas. Indicadores sin umbral no activan decisiones: solo informan.",
+    "tags": ["iso42001", "clause:9.1", "kpi", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q004",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.122-123 — 9.1 qué medir",
+    "type": "single-choice",
+    "question": "Una organización mide con detalle métricas fáciles de obtener, pero no mide los riesgos críticos de su sistema de IA. ¿Cómo describe el material esta situación?",
+    "options": [
+      "Es aceptable si las métricas medidas tienen buena calidad de datos.",
+      "Medir 'lo fácil' en vez de 'lo importante' crea ceguera operacional; la selección de métricas debe justificarse por criticidad y contexto.",
+      "Es un hallazgo contra la Cláusula 7 por falta de recursos.",
+      "Es correcto siempre que el conjunto se revise anualmente."
+    ],
+    "answer": 1,
+    "explanation": "El auditor evalúa si lo medido se vincula con riesgos críticos, impactos y objetivos. El 'set' de métricas es parte del diseño del control del sistema, no un accesorio.",
+    "tags": ["iso42001", "clause:9.1", "medicion", "enfoque-riesgo", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q005",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.123 — 9.1 métodos",
+    "type": "multiple-choice",
+    "question": "Para que un método de medición sea auditable, ¿qué elementos debe tener definidos según el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Fórmula y población.",
+      "Periodo y fuente de datos.",
+      "Limpieza de datos y supuestos.",
+      "Firma del auditor externo en cada cálculo."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "No basta con tener un número: debe existir método definido (fórmula, población, periodo, fuente, limpieza de datos y supuestos). Si el método cambia sin control, las tendencias dejan de ser comparables: 'misma métrica, distinto método' = evidencia no confiable.",
+    "tags": ["iso42001", "clause:9.1", "metodo", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q006",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.123 — 9.1 frecuencia",
+    "type": "single-choice",
+    "question": "¿Qué criterio debe seguir la frecuencia de medición según el material?",
+    "options": [
+      "La disponibilidad del equipo de datos en cada trimestre.",
+      "La criticidad del sistema de IA y los riesgos asociados; alta criticidad suele exigir mayor cadencia o monitoreo continuo.",
+      "Un calendario fijo mensual para todos los sistemas.",
+      "La periodicidad de las auditorías de tercera parte."
+    ],
+    "answer": 1,
+    "explanation": "La organización debe definir cuándo medir, con qué frecuencia y bajo qué disparadores (cambios, incidentes, deriva). Si se mide tarde, el riesgo residual puede crecer silenciosamente y se pierde capacidad de respuesta oportuna.",
+    "tags": ["iso42001", "clause:9.1", "intervalos", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q007",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.124 — 9.1 registros",
+    "type": "single-choice",
+    "question": "El material afirma que \"registro incompleto = evidencia insuficiente, aun si se midió\". ¿Qué debe contener el registro de una medición?",
+    "options": [
+      "Únicamente el valor obtenido y la fecha.",
+      "Fecha, responsable, fuente, resultado, evidencia de revisión y acciones, con integridad, retención y control de versiones.",
+      "El código fuente completo del pipeline de cálculo.",
+      "La aprobación del comité de dirección para cada valor."
+    ],
+    "answer": 1,
+    "explanation": "Sin registro no hay evidencia; sin control documental la evidencia es discutible. Los registros deben permitir reconstruir decisiones y justificar cambios en riesgo o controles.",
+    "tags": ["iso42001", "clause:9.1", "registros", "evidencia", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q008",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.124 — 9.1 análisis",
+    "type": "single-choice",
+    "question": "\"Un tablero sin análisis es *reporting*, no *gestión*\". ¿Qué debe existir para que la medición se convierta en evaluación?",
+    "options": [
+      "Un dashboard con actualización en tiempo real.",
+      "Criterios de interpretación, umbrales de alerta y seguimiento de anomalías, para identificar tendencias, desviaciones y causas probables.",
+      "Un informe mensual firmado por el responsable de datos.",
+      "Un histórico de al menos 24 meses de datos."
+    ],
+    "answer": 1,
+    "explanation": "Medir no equivale a evaluar. Sin análisis, el SGIA se vuelve reactivo: detecta tarde y corrige sin aprendizaje estructurado.",
+    "tags": ["iso42001", "clause:9.1", "analisis", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q009",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.124 — 9.1 acción",
+    "type": "single-choice",
+    "question": "¿Qué cadena de trazabilidad busca el auditor al evaluar si la medición del SGIA produce acción?",
+    "options": [
+      "Política → objetivo → control → SoA.",
+      "Dato → decisión → acción → verificación.",
+      "Criterio → condición → evidencia → impacto.",
+      "Programa → plan → muestreo → informe."
+    ],
+    "answer": 1,
+    "explanation": "La evaluación del desempeño debe activar acciones: ajustar controles, actualizar riesgos, revisar SoA, reentrenar, detener despliegues o reforzar supervisión humana. Si no hay acciones, el SGIA no mejora: solo observa.",
+    "tags": ["iso42001", "clause:9.1", "trazabilidad", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q010",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.125 — Precisión",
+    "type": "single-choice",
+    "question": "Respecto a la **precisión** como métrica auditable, ¿qué advierte el material?",
+    "options": [
+      "Precisión alta en pruebas garantiza desempeño estable en producción.",
+      "Precisión alta en pruebas no garantiza desempeño estable: sin monitoreo en datos reales y umbrales definidos, el riesgo se oculta.",
+      "La precisión no puede usarse como evidencia en auditoría del SGIA.",
+      "La precisión solo es relevante para modelos de clasificación binaria."
+    ],
+    "answer": 1,
+    "explanation": "El auditor evalúa si la organización mide rendimiento en datos reales, detecta degradación y activa revisión de riesgos o cambios controlados. Métrica sin umbral = sin criterio para decidir.",
+    "tags": ["iso42001", "metricas-ia", "precision", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q011",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.125 — Sesgo",
+    "type": "multiple-choice",
+    "question": "Para que la medición de **sesgo** sea auditable, ¿qué debe definir la organización? *(selecciona todas las correctas)*",
+    "options": [
+      "Los grupos sobre los que se compara.",
+      "El método de comparación.",
+      "Los criterios de aceptación y la periodicidad de la medición.",
+      "La arquitectura interna del modelo."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El sesgo requiere definir grupos, método de comparación y criterios de aceptación, medir equidad con periodicidad y registrar las mitigaciones. Declarar 'equidad' sin medición es incoherencia con política y objetivos: sesgo no medido suele ser riesgo no gestionado.",
+    "tags": ["iso42001", "metricas-ia", "sesgo", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q012",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.126 — Robustez",
+    "type": "single-choice",
+    "question": "¿Qué evalúa la **robustez** de un sistema de IA y qué evidencia busca el auditor?",
+    "options": [
+      "La velocidad de inferencia; se evidencia con logs de latencia.",
+      "La estabilidad ante ruido, cambios de entrada o condiciones extremas; se evidencia con pruebas periódicas, criterios de aprobación y acciones ante fallos.",
+      "El tamaño del conjunto de entrenamiento; se evidencia con el inventario de datos.",
+      "La disponibilidad del servicio; se evidencia con el SLA del proveedor."
+    ],
+    "answer": 1,
+    "explanation": "La robustez incluye también resiliencia operacional: degradación controlada, límites de uso y mecanismos de contención. Sin pruebas, el control es presuntivo: 'robustez sin registros es confianza, no evidencia'.",
+    "tags": ["iso42001", "metricas-ia", "robustez", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q013",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.126 — Deriva",
+    "type": "single-choice",
+    "question": "Se detecta deriva sostenida en un modelo en producción y no existe respuesta documentada. ¿Cuál es la consecuencia principal según el material?",
+    "options": [
+      "Ninguna, si la precisión global sigue por encima del umbral.",
+      "La evaluación de riesgos queda desactualizada y el SGIA pierde control operacional; deriva persistente sin acción suele ser evidencia de ineficacia del control.",
+      "Debe reportarse como oportunidad de mejora en el informe.",
+      "Corresponde un hallazgo contra 7.2 por falta de competencia técnica."
+    ],
+    "answer": 1,
+    "explanation": "El auditor verifica monitoreo de deriva, umbrales, alertas y decisiones: recalibrar, reentrenar, restringir uso o retirar. La deriva debe activar revisión de riesgo y de la SoA.",
+    "tags": ["iso42001", "metricas-ia", "deriva", "eficacia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q014",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.126-127 — Explicabilidad",
+    "type": "single-choice",
+    "question": "Según el material, ¿qué exige la **explicabilidad** desde la óptica auditora?",
+    "options": [
+      "Revelar la totalidad del modelo y sus pesos a las partes interesadas.",
+      "Poder justificar resultados cuando el contexto lo requiere, con mecanismos definidos, registros de explicaciones entregadas y controles de consistencia.",
+      "Sustituir el modelo por uno interpretable por diseño.",
+      "Publicar el conjunto de datos de entrenamiento."
+    ],
+    "answer": 1,
+    "explanation": "La explicabilidad no exige revelar 'todo el modelo'. Explicar también es un control: reduce riesgo reputacional y apoya cumplimiento. Sin procedimiento hay improvisación, y la explicabilidad sin procedimiento es vulnerable ante incidentes o reclamos.",
+    "tags": ["iso42001", "metricas-ia", "explicabilidad", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q015",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.127 — Calidad de datos de monitoreo",
+    "type": "single-choice",
+    "question": "El material advierte que \"mala data puede simular estabilidad o esconder degradación\". ¿Qué debe verificar el auditor?",
+    "options": [
+      "Que los datos de entrenamiento estén anonimizados.",
+      "Que existan controles de calidad, procedencia y representatividad de los datos usados para MEDIR, no solo para entrenar.",
+      "Que el volumen de datos supere un mínimo estadístico.",
+      "Que los datos estén almacenados en la misma jurisdicción."
+    ],
+    "answer": 1,
+    "explanation": "Muchas métricas dependen de datos confiables. Si los datos de monitoreo están sesgados o incompletos, las conclusiones de desempeño son inválidas. La organización debe demostrar que mide sobre datos pertinentes al contexto real.",
+    "tags": ["iso42001", "metricas-ia", "calidad-datos", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q016",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.127 — KPI/KRI de IA",
+    "type": "single-choice",
+    "question": "\"Una métrica técnica sin dueño es un riesgo de gobernanza\". ¿Qué busca el auditor al revisar los KPI/KRI de IA?",
+    "options": [
+      "Que el tablero técnico tenga visualizaciones claras y actualizadas.",
+      "Que las métricas técnicas se traduzcan a riesgos y decisiones: umbrales, responsables, acciones y verificación posterior, alimentando objetivos del SGIA y tratamiento del riesgo.",
+      "Que existan al menos cinco indicadores por sistema de IA.",
+      "Que las métricas se comparen con benchmarks del sector."
+    ],
+    "answer": 1,
+    "explanation": "Si el tablero técnico no se conecta con la gestión, el SGIA se vuelve 'observador' y no 'controlador'. La pregunta auditora clave es quién decide acciones cuando un KPI técnico se degrada.",
+    "tags": ["iso42001", "kpi", "gobernanza", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q017",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.128 — Métricas de proceso",
+    "type": "multiple-choice",
+    "question": "Además de métricas del modelo, el auditor evalúa **métricas de proceso** que evidencian la \"salud operativa\" del SGIA. ¿Cuáles menciona el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Incidentes de IA y cambios no planificados.",
+      "Excepciones a la supervisión humana.",
+      "Retrabajos y tiempos de respuesta.",
+      "Coste por inferencia y consumo de GPU."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Si el sistema tiene incidentes repetidos y no aprende, la eficacia global es cuestionable aunque el modelo rinda bien. La reincidencia de incidentes suele apuntar a fallas de mejora y de gestión.",
+    "tags": ["iso42001", "metricas-proceso", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q018",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.128 — C5 Validez",
+    "type": "single-choice",
+    "question": "Un indicador es estadísticamente preciso pero mide precisión global e ignora subgrupos relevantes para el riesgo. ¿Qué problema identifica el material?",
+    "options": [
+      "Un problema de fiabilidad: el método no es repetible.",
+      "Un problema de validez: la métrica no refleja el fenómeno relevante, aunque sea precisa.",
+      "Un problema de trazabilidad: falta el linaje del dato.",
+      "Un problema de cadencia: se mide con poca frecuencia."
+    ],
+    "answer": 1,
+    "explanation": "Validez implica que el indicador refleja el fenómeno relevante. Una métrica puede ser precisa estadísticamente pero inválida para el riesgo. La validez deficiente produce 'decisiones correctas con datos incorrectos'.",
+    "tags": ["iso42001", "validez", "metricas-ia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q019",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.128 — C5 Fiabilidad",
+    "type": "single-choice",
+    "question": "¿Qué es la **fiabilidad** de una métrica y cómo se evidencia?",
+    "options": [
+      "Que la métrica sea favorable a los objetivos; se evidencia con el informe de dirección.",
+      "Consistencia del resultado bajo el mismo método; se evidencia con control de versiones del código/método, estabilidad de fuentes de datos y repetibilidad.",
+      "Que la métrica esté auditada por un tercero independiente.",
+      "Que la métrica se calcule automáticamente sin intervención humana."
+    ],
+    "answer": 1,
+    "explanation": "Si el indicador cambia por ajustes no controlados, la tendencia no es confiable. Una organización madura demuestra reproducibilidad y control de cambios en sus métricas, igual que en sus modelos.",
+    "tags": ["iso42001", "fiabilidad", "metricas-ia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q020",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.129 — C5 Trazabilidad del dato",
+    "type": "single-choice",
+    "question": "¿Qué ruta debe poder seguir el auditor para validar la trazabilidad de una métrica?",
+    "options": [
+      "Riesgo → control → evidencia → hallazgo.",
+      "Dato origen → transformación → cálculo → reporte.",
+      "Política → objetivo → indicador → umbral.",
+      "Programa → plan → agenda → informe."
+    ],
+    "answer": 1,
+    "explanation": "El auditor revisa linaje, logs, repositorios y custodios. Sin trazabilidad, el número es una caja negra que no se puede defender. La trazabilidad también soporta responsabilidad: quién produjo, quién aprobó y quién interpretó el resultado.",
+    "tags": ["iso42001", "trazabilidad", "metricas-ia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q021",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.129 — C5 Dueños de métricas",
+    "type": "single-choice",
+    "question": "¿Por qué el material recomienda una segregación razonable en los roles asociados a una métrica?",
+    "options": [
+      "Para cumplir con requisitos de protección de datos personales.",
+      "Para evitar la 'auto-validación' del mismo equipo que define, calcula, revisa y aprueba la métrica.",
+      "Para reducir el coste operativo del cálculo.",
+      "Porque la norma exige un mínimo de tres responsables por indicador."
+    ],
+    "answer": 1,
+    "explanation": "Cada indicador debe tener dueño responsable, con roles claros para definir, calcular, revisar y aprobar. Sin dueños, las métricas se vuelven huérfanas y nadie responde por su calidad ni por decisiones tardías.",
+    "tags": ["iso42001", "gobernanza", "metricas-ia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q022",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.129 — C5 Sesgos de medición",
+    "type": "single-choice",
+    "question": "\"Promedios altos pueden esconder fallos graves en poblaciones minoritarias\". ¿Qué debe pedir el auditor para evitar esa falsa seguridad?",
+    "options": [
+      "Un aumento de la frecuencia de medición.",
+      "Evaluación del desempeño por segmentos relevantes y documentación de las limitaciones del indicador.",
+      "La sustitución del promedio por la mediana.",
+      "Una auditoría externa del modelo."
+    ],
+    "answer": 1,
+    "explanation": "El auditor debe considerar sesgos en muestreo, selección de datos y métricas agregadas. Si el sesgo de medición no se reconoce, el SGIA puede declarar eficacia mientras el riesgo real aumenta.",
+    "tags": ["iso42001", "sesgo", "metricas-ia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q023",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.130 — C6 Intervalos",
+    "type": "single-choice",
+    "question": "El material afirma: \"'Se iba a medir' no es evidencia\". ¿Qué sí lo es?",
+    "options": [
+      "El plan anual de medición aprobado por la dirección.",
+      "El registro de ejecución: calendarios, reportes, logs y firmas de revisión que prueben la periodicidad.",
+      "La declaración del responsable en entrevista.",
+      "El procedimiento documentado que define la cadencia."
+    ],
+    "answer": 1,
+    "explanation": "C6 evalúa si las mediciones y revisiones ocurren en intervalos planificados. La periodicidad debe ser coherente con la criticidad: medir tarde equivale a tratar riesgos tarde, aumentando exposición operativa y regulatoria.",
+    "tags": ["iso42001", "intervalos", "evidencia", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q024",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.131 — C6 Brechas",
+    "type": "single-choice",
+    "question": "Al evaluar el incumplimiento de un intervalo de medición, ¿qué tres factores analiza el auditor para decidir entre no conformidad y oportunidad de mejora?",
+    "options": [
+      "Coste, plazo y responsable.",
+      "Duración del atraso, recurrencia y riesgo asociado.",
+      "Formato, idioma y aprobación del registro.",
+      "Tamaño de muestra, método y fuente."
+    ],
+    "answer": 1,
+    "explanation": "No toda brecha tiene el mismo peso. Un atraso en métrica crítica (sesgo/deriva) puede ser grave; un atraso aislado en métrica menor podría ser OM. La conclusión debe justificar qué decisión se retrasó y qué riesgo aumentó.",
+    "tags": ["iso42001", "intervalos", "severidad", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q025",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.131 — C6 Reprogramaciones",
+    "type": "single-choice",
+    "question": "Una organización reprograma repetidamente sus mediciones críticas sin aprobación ni justificación registrada. ¿Qué señala esto?",
+    "options": [
+      "Flexibilidad operativa adecuada al contexto cambiante.",
+      "Que el intervalo pierde significado; las reprogramaciones repetidas pueden ser señal de falta de recursos o de gobernanza.",
+      "Un hallazgo contra 8.2 por evaluación de riesgos incompleta.",
+      "Una condición aceptable si la métrica se recupera al cierre del año."
+    ],
+    "answer": 1,
+    "explanation": "El auditor compara 'planificado vs ejecutado' y valida si existen mecanismos para reprogramar con aprobación y justificar excepciones. La evidencia debe permitir reconstruir el historial de cumplimiento, no solo el estado actual.",
+    "tags": ["iso42001", "intervalos", "gobernanza", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q026",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.132 — C6 Coherencia de cadencia",
+    "type": "single-choice",
+    "question": "Tras desplegar una nueva versión del modelo y registrar dos incidentes, la organización mantiene exactamente la misma cadencia de monitoreo. ¿Qué concluye el auditor?",
+    "options": [
+      "Es correcto: la estabilidad de la cadencia facilita la comparación de tendencias.",
+      "Hay debilidad de control adaptativo: la frecuencia debe ajustarse ante cambios significativos, y un SGIA eficaz aumenta la vigilancia cuando el riesgo crece.",
+      "Es indiferente mientras se cumpla el intervalo planificado.",
+      "Debe reportarse contra 6.3 por planificación de cambios."
+    ],
+    "answer": 1,
+    "explanation": "La cadencia debe seguir al riesgo y al cambio: nuevas versiones del modelo, nuevos datos, incidentes o cambios regulatorios. Cambios sin ajuste de cadencia suelen anticipar incidentes.",
+    "tags": ["iso42001", "intervalos", "gestion-cambios", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q027",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.132 — C7 Integración",
+    "type": "multiple-choice",
+    "question": "La competencia C7 exige integrar evidencias de varias fuentes para juzgar la eficacia. ¿Cuáles menciona el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Métricas y auditorías internas.",
+      "No conformidades e incidentes.",
+      "Revisión por la dirección.",
+      "Encuestas de satisfacción del proveedor tecnológico."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "C7 busca coherencia entre fuentes: ¿las métricas confirman lo que dicen las auditorías?, ¿las NC se repiten?, ¿las decisiones de dirección se basan en datos? Si las fuentes se contradicen, el sistema puede estar 'reportando' sin controlar.",
+    "tags": ["iso42001", "clause:9", "integracion", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q028",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.133 — C7 Tendencias",
+    "type": "single-choice",
+    "question": "\"La eficacia global se aprecia en tendencias, no en fotografías\". ¿Qué evidencia una mejora real según el material?",
+    "options": [
+      "El número de tickets cerrados en el periodo.",
+      "Reducción de la recurrencia, estabilización de métricas y cierre oportuno de acciones.",
+      "El aumento del número de indicadores monitoreados.",
+      "La ausencia de hallazgos en la última auditoría interna."
+    ],
+    "answer": 1,
+    "explanation": "El material es explícito: mejorar = reducir recurrencia, no solo 'cerrar tickets'. Si no hay tendencia, no hay aprendizaje. La tendencia es evidencia de control adaptativo y mejora continua.",
+    "tags": ["iso42001", "tendencias", "mejora-continua", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q029",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.133-134 — C7 Juicio global",
+    "type": "single-choice",
+    "question": "¿Qué tres conclusiones puede emitir el auditor sobre la eficacia del SGIA, y sobre qué base?",
+    "options": [
+      "Conforme / no conforme / pendiente, según la existencia de documentación.",
+      "Eficaz / parcialmente eficaz / ineficaz, integrando calidad de métodos (C5), cumplimiento de intervalos (C6) y coherencia multifuente (C7), trazados a evidencias específicas.",
+      "Aprobado / observado / rechazado, según decisión de la dirección.",
+      "Mayor / menor / oportunidad de mejora, según severidad."
+    ],
+    "answer": 1,
+    "explanation": "Un buen juicio explica el 'por qué' y el 'qué implica': nivel de confianza, riesgos residuales y prioridades de mejora. Una conclusión sin trazabilidad es vulnerable ante discusión con dirección.",
+    "tags": ["iso42001", "conclusiones", "eficacia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q030",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.28 — Cláusula 9.2.1",
+    "type": "single-choice",
+    "question": "Según 9.2.1, ¿sobre qué debe proporcionar información la auditoría interna del SGIA?",
+    "options": [
+      "Sobre la precisión de los modelos y su comparación con el mercado.",
+      "Sobre si el SGIA cumple con los propios requisitos de la organización y con los requisitos de la norma, y si está implementado y mantenido eficazmente.",
+      "Sobre el retorno de inversión del programa de IA.",
+      "Sobre la conformidad de los proveedores con sus contratos."
+    ],
+    "answer": 1,
+    "explanation": "9.2.1 exige realizar auditorías internas a intervalos planificados para informar si el SGIA a) cumple con los propios requisitos de la organización y con los de la norma, y b) está implementado y mantenido eficazmente.",
+    "tags": ["iso42001", "clause:9.2.1", "auditoria-interna", "difficulty:basic", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q031",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.28 — Cláusula 9.2.2",
+    "type": "multiple-choice",
+    "question": "Según 9.2.2, el programa de auditoría interna debe incluir varios elementos. ¿Cuáles? *(selecciona todas las correctas)*",
+    "options": [
+      "Frecuencia y métodos.",
+      "Responsabilidades.",
+      "Requisitos de planificación y elaboración de informes.",
+      "El presupuesto detallado por auditoría."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "9.2.2 exige planificar, establecer, implementar y mantener uno o más programas de auditoría que incluyan frecuencia, métodos, responsabilidades, requisitos de planificación y elaboración de informes, considerando la importancia de los procesos y los resultados de auditorías previas.",
+    "tags": ["iso42001", "clause:9.2.2", "programa-auditoria", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q032",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.28 — Cláusula 9.2.2 obligaciones",
+    "type": "multiple-choice",
+    "question": "Además de establecer el programa, ¿qué tres obligaciones concretas fija 9.2.2? *(selecciona todas las correctas)*",
+    "options": [
+      "Definir los objetivos, criterios y alcance de cada auditoría.",
+      "Seleccionar auditores y realizar auditorías asegurando la objetividad y la imparcialidad del proceso.",
+      "Asegurar que los resultados de las auditorías se informen a los responsables pertinentes.",
+      "Contratar un auditor externo acreditado para cada ciclo."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "9.2.2 lista exactamente esos tres puntos (a, b, c), y exige que la información documentada esté disponible como evidencia de la implementación del programa y de los resultados de las auditorías.",
+    "tags": ["iso42001", "clause:9.2.2", "imparcialidad", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q033",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.28 — Cláusula 9.3.1",
+    "type": "single-choice",
+    "question": "Según 9.3.1, ¿qué debe asegurar la revisión por la dirección respecto al SGIA?",
+    "options": [
+      "Su certificación ante un organismo acreditado.",
+      "Su conveniencia, adecuación y eficacia continuas.",
+      "Su alineación con el presupuesto anual aprobado.",
+      "Su cobertura de todos los controles del Anexo A."
+    ],
+    "answer": 1,
+    "explanation": "9.3.1 exige que la alta dirección revise el SGIA a intervalos planificados para asegurar su conveniencia, adecuación y eficacia continuas.",
+    "tags": ["iso42001", "clause:9.3.1", "revision-direccion", "difficulty:basic", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q034",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.28-29 — Cláusula 9.3.2",
+    "type": "multiple-choice",
+    "question": "Según 9.3.2, ¿qué debe incluir la revisión por la dirección como **entradas**? *(selecciona todas las correctas)*",
+    "options": [
+      "El estado de las acciones de revisiones previas por la dirección.",
+      "Cambios en cuestiones externas e internas y en las necesidades y expectativas de las partes interesadas relevantes.",
+      "Información sobre el desempeño del SGIA, incluyendo tendencias en no conformidades y acciones correctivas, resultados de monitoreo y medición, y resultados de auditorías.",
+      "El inventario de licencias de software del área de TI."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "9.3.2 lista: a) estado de acciones previas, b) cambios en cuestiones externas e internas, c) cambios en necesidades y expectativas de partes interesadas, d) información sobre desempeño incluyendo tendencias en NC/AC, monitoreo/medición y auditorías, y e) oportunidades de mejora continua.",
+    "tags": ["iso42001", "clause:9.3.2", "revision-direccion", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q035",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.29 — Cláusula 9.3.3",
+    "type": "single-choice",
+    "question": "¿Qué deben incluir los **resultados** de la revisión por la dirección (9.3.3)?",
+    "options": [
+      "Un informe técnico del desempeño de cada modelo.",
+      "Decisiones relacionadas con oportunidades de mejora continua y cualquier necesidad de cambios en el SGIA, con información documentada como evidencia.",
+      "La aprobación formal del presupuesto del siguiente ejercicio.",
+      "La designación del equipo auditor del siguiente ciclo."
+    ],
+    "answer": 1,
+    "explanation": "9.3.3 exige que los resultados incluyan decisiones sobre oportunidades de mejora continua y necesidades de cambio en el SGIA, y que la información documentada esté disponible como evidencia de esos resultados.",
+    "tags": ["iso42001", "clause:9.3.3", "revision-direccion", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q036",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.135 — 9.3 revisión ceremonial",
+    "type": "single-choice",
+    "question": "La dirección se reúne trimestralmente y levanta acta, pero no analiza datos críticos ni registra decisiones. ¿Cómo lo evalúa el auditor?",
+    "options": [
+      "Conforme: 9.3 exige la reunión, no su contenido.",
+      "La revisión es formalista y no cumple su función de gobierno; una revisión sin decisiones documentadas es evidencia débil.",
+      "Oportunidad de mejora sin impacto en la conformidad.",
+      "Hallazgo contra 9.1 por falta de análisis de métricas."
+    ],
+    "answer": 1,
+    "explanation": "El auditor busca evidencia de revisión periódica real: agenda, entradas analizadas, análisis y decisiones. Si la dirección 'se reúne' pero no revisa datos críticos, la revisión no cumple su función de control de alto nivel.",
+    "tags": ["iso42001", "clause:9.3", "revision-direccion", "evidencia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q037",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.136-137 — Caso integrador Módulo 4",
+    "type": "single-choice",
+    "question": "Una organización reporta precisión alta y estable, no mide sesgo ni deriva por subgrupos, incumple la frecuencia real en métricas críticas, retrasa auditorías internas y entrega a dirección solo un tablero resumido sin análisis de brechas. ¿Cuál es la conclusión modelo del material?",
+    "options": [
+      "SGIA eficaz, dado el buen desempeño técnico sostenido.",
+      "SGIA parcialmente eficaz con debilidades sistémicas: requiere correcciones en medición (C5), cadencia (C6) y gobernanza (C7).",
+      "SGIA ineficaz, sin posibilidad de matizar la conclusión.",
+      "No procede conclusión hasta completar una auditoría de tercera parte."
+    ],
+    "answer": 1,
+    "explanation": "El diagnóstico modelo: C5 validez incompleta (no segmenta sesgo), C6 intervalos incumplidos en métricas críticas, C7 integración débil. Buen rendimiento técnico puede ocultar riesgo no gobernado. 'Parcialmente eficaz' exige justificar riesgos residuales y plan de mejora.",
+    "tags": ["iso42001", "caso-aplicado", "eficacia", "difficulty:advanced", "module:m04"]
+  },
+  {
+    "id": "iso42001-d4-q038",
+    "domainId": "domain-4",
+    "source": "MATERIALES p.134 — Puente 9.1 → 9.2 y 9.3",
+    "type": "single-choice",
+    "question": "\"Medición sin revisión directiva es dato sin gobierno\". ¿Cómo se completa la evaluación del desempeño más allá de las métricas?",
+    "options": [
+      "Con la certificación externa del sistema de gestión.",
+      "Con auditoría interna (9.2) y revisión por la dirección (9.3): las métricas alimentan auditorías con enfoque basado en riesgo y la dirección toma decisiones informadas.",
+      "Con la publicación de un informe anual de transparencia.",
+      "Con la ampliación del inventario de indicadores técnicos."
+    ],
+    "answer": 1,
+    "explanation": "Si la auditoría y la dirección no usan los resultados, el sistema pierde el 'Check' del PDCA y queda sin aprendizaje organizacional.",
+    "tags": ["iso42001", "clause:9", "pdca", "difficulty:intermediate", "module:m04"]
+  }
+]

@@ -3,9 +3,15 @@ import { escapeHtml, letters, formatTime } from "../utils/helpers.js";
 import { parseMarkdown } from "../utils/markdown.js";
 import { renderTagBadges } from "../utils/tags.js";
 
-export function renderQuizView(container, { onFinish, onQuit }) {
+// Los handlers se conservan a nivel de modulo para que los re-render internos
+// (comprobar respuesta, siguiente pregunta) no pierdan onQuit ni onFinish.
+let handlers = { onFinish: null, onQuit: null };
+
+export function renderQuizView(container, nextHandlers) {
   const session = state.session;
   if (!session) return;
+  if (nextHandlers) handlers = { ...handlers, ...nextHandlers };
+  const { onFinish, onQuit } = handlers;
   
   const question = session.questions[session.current];
   const progress = (session.current / session.questions.length) * 100;
@@ -47,7 +53,7 @@ export function renderQuizView(container, { onFinish, onQuit }) {
 
   const checkBtn = document.getElementById("checkBtn");
   if (checkBtn) {
-    checkBtn.addEventListener("click", () => checkCurrentAnswer(container, onFinish));
+    checkBtn.addEventListener("click", () => checkCurrentAnswer(container));
   }
 
   document.getElementById("nextBtn").addEventListener("click", () => {
@@ -56,6 +62,7 @@ export function renderQuizView(container, { onFinish, onQuit }) {
   });
 
   document.getElementById("quitBtn").addEventListener("click", () => {
+    if (typeof onQuit !== "function") return;
     if (confirm("¿Salir de la sesión actual? No se guardará como intento completo.")) {
       onQuit();
     }
@@ -92,7 +99,7 @@ function isCorrect(question) {
   return selected === answer;
 }
 
-function checkCurrentAnswer(container, onFinish) {
+function checkCurrentAnswer(container) {
   const session = state.session;
   const question = session.questions[session.current];
   if (!question.selected.length) {
@@ -103,7 +110,7 @@ function checkCurrentAnswer(container, onFinish) {
   question.correct = isCorrect(question);
   session.answers[session.current] = summarizeAnswer(question);
   updateQuestionProgress(question);
-  renderQuizView(container, { onFinish });
+  renderQuizView(container);
 }
 
 export function saveExamAnswer() {
@@ -158,10 +165,11 @@ function renderFeedback(question) {
 
 export function nextQuestion(container, onFinish) {
   const session = state.session;
+  const finish = onFinish || handlers.onFinish;
   if (session.current < session.questions.length - 1) {
     session.current += 1;
-    renderQuizView(container, { onFinish });
-  } else {
-    onFinish();
+    renderQuizView(container);
+  } else if (typeof finish === "function") {
+    finish();
   }
 }

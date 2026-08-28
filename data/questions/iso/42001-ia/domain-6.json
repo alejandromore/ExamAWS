@@ -1,0 +1,482 @@
+[
+  {
+    "id": "iso42001-d6-q001",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.29 — Cláusula 10.1",
+    "type": "single-choice",
+    "question": "Según 10.1, ¿qué debe mejorar continuamente la organización?",
+    "options": [
+      "La precisión de los modelos de IA en producción.",
+      "La idoneidad, adecuación y eficacia del sistema de gestión de IA.",
+      "El número de controles del Anexo A implementados.",
+      "La cobertura del programa de auditoría interna."
+    ],
+    "answer": 1,
+    "explanation": "10.1 establece que la organización debe mejorar continuamente la idoneidad, adecuación y eficacia del SGIA. Son los mismos tres atributos que 9.3.1 exige asegurar mediante la revisión por la dirección.",
+    "tags": ["iso42001", "clause:10.1", "mejora-continua", "difficulty:basic", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q002",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.29-30 — Cláusula 10.2 a)",
+    "type": "single-choice",
+    "question": "Cuando ocurre una no conformidad, ¿cuál es la **primera** obligación según 10.2 a)?",
+    "options": [
+      "Determinar las causas de la no conformidad.",
+      "Reaccionar a la no conformidad: tomar acciones para controlarla y corregirla, y tratar las consecuencias.",
+      "Actualizar la SoA y el plan de tratamiento de riesgos.",
+      "Convocar una revisión extraordinaria por la dirección."
+    ],
+    "answer": 1,
+    "explanation": "10.2 a) exige reaccionar a la no conformidad y, según corresponda, 1) tomar acciones para controlarla y corregirla y 2) tratar las consecuencias. La determinación de causas viene después, en 10.2 b).",
+    "tags": ["iso42001", "clause:10.2", "no-conformidad", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q003",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.30 — Cláusula 10.2 b)",
+    "type": "multiple-choice",
+    "question": "Al evaluar la necesidad de acciones para eliminar las causas de una no conformidad (10.2 b), ¿qué debe hacer la organización? *(selecciona todas las correctas)*",
+    "options": [
+      "Revisar la no conformidad.",
+      "Determinar las causas de la no conformidad.",
+      "Determinar si existen no conformidades similares o si potencialmente podrían ocurrir.",
+      "Notificar la no conformidad al organismo de certificación."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "10.2 b) exige revisar la NC, determinar sus causas y determinar si existen NC similares o podrían ocurrir. El objetivo es que la NC no vuelva a ocurrir ni ocurra en otro lugar.",
+    "tags": ["iso42001", "clause:10.2", "causa-raiz", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q004",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.30 — Cláusula 10.2 c-e",
+    "type": "single-choice",
+    "question": "Según 10.2, ¿a qué deben ser apropiadas las acciones correctivas?",
+    "options": [
+      "Al presupuesto disponible del área responsable.",
+      "A los efectos de las no conformidades encontradas.",
+      "Al plazo acordado con el organismo de certificación.",
+      "Al número de auditorías realizadas en el periodo."
+    ],
+    "answer": 1,
+    "explanation": "10.2 exige implementar cualquier acción necesaria, revisar la eficacia de la acción correctiva tomada, realizar cambios en el SGIA si es necesario, y que las acciones correctivas sean apropiadas a los efectos de las no conformidades encontradas.",
+    "tags": ["iso42001", "clause:10.2", "acciones-correctivas", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q005",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.30 — Cláusula 10.2 información documentada",
+    "type": "multiple-choice",
+    "question": "¿De qué debe estar disponible información documentada como evidencia según 10.2? *(selecciona todas las correctas)*",
+    "options": [
+      "La naturaleza de las no conformidades y cualquier acción posterior tomada.",
+      "Los resultados de cualquier acción correctiva.",
+      "El nombre del auditor que detectó la no conformidad.",
+      "El coste de implementación de cada acción correctiva."
+    ],
+    "answer": [0, 1],
+    "explanation": "10.2 exige información documentada como evidencia de la naturaleza de las no conformidades y cualquier acción posterior tomada, y de los resultados de cualquier acción correctiva.",
+    "tags": ["iso42001", "clause:10.2", "informacion-documentada", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q006",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.163 — Corrección vs acción correctiva",
+    "type": "single-choice",
+    "question": "Falta el registro de supervisión humana del último trimestre. Se crean los registros para el mes en curso. ¿Cómo se clasifica esa acción?",
+    "options": [
+      "Acción correctiva, porque resuelve el incumplimiento detectado.",
+      "Corrección: es la solución inmediata de contención; la acción correctiva exigiría eliminar la causa raíz y prevenir la recurrencia.",
+      "Acción preventiva, porque evita futuros incumplimientos.",
+      "Oportunidad de mejora, porque no hubo impacto en el riesgo."
+    ],
+    "answer": 1,
+    "explanation": "Corrección = solución inmediata (contener). Acción correctiva = eliminar causa raíz y prevenir recurrencia; en este caso, ajustar proceso, roles, herramienta y control de cumplimiento para que el registro se genere siempre y se revise. Cerrar con 'corrección' sin causa raíz explica la reincidencia.",
+    "tags": ["iso42001", "clause:10.2", "acciones-correctivas", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q007",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.156 — Conformidad, NC y OM",
+    "type": "single-choice",
+    "question": "Un control exige registrar la revisión humana. Existen los registros del periodo auditado, pero sin análisis de tendencias, y el criterio no exige ese análisis. ¿Cómo se clasifica?",
+    "options": [
+      "No conformidad mayor, por falta de análisis.",
+      "Oportunidad de mejora: el requisito se cumple y la mejora no supone incumplimiento.",
+      "No conformidad menor, por cumplimiento parcial.",
+      "Observación, porque podría derivar en incumplimiento legal."
+    ],
+    "answer": 1,
+    "explanation": "La clasificación se hace comparando evidencia verificable contra el criterio exacto. Si el criterio no exige el análisis de tendencias, su ausencia es OM, no NC. La clasificación incorrecta suele venir de no fijar el criterio antes de mirar la evidencia.",
+    "tags": ["iso42001", "hallazgos", "clasificacion", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q008",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.157 — Mini-mapa criterio vs evidencia",
+    "type": "single-choice",
+    "question": "Según el mini-mapa de decisión del material, si el criterio exige que algo sea **eficaz**, ¿qué evidencia debe buscar el auditor?",
+    "options": [
+      "Un documento controlado y aprobado.",
+      "Registros operativos de ejecución.",
+      "Métricas o resultados que demuestren el efecto logrado.",
+      "La declaración del responsable del proceso."
+    ],
+    "answer": 2,
+    "explanation": "El mapa es: si el criterio exige 'documentado' → busca documento controlado; si exige 'implementado' → busca registros operativos; si exige 'eficaz' → busca métricas o resultado. Sin criterio o sin evidencia verificable no hay hallazgo defendible.",
+    "tags": ["iso42001", "criterios", "evidencia", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q009",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.157-158 — Severidad",
+    "type": "single-choice",
+    "question": "Según la regla práctica del material, ¿qué caracteriza a una **no conformidad mayor**?",
+    "options": [
+      "Cualquier incumplimiento documental detectado durante la auditoría.",
+      "Falla en un control crítico o riesgo alto sin mitigación, evidencia de recurrencia o brecha sistémica.",
+      "Un incumplimiento puntual con bajo impacto y sin recurrencia.",
+      "Un hallazgo que el auditado no acepta en la reunión de cierre."
+    ],
+    "answer": 1,
+    "explanation": "La severidad se justifica por impacto + recurrencia + criticidad. Menor = incumplimiento puntual con bajo impacto y sin recurrencia. Ejemplo de mayor: cambios de modelo sin aprobación en un sistema de IA de alto impacto.",
+    "tags": ["iso42001", "severidad", "hallazgos", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q010",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.158 — Severidad de fallas documentales",
+    "type": "single-choice",
+    "question": "\"Una falla documental puede ser mayor\". ¿En qué condición según el material?",
+    "options": [
+      "Cuando afecta a más de tres documentos del SGIA.",
+      "Cuando impide demostrar control en un proceso crítico.",
+      "Cuando el documento lleva más de un año sin actualizarse.",
+      "Cuando el auditado no puede localizar el documento durante la visita."
+    ],
+    "answer": 1,
+    "explanation": "La severidad no se decide por la naturaleza documental o no del hallazgo, sino por su impacto: si la falla documental impide demostrar control en un proceso crítico, puede clasificarse como mayor.",
+    "tags": ["iso42001", "severidad", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q011",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.158 — Hallazgo completo",
+    "type": "single-choice",
+    "question": "¿Cuál es la secuencia completa de un hallazgo auditable según la plantilla del material?",
+    "options": [
+      "Condición → Criterio → Conclusión → Evidencia → Impacto.",
+      "Criterio → Condición → Evidencia → Impacto → Conclusión.",
+      "Evidencia → Impacto → Criterio → Condición → Conclusión.",
+      "Criterio → Evidencia → Conclusión → Acción correctiva."
+    ],
+    "answer": 1,
+    "explanation": "Ejemplo del material: Criterio (el procedimiento exige revisar sesgo mensual) → Condición (no se realizó en 2 meses) → Evidencia (calendario sin entradas y ausencia de reportes) → Impacto (sesgo no detectado, riesgo residual aumenta) → Conclusión (NC, severidad según criticidad).",
+    "tags": ["iso42001", "hallazgos", "redaccion", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q012",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.158 — Componentes faltantes",
+    "type": "single-choice",
+    "question": "Según el material, si falta el **impacto** en un hallazgo, ¿cuál es la consecuencia práctica?",
+    "options": [
+      "El hallazgo se convierte automáticamente en observación.",
+      "El auditado no entiende la urgencia; si además falta evidencia, el hallazgo se vuelve discutible.",
+      "El hallazgo debe reclasificarse contra otra cláusula.",
+      "El informe pierde validez ante el organismo de certificación."
+    ],
+    "answer": 1,
+    "explanation": "Si falta impacto, el auditado no entiende la urgencia; si falta evidencia, el hallazgo es discutible; si el criterio no está claro, el hallazgo se vuelve opinable.",
+    "tags": ["iso42001", "hallazgos", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q013",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.158-159 — Verbo de evidencia",
+    "type": "single-choice",
+    "question": "El material recomienda redactar con \"verbos de evidencia\". ¿Cuál de las siguientes redacciones cumple ese criterio?",
+    "options": [
+      "\"La gestión de cambios del modelo es débil e insuficiente.\"",
+      "\"No se encontró acta de aprobación para los cambios de la versión v3.2 (fecha X).\"",
+      "\"El equipo no parece comprender la importancia del control de cambios.\"",
+      "\"La documentación de cambios es de mala calidad.\""
+    ],
+    "answer": 1,
+    "explanation": "Se redacta con verbos verificables: 'no existe', 'no se encontró', 'no hay registro', 'se observó', 'se evidenció'. Hay que evitar adjetivos como 'malo' o 'insuficiente'. Esto convierte el debate en verificación.",
+    "tags": ["iso42001", "redaccion", "objetividad", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q014",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.159-160 — Evidencia aplicada a IA",
+    "type": "single-choice",
+    "question": "Un entrevistado afirma \"sí se revisa mensualmente\". Según el micro-artefacto de prueba del material, ¿cuál es la secuencia de verificación?",
+    "options": [
+      "Aceptar la declaración si el entrevistado es el responsable del proceso.",
+      "Exigir registro → validar periodo y completitud del registro → triangular con métricas o decisiones derivadas.",
+      "Solicitar una segunda entrevista con su superior jerárquico.",
+      "Registrar la declaración como evidencia verbal en el expediente."
+    ],
+    "answer": 1,
+    "explanation": "La triangulación reduce el riesgo de 'cumplimiento narrado'. Para controles de IA, la evidencia típica son logs de monitoreo, tickets/incidentes, actas de cambios, SoA vigente, matriz de riesgos y reportes de métricas.",
+    "tags": ["iso19011", "evidencia", "triangulacion", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q015",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.160 — Guion de comunicación",
+    "type": "single-choice",
+    "question": "El \"guion de 30 segundos\" para comunicar un hallazgo tiene cinco partes. ¿Cuáles son?",
+    "options": [
+      "Saludo, contexto, hallazgo, disculpa y despedida.",
+      "Criterio, qué vimos, evidencia, impacto y próximo paso.",
+      "Alcance, método, muestra, resultado y conclusión.",
+      "Riesgo, control, evidencia, severidad y responsable."
+    ],
+    "answer": 1,
+    "explanation": "Micro-ejemplo del material: \"El procedimiento exige revisión mensual de deriva; en abril y mayo no hubo revisión (calendario vacío y sin reportes). Esto eleva el riesgo de degradación no detectada. Recomendamos acción correctiva y verificación en 30 días\".",
+    "tags": ["iso42001", "comunicacion", "hallazgos", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q016",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.161 — Matriz impacto × urgencia",
+    "type": "single-choice",
+    "question": "Según la matriz de priorización del material, ¿cómo se clasifica la ausencia de supervisión humana en decisiones críticas?",
+    "options": [
+      "Bajo impacto y alta urgencia → corrección rápida.",
+      "Alto impacto y alta urgencia → atención inmediata, probable NC mayor.",
+      "Alto impacto y baja urgencia → plan con fecha fija y control de riesgo.",
+      "Bajo impacto y baja urgencia → oportunidad de mejora."
+    ],
+    "answer": 1,
+    "explanation": "El material usa ese caso como ejemplo de alto/alto. La priorización es parte del valor auditor: orienta recursos hacia la reducción real de riesgo, definiendo plazos por riesgo y no por conveniencia operativa.",
+    "tags": ["iso42001", "severidad", "priorizacion", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q017",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.161 — Regla de coherencia",
+    "type": "single-choice",
+    "question": "¿Qué establece la \"regla de coherencia\" del informe de auditoría?",
+    "options": [
+      "Que el informe debe usar la misma plantilla en todos los ciclos.",
+      "Que si hay una NC mayor sin contención, no debe declararse el SGIA eficaz.",
+      "Que todos los hallazgos deben tener la misma severidad dentro de un proceso.",
+      "Que el informe debe coincidir con las conclusiones del ciclo anterior."
+    ],
+    "answer": 1,
+    "explanation": "Hay que alinear hallazgos ↔ severidad ↔ conclusión global ↔ acciones requeridas. El micro-chequeo pregunta si la conclusión menciona las debilidades críticas, si las recomendaciones responden a las causas y si el seguimiento está definido. Sin coherencia, el informe se percibe complaciente.",
+    "tags": ["iso42001", "informe-auditoria", "coherencia", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q018",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.161-162 — Revisión por la dirección como insumo",
+    "type": "single-choice",
+    "question": "Al auditar la revisión por la dirección como insumo de mejora (C12), ¿qué micro-evidencias busca el auditor?",
+    "options": [
+      "La lista de asistentes y la duración de la reunión.",
+      "Agenda, entradas analizadas (métricas, auditorías, NC, incidentes), decisiones registradas y asignación de recursos.",
+      "El acta firmada por el director general.",
+      "El presupuesto aprobado para el siguiente ejercicio."
+    ],
+    "answer": 1,
+    "explanation": "El auditor verifica que la revisión use información crítica (sesgo, deriva, incidentes) y no solo reportes genéricos. Una reunión con acta pero sin decisiones no es evidencia fuerte de mejora.",
+    "tags": ["iso42001", "clause:9.3", "revision-direccion", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q019",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.162 — Salidas accionables",
+    "type": "multiple-choice",
+    "question": "Para que una salida de la revisión por la dirección sea accionable, ¿qué debe validar el auditor? *(selecciona todas las correctas)*",
+    "options": [
+      "Que tenga responsable asignado.",
+      "Que tenga plazo definido.",
+      "Que tenga criterio de éxito o KPI.",
+      "Que haya sido aprobada por el equipo auditor."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Micro-ejemplo del material: \"Aumentar cadencia de monitoreo de sesgo a semanal para el sistema X; responsable Y; inicio fecha Z; KPI: % semanas con reporte\". Una salida sin KPI ni plazo se convierte en 'intención' sin control.",
+    "tags": ["iso42001", "clause:9.3.3", "revision-direccion", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q020",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.163 — Seguimiento de decisiones",
+    "type": "single-choice",
+    "question": "Para auditar el seguimiento de una decisión de dirección, ¿qué cadena de evidencia debe poder trazar el auditor?",
+    "options": [
+      "Acta → ticket o plan → registro de implementación → métrica posterior.",
+      "Riesgo → control → SoA → informe.",
+      "Criterio → condición → evidencia → impacto.",
+      "Objetivo → indicador → umbral → alerta."
+    ],
+    "answer": 0,
+    "explanation": "Si no hay seguimiento, la mejora continua es declarativa y los mismos temas reaparecen en auditorías sucesivas. La reincidencia es evidencia de que el sistema no aprende o no controla.",
+    "tags": ["iso42001", "seguimiento", "trazabilidad", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q021",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.163-164 — Causa raíz",
+    "type": "single-choice",
+    "question": "¿Cómo valida el auditor la consistencia de un análisis de causa raíz?",
+    "options": [
+      "Verificando que se haya usado la técnica de los 5 porqués y no otra.",
+      "Comprobando que la causa explique el incumplimiento sin saltos lógicos, evitando causas vagas como \"falta de cultura\".",
+      "Confirmando que la causa haya sido aprobada por la dirección.",
+      "Revisando que la causa coincida con la de no conformidades anteriores."
+    ],
+    "answer": 1,
+    "explanation": "Micro-ejemplo: \"no hay registros\" → ¿por qué? \"la herramienta no obliga\" → ¿por qué? \"el requisito no está en el checklist\" → causa probable: control de proceso incompleto. Causas genéricas producen planes genéricos y resultados nulos.",
+    "tags": ["iso42001", "causa-raiz", "acciones-correctivas", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q022",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.164 — Plan de acción",
+    "type": "multiple-choice",
+    "question": "¿Qué calidad mínima debe tener un plan de acción correctiva según el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Acción específica, responsable y fecha.",
+      "Recurso asignado y evidencia esperada.",
+      "KPI de eficacia, proporcional al riesgo.",
+      "Aprobación previa del organismo de certificación."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Micro-ejemplo: \"Implementar control automático de bloqueo si no hay revisión humana; dueño: Ops; fecha: 30 días; evidencia: logs de bloqueo; KPI: 100% de decisiones críticas con revisión registrada\". Planes sin KPI no permiten verificar eficacia.",
+    "tags": ["iso42001", "acciones-correctivas", "kpi", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q023",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.164 — Paquete de cierre",
+    "type": "multiple-choice",
+    "question": "El \"paquete de cierre\" que confirma la implementación de una acción correctiva incluye tres piezas. ¿Cuáles? *(selecciona todas las correctas)*",
+    "options": [
+      "Evidencia técnica (logs, configuración).",
+      "Evidencia de proceso (procedimiento actualizado, roles).",
+      "Evidencia de ejecución (registros del periodo).",
+      "Evidencia contractual (anexo firmado con el proveedor)."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Sin paquete no hay cierre sólido. Implementar 'en palabra' es el origen de las reaperturas de no conformidades.",
+    "tags": ["iso42001", "acciones-correctivas", "evidencia", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q024",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.165 — Verificación de eficacia",
+    "type": "single-choice",
+    "question": "La causa raíz de una NC fue \"cambios sin aprobación\". ¿Cómo se verifica la eficacia de la acción correctiva?",
+    "options": [
+      "Confirmando que el procedimiento fue actualizado y comunicado.",
+      "Revisando cambios posteriores a la implementación: ¿hay acta?, ¿análisis de impacto?, ¿actualización de riesgos?",
+      "Obteniendo la declaración del responsable de que el problema está resuelto.",
+      "Comprobando que no se han reportado incidentes en el último mes."
+    ],
+    "answer": 1,
+    "explanation": "Verificar eficacia requiere evidencia POSTERIOR a la implementación: nueva medición, nuevo muestreo o auditoría de seguimiento. Si la evidencia posterior no cambia, la acción no fue eficaz aunque esté 'implementada'. Eficacia = prevención de recurrencia, no solo ejecución de tareas.",
+    "tags": ["iso42001", "eficacia", "acciones-correctivas", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q025",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.165 — Criterio de cierre de NC",
+    "type": "multiple-choice",
+    "question": "¿Cuándo puede cerrarse formalmente una no conformidad según el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Cuando la corrección está implementada y la causa raíz tratada.",
+      "Cuando la eficacia ha sido verificada.",
+      "Cuando las evidencias están archivadas y trazadas al hallazgo.",
+      "Cuando ha transcurrido el plazo acordado en la reunión de cierre."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El cierre formal exige registro con fecha, verificador, evidencia y resultado. El cierre prematuro se detecta por reincidencia o por ausencia de evidencia posterior. El mero transcurso del plazo no cierra una NC.",
+    "tags": ["iso42001", "cierre-nc", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q026",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.165, 170 — Verificador independiente",
+    "type": "single-choice",
+    "question": "El checklist de cierre de NC del material incluye un punto sobre quién valida el cierre. ¿Qué recomienda?",
+    "options": [
+      "Que lo valide el mismo responsable que implementó la acción, por conocer mejor el contexto.",
+      "Que el cierre sea validado por un verificador independiente.",
+      "Que lo valide el auditado en la reunión de cierre.",
+      "Que lo valide la alta dirección en la siguiente revisión."
+    ],
+    "answer": 1,
+    "explanation": "El checklist incluye: criterio citado y vigente, corrección aplicada, causa raíz documentada con método, plan con responsables y fechas, evidencia de implementación, evidencia posterior, KPI de eficacia cumplido y cierre validado por verificador independiente.",
+    "tags": ["iso42001", "cierre-nc", "independencia", "difficulty:advanced", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q027",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.166 — Estrategia tipo examen",
+    "type": "single-choice",
+    "question": "El material propone un \"método auditor en 3 pasos\" para preguntas situacionales. ¿Cuál es?",
+    "options": [
+      "Leer, descartar extremos y elegir la opción más larga.",
+      "Identificar el criterio implícito (cláusula o principio), detectar la evidencia disponible y la que falta, y decidir la acción auditora (hallazgo, severidad o evidencia adicional).",
+      "Buscar la palabra clave de la norma y elegir la opción que la contenga.",
+      "Determinar el módulo del syllabus y responder según su objetivo."
+    ],
+    "answer": 1,
+    "explanation": "El examen premia la lógica de auditoría: criterio + evidencia + juicio, más que la memoria literal. En preguntas situacionales, el distractor frecuente es una 'buena práctica' que no está sustentada por evidencia documentada o método definido.",
+    "tags": ["iso42001", "estrategia-examen", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q028",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.166 — Checklist final del auditor",
+    "type": "multiple-choice",
+    "question": "Antes de emitir el informe, ¿qué debe confirmar el checklist final del auditor? *(selecciona todas las correctas)*",
+    "options": [
+      "Criterios citados, evidencias registradas y muestreo justificado.",
+      "Hallazgos completos (criterio–condición–evidencia–impacto–conclusión) con severidad justificada por riesgo.",
+      "Conflictos gestionados, acuerdos de cierre documentados y plan de seguimiento.",
+      "Aprobación previa del informe por parte del auditado."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Un checklist reduce omisiones que luego invalidan hallazgos o dificultan las acciones correctivas. La aprobación del auditado no es condición para emitir el informe, aunque las opiniones divergentes no resueltas deben reportarse.",
+    "tags": ["iso42001", "checklist", "informe-auditoria", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q029",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.167 — Plantilla de clasificación de hallazgos",
+    "type": "multiple-choice",
+    "question": "La plantilla de clasificación de hallazgos del material incluye campos para justificar la severidad. ¿Cuáles? *(selecciona todas las correctas)*",
+    "options": [
+      "Criterio, condición y evidencia.",
+      "Impacto y recurrencia.",
+      "Criticidad y justificación de la severidad propuesta.",
+      "Coste estimado de la remediación."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La plantilla conecta criterio, evidencia y riesgo, e incluye recurrencia y criticidad para justificar la severidad. Estandarizar la decisión entre auditores reduce la subjetividad y acelera acciones proporcionales.",
+    "tags": ["iso42001", "severidad", "hallazgos", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-d6-q030",
+    "domainId": "domain-6",
+    "source": "MATERIALES p.167 — Valor del auditor del SGIA",
+    "type": "single-choice",
+    "question": "Según el cierre del curso, ¿cuándo aporta valor real el auditor interno del SGIA?",
+    "options": [
+      "Cuando maximiza el número de no conformidades detectadas por auditoría.",
+      "Cuando conecta evidencia con riesgo y mejora: identifica fallas reales, comunica con claridad y verifica la eficacia de las acciones correctivas.",
+      "Cuando consigue que la organización obtenga la certificación en el primer intento.",
+      "Cuando limita su revisión a la documentación para preservar la independencia."
+    ],
+    "answer": 1,
+    "explanation": "El objetivo no es 'cazar errores' sino aportar valor: un hallazgo bien formulado ayuda a mejorar el SGIA y a reducir riesgos. La auditoría madura convierte hallazgos en aprendizaje organizacional medible.",
+    "tags": ["iso42001", "rol-auditor", "mejora-continua", "difficulty:basic", "module:m06"]
+  }
+]

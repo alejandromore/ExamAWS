@@ -8,10 +8,11 @@ import {
 } from "../state.js";
 import { escapeHtml, formatPercent } from "../utils/helpers.js";
 
-export async function renderSetupView(container, { onGoBackRoadmap, onStartSession }) {
+export async function renderSetupView(container, { onGoBackRoadmap, onGoHome, onStartSession }) {
   state.view = "exam";
   const exam = getExam();
   ensureDomainSelection();
+  const roadmapTitle = state.catalog.roadmaps.find(item => item.id === state.selectedRoadmapId)?.title || "Roadmap";
 
   // Load all domain questions in parallel
   const domainQuestions = {};
@@ -66,14 +67,21 @@ export async function renderSetupView(container, { onGoBackRoadmap, onStartSessi
     : `<option value="practice" ${state.mode === "practice" ? "selected" : ""}>Práctica: feedback inmediato</option><option value="exam" ${state.mode === "exam" ? "selected" : ""}>Examen: feedback al final y temporizador</option><option value="review" ${state.mode === "review" ? "selected" : ""}>Revisión: prioriza errores</option>`;
 
   container.innerHTML = `
-    <button id="backRoadmapBtn" class="btn btn-light" type="button">← Roadmap</button>
+    <nav class="breadcrumbs" aria-label="Navegación">
+      <button id="homeBtn" class="crumb" type="button">Menú inicial</button>
+      <span class="crumb-sep" aria-hidden="true">›</span>
+      <button id="backRoadmapBtn" class="crumb" type="button">${escapeHtml(roadmapTitle)}</button>
+      <span class="crumb-sep" aria-hidden="true">›</span>
+      <span class="crumb current" aria-current="page">${escapeHtml(exam.code)}</span>
+    </nav>
     <div class="setup-grid">
       <div class="main-setup-col">
         <div class="exam-card">
           <div class="exam-title">
-            <span class="badge aws">${escapeHtml(exam.code)}</span>
+            <span class="badge code">${escapeHtml(exam.code)}</span>
             <h2>${escapeHtml(exam.title)}</h2>
             <span class="badge">${escapeHtml(exam.level || "")}</span>
+            ${exam.vendor ? `<span class="badge vendor-${escapeHtml(String(exam.vendor).toLowerCase())}">${escapeHtml(exam.vendor)}</span>` : ""}
           </div>
           <p class="exam-desc">${escapeHtml(exam.description)}</p>
           <p class="small">Puntaje objetivo: <strong>${exam.passingScore}%</strong> · Duración oficial aproximada: <strong>${exam.examDurationMinutes} min</strong></p>
@@ -120,9 +128,11 @@ export async function renderSetupView(container, { onGoBackRoadmap, onStartSessi
 
   // Bind Event Listeners
   document.getElementById("backRoadmapBtn").addEventListener("click", onGoBackRoadmap);
+  const homeBtn = document.getElementById("homeBtn");
+  if (homeBtn && onGoHome) homeBtn.addEventListener("click", onGoHome);
 
   container.querySelectorAll(".domain-card").forEach(card => {
-    card.addEventListener("click", async () => {
+    const select = async () => {
       const domainId = card.dataset.domainId;
       const targetDomain = exam.domains.find(d => d.id === domainId);
       if (!targetDomain || !(domainQuestions[domainId] || []).length) return;
@@ -132,13 +142,20 @@ export async function renderSetupView(container, { onGoBackRoadmap, onStartSessi
         state.mode = "exam";
         state.questionCount = (domainQuestions[domainId] || []).length;
       }
-      await renderSetupView(container, { onGoBackRoadmap, onStartSession });
+      await renderSetupView(container, { onGoBackRoadmap, onGoHome, onStartSession });
+    };
+    card.addEventListener("click", select);
+    card.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        select();
+      }
     });
   });
 
   document.getElementById("modeSelect").addEventListener("change", async e => {
     state.mode = e.target.value;
-    await renderSetupView(container, { onGoBackRoadmap, onStartSession });
+    await renderSetupView(container, { onGoBackRoadmap, onGoHome, onStartSession });
   });
 
   document.getElementById("questionCount").addEventListener("change", e => {

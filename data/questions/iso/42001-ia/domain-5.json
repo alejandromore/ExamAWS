@@ -1,0 +1,722 @@
+[
+  {
+    "id": "iso42001-d5-q001",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.40 — Definición de auditoría",
+    "type": "single-choice",
+    "question": "¿Cuál es la definición de **auditoría** según ISO 19011:2018?",
+    "options": [
+      "Revisión periódica de documentos del sistema de gestión realizada por la dirección.",
+      "Proceso sistemático, independiente y documentado para obtener evidencia objetiva y evaluarla objetivamente para determinar en qué medida se cumplen los criterios de auditoría.",
+      "Inspección técnica de los sistemas informáticos de una organización.",
+      "Actividad de consultoría orientada a mejorar los procesos del auditado."
+    ],
+    "answer": 1,
+    "explanation": "Los tres adjetivos son esenciales: sistemático, independiente y documentado. La auditoría no es consultoría ni inspección técnica: determina el grado de cumplimiento de criterios mediante evidencia objetiva.",
+    "tags": ["iso19011", "terminologia", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q002",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.40-41 — Tipos de auditoría",
+    "type": "single-choice",
+    "question": "Una auditoría realizada por un cliente sobre uno de sus proveedores, ¿de qué tipo es?",
+    "options": [
+      "Auditoría de primera parte (interna).",
+      "Auditoría de segunda parte.",
+      "Auditoría de tercera parte.",
+      "Auditoría combinada."
+    ],
+    "answer": 1,
+    "explanation": "Las auditorías de segunda parte se llevan a cabo por partes que tienen un interés en la organización, como los clientes, o por otras personas en su nombre. Las de tercera parte las realizan organizaciones de auditoría independientes (certificación o agencias gubernamentales).",
+    "tags": ["iso19011", "tipos-auditoria", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q003",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.41 — Criterios de auditoría",
+    "type": "single-choice",
+    "question": "Según ISO 19011, ¿qué pueden incluir los **requisitos** que conforman los criterios de auditoría?",
+    "options": [
+      "Únicamente los requisitos de la norma de sistema de gestión aplicable.",
+      "Políticas, procedimientos, instrucciones de trabajo, requisitos legales y obligaciones contractuales, entre otros.",
+      "Solo los requisitos legales y reglamentarios vigentes.",
+      "Las mejores prácticas del sector reconocidas por la industria."
+    ],
+    "answer": 1,
+    "explanation": "La Nota 2 de la definición indica que los requisitos pueden incluir políticas, procedimientos, instrucciones de trabajo, requisitos legales, obligaciones contractuales, etc. Usar 'mejores prácticas' como criterio es un error frecuente del auditor.",
+    "tags": ["iso19011", "criterios", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q004",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.41-42 — Cumplimiento vs conformidad",
+    "type": "single-choice",
+    "question": "Si los criterios de auditoría se seleccionan de entre requisitos legales o reglamentarios, ¿qué términos se usan en la conclusión?",
+    "options": [
+      "Conformidad o no conformidad.",
+      "Cumplimiento o incumplimiento.",
+      "Aprobado o rechazado.",
+      "Eficaz o ineficaz."
+    ],
+    "answer": 1,
+    "explanation": "La Nota 1 de 'criterios de auditoría' y la Nota 3 de 'hallazgos' indican que cuando los criterios son legales o reglamentarios se usan las palabras 'cumplimiento' o 'incumplimiento' en lugar de conformidad/no conformidad.",
+    "tags": ["iso19011", "terminologia", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q005",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.43 — Cliente de la auditoría",
+    "type": "single-choice",
+    "question": "¿Quién es el **cliente de la auditoría** y qué particularidad tiene en auditoría interna?",
+    "options": [
+      "La organización o persona que solicita una auditoría; en auditoría interna puede ser también el auditado o quien administra el programa.",
+      "Siempre el organismo de certificación que emite el certificado.",
+      "El proveedor cuyos servicios se están auditando.",
+      "El líder del equipo auditor designado para la auditoría."
+    ],
+    "answer": 0,
+    "explanation": "Cliente de la auditoría = organización o persona que solicita una auditoría. En auditoría interna, el cliente puede ser también el auditado o la persona que administra el programa. Las solicitudes externas pueden venir de reguladores, partes contratantes o clientes.",
+    "tags": ["iso19011", "terminologia", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q006",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.43-44 — Roles del equipo auditor",
+    "type": "single-choice",
+    "question": "Un **experto técnico** forma parte del equipo de auditoría. ¿Qué limitación tiene su rol?",
+    "options": [
+      "No puede acceder a la documentación del auditado.",
+      "No actúa como auditor: aporta conocimientos o experiencia específicos al equipo.",
+      "No puede participar en la reunión de apertura.",
+      "Solo puede intervenir en auditorías de tercera parte."
+    ],
+    "answer": 1,
+    "explanation": "La Nota 2 de la definición de experto técnico establece que no actúa como auditor. Su conocimiento se relaciona con la organización, actividad, proceso, producto, servicio, disciplina, idioma o cultura a auditar.",
+    "tags": ["iso19011", "equipo-auditor", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q007",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.43-44 — Observador y guía",
+    "type": "single-choice",
+    "question": "¿Cuál es la diferencia entre un **observador** y un **guía** en una auditoría?",
+    "options": [
+      "El observador es designado por el auditado para asistir al equipo auditor; el guía solo acompaña sin actuar.",
+      "El observador acompaña al equipo auditor sin actuar como auditor; el guía es designado por el auditado para asistir al equipo auditor.",
+      "Ambos son miembros del equipo auditor con distinta antigüedad.",
+      "El observador representa al organismo de certificación y el guía al regulador."
+    ],
+    "answer": 1,
+    "explanation": "Observador = individuo que acompaña al equipo de auditoría pero que no actúa como auditor. Guía = persona designada por el auditado para asistir al equipo auditor. Ninguno debería influir ni interferir en la realización de la auditoría.",
+    "tags": ["iso19011", "equipo-auditor", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q008",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.72 — Responsabilidades del guía",
+    "type": "multiple-choice",
+    "question": "¿Cuáles son responsabilidades propias de un **guía** durante la auditoría? *(selecciona todas las correctas)*",
+    "options": [
+      "Ayudar a identificar a los individuos para las entrevistas y confirmar horarios y ubicaciones.",
+      "Organizar el acceso a ubicaciones específicas del auditado.",
+      "Ser testigo de la auditoría en nombre del auditado, cuando corresponda.",
+      "Decidir la clasificación de severidad de los hallazgos."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El guía también garantiza que el equipo conozca y respete las reglas de acceso, salud, seguridad, medio ambiente y confidencialidad, y puede proporcionar aclaraciones o ayudar a recopilar información. La clasificación de hallazgos corresponde al equipo auditor.",
+    "tags": ["iso19011", "equipo-auditor", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q009",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.44-45 — Alcance de la auditoría",
+    "type": "single-choice",
+    "question": "Según ISO 19011, ¿qué incluye generalmente el **alcance de la auditoría**?",
+    "options": [
+      "Los requisitos normativos contra los que se compara la evidencia.",
+      "Descripción de las ubicaciones físicas y virtuales, funciones, unidades organizativas, actividades y procesos, así como el periodo de tiempo cubierto.",
+      "Los nombres de los auditores y el presupuesto asignado.",
+      "La lista de hallazgos esperados y su severidad."
+    ],
+    "answer": 1,
+    "explanation": "El alcance se refiere a la extensión y los límites de una auditoría. Una ubicación virtual es cuando la organización realiza trabajo o proporciona un servicio usando un entorno en línea, independientemente de las ubicaciones físicas.",
+    "tags": ["iso19011", "alcance", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q010",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.46 — Cláusula 4 Principios de auditoría",
+    "type": "multiple-choice",
+    "question": "¿Cuáles de los siguientes son **principios de auditoría** según la Cláusula 4 de ISO 19011:2018? *(selecciona todas las correctas)*",
+    "options": [
+      "Integridad y presentación justa.",
+      "Debido cuidado profesional y confidencialidad.",
+      "Independencia, enfoque basado en la evidencia y enfoque basado en el riesgo.",
+      "Mejora continua y satisfacción del cliente."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Los siete principios son: integridad, presentación justa, debido cuidado profesional, confidencialidad, independencia, enfoque basado en la evidencia y enfoque basado en el riesgo. La adhesión a los principios es requisito previo para conclusiones pertinentes y suficientes.",
+    "tags": ["iso19011", "principios", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q011",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.46 — Presentación justa",
+    "type": "single-choice",
+    "question": "Según el principio de **presentación justa**, ¿qué debe informarse además de los hallazgos y conclusiones?",
+    "options": [
+      "El coste real de la auditoría frente al presupuestado.",
+      "Los obstáculos significativos encontrados y las opiniones divergentes no resueltas entre el equipo de auditoría y el auditado.",
+      "El nombre de las personas entrevistadas y sus declaraciones textuales.",
+      "Las recomendaciones de mejora del equipo auditor."
+    ],
+    "answer": 1,
+    "explanation": "La comunicación debe ser veraz, precisa, objetiva, oportuna, clara y completa. Los obstáculos significativos y las opiniones divergentes no resueltas deben reportarse.",
+    "tags": ["iso19011", "principios", "informe-auditoria", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q012",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.47 — Independencia en organizaciones pequeñas",
+    "type": "single-choice",
+    "question": "En una organización pequeña, los auditores internos no pueden ser totalmente independientes de la actividad auditada. Según ISO 19011, ¿cuál es la conducta esperada?",
+    "options": [
+      "Suspender la auditoría interna hasta contratar un auditor externo.",
+      "Hacer todos los esfuerzos para eliminar el sesgo y alentar la objetividad.",
+      "Declarar la auditoría no válida y registrarla como oportunidad de mejora.",
+      "Delegar la auditoría en el responsable del proceso auditado."
+    ],
+    "answer": 1,
+    "explanation": "ISO 19011 reconoce que en organizaciones pequeñas la independencia plena puede no ser posible, pero exige hacer todos los esfuerzos para eliminar el sesgo y alentar la objetividad, manteniendo hallazgos y conclusiones basados solo en evidencia.",
+    "tags": ["iso19011", "independencia", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q013",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.146-147, 151 — Mini-caso auto-auditoría",
+    "type": "single-choice",
+    "question": "El auditor asignado diseñó el procedimiento de gestión de cambios que ahora debe auditar. Se declara \"independiente\" por escrito, sin mitigación adicional. ¿Cuál es la acción más adecuada?",
+    "options": [
+      "Continuar: la declaración escrita de independencia es suficiente.",
+      "Aplicar controles de objetividad proporcionales al riesgo de sesgo (reasignar auditor, incorporar revisor independiente, rotar roles, restringir áreas) y documentar la decisión.",
+      "Cancelar el programa de auditoría del periodo.",
+      "Permitir la auditoría siempre que el auditado acepte por escrito el conflicto."
+    ],
+    "answer": 1,
+    "explanation": "Mitigar no es 'declarar' el conflicto: es aplicar controles. La independencia debe evidenciarse con declaraciones, matriz de conflictos, aprobación del líder del programa y registros de mitigación. Sin gestión del conflicto, hallazgos y conclusiones pueden ser cuestionados o invalidados.",
+    "tags": ["iso19011", "independencia", "imparcialidad", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q014",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.47-48 — Enfoque basado en la evidencia",
+    "type": "single-choice",
+    "question": "¿Por qué el principio de **enfoque basado en la evidencia** vincula el muestreo con la confianza en las conclusiones?",
+    "options": [
+      "Porque el muestreo permite reducir el coste de la auditoría.",
+      "Porque la auditoría se lleva a cabo en un tiempo finito y con recursos limitados; el uso apropiado del muestreo está estrechamente relacionado con la confianza que puede depositarse en las conclusiones.",
+      "Porque el muestreo garantiza que se detecten todas las no conformidades existentes.",
+      "Porque las normas exigen un tamaño mínimo de muestra por proceso."
+    ],
+    "answer": 1,
+    "explanation": "La evidencia de auditoría debería ser verificable y, en general, basarse en muestras de la información disponible, ya que la auditoría se realiza en tiempo finito con recursos limitados. Por eso el muestreo debe justificarse metodológicamente.",
+    "tags": ["iso19011", "muestreo", "evidencia", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q015",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.48 — Enfoque basado en el riesgo",
+    "type": "single-choice",
+    "question": "¿Sobre qué fases de la auditoría debe influir sustancialmente el **enfoque basado en el riesgo**?",
+    "options": [
+      "Únicamente sobre la selección del equipo auditor.",
+      "Sobre la planificación, la conducción y la presentación de informes de las auditorías.",
+      "Únicamente sobre la reunión de cierre.",
+      "Sobre la fase de seguimiento posterior a la auditoría."
+    ],
+    "answer": 1,
+    "explanation": "El enfoque basado en el riesgo debe influir sustancialmente en la planificación, conducción y presentación de informes, para garantizar que las auditorías se centren en asuntos importantes para el cliente y para lograr los objetivos del programa.",
+    "tags": ["iso19011", "enfoque-riesgo", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q016",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.39 — Estructura ISO 19011:2018",
+    "type": "single-choice",
+    "question": "¿Qué cubre la **Cláusula 7** de ISO 19011:2018?",
+    "options": [
+      "Principios de auditoría.",
+      "Gestión de un programa de auditoría.",
+      "Realización de una auditoría.",
+      "Competencia y evaluación de los auditores."
+    ],
+    "answer": 3,
+    "explanation": "La estructura de ISO 19011:2018 es: 1 Alcance, 2 Referencias normativas, 3 Términos y definiciones, 4 Principios de auditoría, 5 Gestión de un programa de auditoría, 6 Realización de una auditoría, 7 Competencia y evaluación de los auditores, más el Anexo A.",
+    "tags": ["iso19011", "estructura", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q017",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.55 — Alcance del programa de auditoría",
+    "type": "multiple-choice",
+    "question": "Para comprender el contexto del auditado, ¿qué debería tener en cuenta el programa de auditoría? *(selecciona todas las correctas)*",
+    "options": [
+      "Objetivos organizacionales.",
+      "Cuestiones externas e internas relevantes.",
+      "Necesidades y expectativas de las partes interesadas pertinentes, y requisitos de confidencialidad y del SGIA.",
+      "El resultado financiero del último ejercicio."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El alcance del programa debería basarse en el tamaño y naturaleza del auditado, la naturaleza, funcionalidad, complejidad, tipo de riesgos y oportunidades, y el nivel de madurez de los sistemas de gestión a auditar.",
+    "tags": ["iso19011", "programa-auditoria", "contexto", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q018",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.56 — Objetivos del programa",
+    "type": "single-choice",
+    "question": "¿Con qué deben ser coherentes los objetivos del programa de auditoría?",
+    "options": [
+      "Con la disponibilidad de agenda de los auditores.",
+      "Con la orientación estratégica y con los objetivos y la política del sistema de gestión del cliente de auditoría.",
+      "Con el número de no conformidades del ciclo anterior.",
+      "Con los requisitos del organismo de certificación."
+    ],
+    "answer": 1,
+    "explanation": "Los objetivos pueden basarse en: necesidades y expectativas de partes interesadas, características y requisitos de procesos/productos/servicios, requisitos del sistema de gestión, evaluación de proveedores externos, nivel de desempeño y madurez, riesgos y oportunidades identificados, y resultados de auditorías anteriores.",
+    "tags": ["iso19011", "programa-auditoria", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q019",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.57 — Riesgos del programa de auditoría",
+    "type": "multiple-choice",
+    "question": "¿Cuáles de los siguientes son **riesgos del programa de auditoría** que debe considerar quien lo gestiona? *(selecciona todas las correctas)*",
+    "options": [
+      "Planificación: no establecer objetivos relevantes ni determinar alcance, número, duración, ubicaciones y cronograma.",
+      "Recursos: tiempo, equipo o capacitación insuficientes.",
+      "Selección del equipo de auditoría: competencia global insuficiente.",
+      "Certificación: no obtener el certificado en el plazo previsto."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "ISO 19011 lista riesgos de planificación, recursos, selección del equipo, comunicación, implementación, control de la información documentada, supervisión/revisión/mejora del programa, y disponibilidad y cooperación del auditado.",
+    "tags": ["iso19011", "programa-auditoria", "enfoque-riesgo", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q020",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.58 — Oportunidades del programa",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes es una **oportunidad** para mejorar el programa de auditoría según ISO 19011?",
+    "options": [
+      "Reducir el número de auditorías para ahorrar costes.",
+      "Hacer coincidir el nivel de competencia del equipo auditor con el necesario para alcanzar los objetivos de la auditoría.",
+      "Delegar la planificación en el auditado para acelerar el proceso.",
+      "Eliminar las reuniones de apertura para ganar tiempo."
+    ],
+    "answer": 1,
+    "explanation": "Las oportunidades incluyen: permitir múltiples auditorías en una sola visita, minimizar tiempo y distancias de viaje, hacer coincidir la competencia del equipo con la necesaria, y alinear las fechas con la disponibilidad del personal clave del auditado.",
+    "tags": ["iso19011", "programa-auditoria", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q021",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.68 — Viabilidad de la auditoría",
+    "type": "multiple-choice",
+    "question": "Al determinar la **viabilidad** de una auditoría, ¿qué factores deben considerarse? *(selecciona todas las correctas)*",
+    "options": [
+      "Información suficiente y apropiada para planificar y llevar a cabo la auditoría.",
+      "Cooperación adecuada del auditado.",
+      "Tiempo y recursos adecuados para realizar la auditoría.",
+      "Ausencia de no conformidades abiertas del ciclo anterior."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La viabilidad se determina considerando la disponibilidad de información suficiente y apropiada, la cooperación adecuada del auditado, y tiempo y recursos adecuados.",
+    "tags": ["iso19011", "planificacion", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q022",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.70 — Contenido del plan de auditoría",
+    "type": "multiple-choice",
+    "question": "¿Qué debe incluir el **plan de auditoría** según ISO 19011? *(selecciona todas las correctas)*",
+    "options": [
+      "Los objetivos, el alcance y los criterios de la auditoría.",
+      "Ubicación, fechas, horario y duración, incluyendo las reuniones con la dirección del auditado.",
+      "Funciones y responsabilidades del equipo auditor, guías y observadores; asignación de recursos; identificación del representante del auditado; e idioma.",
+      "La lista definitiva de no conformidades a reportar."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El plan de auditoría convierte el programa en una auditoría ejecutable. Los hallazgos son un resultado de la auditoría, no un contenido previo del plan. El plan puede ser revisado y aceptado por el cliente y debería presentarse al auditado.",
+    "tags": ["iso19011", "plan-auditoria", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q023",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.69 — Enfoque basado en riesgo en la planificación",
+    "type": "multiple-choice",
+    "question": "Al planificar la auditoría con enfoque basado en riesgo, ¿qué debería considerar el líder del equipo auditor? *(selecciona todas las correctas)*",
+    "options": [
+      "La composición del equipo de auditoría y su competencia general.",
+      "Las técnicas de muestreo apropiadas.",
+      "Los riesgos para lograr los objetivos creados por una planificación ineficaz, y los riesgos para el auditado creados al realizar la auditoría.",
+      "El historial disciplinario del personal del auditado."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "También debe considerar las oportunidades para mejorar la efectividad y eficiencia de las actividades de auditoría. La planificación se basa en la información del programa y en la información documentada proporcionada por el auditado.",
+    "tags": ["iso19011", "plan-auditoria", "enfoque-riesgo", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q024",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.72-73 — Listas de verificación",
+    "type": "single-choice",
+    "question": "Sobre las **listas de verificación**, ¿qué desventaja advierte ISO 19011?",
+    "options": [
+      "Impiden registrar hallazgos positivos.",
+      "Las listas previamente confeccionadas pueden inhibir a los auditores, que podrían pasar por alto cuestiones importantes por no estar incluidas.",
+      "No pueden formar parte del informe de auditoría.",
+      "Aumentan el tiempo necesario para planificar la auditoría."
+    ],
+    "answer": 1,
+    "explanation": "Las ventajas incluyen asegurar que nada importante se pase por alto, dar continuidad, ayudar a planificar y controlar el ritmo, y registrar hallazgos positivos y negativos. La recomendación de uso es considerarlas un ayuda memoria y evitar sentirse inhibido por ellas.",
+    "tags": ["iso19011", "listas-verificacion", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q025",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.73 — Reunión de apertura",
+    "type": "multiple-choice",
+    "question": "¿Cuáles son los propósitos de la **reunión de apertura**? *(selecciona todas las correctas)*",
+    "options": [
+      "Confirmar el acuerdo de todos los participantes con el plan de auditoría.",
+      "Presentar al equipo de auditoría y sus roles.",
+      "Garantizar que se puedan realizar todas las actividades de auditoría planificadas.",
+      "Acordar la clasificación de severidad de los hallazgos que se detecten."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Se consideran además objetivos/alcance/criterios, plan y arreglos, canales formales de comunicación, idioma, disponibilidad de recursos, confidencialidad e IA, el método de informar hallazgos y las condiciones de terminación de la auditoría.",
+    "tags": ["iso19011", "reunion-apertura", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q026",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.75-76 — Comunicación durante la auditoría",
+    "type": "single-choice",
+    "question": "Durante la auditoría se determina que los objetivos no son alcanzables. ¿Qué debe hacer el líder del equipo auditor?",
+    "options": [
+      "Reducir el alcance por su propia iniciativa y continuar.",
+      "Informar las razones a las partes interesadas para tomar acciones apropiadas; los cambios deben revisarse y aprobarse por el gestor del programa y por el auditado.",
+      "Emitir el informe con los hallazgos disponibles sin notificar.",
+      "Convocar de inmediato la reunión de cierre y dar por finalizada la auditoría."
+    ],
+    "answer": 1,
+    "explanation": "Las acciones pueden incluir la reconfirmación o modificación del plan, cambios en los objetivos o alcance, o la interrupción de la auditoría. Los cambios deben revisarse y aprobarse tanto por el gestor del programa como por el auditado.",
+    "tags": ["iso19011", "comunicacion", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q027",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.76-78 — Métodos y entrevistas",
+    "type": "single-choice",
+    "question": "Sobre la realización de **entrevistas**, ¿cuál es la recomendación correcta?",
+    "options": [
+      "Realizarlas fuera del horario laboral para evitar interrupciones.",
+      "Realizarlas con personas de niveles y funciones apropiadas dentro del alcance, durante el horario laboral normal y, donde sea práctico, en su lugar de trabajo habitual.",
+      "Realizarlas siempre en presencia del responsable jerárquico del entrevistado.",
+      "Usar preguntas cerradas de sí/no para obtener respuestas concluyentes."
+    ],
+    "answer": 1,
+    "explanation": "Se debe explicar la razón de la entrevista y las notas tomadas, hacer sentir cómoda a la persona, resumir y revisar los resultados con ella, y agradecer su participación. El material recomienda evitar preguntas inductivas cuya respuesta sea SÍ o NO.",
+    "tags": ["iso19011", "entrevistas", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q028",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.80 — Tipos de hallazgos",
+    "type": "single-choice",
+    "question": "¿Cómo distingue el material una **observación** de una **oportunidad de mejora**?",
+    "options": [
+      "La observación no representa incumplimiento; la oportunidad de mejora sí.",
+      "La observación es un hallazgo que podría generar una no conformidad si no es tratado; la oportunidad de mejora no representa incumplimiento pero puede revisarse para mejorar la eficacia del proceso.",
+      "Son sinónimos: ambas describen incumplimientos menores.",
+      "La observación se reporta al regulador y la oportunidad de mejora al auditado."
+    ],
+    "answer": 1,
+    "explanation": "No conformidad = incumplimiento de un requisito de la norma auditada. Observación = hallazgo que podría generar una no conformidad si no es tratado. Oportunidad de mejora = situación que no representa incumplimiento pero puede mejorar la eficacia del proceso.",
+    "tags": ["iso19011", "hallazgos", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q029",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.81 — Redacción de no conformidades",
+    "type": "single-choice",
+    "question": "Al redactar una no conformidad, ¿a cuántas cláusulas de la norma debe atribuirse la discrepancia?",
+    "options": [
+      "A todas las cláusulas que guarden alguna relación con el hecho.",
+      "A una sola cláusula, la más aplicable.",
+      "A ninguna: basta describir el hecho observado.",
+      "A un mínimo de dos, para reforzar la severidad."
+    ],
+    "answer": 1,
+    "explanation": "La fórmula de redacción exige referenciar el requisito de la norma, manual o procedimiento, un requisito a la vez, el que más aplica. En ocasiones la única referencia es la documentación de la organización.",
+    "tags": ["iso19011", "no-conformidad", "redaccion", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q030",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.81 — Conclusiones de auditoría",
+    "type": "multiple-choice",
+    "question": "Antes de la reunión de cierre, el equipo auditor debe reunirse. ¿Para qué? *(selecciona todas las correctas)*",
+    "options": [
+      "Revisar los hallazgos y cualquier otra información recopilada frente a los objetivos de la auditoría.",
+      "Acordar las conclusiones de auditoría.",
+      "Preparar recomendaciones, si así lo especifica el plan de auditoría.",
+      "Negociar con el auditado la eliminación de hallazgos menores."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Las conclusiones pueden tratar el grado de cumplimiento con los criterios, la eficacia de la implementación/mantenimiento/mejora del sistema de gestión, y la capacidad del proceso de revisión por la dirección para asegurar adecuación, eficacia y mejora sostenida del SGIA.",
+    "tags": ["iso19011", "conclusiones", "reunion-cierre", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q031",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.82 — Reunión de cierre",
+    "type": "single-choice",
+    "question": "En la reunión de cierre, ¿qué debe explicarse al auditado respecto a la naturaleza de la evidencia recopilada?",
+    "options": [
+      "Que la evidencia es exhaustiva y cubre la totalidad de los procesos auditados.",
+      "Que se basó en una muestra de la información disponible y no es necesariamente representativa de la eficacia general de los procesos del auditado.",
+      "Que la evidencia será compartida con el organismo de certificación.",
+      "Que la evidencia se destruirá al cierre de la auditoría."
+    ],
+    "answer": 1,
+    "explanation": "La reunión de cierre es facilitada por el auditor líder. Se explica el método de informar, cómo abordar las conclusiones, las posibles consecuencias de no abordar los hallazgos, y las actividades posteriores (acciones correctivas, quejas, apelaciones).",
+    "tags": ["iso19011", "reunion-cierre", "muestreo", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q032",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.83 — Contenido del informe",
+    "type": "multiple-choice",
+    "question": "¿Qué debe incluir o referenciar el **informe de auditoría** según ISO 19011? *(selecciona todas las correctas)*",
+    "options": [
+      "Objetivos, alcance y criterios de auditoría.",
+      "Hallazgos de auditoría y evidencia relacionada, conclusiones y una declaración sobre el grado en que se han cumplido los criterios.",
+      "Cualquier opinión divergente no resuelta entre el equipo de auditoría y el auditado.",
+      "Un plan de acción correctiva con responsables y fechas."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El informe también identifica al cliente de auditoría, al equipo auditor y participantes, y las fechas y lugares. El plan de acción correctiva es responsabilidad del auditado, no contenido obligatorio del informe.",
+    "tags": ["iso19011", "informe-auditoria", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q033",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.84 — Confidencialidad del informe",
+    "type": "single-choice",
+    "question": "¿En qué condiciones puede el equipo auditor divulgar información obtenida durante la auditoría a terceros?",
+    "options": [
+      "Libremente, siempre que se anonimice al auditado.",
+      "Solo si lo exige la ley, o con la aprobación explícita del cliente de auditoría y, cuando corresponda, del auditado.",
+      "Con la aprobación del líder del equipo auditor.",
+      "Nunca, bajo ninguna circunstancia."
+    ],
+    "answer": 1,
+    "explanation": "A menos que lo exija la ley, el equipo de auditoría y quienes gestionan el programa no deberían divulgar información ni el informe a otras partes sin la aprobación explícita del cliente de auditoría y, cuando corresponda, del auditado.",
+    "tags": ["iso19011", "confidencialidad", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q034",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.84 — Seguimiento de auditoría",
+    "type": "single-choice",
+    "question": "Respecto al **seguimiento de auditoría**, ¿quién decide y ejecuta las correcciones y acciones correctivas, y qué debe verificarse?",
+    "options": [
+      "El equipo auditor las ejecuta y verifica su implementación en el acto.",
+      "Generalmente las decide y lleva a cabo el auditado dentro de un plazo acordado; debe verificarse su finalización y efectividad, lo que puede formar parte de una auditoría posterior.",
+      "El organismo de certificación las impone y verifica anualmente.",
+      "El cliente de auditoría las ejecuta y el auditado las verifica."
+    ],
+    "answer": 1,
+    "explanation": "El auditado debería mantener informadas a las personas que gestionan el programa y/o al equipo auditor sobre el estado de estas acciones. Los resultados de la verificación se informan al gestor del programa y al cliente de auditoría para su revisión por la dirección.",
+    "tags": ["iso19011", "seguimiento", "acciones-correctivas", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q035",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.52-53 — Atributos personales del auditor",
+    "type": "multiple-choice",
+    "question": "¿Cuáles de los siguientes son **atributos personales** del auditor según la Cláusula 7 de ISO 19011? *(selecciona todas las correctas)*",
+    "options": [
+      "De mente abierta y diplomático.",
+      "Observador, perceptivo y versátil.",
+      "Culturalmente sensible y capaz de actuar con fortaleza.",
+      "Especializado en ciencia de datos y programación."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La lista incluye: ético, de mente abierta, diplomático, observador, perceptivo, versátil, tenaz, decisivo, autosuficiente, capaz de actuar con fortaleza, abierto a la mejora, culturalmente sensible y colaborador. La especialización técnica corresponde al experto técnico.",
+    "tags": ["iso19011", "competencia-auditor", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q036",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.55 — Requisitos legales y auditoría",
+    "type": "single-choice",
+    "question": "ISO 19011 exige que el auditor conozca los requisitos legales y reglamentarios aplicables. ¿Qué NOTA acompaña a ese requisito?",
+    "options": [
+      "Que el auditor debe estar colegiado como asesor jurídico.",
+      "Que la conciencia de los requisitos legales no implica pericia legal, y una auditoría del sistema de gestión no debería tratarse como una auditoría de cumplimiento legal.",
+      "Que el auditor debe rechazar auditorías en sectores regulados.",
+      "Que los requisitos legales prevalecen sobre los criterios de la norma."
+    ],
+    "answer": 1,
+    "explanation": "El conocimiento debería cubrir requisitos legales y reglamentarios y sus agencias de gobierno, terminología jurídica básica, contratación y responsabilidad; pero sin convertir la auditoría del sistema de gestión en una auditoría de cumplimiento legal.",
+    "tags": ["iso19011", "competencia-auditor", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q037",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.141-142 — C1 Programa vivo",
+    "type": "single-choice",
+    "question": "El material sostiene que el programa de auditoría del SGIA \"no debe ser un calendario, sino un mecanismo vivo de control del riesgo\". ¿Qué debe priorizar?",
+    "options": [
+      "Los procesos con mejor documentación disponible.",
+      "Sistemas de IA de alto impacto, controles críticos, cambios recientes y reincidencia de hallazgos.",
+      "Los procesos que no fueron auditados en el ciclo anterior, por rotación.",
+      "Los procesos con menor coste de auditoría."
+    ],
+    "answer": 1,
+    "explanation": "El auditor justifica frecuencia y alcance con evidencia (incidentes, desviaciones, auditorías previas), evitando 'auditar lo fácil' y omitir lo crítico. La recurrencia indica que el sistema no aprende: priorizarla acelera la reducción del riesgo residual.",
+    "tags": ["iso19011", "programa-auditoria", "enfoque-riesgo", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q038",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.142 — C1 Competencia en SGIA",
+    "type": "single-choice",
+    "question": "¿Qué competencia mínima exige el material para auditar un sistema de IA de alto impacto?",
+    "options": [
+      "Ser científico de datos con experiencia en entrenamiento de modelos.",
+      "Comprender el ciclo de vida de IA, riesgos, controles y evidencia técnica mínima (logs, métricas, cambios), sin necesidad de ser científico de datos.",
+      "Contar con certificación en desarrollo de software.",
+      "Haber participado en el diseño de los controles del sistema auditado."
+    ],
+    "answer": 1,
+    "explanation": "Sin competencia, el auditor acepta narrativas sin verificación y debilita conclusiones. La competencia soporta el principio de debido cuidado: si el equipo no domina lo esencial, aumenta el riesgo de 'falsos conformes'.",
+    "tags": ["iso19011", "competencia-auditor", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q039",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.148 — C4 Evidencia suficiente y apropiada",
+    "type": "single-choice",
+    "question": "¿Qué significa que la evidencia sea **suficiente** y **apropiada**?",
+    "options": [
+      "Suficiente = relevante y confiable; apropiada = en cantidad adecuada.",
+      "Suficiente = en cantidad adecuada; apropiada = con calidad, relevancia y confiabilidad respecto al criterio.",
+      "Suficiente = documentada; apropiada = firmada por el auditado.",
+      "Suficiente = obtenida por observación; apropiada = obtenida por entrevista."
+    ],
+    "answer": 1,
+    "explanation": "En IA, las entrevistas sin registros rara vez bastan: se requieren logs, actas, métricas, aprobaciones y trazabilidad riesgo–control. El auditor debe justificar la suficiencia de su base de evidencia.",
+    "tags": ["iso19011", "evidencia", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q040",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.149 — C4 Registro de evidencia",
+    "type": "multiple-choice",
+    "question": "Al registrar evidencia de un sistema de IA, ¿qué contexto técnico mínimo recomienda anotar el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Periodo de los logs revisados.",
+      "Versión del modelo.",
+      "Dataset de monitoreo utilizado.",
+      "Nombre del proveedor de la infraestructura cloud."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Registrar evidencia significa documentar fuente, fecha, responsable, ubicación, versión y vínculo al criterio. En IA, añadir periodo de logs, versión del modelo y dataset de monitoreo evita disputas posteriores sobre 'qué se revisó'.",
+    "tags": ["iso19011", "evidencia", "trazabilidad", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q041",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.150 — C4 Estructura del hallazgo",
+    "type": "single-choice",
+    "question": "¿Qué cuatro componentes debe declarar un hallazgo sólido del SGIA?",
+    "options": [
+      "Fecha, responsable, área y severidad.",
+      "Criterio (requisito), condición (lo observado), evidencia verificable e impacto/riesgo.",
+      "Objetivo, alcance, método y muestra.",
+      "Causa raíz, plan, KPI y verificación."
+    ],
+    "answer": 1,
+    "explanation": "En el SGIA, el impacto debe vincularse a riesgo residual, partes interesadas o incumplimiento de intervalos. Sin impacto, el hallazgo se percibe 'menor' aunque sea crítico; si el criterio no está claro, el hallazgo se vuelve opinable.",
+    "tags": ["iso19011", "hallazgos", "redaccion", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q042",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.150 — C4 Conclusiones e informe en IA",
+    "type": "single-choice",
+    "question": "Al redactar conclusiones sobre un sistema de IA, ¿qué recomienda el material para no exceder el alcance?",
+    "options": [
+      "Afirmar la seguridad del sistema para dar confianza a la dirección.",
+      "Evitar conclusiones absolutas sin base y reportar con alcance: \"según evidencia revisada\" y \"en el periodo auditado\".",
+      "Omitir las limitaciones para no debilitar el informe.",
+      "Incluir una proyección del desempeño futuro del sistema."
+    ],
+    "answer": 1,
+    "explanation": "La claridad del informe protege la imparcialidad: otros deben poder seguir la lógica desde la evidencia hasta la conclusión sin 'saltos'. Las auditorías son por naturaleza un ejercicio de muestreo.",
+    "tags": ["iso19011", "conclusiones", "informe-auditoria", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q043",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.144 — C2 Exclusiones en el alcance",
+    "type": "single-choice",
+    "question": "El material advierte sobre un alcance estrecho que produce un informe \"positivo\" sin proteger a la organización. ¿Cuál es la buena práctica?",
+    "options": [
+      "Ampliar siempre el alcance a toda la organización.",
+      "Probar que lo excluido no cambia materialmente el juicio de eficacia.",
+      "Delegar la decisión de exclusiones al auditado.",
+      "Excluir únicamente procesos sin sistemas de IA en producción."
+    ],
+    "answer": 1,
+    "explanation": "Las exclusiones deben justificarse por contexto y riesgo, no por conveniencia. El auditor valida que el alcance cubra interfaces críticas (datos, proveedores, operación) para evitar presentar conclusiones parciales como globales.",
+    "tags": ["iso19011", "alcance", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q044",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.139 — 9.1 vs 9.2",
+    "type": "single-choice",
+    "question": "¿Qué diferencia hay entre **evaluar el desempeño (9.1)** y **auditar (9.2)**?",
+    "options": [
+      "Evaluar es una actividad externa y auditar una actividad interna.",
+      "Evaluar el desempeño describe resultados; auditar determina conformidad y eficacia del SGIA frente a criterios, mediante plan, método, muestreo, evidencia verificable y conclusión defendible.",
+      "Evaluar exige independencia y auditar no.",
+      "Son la misma actividad con distinto nombre según la cláusula."
+    ],
+    "answer": 1,
+    "explanation": "Como auditor cambias de 'leer indicadores' a 'probar control'. Si una métrica sale bien, aún se necesita evidencia adicional para concluir conformidad con 9.2, no solo buen desempeño.",
+    "tags": ["iso42001", "clause:9.1", "clause:9.2", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-d5-q045",
+    "domainId": "domain-5",
+    "source": "MATERIALES p.155 — Checklist de evidencia",
+    "type": "multiple-choice",
+    "question": "Antes de concluir, el checklist de evidencia suficiente y apropiada del material pregunta varias cosas. ¿Cuáles? *(selecciona todas las correctas)*",
+    "options": [
+      "¿Existe criterio claramente definido y la evidencia es verificable y trazable?",
+      "¿Se trianguló información (documento + entrevista + registro)?",
+      "¿La muestra está justificada por riesgo y la evidencia cubre el periodo auditado?",
+      "¿El auditado firmó su conformidad con cada hallazgo?"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El checklist incluye además: ¿existe registro documentado en el expediente? La firma de conformidad del auditado no es condición de suficiencia de la evidencia.",
+    "tags": ["iso19011", "evidencia", "checklist", "triangulacion", "difficulty:intermediate", "module:m05"]
+  }
+]

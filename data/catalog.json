@@ -1,18 +1,29 @@
 {
-  "version": 2,
-  "vendor": "AWS",
+  "version": 3,
   "roadmaps": [
     {
       "id": "ai-practitioner",
       "title": "Roadmap de certificación de IA",
       "description": "Ruta sugerida para iniciar en IA generativa, ML y servicios administrados de AWS.",
-      "url": "data/roadmaps/ai.json"
+      "url": "data/roadmaps/ai.json",
+      "vendor": "AWS",
+      "icon": "🤖"
     },
     {
       "id": "solutions-architect",
       "title": "Roadmap Solution Architect",
       "description": "Ruta sugerida para desarrollar criterio de arquitectura, resiliencia, seguridad y optimización en AWS.",
-      "url": "data/roadmaps/solutions-architect.json"
+      "url": "data/roadmaps/solutions-architect.json",
+      "vendor": "AWS",
+      "icon": "🏗️"
+    },
+    {
+      "id": "ai-governance",
+      "title": "Roadmap de Gobernanza y Auditoría de IA",
+      "description": "Ruta sugerida para auditar y gobernar sistemas de gestión de IA con evidencia objetiva, según ISO/IEC 42001 e ISO 19011.",
+      "vendor": "ISO",
+      "icon": "📋",
+      "url": "data/roadmaps/ai-governance.json"
     }
   ],
   "exams": [
@@ -200,6 +211,71 @@
           "weight": 20,
           "dataUrl": null,
           "questionCount": 0
+        }
+      ]
+    },
+    {
+      "id": "iso-42001-ia",
+      "code": "I42001IA",
+      "title": "ISO/IEC 42001 Internal Auditor Professional",
+      "vendor": "ISO",
+      "level": "Auditor",
+      "roadmapIds": [
+        "ai-governance"
+      ],
+      "description": "Auditoría interna del Sistema de Gestión de IA (SGIA): terminología, contexto, liderazgo y riesgos, controles y SoA, evaluación del desempeño, ISO 19011 y mejora continua.",
+      "passingScore": 70,
+      "examDurationMinutes": 60,
+      "domains": [
+        {
+          "id": "domain-1",
+          "title": "Módulo 1: Introducción y contexto del SGIA (Cláusulas 1-4)",
+          "weight": 9,
+          "dataUrl": "data/questions/iso/42001-ia/domain-1.json",
+          "questionCount": 30
+        },
+        {
+          "id": "domain-2",
+          "title": "Módulo 2: Liderazgo y planificación (Cláusulas 5-6)",
+          "weight": 16,
+          "dataUrl": "data/questions/iso/42001-ia/domain-2.json",
+          "questionCount": 32
+        },
+        {
+          "id": "domain-3",
+          "title": "Módulo 3: Soporte y operación (Cláusulas 7-8)",
+          "weight": 15,
+          "dataUrl": "data/questions/iso/42001-ia/domain-3.json",
+          "questionCount": 33
+        },
+        {
+          "id": "domain-4",
+          "title": "Módulo 4: Evaluación del desempeño (Cláusula 9)",
+          "weight": 26,
+          "dataUrl": "data/questions/iso/42001-ia/domain-4.json",
+          "questionCount": 38
+        },
+        {
+          "id": "domain-5",
+          "title": "Módulo 5: Auditoría interna del SGIA (ISO 19011 + 9.2)",
+          "weight": 19,
+          "dataUrl": "data/questions/iso/42001-ia/domain-5.json",
+          "questionCount": 45
+        },
+        {
+          "id": "domain-6",
+          "title": "Módulo 6: Mejora y cierre del ciclo (Cláusula 10)",
+          "weight": 15,
+          "dataUrl": "data/questions/iso/42001-ia/domain-6.json",
+          "questionCount": 30
+        },
+        {
+          "id": "sample-exam-1",
+          "title": "Examen de muestra oficial I42001IA",
+          "weight": 0,
+          "dataUrl": "data/questions/iso/42001-ia/sample-exam-1.json",
+          "questionCount": 40,
+          "kind": "practice-exam"
         }
       ]
     }

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "iso42001-d1-q001",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.6 — Cláusula 1 Alcance",
+    "type": "single-choice",
+    "question": "Según la Cláusula 1, ¿a quién está destinado ISO/IEC 42001?",
+    "options": [
+      "Únicamente a organizaciones que desarrollan modelos de aprendizaje automático propios.",
+      "A cualquier organización que proporcione o utilice productos o servicios que empleen sistemas de IA.",
+      "Solo a organizaciones con más de 250 empleados que traten datos personales.",
+      "Exclusivamente a proveedores de servicios de nube que alojen modelos fundacionales."
+    ],
+    "answer": 1,
+    "explanation": "La norma es aplicable a cualquier organización, independientemente de su tamaño, tipo o naturaleza, que proporcione o utilice productos o servicios que utilicen sistemas de inteligencia artificial.",
+    "tags": ["iso42001", "clause:1", "aplicabilidad", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q002",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.5-6 — Cláusula 2 Referencias normativas",
+    "type": "single-choice",
+    "question": "¿Qué documento se cita como **referencia normativa** de ISO/IEC 42001 para conceptos y terminología de IA?",
+    "options": [
+      "ISO/IEC 27001:2022",
+      "ISO/IEC 22989:2022",
+      "ISO 19011:2018",
+      "ISO/IEC 23894:2023"
+    ],
+    "answer": 1,
+    "explanation": "ISO/IEC 22989:2022 (Tecnología de la información — Inteligencia artificial — Conceptos y terminología de IA) es la referencia normativa citada en la Cláusula 2. ISO 19011 e ISO/IEC 23894 son referencias de apoyo, no normativas.",
+    "tags": ["iso42001", "iso22989", "clause:2", "terminologia", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q003",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.90 — Referencia normativa vs bibliografía",
+    "type": "single-choice",
+    "question": "Al definir criterios de auditoría, ¿qué diferencia práctica hay entre una **referencia normativa** y una **bibliografía recomendada**?",
+    "options": [
+      "Ninguna: ambas pueden usarse indistintamente como criterio de auditoría.",
+      "La referencia normativa constituye parte de los requisitos del documento; la bibliografía solo orienta y no puede usarse como criterio por sí sola.",
+      "La bibliografía es obligatoria y la referencia normativa es opcional.",
+      "Solo la bibliografía aplica a auditorías internas."
+    ],
+    "answer": 1,
+    "explanation": "Las referencias normativas se citan de forma que parte o la totalidad de su contenido constituye requisitos del documento. Un error frecuente del auditor es usar 'mejores prácticas' como criterio: el criterio debe provenir de la norma, requisitos legales o reglas internas aplicables.",
+    "tags": ["iso42001", "clause:2", "criterios", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q004",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.7 — Término 3.1 Organización",
+    "type": "single-choice",
+    "question": "Si una organización forma parte de una entidad mayor, ¿a qué se refiere el término \"organización\" en ISO/IEC 42001?",
+    "options": [
+      "A la entidad mayor completa, incluyendo todas sus filiales.",
+      "Únicamente a la parte de la entidad mayor que está dentro del alcance del sistema de gestión de IA.",
+      "A la casa matriz, con independencia del alcance declarado.",
+      "A cualquier unidad que utilice tecnología, esté o no en el alcance."
+    ],
+    "answer": 1,
+    "explanation": "La NOTA 2 del término 3.1 aclara que si la organización es parte de una entidad más grande, el término se refiere únicamente a la parte que está dentro del alcance del SGIA.",
+    "tags": ["iso42001", "clause:3", "terminologia", "alcance", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q005",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.8 — Término 3.2 Parte interesada",
+    "type": "single-choice",
+    "question": "¿Cuál es la definición de **parte interesada** aplicable al SGIA?",
+    "options": [
+      "Persona u organización que ha firmado un contrato con la organización auditada.",
+      "Persona u organización que puede afectar, verse afectada o percibirse a sí misma como afectada por una decisión o actividad.",
+      "Cualquier accionista o inversor de la organización.",
+      "Persona designada por la alta dirección para representar al SGIA."
+    ],
+    "answer": 1,
+    "explanation": "La definición incluye la percepción de afectación, no solo la afectación real ni la existencia de una relación contractual. Esto amplía deliberadamente el universo de partes interesadas del SGIA.",
+    "tags": ["iso42001", "clause:3", "partes-interesadas", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q006",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.8 — Término 3.3 Alta dirección",
+    "type": "single-choice",
+    "question": "Según la definición de **alta dirección**, ¿qué facultad se le reconoce explícitamente?",
+    "options": [
+      "Auditar internamente el SGIA sin restricciones de independencia.",
+      "Delegar autoridad y proporcionar recursos dentro de la organización.",
+      "Modificar los requisitos de ISO/IEC 42001 según el contexto.",
+      "Aceptar cualquier nivel de riesgo residual sin documentarlo."
+    ],
+    "answer": 1,
+    "explanation": "La NOTA del término 3.3 indica que la alta dirección tiene el poder de delegar autoridad y proporcionar recursos dentro de la organización. Esa capacidad es la base de la evidencia de liderazgo (5.1).",
+    "tags": ["iso42001", "clause:3", "liderazgo", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q007",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.9 — Términos 3.5 y 3.6",
+    "type": "single-choice",
+    "question": "¿Qué distingue una **política** de un **objetivo** en la terminología del SGIA?",
+    "options": [
+      "La política es un resultado a lograr; el objetivo son las intenciones expresadas por la alta dirección.",
+      "La política son las intenciones y dirección expresadas formalmente por la alta dirección; el objetivo es un resultado a lograr.",
+      "Ambos términos son intercambiables dentro del SGIA.",
+      "La política solo aplica a IA generativa y el objetivo a IA tradicional."
+    ],
+    "answer": 1,
+    "explanation": "Política (3.5) = intenciones y dirección de una organización expresadas formalmente por su alta dirección. Objetivo (3.6) = resultado a lograr. La política proporciona el marco para establecer los objetivos (5.2 b).",
+    "tags": ["iso42001", "clause:3", "politica", "objetivos", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q008",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.91 — SGIA vs Sistema de IA",
+    "type": "single-choice",
+    "question": "El material describe la confusión entre **SGIA** y **sistema de IA** como \"la más costosa en auditoría\". ¿Cuál es la distinción correcta?",
+    "options": [
+      "El SGIA es el modelo entrenado y el sistema de IA es la documentación que lo describe.",
+      "El SGIA es el marco de gestión (políticas, procesos, roles, medición, mejora); el sistema de IA es la solución que produce resultados (modelo, datos, componentes, operación).",
+      "Son sinónimos: un sistema de IA certificado equivale a un SGIA implantado.",
+      "El SGIA solo existe cuando la organización desarrolla sus propios modelos."
+    ],
+    "answer": 1,
+    "explanation": "Un mismo SGIA puede cubrir varios sistemas de IA, y un sistema de IA puede cambiar sin que el SGIA cambie, siempre que el cambio esté controlado. Confundirlos lleva a evaluar tecnología sin criterio de gestión, o documentos sin evidencia operativa.",
+    "tags": ["iso42001", "sgia", "terminologia", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q009",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.10 — Cláusula 4.1",
+    "type": "single-choice",
+    "question": "Además de las cuestiones externas e internas, ¿qué exige explícitamente la Cláusula 4.1 que la organización determine?",
+    "options": [
+      "El presupuesto anual asignado al SGIA.",
+      "Sus roles con respecto a los sistemas de IA y si el cambio climático es una cuestión relevante.",
+      "El número de modelos en producción y su precisión promedio.",
+      "La lista completa de controles del Anexo A que aplicará."
+    ],
+    "answer": 1,
+    "explanation": "4.1 exige determinar las cuestiones externas e internas, determinar si el cambio climático es una cuestión relevante, considerar el propósito previsto de los sistemas de IA y determinar los roles de la organización respecto a ellos.",
+    "tags": ["iso42001", "clause:4.1", "contexto", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q010",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.10 — NOTA 1 de 4.1",
+    "type": "multiple-choice",
+    "question": "Según la NOTA 1 de la Cláusula 4.1, ¿cuáles de los siguientes son roles que una organización puede tener respecto a un sistema de IA? *(selecciona todas las correctas)*",
+    "options": [
+      "Proveedor de IA",
+      "Sujeto de IA",
+      "Auditor certificado de IA",
+      "Autoridad de IA"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "Los roles citados son: proveedor de IA, productor de IA, cliente de IA, socio de IA, sujeto de IA y autoridad de IA. 'Auditor certificado de IA' no es un rol del ecosistema definido en la norma. Un rol puede aplicar a toda la organización o a una parte, y una organización puede tener más de uno.",
+    "tags": ["iso42001", "clause:4.1", "rol-organizacion", "iso22989", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q011",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.11 — NOTA 2 de 4.1",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes se clasifica como cuestión de **contexto externo** según la NOTA 2 de la Cláusula 4.1?",
+    "options": [
+      "Valores, cultura y ética organizacional.",
+      "Capacidades y recursos de la organización.",
+      "Requisitos legales y regulatorios y panorama competitivo.",
+      "Políticas y estrategias organizacionales."
+    ],
+    "answer": 2,
+    "explanation": "El contexto externo incluye requisitos legales y regulatorios, incentivos, factores sociales/culturales/éticos, panorama competitivo y cambios en el entorno tecnológico. Las otras tres opciones son contexto interno.",
+    "tags": ["iso42001", "clause:4.1", "contexto", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q012",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.11 — NOTA 3 de 4.1",
+    "type": "single-choice",
+    "question": "Si la organización trata información de identificación personal (PII), ¿qué roles adicionales pueden ser relevantes según la norma?",
+    "options": [
+      "Controlador y procesador de PII, con orientación en ISO/IEC 29100.",
+      "Auditor líder y auditor en formación, según ISO 19011.",
+      "Proveedor y productor de IA únicamente.",
+      "Ninguno: la privacidad queda fuera del alcance del SGIA."
+    ],
+    "answer": 0,
+    "explanation": "La NOTA 3 de 4.1 señala que si la organización trata PII, los roles de controlador y procesador de PII pueden ser relevantes, y remite a ISO/IEC 29100 para orientación sobre esos roles.",
+    "tags": ["iso42001", "clause:4.1", "privacidad", "rol-organizacion", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q013",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.12 — Cláusula 4.2",
+    "type": "single-choice",
+    "question": "La Cláusula 4.2 exige determinar tres cosas sobre las partes interesadas. ¿Cuál es la **tercera**, además de identificarlas y determinar sus requisitos?",
+    "options": [
+      "Obtener su aprobación formal del alcance del SGIA.",
+      "Determinar cuáles de esos requisitos se abordarán a través del sistema de gestión de IA.",
+      "Publicar sus datos de contacto en la política de IA.",
+      "Asignarles un responsable dentro del equipo auditor."
+    ],
+    "answer": 1,
+    "explanation": "4.2 exige determinar: las partes interesadas relevantes, sus requisitos relevantes, y cuáles de esos requisitos se abordarán a través del SGIA. Esa tercera decisión es la que convierte una lista en un insumo de gestión.",
+    "tags": ["iso42001", "clause:4.2", "partes-interesadas", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q014",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.94 — Cláusula 4.2 declarar vs demostrar",
+    "type": "single-choice",
+    "question": "Una organización presenta una lista prolija de partes interesadas, pero ningún control, canal de comunicación ni monitoreo asociado a sus requisitos. Desde la óptica auditora, ¿cuál es la lectura correcta?",
+    "options": [
+      "Se cumple 4.2, porque el requisito es únicamente identificar a las partes interesadas.",
+      "Hay una brecha: 4.2 no es 'listar', es incorporar los requisitos aplicables al SGIA mediante controles, comunicación y monitoreo.",
+      "No es auditable porque las partes interesadas son un concepto subjetivo.",
+      "Se debe reportar contra la Cláusula 9 por falta de medición."
+    ],
+    "answer": 1,
+    "explanation": "El material insiste en la diferencia entre declarar y demostrar: el auditor verifica que las partes estén identificadas Y que sus requisitos aplicables se traduzcan en controles, comunicación y monitoreo.",
+    "tags": ["iso42001", "clause:4.2", "partes-interesadas", "evidencia", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q015",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.12 — Cláusula 4.3",
+    "type": "single-choice",
+    "question": "Respecto al alcance del SGIA (Cláusula 4.3), ¿qué exige la norma sobre su formalización?",
+    "options": [
+      "Debe comunicarse verbalmente en la reunión de apertura de cada auditoría.",
+      "Debe estar disponible como información documentada.",
+      "Debe ser aprobado por un organismo de certificación externo.",
+      "Debe revisarse únicamente cuando cambie la alta dirección."
+    ],
+    "answer": 1,
+    "explanation": "4.3 establece que el alcance debe estar disponible como información documentada, y que al determinarlo se consideran las cuestiones de 4.1 y los requisitos de 4.2.",
+    "tags": ["iso42001", "clause:4.3", "alcance", "informacion-documentada", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q016",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.94 — Cláusula 4.3 exclusiones",
+    "type": "single-choice",
+    "question": "Como auditor evalúas el alcance del SGIA. ¿Qué riesgo señala el material para un alcance **demasiado estrecho sin justificación**?",
+    "options": [
+      "Genera un SGIA inoperable por falta de recursos.",
+      "Genera brechas y riesgos ocultos, y permite 'evadir' requisitos críticos.",
+      "Obliga a aplicar los 38 controles del Anexo A.",
+      "Impide realizar auditorías de tercera parte."
+    ],
+    "answer": 1,
+    "explanation": "El material contrasta ambos extremos: un alcance demasiado amplio sin recursos genera un SGIA inoperable; uno demasiado estrecho sin justificación genera brechas y riesgos ocultos. Un alcance ambiguo además impide un muestreo efectivo.",
+    "tags": ["iso42001", "clause:4.3", "alcance", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q017",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.95-96 — Caso Fintech",
+    "type": "single-choice",
+    "question": "Una Fintech usa IA para scoring crediticio. La auditoría detecta que el análisis de contexto ignora la regulación financiera, no identifica reguladores ni clientes como partes interesadas, y el alcance excluye el sistema crítico alegando que es SaaS externo. Según la resolución modelo del material, ¿cómo debe estructurarse el hallazgo?",
+    "options": [
+      "Hallazgo principal contra 4.1, sin referencias adicionales.",
+      "Hallazgo principal contra 4.3 (Alcance) por exclusión injustificada, referenciando 4.1 y 4.2 como debilidades contribuyentes.",
+      "Tres hallazgos independientes de igual severidad contra 4.1, 4.2 y 4.3.",
+      "No procede hallazgo: la responsabilidad recae en el proveedor SaaS."
+    ],
+    "answer": 1,
+    "explanation": "La respuesta orientativa del material formula el hallazgo principal en 4.3 porque el SGIA excluye injustificadamente el sistema crítico, y referencia 4.1 (regulación no considerada) y 4.2 (reguladores y clientes omitidos) como contribuyentes sistémicos.",
+    "tags": ["iso42001", "clause:4.3", "hallazgos", "caso-aplicado", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q018",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.95 — Caso Fintech, exclusión SaaS",
+    "type": "single-choice",
+    "question": "Una organización excluye del alcance del SGIA un sistema de IA crítico argumentando que \"es un SaaS externo, la responsabilidad es del proveedor\". ¿Cuál es la valoración correcta?",
+    "options": [
+      "Es válida: la norma solo aplica a sistemas desarrollados internamente.",
+      "Excluir un sistema crítico por ser externo no elimina la responsabilidad organizacional; la norma exige gestionar la IA según el rol y el impacto.",
+      "Es válida siempre que el proveedor tenga certificación ISO/IEC 27001.",
+      "Es válida solo si el sistema no trata datos personales."
+    ],
+    "answer": 1,
+    "explanation": "ISO/IEC 42001 exige gestionar la IA según el rol y el impacto, incluso si el proveedor desarrolla la tecnología. La externalización no elimina la obligación de control (8.1 exige controlar los procesos, productos o servicios proporcionados externamente).",
+    "tags": ["iso42001", "clause:4.3", "terceros", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q019",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.13 — Cláusula 4.4",
+    "type": "single-choice",
+    "question": "¿Qué exige la Cláusula 4.4 respecto al sistema de gestión de IA?",
+    "options": [
+      "Certificarlo ante un organismo acreditado antes de operarlo.",
+      "Establecer, implementar, mantener, mejorar continuamente y documentar el SGIA, incluidos los procesos necesarios y sus interacciones.",
+      "Limitarlo a un solo sistema de IA por organización.",
+      "Definir únicamente la política y los objetivos de IA."
+    ],
+    "answer": 1,
+    "explanation": "4.4 exige establecer, implementar, mantener, mejorar continuamente y documentar el SGIA, incluidos los procesos necesarios y sus interacciones, de acuerdo con los requisitos del documento.",
+    "tags": ["iso42001", "clause:4.4", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q020",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.96 — Cláusula 4.4 en auditoría",
+    "type": "single-choice",
+    "question": "Al auditar la Cláusula 4.4, ¿qué evidencia es más pertinente para demostrar que el SGIA funciona \"como sistema y no como colección de documentos\"?",
+    "options": [
+      "El certificado de asistencia a la capacitación de la norma.",
+      "Mapa de procesos con responsabilidades, entradas/salidas, controles integrados y evidencias de operación.",
+      "El currículum del responsable del SGIA.",
+      "La factura del proveedor de la plataforma de IA."
+    ],
+    "answer": 1,
+    "explanation": "Un buen mapa de procesos permite auditar por trazabilidad: de riesgo → control → evidencia → resultado. Sin él, la auditoría se pierde en papeles sin poder demostrar operación.",
+    "tags": ["iso42001", "clause:4.4", "evidencia", "trazabilidad", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q021",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.4 — Estructura de la norma",
+    "type": "single-choice",
+    "question": "¿Cuál es el orden correcto de las cláusulas 4 a 10 de ISO/IEC 42001?",
+    "options": [
+      "Contexto, Liderazgo, Planificación, Operación, Soporte, Mejora, Evaluación del desempeño.",
+      "Contexto, Liderazgo, Planificación, Soporte, Operación, Evaluación del desempeño, Mejora.",
+      "Liderazgo, Contexto, Soporte, Planificación, Operación, Mejora, Evaluación del desempeño.",
+      "Contexto, Planificación, Liderazgo, Operación, Soporte, Evaluación del desempeño, Mejora."
+    ],
+    "answer": 1,
+    "explanation": "4 Contexto de la organización, 5 Liderazgo, 6 Planificación, 7 Soporte, 8 Operación, 9 Evaluación del desempeño, 10 Mejora. Es la estructura armonizada (HLS) común a las normas de sistemas de gestión.",
+    "tags": ["iso42001", "estructura-hls", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q022",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.4-5 — Estructura armonizada",
+    "type": "single-choice",
+    "question": "¿Cuál es el propósito declarado de que ISO/IEC 42001 aplique la **estructura armonizada (HLS)**?",
+    "options": [
+      "Reducir el número de controles que la organización debe implementar.",
+      "Mejorar la alineación entre las normas de sistemas de gestión mediante números y títulos de cláusula, texto y definiciones núcleo comunes.",
+      "Permitir que la certificación sea emitida por cualquier organismo sin acreditación.",
+      "Sustituir la necesidad de un análisis de contexto propio."
+    ],
+    "answer": 1,
+    "explanation": "La NOTA de la introducción indica que la HLS (números de cláusula idénticos, títulos, texto y términos y definiciones núcleo comunes) se desarrolló para mejorar la alineación entre las normas de sistemas de gestión. Esto facilita integrar auditorías del SGIA con calidad o seguridad, reutilizando prácticas como 9.2 y 9.3.",
+    "tags": ["iso42001", "estructura-hls", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q023",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.2 — Introducción",
+    "type": "single-choice",
+    "question": "La introducción de la norma señala que ciertas características de la IA pueden justificar salvaguardas distintas a las tradicionales. ¿Cuáles menciona explícitamente?",
+    "options": [
+      "El coste de cómputo y la latencia de inferencia.",
+      "La capacidad de aprender y mejorar continuamente, y la falta de transparencia o explicabilidad.",
+      "La cantidad de parámetros del modelo y el idioma de entrenamiento.",
+      "La disponibilidad de GPU y la ubicación del centro de datos."
+    ],
+    "answer": 1,
+    "explanation": "La introducción indica que características como la capacidad de aprender y mejorar continuamente, o la falta de transparencia o explicabilidad, pueden justificar salvaguardas diferentes si plantean preocupaciones adicionales frente a cómo se realizaría tradicionalmente la tarea.",
+    "tags": ["iso42001", "explicabilidad", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q024",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.92 — Ciclo de vida del sistema de IA",
+    "type": "single-choice",
+    "question": "Según el material, al auditar el **ciclo de vida** de un sistema de IA, ¿dónde aparecen muchos de los fallos y por qué?",
+    "options": [
+      "En el entrenamiento, porque es la fase con más datos.",
+      "En operación (monitoreo y deriva), por lo que el ciclo de vida es evidencia continua y no solo inicial.",
+      "En el diseño, porque no existe documentación en esa fase.",
+      "En el retiro, porque no hay controles definidos para esa etapa."
+    ],
+    "answer": 1,
+    "explanation": "El material advierte que muchos fallos aparecen en operación (monitoreo/deriva), no en entrenamiento. Por eso el auditor verifica controles y evidencias por fase — criterios de aceptación, pruebas, autorizaciones, monitoreo de deriva, incidentes y decisiones de retiro — buscando trazabilidad end-to-end.",
+    "tags": ["iso42001", "ciclo-de-vida", "deriva", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q025",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.87-88 — El triángulo auditor",
+    "type": "single-choice",
+    "question": "El material describe el \"triángulo auditor\". ¿Cuáles son sus tres vértices?",
+    "options": [
+      "Alcance – Programa – Informe.",
+      "Criterios – Evidencia – Conclusión.",
+      "Riesgo – Control – SoA.",
+      "Planear – Hacer – Verificar."
+    ],
+    "answer": 1,
+    "explanation": "Una conclusión de auditoría se sostiene cuando el criterio es claro, la evidencia es suficiente y apropiada, y la conclusión es trazable. Un error típico es confundir 'alcance' (qué auditas) con 'criterios' (contra qué comparas).",
+    "tags": ["iso19011", "criterios", "evidencia", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q026",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.86 — Enfoque del rol I42001IA",
+    "type": "single-choice",
+    "question": "¿Qué distingue el alcance del rol **Internal Auditor (I42001IA)** frente a un rol de ingeniería de IA?",
+    "options": [
+      "El auditor interno debe poder reentrenar modelos para validar su precisión.",
+      "El auditor interno se centra en el aseguramiento del SGIA con evidencia objetiva; no evalúa habilidades de ingeniería ni desarrollo de modelos.",
+      "El auditor interno diseña los controles del Anexo A que después audita.",
+      "El auditor interno solo revisa documentos y no interpreta evidencia técnica."
+    ],
+    "answer": 1,
+    "explanation": "El rol se centra en obtener y evaluar evidencia objetiva sobre gobernanza, riesgos e impactos, controles (incluida la SoA), medición y tratamiento de no conformidades. Puede interpretar evidencia técnica reportada por la organización, pero no realiza entrenamiento ni desarrollo de modelos.",
+    "tags": ["iso42001", "rol-auditor", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q027",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.88 — Evidencia en auditorías de IA",
+    "type": "single-choice",
+    "question": "Para verificar que el monitoreo en producción opera como se define, el material recomienda **triangular**. ¿Qué combinación de fuentes describe mejor esa práctica?",
+    "options": [
+      "Tres entrevistas a personas distintas del mismo equipo.",
+      "Documento + entrevista + observación o registro del sistema.",
+      "Tres versiones del mismo procedimiento firmado.",
+      "El dashboard de métricas revisado en tres fechas distintas."
+    ],
+    "answer": 1,
+    "explanation": "En sistemas algorítmicos la evidencia robusta requiere triangulación: documento + entrevista + evidencia operacional (registro/observación). Depender solo de narrativas verbales es evidencia débil según ISO 19011.",
+    "tags": ["iso19011", "evidencia", "triangulacion", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q028",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.93 — Evaluación de impacto auditable",
+    "type": "single-choice",
+    "question": "El material afirma que en una evaluación de impacto del sistema de IA \"lo auditable es la trazabilidad\". ¿Qué elementos conforman esa trazabilidad?",
+    "options": [
+      "El nombre del proveedor, el coste del sistema y la fecha de compra.",
+      "Método usado, alcance, resultados, decisiones y seguimiento, conectados con riesgos, controles y acciones.",
+      "La arquitectura del modelo y sus hiperparámetros.",
+      "La firma del director general en la portada del documento."
+    ],
+    "answer": 1,
+    "explanation": "No basta con que exista un documento: debe conectarse con riesgos, controles y acciones, y actualizarse ante cambios significativos. Una evaluación de impacto sin dueño ni fecha de revisión suele ser evidencia débil.",
+    "tags": ["iso42001", "evaluacion-impacto", "trazabilidad", "difficulty:advanced", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q029",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.99 — Checklist de cierre Módulo 1",
+    "type": "multiple-choice",
+    "question": "Antes de entrar a auditar las cláusulas 5–10, ¿qué elementos debería confirmar un auditor del SGIA según el checklist mínimo del material? *(selecciona todas las correctas)*",
+    "options": [
+      "Terminología consistente y contexto actualizado.",
+      "Partes interesadas y requisitos aplicables identificados.",
+      "Alcance definido y justificable, con procesos del SGIA descritos e implementados.",
+      "Certificación ISO/IEC 27001 vigente de la organización."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "El checklist mínimo incluye: (1) terminología consistente, (2) contexto actualizado, (3) partes interesadas y requisitos aplicables, (4) alcance definido y justificable, (5) procesos del SGIA descritos e implementados. La certificación ISO/IEC 27001 no es un prerrequisito.",
+    "tags": ["iso42001", "clause:4", "checklist", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-d1-q030",
+    "domainId": "domain-1",
+    "source": "MATERIALES p.36-37 — Anexo C",
+    "type": "single-choice",
+    "question": "¿Qué contiene el **Anexo C** de ISO/IEC 42001?",
+    "options": [
+      "Los controles de referencia y sus objetivos de control.",
+      "Ejemplos de objetivos organizacionales relacionados con IA y de fuentes de riesgo relacionadas con IA.",
+      "La guía de implementación de los controles del Anexo A.",
+      "Los requisitos de auditoría interna y revisión por la dirección."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo C aporta ejemplos no exhaustivos de objetivos organizacionales (mejorar eficiencia, apoyar decisiones basadas en datos, mejorar productos, etc.) y de fuentes de riesgo (calidad insuficiente de datos, falta de transparencia, sesgos, uso indebido, cambios inesperados de comportamiento).",
+    "tags": ["iso42001", "anexo-c", "riesgos", "difficulty:intermediate", "module:m01"]
+  }
+]

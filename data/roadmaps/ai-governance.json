@@ -1,0 +1,31 @@
+{
+  "id": "ai-governance",
+  "title": "Roadmap de Gobernanza y Auditoría de IA",
+  "description": "Ruta sugerida para auditar y gobernar sistemas de gestión de IA con evidencia objetiva, según ISO/IEC 42001 e ISO 19011.",
+  "steps": [
+    {
+      "order": 1,
+      "examId": "iso-42001-ia",
+      "code": "I42001IA",
+      "title": "ISO/IEC 42001 Internal Auditor Professional",
+      "goal": "Planificar y ejecutar auditorías internas del SGIA: criterios, evidencia objetiva, hallazgos, no conformidades y verificación de eficacia.",
+      "status": "available"
+    },
+    {
+      "order": 2,
+      "examId": "iso-42001-la",
+      "code": "I42001LA",
+      "title": "ISO/IEC 42001 Lead Auditor",
+      "goal": "Dirigir equipos auditores, gestionar programas de auditoría completos y sostener conclusiones ante dirección y terceras partes.",
+      "status": "planned"
+    },
+    {
+      "order": 3,
+      "examId": "iso-27001-ia",
+      "code": "I27001IA",
+      "title": "ISO/IEC 27001 Internal Auditor",
+      "goal": "Extender el criterio auditor a seguridad de la información e integrar auditorías multi-norma reutilizando la estructura armonizada (HLS).",
+      "status": "planned"
+    }
+  ]
+}

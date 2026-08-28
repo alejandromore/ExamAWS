@@ -14,7 +14,7 @@ export function renderRoadmapView(container, { onGoHome, onOpenExam }) {
         <div class="timeline-number">${step.order}</div>
         <div>
           <div class="exam-title">
-            <span class="badge aws">${escapeHtml(step.code)}</span>
+            <span class="badge code">${escapeHtml(step.code)}</span>
             <h3>${escapeHtml(step.title)}</h3>
             <span class="badge ${available ? "" : "empty"}">${available ? `${examAvailableQuestions(exam)} preguntas` : "Pendiente"}</span>
           </div>
@@ -27,8 +27,12 @@ export function renderRoadmapView(container, { onGoHome, onOpenExam }) {
   const examOptions = exams.map(exam => `<option value="${exam.id}">${escapeHtml(exam.code)} · ${escapeHtml(exam.title)}</option>`).join("");
 
   container.innerHTML = `
-    <button id="homeBtn" class="btn btn-light" type="button">← Menú inicial</button>
-    <section class="hero-card" style="margin-top: 14px;">
+    <nav class="breadcrumbs" aria-label="Navegación">
+      <button id="homeBtn" class="crumb" type="button">Menú inicial</button>
+      <span class="crumb-sep" aria-hidden="true">›</span>
+      <span class="crumb current" aria-current="page">${escapeHtml(roadmap.title)}</span>
+    </nav>
+    <section class="hero-card">
       <p class="eyebrow">Roadmap</p>
       <h2>${escapeHtml(roadmap.title)}</h2>
       <p>${escapeHtml(roadmap.description)}</p>

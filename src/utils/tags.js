@@ -29,6 +29,12 @@ export function renderTagBadges(tags = []) {
       const mod = tag.replace("module:", "").toUpperCase();
       label = `📚 Módulo ${mod}`;
       badgeClass = "badge-tag module";
+    } else if (tag.startsWith("clause:")) {
+      label = `📑 Cláusula ${tag.replace("clause:", "")}`;
+      badgeClass = "badge-tag clause";
+    } else if (tag.toLowerCase() === "iso42001" || tag.toLowerCase() === "iso19011" || tag.toLowerCase() === "iso22989" || tag.toLowerCase() === "iso23894") {
+      label = `📕 ${tag.replace(/iso/i, "ISO ")}`;
+      badgeClass = "badge-tag standard";
     } else if (tag.toLowerCase() === "jemjaf") {
       label = "🌐 Banco Jemjaf";
       badgeClass = "badge-tag jemjaf";

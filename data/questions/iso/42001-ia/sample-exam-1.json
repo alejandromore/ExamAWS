@@ -1,0 +1,642 @@
+[
+  {
+    "id": "iso42001-se1-q001",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.1",
+    "type": "single-choice",
+    "question": "¿Cuál definición describe mejor un **programa de auditoría** en el contexto de ISO 19011 aplicado al SGIA?",
+    "options": [
+      "Una lista de verificación usada por un auditor en una sola entrevista.",
+      "Acuerdos para un conjunto de auditorías planificadas en un periodo con un propósito.",
+      "El documento que resume solo los hallazgos de una auditoría específica.",
+      "La agenda horaria de la reunión de apertura de una auditoría."
+    ],
+    "answer": 1,
+    "explanation": "ISO 19011 define el programa de auditoría como el conjunto de una o más auditorías planificadas para un periodo de tiempo determinado y dirigidas hacia un propósito específico. No es una lista de verificación, ni un informe, ni una agenda.",
+    "tags": ["iso19011", "programa-auditoria", "terminologia", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q002",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.1",
+    "type": "single-choice",
+    "question": "En terminología de auditoría, ¿qué enunciado diferencia correctamente el **alcance de la auditoría** y los **criterios de auditoría**?",
+    "options": [
+      "El alcance es el conjunto de requisitos y los criterios son los límites de la auditoría.",
+      "El alcance describe extensión y límites; los criterios son los requisitos de referencia contra los que se compara la evidencia.",
+      "Ambos significan lo mismo si la auditoría es interna.",
+      "El alcance solo aplica a auditorías externas y los criterios a auditorías internas."
+    ],
+    "answer": 1,
+    "explanation": "El alcance delimita QUÉ se audita (ubicaciones, funciones, procesos, periodo). Los criterios definen CONTRA QUÉ se compara la evidencia (norma, políticas, procedimientos, requisitos legales o contractuales).",
+    "tags": ["iso19011", "alcance", "criterios", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q003",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.1",
+    "type": "single-choice",
+    "question": "¿Cuál opción utiliza correctamente los términos **hallazgos de auditoría** y **conclusiones de auditoría**?",
+    "options": [
+      "Los hallazgos son el juicio final y las conclusiones son los datos brutos recopilados.",
+      "Los hallazgos son resultados de evaluar evidencia frente a criterios; las conclusiones son el resultado global tras considerar todos los hallazgos y objetivos.",
+      "Las conclusiones son observaciones informales y los hallazgos son recomendaciones de mejora.",
+      "Ambos términos sólo se usan en auditorías de certificación."
+    ],
+    "answer": 1,
+    "explanation": "Un hallazgo resulta de comparar evidencia contra criterios (indica conformidad o no conformidad). La conclusión es el resultado global de la auditoría después de considerar los objetivos y todos los hallazgos.",
+    "tags": ["iso19011", "hallazgos", "conclusiones", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q004",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.2",
+    "type": "single-choice",
+    "question": "¿Qué describe mejor la **evidencia objetiva** en una auditoría del SGIA?",
+    "options": [
+      "Opiniones del auditor sobre cómo debería operar la IA.",
+      "Datos que respaldan la existencia o veracidad de algo relevante para los criterios de auditoría.",
+      "Cualquier comentario de pasillo obtenido durante la visita.",
+      "Una hipótesis técnica sobre el modelo de IA no verificada."
+    ],
+    "answer": 1,
+    "explanation": "La evidencia objetiva son datos que respaldan la existencia o verdad de algo. Se obtiene por observación, medición, prueba u otros medios, y generalmente consiste en registros, declaraciones de hechos u otra información relevante y verificable.",
+    "tags": ["iso19011", "evidencia", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q005",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.2",
+    "type": "single-choice",
+    "question": "Una responsable dice: \"El **plan de auditoría** de este año incluye todas las auditorías internas previstas para las distintas áreas con sus fechas generales\". ¿Qué corrección terminológica es más adecuada?",
+    "options": [
+      "Es correcto, porque plan y programa de auditoría son sinónimos.",
+      "Debería hablar de programa de auditoría, porque se refiere al conjunto de auditorías planificadas en un periodo.",
+      "Debería hablar de hallazgos de auditoría, porque describe resultados esperados.",
+      "Debería hablar de criterios de auditoría, porque incluye fechas y áreas."
+    ],
+    "answer": 1,
+    "explanation": "El plan de auditoría describe las actividades y arreglos de UNA auditoría individual. El conjunto anual de auditorías planificadas para un periodo es el programa de auditoría.",
+    "tags": ["iso19011", "programa-auditoria", "plan-auditoria", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q006",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.2",
+    "type": "single-choice",
+    "question": "¿Cuál afirmación refleja mejor el significado de **independencia** en auditoría?",
+    "options": [
+      "Evitar cualquier interacción con el auditado durante la auditoría.",
+      "Actuar libre de sesgo y conflicto de intereses para sostener la objetividad.",
+      "No utilizar documentos internos de la organización como evidencia.",
+      "Rechazar la participación de expertos técnicos en todas las auditorías."
+    ],
+    "answer": 1,
+    "explanation": "La independencia es la base de la imparcialidad y de la objetividad de las conclusiones. Los auditores deben actuar sin prejuicios ni conflictos de intereses; en auditoría interna deben ser independientes de la función auditada siempre que sea posible.",
+    "tags": ["iso19011", "independencia", "principios", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q007",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.2",
+    "type": "single-choice",
+    "question": "En una auditoría del SGIA, ¿qué documento presenta formalmente hallazgos y conclusiones?",
+    "options": [
+      "Programa de auditoría.",
+      "Informe de auditoría.",
+      "Matriz de partes interesadas.",
+      "Declaración de aplicabilidad (SoA)."
+    ],
+    "answer": 1,
+    "explanation": "El informe de auditoría proporciona el registro completo, preciso, conciso y claro de la auditoría, incluyendo objetivos, alcance, criterios, hallazgos, evidencia relacionada y conclusiones.",
+    "tags": ["iso19011", "informe-auditoria", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "iso42001-se1-q008",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.3",
+    "type": "single-choice",
+    "question": "Un área de negocio no técnica pregunta para qué serviría implantar un SGIA si la organización ya usa IA comprada a terceros y no desarrolla modelos propios. ¿Qué respuesta refleja mejor el propósito del SGIA en ese contexto?",
+    "options": [
+      "No aporta valor, porque el SGIA solo aplica a equipos de desarrollo de modelos.",
+      "Sirve para estructurar cómo la organización gobierna riesgos, impactos, responsabilidades y mejora continua asociados al uso de esos sistemas de IA.",
+      "Solo sirve para redactar contratos con proveedores de software.",
+      "Su propósito principal es sustituir la regulación aplicable sobre IA."
+    ],
+    "answer": 1,
+    "explanation": "ISO/IEC 42001 está destinada a organizaciones que PROVEEN O UTILIZAN productos o servicios que usan sistemas de IA. El SGIA estructura la gobernanza de riesgos, impactos, responsabilidades y mejora continua aunque la tecnología sea de terceros.",
+    "tags": ["iso42001", "clause:1", "aplicabilidad", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q009",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.3",
+    "type": "single-choice",
+    "question": "Una empresa de logística no desarrolla modelos propios, pero usa un sistema de IA externo para optimizar rutas y esto afecta tiempos de entrega y atención a clientes. Respecto a ISO/IEC 42001, ¿qué afirmación es más correcta?",
+    "options": [
+      "No aplica, porque la empresa no diseña el sistema de IA.",
+      "Puede aplicar, porque usa sistemas de IA y necesita gestionar riesgos e impactos asociados a ese uso.",
+      "Solo aplicaría si el proveedor del sistema no tuviera certificaciones previas.",
+      "No aplica mientras la IA no trate datos personales."
+    ],
+    "answer": 1,
+    "explanation": "La norma es aplicable a cualquier organización, independientemente de su tamaño, tipo o naturaleza, que proporcione o utilice productos o servicios que utilicen sistemas de IA. El uso genera responsabilidad de gestión de riesgos e impactos.",
+    "tags": ["iso42001", "clause:1", "aplicabilidad", "rol-organizacion", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q010",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.3",
+    "type": "single-choice",
+    "question": "Un área de negocio afirma que ISO/IEC 42001 \"solo sirve para empresas tecnológicas\". ¿Cuál es la mejor respuesta?",
+    "options": [
+      "Es correcto, porque la norma está diseñada exclusivamente para fabricantes de software de IA.",
+      "Es incorrecto; puede ser útil para organizaciones de distintos sectores que proveen o usan sistemas de IA y necesitan gobernarlos.",
+      "Es correcto solo para organizaciones privadas, no públicas.",
+      "Es incorrecto únicamente si la organización usa IA generativa."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo D describe el uso del SGIA en diferentes dominios o sectores. La norma es aplicable a cualquier organización, pública o privada, de cualquier tamaño, que provea o use sistemas de IA.",
+    "tags": ["iso42001", "clause:1", "aplicabilidad", "anexo-d", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q011",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.4",
+    "type": "single-choice",
+    "question": "¿En qué capítulo de ISO/IEC 42001 se ubica, de forma general, la comprensión del contexto de la organización, partes interesadas y alcance del SGIA?",
+    "options": [
+      "Capítulo 4.",
+      "Capítulo 5.",
+      "Capítulo 8.",
+      "Capítulo 10."
+    ],
+    "answer": 0,
+    "explanation": "La Cláusula 4 (Contexto de la organización) contiene 4.1 comprensión de la organización y su contexto, 4.2 necesidades y expectativas de las partes interesadas, 4.3 determinación del alcance y 4.4 el sistema de gestión de IA.",
+    "tags": ["iso42001", "clause:4", "estructura-hls", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q012",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.4",
+    "type": "single-choice",
+    "question": "Si una organización necesita ubicar en la norma dónde se espera que la alta dirección establezca la política de IA y demuestre compromiso con el SGIA, ¿qué capítulo debería consultar primero?",
+    "options": [
+      "Capítulo 4.",
+      "Capítulo 5.",
+      "Capítulo 7.",
+      "Capítulo 9."
+    ],
+    "answer": 1,
+    "explanation": "La Cláusula 5 (Liderazgo) cubre 5.1 liderazgo y compromiso, 5.2 política de IA y 5.3 roles, responsabilidades y autoridades.",
+    "tags": ["iso42001", "clause:5", "estructura-hls", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "iso42001-se1-q013",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.4",
+    "type": "single-choice",
+    "question": "¿Qué capítulo se relaciona principalmente con recursos, competencia, comunicación e información documentada del SGIA?",
+    "options": [
+      "Capítulo 6.",
+      "Capítulo 7.",
+      "Capítulo 8.",
+      "Capítulo 9."
+    ],
+    "answer": 1,
+    "explanation": "La Cláusula 7 (Soporte) cubre 7.1 recursos, 7.2 competencia, 7.3 concienciación, 7.4 comunicación y 7.5 información documentada.",
+    "tags": ["iso42001", "clause:7", "estructura-hls", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q014",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.4",
+    "type": "single-choice",
+    "question": "¿Cuál de las siguientes actividades corresponde mejor al capítulo 8 – Operación?",
+    "options": [
+      "Definir la política de IA.",
+      "Planificar objetivos de IA.",
+      "Aplicar y controlar procesos operativos relacionados con sistemas de IA.",
+      "Gestionar no conformidades y acciones correctivas."
+    ],
+    "answer": 2,
+    "explanation": "8.1 exige planificar, implementar y controlar los procesos necesarios, estableciendo criterios y aplicando el control conforme a ellos. La política es 5.2, los objetivos 6.2 y las no conformidades 10.2.",
+    "tags": ["iso42001", "clause:8", "estructura-hls", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q015",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.5",
+    "type": "single-choice",
+    "question": "En un taller, alguien describe una sección de la norma así: \"Aquí se pide definir qué se debe seguir y medir, cómo analizar resultados, hacer auditoría interna y revisión por la dirección\". ¿A qué capítulo se refiere?",
+    "options": [
+      "Capítulo 6.",
+      "Capítulo 8.",
+      "Capítulo 9.",
+      "Capítulo 10."
+    ],
+    "answer": 2,
+    "explanation": "La Cláusula 9 (Evaluación del desempeño) integra 9.1 monitoreo, medición, análisis y evaluación; 9.2 auditoría interna; y 9.3 revisión por la dirección.",
+    "tags": ["iso42001", "clause:9", "estructura-hls", "difficulty:basic", "module:m04"]
+  },
+  {
+    "id": "iso42001-se1-q016",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.5",
+    "type": "single-choice",
+    "question": "¿Qué capítulo trata principalmente las no conformidades, acciones correctivas y mejora continua del SGIA?",
+    "options": [
+      "Capítulo 7.",
+      "Capítulo 8.",
+      "Capítulo 9.",
+      "Capítulo 10."
+    ],
+    "answer": 3,
+    "explanation": "La Cláusula 10 (Mejora) contiene 10.1 mejora continua y 10.2 no conformidad y acción correctiva.",
+    "tags": ["iso42001", "clause:10", "estructura-hls", "difficulty:basic", "module:m06"]
+  },
+  {
+    "id": "iso42001-se1-q017",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.5",
+    "type": "single-choice",
+    "question": "¿Cuál emparejamiento actividad → capítulo es correcto?",
+    "options": [
+      "Determinar partes interesadas → capítulo 9.",
+      "Definir objetivos de IA → capítulo 6.",
+      "Auditoría interna → capítulo 5.",
+      "Información documentada → capítulo 10."
+    ],
+    "answer": 1,
+    "explanation": "6.2 establece los objetivos de IA y la planificación para lograrlos. Las partes interesadas son 4.2, la auditoría interna 9.2 y la información documentada 7.5.",
+    "tags": ["iso42001", "clause:6", "estructura-hls", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-se1-q018",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.5",
+    "type": "single-choice",
+    "question": "Una analista dice: \"Estoy revisando la parte donde la organización debe asegurar que su personal tenga la competencia necesaria y que se comuniquen internamente las responsabilidades del SGIA\". ¿Qué capítulo está revisando?",
+    "options": [
+      "Capítulo 5.",
+      "Capítulo 6.",
+      "Capítulo 7.",
+      "Capítulo 9."
+    ],
+    "answer": 2,
+    "explanation": "Competencia (7.2) y comunicación (7.4) pertenecen a la Cláusula 7 – Soporte.",
+    "tags": ["iso42001", "clause:7", "competencia", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q019",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.6",
+    "type": "single-choice",
+    "question": "En una presentación interna del SGIA aparece el flujo 'contexto → liderazgo → planificación → evaluación del desempeño → mejora'. ¿Qué observación es más adecuada?",
+    "options": [
+      "La secuencia es completa y no requiere ajustes.",
+      "Falta la parte de apoyo y operación entre planificación y evaluación del desempeño.",
+      "La mejora debería aparecer antes del liderazgo.",
+      "El contexto solo se incorpora después de la evaluación del desempeño."
+    ],
+    "answer": 1,
+    "explanation": "La estructura armonizada va 4 contexto → 5 liderazgo → 6 planificación → 7 soporte → 8 operación → 9 evaluación del desempeño → 10 mejora. Faltan las cláusulas 7 y 8.",
+    "tags": ["iso42001", "estructura-hls", "pdca", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q020",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.6",
+    "type": "single-choice",
+    "question": "¿Qué relación describe mejor el vínculo entre evaluación del desempeño y mejora en el SGIA?",
+    "options": [
+      "La mejora sustituye la necesidad de evaluar resultados.",
+      "La evaluación del desempeño aporta información que sustenta decisiones de mejora.",
+      "Son procesos independientes sin relación directa.",
+      "La mejora solo depende de la intuición de la alta dirección."
+    ],
+    "answer": 1,
+    "explanation": "En la lógica PHVA, el 'Verificar' (Cláusula 9) alimenta al 'Actuar' (Cláusula 10). Los resultados de medición, auditoría y revisión por la dirección sustentan las decisiones de mejora.",
+    "tags": ["iso42001", "pdca", "clause:9", "clause:10", "difficulty:basic", "module:m06"]
+  },
+  {
+    "id": "iso42001-se1-q021",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.6",
+    "type": "single-choice",
+    "question": "Una organización ha definido contexto, política y objetivos de IA, pero no asigna recursos ni competencias antes de operar los sistemas. ¿Qué parte del ciclo está debilitada principalmente?",
+    "options": [
+      "Contexto.",
+      "Apoyo.",
+      "Mejora.",
+      "Revisión por la dirección."
+    ],
+    "answer": 1,
+    "explanation": "Recursos (7.1) y competencia (7.2) son requisitos de la Cláusula 7 – Soporte (Apoyo). Sin ellos, la operación carece de las condiciones habilitantes.",
+    "tags": ["iso42001", "clause:7", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q022",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.6",
+    "type": "single-choice",
+    "question": "¿Qué opción representa mejor la etapa de 'hacer' dentro de la lógica tipo PDCA del SGIA?",
+    "options": [
+      "Definir contexto y alcance.",
+      "Operar y controlar procesos planificados relacionados con IA.",
+      "Analizar resultados de auditoría interna.",
+      "Determinar acciones correctivas."
+    ],
+    "answer": 1,
+    "explanation": "El 'Hacer' corresponde a la Cláusula 8 – Operación: implementar y controlar los procesos planificados. Analizar auditorías es 'Verificar' y las acciones correctivas son 'Actuar'.",
+    "tags": ["iso42001", "pdca", "clause:8", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q023",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.7",
+    "type": "single-choice",
+    "question": "En un diagrama simplificado del SGIA aparecen solo las fases 'contexto', 'liderazgo' y 'planificación'. ¿Cuál es la mejor observación?",
+    "options": [
+      "Es suficiente, porque esas son las únicas fases obligatorias.",
+      "Faltan fases clave como apoyo, operación, evaluación del desempeño y mejora.",
+      "No falta nada si la organización tiene una política de IA.",
+      "Las fases omitidas solo aplican a certificaciones avanzadas."
+    ],
+    "answer": 1,
+    "explanation": "Los requisitos auditables del SGIA abarcan las cláusulas 4 a 10. Omitir 7, 8, 9 y 10 deja fuera soporte, operación, evaluación del desempeño y mejora.",
+    "tags": ["iso42001", "estructura-hls", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q024",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.7",
+    "type": "single-choice",
+    "question": "¿Cuál afirmación describe mejor el papel del contexto en relación con liderazgo y planificación?",
+    "options": [
+      "El contexto se analiza después de fijar objetivos y controles.",
+      "El contexto informa la dirección que establece el liderazgo y orienta la planificación posterior.",
+      "El contexto es irrelevante si ya existe una política de IA.",
+      "El contexto solo se usa para auditoría interna."
+    ],
+    "answer": 1,
+    "explanation": "6.1.1 exige considerar las cuestiones de 4.1 y los requisitos de 4.2 al planificar. El contexto es el insumo de la política, los objetivos y la evaluación de riesgos.",
+    "tags": ["iso42001", "clause:4", "clause:6", "contexto", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q025",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.7",
+    "type": "single-choice",
+    "question": "Una organización mide indicadores del SGIA y realiza auditorías internas, pero no toma ninguna decisión ni ajusta procesos con base en esos resultados. ¿Qué fase del ciclo está más débil?",
+    "options": [
+      "Contexto.",
+      "Planificación.",
+      "Mejora.",
+      "Apoyo."
+    ],
+    "answer": 2,
+    "explanation": "Medir y auditar sin actuar rompe el 'Actuar' del ciclo. La Cláusula 10 exige mejorar continuamente la idoneidad, adecuación y eficacia del SGIA a partir de los resultados.",
+    "tags": ["iso42001", "clause:10", "mejora-continua", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "iso42001-se1-q026",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.7",
+    "type": "single-choice",
+    "question": "¿Qué capítulo se asocia mejor con la definición de objetivos de IA y la planificación para lograrlos?",
+    "options": [
+      "Capítulo 4.",
+      "Capítulo 5.",
+      "Capítulo 6.",
+      "Capítulo 8."
+    ],
+    "answer": 2,
+    "explanation": "6.2 'Objetivos de IA y planificación para lograrlos' pertenece a la Cláusula 6 – Planificación.",
+    "tags": ["iso42001", "clause:6", "objetivos", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "iso42001-se1-q027",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.8",
+    "type": "single-choice",
+    "question": "¿Cuál afirmación identifica mejor una confusión frecuente que la **SoA** ayuda a evitar en el SGIA?",
+    "options": [
+      "Confundir la SoA con un documento que justifica controles seleccionados y excluidos frente a riesgos.",
+      "Confundir la SoA con un plan de trabajo o *statement of work*, cuando en realidad documenta controles necesarios y su justificación.",
+      "Confundir la SoA con el organigrama del equipo auditor.",
+      "Confundir la SoA con el acta de revisión por la dirección."
+    ],
+    "answer": 1,
+    "explanation": "SoA es *Statement of Applicability* (Declaración de aplicabilidad). Se confunde a menudo con *statement of work*. Documenta los controles necesarios y la justificación de inclusión y exclusión (6.1.3 f).",
+    "tags": ["iso42001", "soa", "clause:6.1.3", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q028",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.8",
+    "type": "single-choice",
+    "question": "Al revisar una SoA, observas la lista de controles aplicados, pero no explica por qué ciertos controles se excluyen ni a qué riesgos responden los incluidos. ¿Qué falta principal detectas?",
+    "options": [
+      "El presupuesto anual del SGIA.",
+      "La justificación de inclusión/exclusión y la trazabilidad riesgo–control.",
+      "La firma del auditor interno.",
+      "La descripción detallada del algoritmo."
+    ],
+    "answer": 1,
+    "explanation": "6.1.3 f) exige producir una declaración de aplicabilidad que contenga los controles necesarios y proporcione justificación para la inclusión y exclusión de controles. Sin ello se rompe la trazabilidad riesgo → control.",
+    "tags": ["iso42001", "soa", "trazabilidad", "clause:6.1.3", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q029",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.8",
+    "type": "single-choice",
+    "question": "¿Cuál afirmación sobre la SoA es correcta?",
+    "options": [
+      "Todos los controles del Anexo A deben aparecer siempre como aplicables.",
+      "La SoA puede incluir controles seleccionados y controles no aplicables, siempre con justificación.",
+      "La SoA reemplaza la evaluación de riesgos de IA.",
+      "La SoA solo se usa en auditorías externas."
+    ],
+    "answer": 1,
+    "explanation": "Los controles del Anexo A no son exhaustivos ni obligatorios en bloque. La organización puede excluir controles siempre que documente la justificación, y puede añadir controles adicionales.",
+    "tags": ["iso42001", "soa", "anexo-a", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q030",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.8",
+    "type": "single-choice",
+    "question": "¿Qué diferencia básica existe entre el **Anexo A** y el **Anexo B** de ISO/IEC 42001?",
+    "options": [
+      "El Anexo A define controles de referencia; el Anexo B proporciona orientación sobre su implementación.",
+      "El Anexo A contiene requisitos legales y el Anexo B sanciones por incumplimiento.",
+      "El Anexo A trata roles y el Anexo B auditoría interna.",
+      "No existe diferencia práctica entre ambos anexos."
+    ],
+    "answer": 0,
+    "explanation": "El Anexo A lista los objetivos de control y controles de referencia (9 grupos, 38 controles). El Anexo B sigue la misma estructura y aporta orientación de implementación.",
+    "tags": ["iso42001", "anexo-a", "anexo-b", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q031",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.9",
+    "type": "single-choice",
+    "question": "¿Qué uso adecuado puede darse al Anexo A cuando una organización revisa un control de IA ya existente pero quiere saber si su selección sigue siendo coherente?",
+    "options": [
+      "Usarlo como referencia para contrastar si el control elegido sigue siendo apropiado frente a riesgos y documentar la decisión en la SoA.",
+      "Usarlo solo si la organización desarrolla modelos fundacionales de IA.",
+      "Sustituir con él toda la evaluación de riesgos de IA.",
+      "Ignorarlo si el control ya existe desde antes de implantar el SGIA."
+    ],
+    "answer": 0,
+    "explanation": "6.1.3 b) pide comparar los controles determinados con los del Anexo A para verificar que no se haya omitido ningún control necesario, y documentar la decisión resultante en la SoA.",
+    "tags": ["iso42001", "anexo-a", "soa", "clause:6.1.3", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q032",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.9",
+    "type": "single-choice",
+    "question": "En una capacitación, alguien afirma: \"El Anexo B contiene nuevos requisitos obligatorios adicionales a los capítulos 4–10\". ¿Cómo responderías mejor?",
+    "options": [
+      "Es correcto, porque el Anexo B amplía los requisitos principales.",
+      "Es incorrecto; el Anexo B ofrece orientación para implementar controles, no añade nuevos requisitos obligatorios.",
+      "Es correcto solo para auditorías internas.",
+      "Es incorrecto porque el Anexo B trata únicamente de gestión documental."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo B es orientación de implementación: ayuda a comprender el propósito de los controles, considerar enfoques y adaptarlos al contexto. No es fuente de requisitos obligatorios.",
+    "tags": ["iso42001", "anexo-b", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q033",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.9",
+    "type": "single-choice",
+    "question": "¿Qué relación conceptual existe entre evaluación de riesgos de IA, tratamiento del riesgo y SoA?",
+    "options": [
+      "La SoA se prepara primero y luego se identifican riesgos.",
+      "La evaluación de riesgos informa el tratamiento del riesgo, y la SoA documenta los controles seleccionados y su justificación.",
+      "La SoA sustituye al tratamiento del riesgo.",
+      "El tratamiento del riesgo solo es necesario si existe auditoría externa."
+    ],
+    "answer": 1,
+    "explanation": "La secuencia normativa es 6.1.2 evaluación de riesgos → 6.1.3 tratamiento (selección de opciones y controles) → SoA como salida documentada con justificación de inclusión y exclusión.",
+    "tags": ["iso42001", "soa", "riesgos", "clause:6.1", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-se1-q034",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.9",
+    "type": "single-choice",
+    "question": "Una organización dice que no consulta el Anexo B porque 'ya tiene la SoA terminada'. ¿Qué valoración es más adecuada?",
+    "options": [
+      "Es razonable, porque la SoA vuelve innecesaria cualquier orientación de implementación.",
+      "Puede ser una práctica débil, porque el Anexo B puede ayudar a interpretar e implementar mejor los controles seleccionados en la SoA.",
+      "Es obligatorio consultar el Anexo B para cada control seleccionado.",
+      "No importa, porque el Anexo B solo aplica a certificaciones Foundation."
+    ],
+    "answer": 1,
+    "explanation": "6.1.3 e) pide considerar la orientación del Anexo B para la implementación de los controles determinados. No es obligatorio control por control, pero prescindir de él debilita la implementación.",
+    "tags": ["iso42001", "anexo-b", "soa", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-se1-q035",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.10",
+    "type": "single-choice",
+    "question": "¿Por qué es importante identificar el rol de la organización respecto a los sistemas de IA (por ejemplo, proveedora o usuaria)?",
+    "options": [
+      "Porque define la tipografía que debe usarse en la política de IA.",
+      "Porque influye en la aplicabilidad de requisitos y controles del SGIA según el contexto y las responsabilidades asumidas.",
+      "Porque solo las organizaciones proveedoras pueden aplicar ISO/IEC 42001.",
+      "Porque permite omitir el análisis de partes interesadas."
+    ],
+    "answer": 1,
+    "explanation": "4.1 exige determinar los roles de la organización respecto a los sistemas de IA (proveedor, productor, cliente, socio, sujeto, autoridad). El rol condiciona qué requisitos y controles resultan aplicables.",
+    "tags": ["iso42001", "clause:4.1", "rol-organizacion", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q036",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.10",
+    "type": "single-choice",
+    "question": "Una universidad utiliza un sistema de IA de un proveedor externo para detectar riesgo de abandono estudiantil. La universidad configura el uso, define intervenciones y responde ante estudiantes y reguladores. ¿Qué rol describe mejor a la universidad respecto a ese sistema?",
+    "options": [
+      "Proveedor de IA.",
+      "Usuario de IA.",
+      "Órgano de gobierno de la norma ISO.",
+      "Parte interesada sin responsabilidad directa."
+    ],
+    "answer": 1,
+    "explanation": "La universidad no desarrolla ni suministra el sistema: lo utiliza, configura su uso y responde por sus consecuencias. Ese es el rol de usuario/cliente de IA, con responsabilidades propias en el SGIA.",
+    "tags": ["iso42001", "clause:4.1", "rol-organizacion", "iso22989", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q037",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.10",
+    "type": "single-choice",
+    "question": "Una organización usa IA para priorizar solicitudes de atención médica. ¿Qué grupo encaja mejor como parte interesada relevante del SGIA además de la alta dirección?",
+    "options": [
+      "Solo los desarrolladores de software de IA.",
+      "Pacientes afectados, personal clínico, reguladores y responsables de procesos vinculados al sistema.",
+      "Únicamente el proveedor tecnológico externo.",
+      "Solo el comité de auditoría interna."
+    ],
+    "answer": 1,
+    "explanation": "Parte interesada es toda persona u organización que puede afectar, verse afectada o percibirse afectada por una decisión o actividad. En salud eso incluye pacientes, personal clínico y reguladores.",
+    "tags": ["iso42001", "clause:4.2", "partes-interesadas", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q038",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.10",
+    "type": "single-choice",
+    "question": "En una empresa, el órgano de gobierno aprueba la política de IA y revisa el desempeño del SGIA, pero no se consulta a clientes ni empleados afectados por sistemas de IA. ¿Qué lectura es más adecuada?",
+    "options": [
+      "La gestión está completa porque basta con la actuación del órgano de gobierno.",
+      "Existe una brecha potencial en la consideración de partes interesadas relevantes del SGIA.",
+      "No hay problema si el área legal está informada.",
+      "La consulta a partes interesadas solo aplica a organismos públicos."
+    ],
+    "answer": 1,
+    "explanation": "4.2 exige determinar las partes interesadas relevantes y sus requisitos, y cuáles se abordarán mediante el SGIA. Omitir clientes y empleados afectados es una brecha auditable.",
+    "tags": ["iso42001", "clause:4.2", "partes-interesadas", "difficulty:intermediate", "module:m01"]
+  },
+  {
+    "id": "iso42001-se1-q039",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.11",
+    "type": "single-choice",
+    "question": "Una organización detecta una no conformidad en el SGIA y quiere ubicar en la norma la parte más pertinente para revisar cómo tratarla y definir acciones correctivas. ¿Dónde debería mirar primero?",
+    "options": [
+      "Capítulo 6 – Planificación.",
+      "Capítulo 8 – Operación.",
+      "Capítulo 9 – Evaluación del desempeño.",
+      "Capítulo 10 – Mejora."
+    ],
+    "answer": 3,
+    "explanation": "10.2 'No conformidad y acción correctiva' describe reaccionar, corregir, tratar consecuencias, determinar causas, implementar acciones y revisar su eficacia.",
+    "tags": ["iso42001", "clause:10.2", "no-conformidad", "difficulty:basic", "module:m06"]
+  },
+  {
+    "id": "iso42001-se1-q040",
+    "domainId": "sample-exam-1",
+    "source": "SAMPLE_EXAM_ISO_42001_IA_-_SP.pdf p.11",
+    "type": "single-choice",
+    "question": "En un mini-caso, una persona necesita ubicar en ISO/IEC 42001 dónde consultar controles de referencia y dónde encontrar orientación sobre cómo implementarlos. ¿Qué respuesta es correcta?",
+    "options": [
+      "Capítulo 5 y capítulo 7, respectivamente.",
+      "Anexo A para controles de referencia y Anexo B para orientación de implementación.",
+      "Capítulo 9 y capítulo 10, respectivamente.",
+      "Capítulo 4 y capítulo 6, respectivamente."
+    ],
+    "answer": 1,
+    "explanation": "Anexo A = controles de referencia (Tabla A.1). Anexo B = guía de implementación de esos mismos controles, con idéntica estructura.",
+    "tags": ["iso42001", "anexo-a", "anexo-b", "difficulty:basic", "module:m03"]
+  }
+]

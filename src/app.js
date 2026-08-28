@@ -10,7 +10,7 @@ import {
   questionStats,
   ensureDomainSelection
 } from "./state.js";
-import { escapeHtml, shuffle } from "./utils/helpers.js";
+import { escapeHtml, shuffle, formatTime } from "./utils/helpers.js";
 import { renderHomeView } from "./views/homeView.js";
 import { renderRoadmapView } from "./views/roadmapView.js";
 import { renderSetupView } from "./views/setupView.js";
@@ -18,6 +18,10 @@ import { renderQuizView, saveExamAnswer, nextQuestion } from "./views/quizView.j
 import { renderResultsView } from "./views/resultsView.js";
 
 let el = {};
+// El id del intervalo se guarda fuera de state.session: startSession() reemplaza
+// el objeto de sesion, asi que un timer previo quedaria huerfano y seguiria
+// disparandose sobre una sesion ya nula.
+let timerId = null;
 
 function initElements() {
   el = {
@@ -84,6 +88,7 @@ async function renderSetup() {
   showContainer(el.setup);
   await renderSetupView(el.setup, {
     onGoBackRoadmap: () => renderRoadmap(),
+    onGoHome: () => renderHome(),
     onStartSession: () => startSession()
   });
 }
@@ -99,6 +104,7 @@ function prepareQuestion(raw) {
 }
 
 async function startSession() {
+  stopTimer();
   const domain = getDomain();
   let pool = await getQuestionsForDomain(domain);
   if (state.onlyMistakes || state.mode === "review") {
@@ -122,27 +128,34 @@ async function startSession() {
     current: 0,
     answers: [],
     startedAt: new Date().toISOString(),
-    timeRemaining: secondsPerQuestion * questions.length,
-    timerId: null
+    timeRemaining: secondsPerQuestion * questions.length
   };
 
+  state.view = "quiz";
   showContainer(el.quiz);
   renderQuiz();
   if (state.mode === "exam") startTimer();
 }
 
+function stopTimer() {
+  if (timerId !== null) {
+    clearInterval(timerId);
+    timerId = null;
+  }
+}
+
 function startTimer() {
-  clearInterval(state.session.timerId);
-  state.session.timerId = setInterval(() => {
-    state.session.timeRemaining -= 1;
-    const timer = document.getElementById("timer");
-    if (timer) {
-      const safe = Math.max(0, state.session.timeRemaining);
-      const min = Math.floor(safe / 60);
-      const sec = safe % 60;
-      timer.textContent = `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+  stopTimer();
+  timerId = setInterval(() => {
+    const session = state.session;
+    if (!session) {
+      stopTimer();
+      return;
     }
-    if (state.session.timeRemaining <= 0) finishSession();
+    session.timeRemaining -= 1;
+    const timer = document.getElementById("timer");
+    if (timer) timer.textContent = formatTime(session.timeRemaining);
+    if (session.timeRemaining <= 0) finishSession();
   }, 1000);
 }
 
@@ -156,7 +169,7 @@ function renderQuiz() {
 function finishSession() {
   const session = state.session;
   if (!session) return;
-  clearInterval(session.timerId);
+  stopTimer();
   
   session.questions.forEach((question, index) => {
     if (!session.answers[index]) {
@@ -200,6 +213,7 @@ function finishSession() {
 }
 
 function renderResults() {
+  state.view = "results";
   showContainer(el.results);
   renderResultsView(el.results, {
     onRepeat: () => startSession(),
@@ -208,13 +222,25 @@ function renderResults() {
       state.mode = "review";
       startSession();
     },
-    onReturnToSetup: () => returnToSetup()
+    onReturnToSetup: () => returnToSetup(),
+    onGoBackRoadmap: () => {
+      clearSession();
+      renderRoadmap();
+    },
+    onGoHome: () => {
+      clearSession();
+      renderHome();
+    }
   });
 }
 
-async function returnToSetup() {
-  if (state.session?.timerId) clearInterval(state.session.timerId);
+function clearSession() {
+  stopTimer();
   state.session = null;
+}
+
+async function returnToSetup() {
+  clearSession();
   await renderSetup();
 }
 
@@ -253,9 +279,14 @@ function bindGlobalEvents() {
     el.reset.addEventListener("click", async () => {
       if (!confirm("¿Seguro que quieres borrar todo el progreso local?")) return;
       resetProgress();
-      if (state.view === "exam") await renderSetup();
-      else if (state.view === "roadmap") renderRoadmap();
-      else renderHome();
+      if (state.view === "exam" || state.view === "quiz" || state.view === "results") {
+        clearSession();
+        await renderSetup();
+      } else if (state.view === "roadmap") {
+        renderRoadmap();
+      } else {
+        renderHome();
+      }
     });
   }
   document.addEventListener("keydown", onKeyDown);

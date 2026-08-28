@@ -3,7 +3,7 @@ import { escapeHtml, formatPercent } from "../utils/helpers.js";
 import { parseMarkdown } from "../utils/markdown.js";
 import { renderTagBadges } from "../utils/tags.js";
 
-export function renderResultsView(container, { onRepeat, onPracticeMistakes, onReturnToSetup }) {
+export function renderResultsView(container, { onRepeat, onPracticeMistakes, onReturnToSetup, onGoBackRoadmap, onGoHome }) {
   const session = state.session;
   if (!session) return;
 
@@ -14,7 +14,18 @@ export function renderResultsView(container, { onRepeat, onPracticeMistakes, onR
   const right = session.answers.filter(a => a.correct);
   const passing = (getExam()?.passingScore || 70) / 100;
 
+  const roadmapTitle = state.catalog.roadmaps.find(item => item.id === state.selectedRoadmapId)?.title || "Roadmap";
+
   container.innerHTML = `
+    <nav class="breadcrumbs" aria-label="Navegación">
+      <button id="homeBtn" class="crumb" type="button">Menú inicial</button>
+      <span class="crumb-sep" aria-hidden="true">›</span>
+      <button id="roadmapBtn" class="crumb" type="button">${escapeHtml(roadmapTitle)}</button>
+      <span class="crumb-sep" aria-hidden="true">›</span>
+      <button id="examCrumbBtn" class="crumb" type="button">${escapeHtml(getExam()?.code || "Examen")}</button>
+      <span class="crumb-sep" aria-hidden="true">›</span>
+      <span class="crumb current" aria-current="page">Resultados</span>
+    </nav>
     <div class="results-header ${percent >= passing ? "passed" : "failed"}">
       <h2>${percent >= passing ? "🎉 ¡Buen resultado! Examen Aprobado" : "📚 Sigue entrenando para alcanzar la meta"}</h2>
       <p class="small">${escapeHtml(session.domainTitle)} · Modo ${escapeHtml(session.mode.toUpperCase())}</p>
@@ -41,6 +52,9 @@ export function renderResultsView(container, { onRepeat, onPracticeMistakes, onR
   document.getElementById("againBtn").addEventListener("click", onRepeat);
   document.getElementById("mistakesBtn").addEventListener("click", onPracticeMistakes);
   document.getElementById("returnSetupBtn").addEventListener("click", onReturnToSetup);
+  document.getElementById("examCrumbBtn").addEventListener("click", onReturnToSetup);
+  if (onGoBackRoadmap) document.getElementById("roadmapBtn").addEventListener("click", onGoBackRoadmap);
+  if (onGoHome) document.getElementById("homeBtn").addEventListener("click", onGoHome);
 }
 
 function renderReviewItem(answer, index) {

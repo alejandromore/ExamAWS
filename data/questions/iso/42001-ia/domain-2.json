@@ -1,0 +1,514 @@
+[
+  {
+    "id": "iso42001-d2-q001",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.13 — Cláusula 5.1",
+    "type": "single-choice",
+    "question": "Según 5.1, ¿cómo debe demostrar la alta dirección su liderazgo y compromiso con el SGIA?",
+    "options": [
+      "Delegando íntegramente el SGIA en el área técnica y aprobando su presupuesto.",
+      "Asegurando que política y objetivos sean compatibles con la dirección estratégica, integrando los requisitos en los procesos de negocio y proporcionando los recursos necesarios.",
+      "Firmando el informe de auditoría interna de cada ciclo.",
+      "Participando personalmente en el entrenamiento de los modelos de IA."
+    ],
+    "answer": 1,
+    "explanation": "5.1 lista acciones concretas: asegurar política y objetivos compatibles con la dirección estratégica, integrar los requisitos en los procesos de negocio, asegurar recursos, comunicar la importancia, asegurar resultados previstos, dirigir y apoyar a las personas, promover la mejora continua y apoyar a otros roles.",
+    "tags": ["iso42001", "clause:5.1", "liderazgo", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q002",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.99 — Liderazgo en el SGIA",
+    "type": "single-choice",
+    "question": "Durante una auditoría, la alta dirección afirma estar comprometida con el SGIA pero lo ha delegado por completo en el equipo técnico, sin participar en revisiones ni aprobar decisiones críticas. ¿Cuál es la lectura auditora correcta?",
+    "options": [
+      "Es aceptable: la delegación es una forma válida de asignar autoridad.",
+      "Delegar completamente el SGIA en áreas técnicas puede indicar incumplimiento de liderazgo (5.1); se requiere evidencia de participación real.",
+      "Solo procede hallazgo si el equipo técnico no tiene competencia formal.",
+      "Debe reportarse contra 7.1 por falta de recursos."
+    ],
+    "answer": 1,
+    "explanation": "El auditor busca evidencia objetiva de participación real: asignación de recursos, revisión periódica del desempeño, aprobación de decisiones críticas y gestión de riesgos asociados a sistemas de IA. La delegación total es señal de incumplimiento de 5.1.",
+    "tags": ["iso42001", "clause:5.1", "liderazgo", "evidencia", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q003",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.14 — Cláusula 5.2",
+    "type": "multiple-choice",
+    "question": "Según 5.2, ¿qué debe incluir la **política de IA**? *(selecciona todas las correctas)*",
+    "options": [
+      "Ser apropiada al propósito de la organización.",
+      "Proporcionar un marco para establecer los objetivos de IA.",
+      "Incluir un compromiso de cumplir con los requisitos aplicables y de mejora continua del SGIA.",
+      "Detallar la arquitectura técnica de cada sistema de IA en producción."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "5.2 exige que la política a) sea apropiada al propósito, b) proporcione un marco para los objetivos de IA, c) incluya compromiso de cumplir requisitos aplicables y d) incluya compromiso de mejora continua. El detalle técnico de los sistemas no es contenido de la política.",
+    "tags": ["iso42001", "clause:5.2", "politica", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q004",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.14 — Cláusula 5.2 disponibilidad",
+    "type": "multiple-choice",
+    "question": "Además de su contenido, ¿qué exige 5.2 respecto a la **disponibilidad y comunicación** de la política de IA? *(selecciona todas las correctas)*",
+    "options": [
+      "Estar disponible como información documentada.",
+      "Ser comunicada dentro de la organización.",
+      "Estar disponible para las partes interesadas, según corresponda.",
+      "Publicarse íntegramente en el sitio web corporativo."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La política debe estar disponible como información documentada, hacer referencia cuando sea relevante a otras políticas organizacionales, ser comunicada dentro de la organización y estar disponible para las partes interesadas según corresponda. La publicación web no es un requisito.",
+    "tags": ["iso42001", "clause:5.2", "politica", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q005",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.14 — NOTA de 5.2",
+    "type": "single-choice",
+    "question": "¿Qué norma se cita como referencia para las consideraciones al desarrollar políticas de IA?",
+    "options": [
+      "ISO/IEC 38507",
+      "ISO 19011",
+      "ISO/IEC 29100",
+      "ISO/IEC Guide 51"
+    ],
+    "answer": 0,
+    "explanation": "La NOTA de 5.2 remite a ISO/IEC 38507 para las consideraciones de las organizaciones al desarrollar políticas de IA. ISO/IEC 38507 también se cita en 6.1.1 sobre apetito de riesgo.",
+    "tags": ["iso42001", "clause:5.2", "politica", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q006",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.102, 107 — Caso política desconectada",
+    "type": "single-choice",
+    "question": "La política de IA de una organización declara \"equidad algorítmica\" y \"transparencia algorítmica\", pero no existen lineamientos, indicadores ni métricas de sesgo asociados. ¿Qué evalúa el auditor?",
+    "options": [
+      "Nada: las declaraciones de política son aspiracionales y no auditables.",
+      "Incoherencia sistémica entre política, objetivos y riesgos; declarar un compromiso sin indicador asociado es una inconsistencia auditable.",
+      "Un hallazgo únicamente contra la Cláusula 9 por falta de medición.",
+      "Una oportunidad de mejora sin impacto en la conformidad."
+    ],
+    "answer": 1,
+    "explanation": "La política debe servir como marco para establecer objetivos medibles. El auditor analiza la trazabilidad entre compromisos declarados y métricas concretas asociadas a riesgos de IA: declarar 'IA ética' sin indicadores es una inconsistencia frecuentemente auditada.",
+    "tags": ["iso42001", "clause:5.2", "coherencia", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q007",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.14-15 — Cláusula 5.3",
+    "type": "single-choice",
+    "question": "Según 5.3, ¿para qué dos asuntos debe la alta dirección asignar explícitamente responsabilidad y autoridad?",
+    "options": [
+      "Entrenar los modelos y validar su precisión estadística.",
+      "Asegurar que el SGIA cumpla con los requisitos del documento, e informar sobre el desempeño del SGIA a la alta dirección.",
+      "Firmar los contratos con proveedores y aprobar el presupuesto de TI.",
+      "Realizar la auditoría interna y cerrar las no conformidades."
+    ],
+    "answer": 1,
+    "explanation": "5.3 exige asignar responsabilidad y autoridad para a) asegurar que el SGIA cumpla con los requisitos de la norma y b) informar sobre el desempeño del SGIA a la alta dirección. El control asociado es A.3.2.",
+    "tags": ["iso42001", "clause:5.3", "roles", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q008",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.99 — Gobierno y rendición de cuentas",
+    "type": "single-choice",
+    "question": "El material advierte que \"la ambigüedad en roles genera vacíos críticos\". ¿Qué debería poder demostrar la organización ante un incidente algorítmico?",
+    "options": [
+      "Que el proveedor asumió contractualmente toda la responsabilidad.",
+      "Quién asume la responsabilidad final, con una estructura de gobierno que permita aprobar sistemas de IA, gestionar riesgos e intervenir.",
+      "Que el incidente no afectó a datos personales.",
+      "Que el modelo superó las pruebas de precisión en el entorno de desarrollo."
+    ],
+    "answer": 1,
+    "explanation": "El auditor evalúa si existe una estructura de gobierno que permita aprobar sistemas de IA, gestionar riesgos e intervenir ante incidentes algorítmicos con responsabilidad definida. Sin dueño claro, la evidencia se dispersa y la trazabilidad se rompe.",
+    "tags": ["iso42001", "clause:5.3", "gobernanza", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q009",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.15 — Cláusula 6.1.1",
+    "type": "single-choice",
+    "question": "Según 6.1.1, ¿qué debe establecer y mantener la organización como base de su gestión de riesgos de IA?",
+    "options": [
+      "Un registro de incidentes de seguridad de la información.",
+      "Criterios de riesgo de IA que permitan distinguir riesgos aceptables de no aceptables, realizar evaluaciones, tratar riesgos y evaluar impactos.",
+      "Un catálogo de todos los modelos de IA del mercado.",
+      "Un acuerdo de confidencialidad con cada proveedor."
+    ],
+    "answer": 1,
+    "explanation": "6.1.1 exige establecer y mantener criterios de riesgo de IA que apoyen: distinguir riesgos aceptables de no aceptables, realizar evaluaciones de riesgo, llevar a cabo el tratamiento y evaluar los impactos de riesgos de IA.",
+    "tags": ["iso42001", "clause:6.1.1", "riesgos", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q010",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.16 — Cláusula 6.1.1",
+    "type": "single-choice",
+    "question": "¿Conforme a qué elementos debe la organización determinar los riesgos y oportunidades de IA según 6.1.1?",
+    "options": [
+      "El presupuesto disponible y el calendario del proyecto.",
+      "El dominio y contexto de aplicación del sistema de IA, el uso previsto, y el contexto externo e interno descrito en 4.1.",
+      "El número de usuarios finales y la cuota de mercado.",
+      "Los controles del Anexo A seleccionados previamente."
+    ],
+    "answer": 1,
+    "explanation": "6.1.1 exige determinar riesgos y oportunidades de acuerdo con el dominio y el contexto de aplicación del sistema de IA, el uso previsto y el contexto externo e interno de 4.1. Cuando hay varios sistemas, la determinación se hace por sistema o por agrupaciones.",
+    "tags": ["iso42001", "clause:6.1.1", "riesgos", "contexto", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q011",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.16 — Cláusula 6.1.1 información documentada",
+    "type": "single-choice",
+    "question": "¿Qué información documentada exige conservar la Cláusula 6.1.1?",
+    "options": [
+      "El código fuente de los modelos evaluados.",
+      "Información documentada sobre las acciones tomadas para identificar y abordar riesgos y oportunidades de IA.",
+      "Las actas de todas las reuniones del equipo de desarrollo.",
+      "El listado de proveedores certificados del sector."
+    ],
+    "answer": 1,
+    "explanation": "6.1.1 exige conservar información documentada sobre las acciones tomadas para identificar y abordar riesgos de IA y oportunidades de IA, además de planificar cómo integrarlas en los procesos y cómo evaluar su eficacia.",
+    "tags": ["iso42001", "clause:6.1.1", "informacion-documentada", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q012",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.17 — Cláusula 6.1.2",
+    "type": "single-choice",
+    "question": "6.1.2 exige que el proceso de evaluación de riesgos de IA esté diseñado de modo que evaluaciones repetidas produzcan resultados con tres propiedades. ¿Cuáles son?",
+    "options": [
+      "Rápidos, económicos y automatizados.",
+      "Consistentes, válidos y comparables.",
+      "Anónimos, agregados y públicos.",
+      "Aprobados, firmados y archivados."
+    ],
+    "answer": 1,
+    "explanation": "6.1.2 b) exige que el proceso esté diseñado de tal manera que evaluaciones repetidas de riesgos de IA puedan producir resultados consistentes, válidos y comparables. Esta es la base auditable de la repetibilidad del método.",
+    "tags": ["iso42001", "clause:6.1.2", "riesgos", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q013",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.17-18 — Cláusula 6.1.2 análisis",
+    "type": "single-choice",
+    "question": "Al analizar los riesgos de IA (6.1.2 d), ¿sobre quiénes debe evaluar la organización las posibles consecuencias si los riesgos se materializan?",
+    "options": [
+      "Únicamente sobre la propia organización.",
+      "Sobre la organización, los individuos y las sociedades.",
+      "Únicamente sobre los clientes contractuales.",
+      "Sobre los accionistas y el órgano de gobierno."
+    ],
+    "answer": 1,
+    "explanation": "6.1.2 d) 1) exige evaluar las posibles consecuencias para la organización, los individuos y las sociedades. Esta triple perspectiva distingue la gestión de riesgos de IA de un enfoque puramente corporativo.",
+    "tags": ["iso42001", "clause:6.1.2", "riesgos", "impacto", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q014",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.18 — Cláusula 6.1.2 evaluación",
+    "type": "single-choice",
+    "question": "En la fase de **evaluación** de riesgos (6.1.2 e), ¿qué dos actividades debe realizar la organización?",
+    "options": [
+      "Seleccionar controles del Anexo A y redactar la SoA.",
+      "Comparar los resultados del análisis con los criterios de riesgo, y priorizar los riesgos evaluados para el tratamiento.",
+      "Aprobar el riesgo residual y comunicarlo a las partes interesadas.",
+      "Definir métricas técnicas y umbrales de alerta."
+    ],
+    "answer": 1,
+    "explanation": "6.1.2 e) exige comparar los resultados del análisis de riesgos con los criterios de riesgo (6.1.1) y priorizar los riesgos evaluados para el tratamiento de riesgos. La selección de controles ocurre en 6.1.3.",
+    "tags": ["iso42001", "clause:6.1.2", "riesgos", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q015",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.18 — Cláusula 6.1.3 b",
+    "type": "single-choice",
+    "question": "Según 6.1.3 b), ¿cuál es la función del Anexo A al determinar los controles necesarios?",
+    "options": [
+      "Sustituir la determinación de controles: basta con adoptar los 38 controles.",
+      "Servir como referencia de comparación para verificar que no se haya omitido ningún control necesario.",
+      "Definir los objetivos de IA de la organización.",
+      "Establecer la frecuencia de las auditorías internas."
+    ],
+    "answer": 1,
+    "explanation": "6.1.3 b) exige determinar todos los controles necesarios para implementar las opciones de tratamiento elegidas y COMPARARLOS con los del Anexo A para verificar que no se haya omitido ningún control necesario. El Anexo A es referencia, no checklist obligatorio.",
+    "tags": ["iso42001", "clause:6.1.3", "anexo-a", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q016",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.19 — Cláusula 6.1.3 f y g",
+    "type": "multiple-choice",
+    "question": "¿Cuáles de las siguientes son salidas exigidas por el proceso de tratamiento de riesgos de IA (6.1.3)? *(selecciona todas las correctas)*",
+    "options": [
+      "Una declaración de aplicabilidad con los controles necesarios y justificación de inclusión y exclusión.",
+      "Un plan de tratamiento de riesgos de IA.",
+      "Aprobación de la dirección designada para el plan y para la aceptación de los riesgos residuales.",
+      "Un informe de auditoría interna del periodo."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "6.1.3 f) exige producir la SoA con justificación de inclusión/exclusión; g) formular un plan de tratamiento; y la norma añade que se debe obtener aprobación de la dirección designada para el plan y para la aceptación de los riesgos residuales. El informe de auditoría pertenece a 9.2.",
+    "tags": ["iso42001", "clause:6.1.3", "soa", "riesgo-residual", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q017",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.19 — Cláusula 6.1.3 controles necesarios",
+    "type": "multiple-choice",
+    "question": "Según 6.1.3, ¿qué condiciones deben cumplir los **controles necesarios**? *(selecciona todas las correctas)*",
+    "options": [
+      "Estar alineados con los objetivos de 6.2.",
+      "Estar disponibles como información documentada.",
+      "Ser comunicados dentro de la organización y estar disponibles para las partes interesadas, según corresponda.",
+      "Ser auditados por un organismo de tercera parte antes de su implementación."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La norma exige que los controles necesarios estén alineados con los objetivos de 6.2, disponibles como información documentada, comunicados internamente y disponibles para las partes interesadas según corresponda. No exige auditoría de tercera parte previa.",
+    "tags": ["iso42001", "clause:6.1.3", "controles", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q018",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.20 — Cláusula 6.1.4",
+    "type": "single-choice",
+    "question": "¿Qué debe determinar la **evaluación de impacto del sistema de IA** según 6.1.4?",
+    "options": [
+      "El retorno de inversión esperado del sistema de IA.",
+      "Las posibles consecuencias que el despliegue, el uso previsto y el uso indebido previsible tienen sobre individuos, grupos de individuos y las sociedades.",
+      "La precisión y latencia del modelo en producción.",
+      "El coste de los controles del Anexo A seleccionados."
+    ],
+    "answer": 1,
+    "explanation": "6.1.4 exige determinar las consecuencias del despliegue, el uso previsto y el USO INDEBIDO PREVISIBLE sobre individuos, grupos y sociedades, teniendo en cuenta el contexto técnico y social específico de despliegue y las jurisdicciones aplicables.",
+    "tags": ["iso42001", "clause:6.1.4", "evaluacion-impacto", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q019",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.20 — Cláusula 6.1.4",
+    "type": "single-choice",
+    "question": "¿Qué relación establece la norma entre la evaluación de impacto del sistema de IA (6.1.4) y la evaluación de riesgos (6.1.2)?",
+    "options": [
+      "Son procesos alternativos: se realiza uno u otro.",
+      "La organización debe considerar los resultados de la evaluación de impacto en la evaluación de riesgos, y puede usarla al evaluar consecuencias.",
+      "La evaluación de impacto sustituye a la evaluación de riesgos cuando hay datos personales.",
+      "La evaluación de impacto se realiza solo después de cerrar el tratamiento del riesgo."
+    ],
+    "answer": 1,
+    "explanation": "6.1.4 exige considerar los resultados de la evaluación de impacto en la evaluación de riesgos, y la NOTA de 6.1.2 indica que al evaluar consecuencias la organización puede utilizar una evaluación de impacto del sistema de IA.",
+    "tags": ["iso42001", "clause:6.1.4", "clause:6.1.2", "evaluacion-impacto", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q020",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.20 — Cláusula 6.1.4 documentación",
+    "type": "single-choice",
+    "question": "Respecto al resultado de la evaluación de impacto del sistema de IA, ¿qué exige la norma?",
+    "options": [
+      "Debe documentarse y, cuando sea apropiado, puede ponerse a disposición de las partes interesadas relevantes definidas por la organización.",
+      "Debe publicarse obligatoriamente para todas las partes interesadas.",
+      "Debe mantenerse confidencial y no compartirse en ningún caso.",
+      "Debe remitirse al organismo de certificación en cada ciclo."
+    ],
+    "answer": 0,
+    "explanation": "El resultado debe documentarse. La puesta a disposición de partes interesadas relevantes es condicional ('cuando sea apropiado') y las define la organización.",
+    "tags": ["iso42001", "clause:6.1.4", "evaluacion-impacto", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q021",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.21 — Cláusula 6.2",
+    "type": "multiple-choice",
+    "question": "Según 6.2, ¿qué características deben tener los **objetivos de IA**? *(selecciona todas las correctas)*",
+    "options": [
+      "Ser coherentes con la política de IA y tener en cuenta los requisitos aplicables.",
+      "Ser medibles si es practicable, y ser monitoreados.",
+      "Ser comunicados, actualizarse según corresponda y estar disponibles como información documentada.",
+      "Ser aprobados individualmente por cada parte interesada externa."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "6.2 exige que los objetivos sean coherentes con la política, medibles si es practicable, tengan en cuenta los requisitos aplicables, sean monitoreados, comunicados, actualizados según corresponda y disponibles como información documentada.",
+    "tags": ["iso42001", "clause:6.2", "objetivos", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q022",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.21 — Cláusula 6.2 planificación",
+    "type": "multiple-choice",
+    "question": "Al planificar cómo lograr los objetivos de IA, ¿qué debe determinar la organización según 6.2? *(selecciona todas las correctas)*",
+    "options": [
+      "Qué se hará y qué recursos se requerirán.",
+      "Quién será responsable y cuándo se completará.",
+      "Cómo se evaluarán los resultados.",
+      "Qué proveedor externo ejecutará cada actividad."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "6.2 exige determinar qué se hará, qué recursos se requerirán, quién será responsable, cuándo se completará y cómo se evaluarán los resultados. Un objetivo sin plan asociado es una debilidad estructural.",
+    "tags": ["iso42001", "clause:6.2", "objetivos", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q023",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.21 — Cláusula 6.3",
+    "type": "single-choice",
+    "question": "¿Qué exige la Cláusula 6.3 (Planificación de cambios)?",
+    "options": [
+      "Que todo cambio en el SGIA requiera una nueva auditoría de tercera parte.",
+      "Que cuando se determine la necesidad de cambios en el SGIA, estos se lleven a cabo de manera planificada.",
+      "Que los cambios se congelen durante los ciclos de auditoría interna.",
+      "Que cada cambio se notifique al organismo regulador correspondiente."
+    ],
+    "answer": 1,
+    "explanation": "6.3 es breve y exige que cuando la organización determine la necesidad de cambios en el SGIA, los cambios se lleven a cabo de manera planificada.",
+    "tags": ["iso42001", "clause:6.3", "gestion-cambios", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q024",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.105 — ISO 23894",
+    "type": "single-choice",
+    "question": "¿Cuál es el estatus de **ISO/IEC 23894** en el esquema I42001IA?",
+    "options": [
+      "Es una norma certificable dentro de este esquema y sustituye a 6.1.2.",
+      "No es certificable en este esquema, pero aporta guía metodológica para evaluar riesgos específicos de IA.",
+      "Es la referencia normativa de terminología del SGIA.",
+      "Es la guía de auditoría de sistemas de gestión aplicable al SGIA."
+    ],
+    "answer": 1,
+    "explanation": "ISO/IEC 23894 aporta orientación sobre gestión de riesgos para organizaciones que desarrollan, proporcionan o utilizan productos, sistemas y servicios de IA (NOTA 3 de 6.1.1), pero no es certificable en este esquema. La terminología viene de ISO/IEC 22989 y la guía de auditoría de ISO 19011.",
+    "tags": ["iso23894", "riesgos", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q025",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.105 — Entradas y salidas auditables",
+    "type": "single-choice",
+    "question": "¿Cuáles son las **salidas auditables** de una evaluación de riesgos de IA según el material?",
+    "options": [
+      "Contexto, partes interesadas y tipo de sistema de IA.",
+      "Nivel de riesgo, criterios de aceptación y decisiones de tratamiento documentadas.",
+      "Precisión, sesgo y deriva del modelo.",
+      "Programa y plan de auditoría del periodo."
+    ],
+    "answer": 1,
+    "explanation": "Las entradas auditables son contexto, partes interesadas, tipo de sistema de IA, datos utilizados y posibles impactos. Las salidas son nivel de riesgo, criterios de aceptación y decisiones de tratamiento documentadas, con aprobación formal del riesgo residual.",
+    "tags": ["iso42001", "riesgos", "evidencia", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q026",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.105 — Trazabilidad riesgo-decisión",
+    "type": "single-choice",
+    "question": "El material plantea la pregunta auditora: \"¿Puedes reconstruir el razonamiento detrás de una aceptación de riesgo?\". ¿Qué evidencia sostiene una respuesta afirmativa?",
+    "options": [
+      "Un correo del responsable técnico confirmando que el riesgo es bajo.",
+      "Cada riesgo identificado con decisión documentada, responsable asignado y aprobación formal del riesgo residual.",
+      "El acta de la última reunión del comité de dirección, sin detalle de riesgos.",
+      "La existencia de la SoA, con independencia de su contenido."
+    ],
+    "answer": 1,
+    "explanation": "El material exige trazabilidad riesgo–decisión: cada riesgo identificado debe tener decisión documentada y responsable asignado, con aprobación formal del riesgo residual. Aceptar riesgo residual sin análisis documentado puede derivar en no conformidad mayor.",
+    "tags": ["iso42001", "riesgo-residual", "trazabilidad", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q027",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.107 — Caso integrador Módulo 2",
+    "type": "multiple-choice",
+    "question": "Una empresa de salud usa IA para priorizar pacientes. Se detecta: política que declara \"equidad algorítmica\", sin métricas de sesgo; evaluación de riesgos que omite impacto en grupos vulnerables; sin evaluación formal de impacto; SoA que excluye supervisión humana por \"confianza en proveedor\". Según la resolución modelo, ¿qué cláusulas resultan afectadas? *(selecciona todas las correctas)*",
+    "options": [
+      "5.2 Política, por incoherencia.",
+      "6.1 Identificación de riesgos, por omisión del impacto.",
+      "6.1.3 Tratamiento y SoA, por exclusión injustificada.",
+      "9.2 Auditoría interna, por falta de programa."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La resolución modelo identifica 5.2, 6.1 y 6.1.3 como cláusulas afectadas, y clasifica el caso como hallazgo sistémico por ruptura de la trazabilidad Política → Objetivo → Riesgo → Control → Justificación SoA, con clasificación posible de No Conformidad Mayor.",
+    "tags": ["iso42001", "caso-aplicado", "trazabilidad", "difficulty:advanced", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q028",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.108 — Cadena de trazabilidad estratégica",
+    "type": "single-choice",
+    "question": "¿Cuál es la cadena de trazabilidad estratégica que el auditor debe poder reconstruir en los Módulos 2 y 3?",
+    "options": [
+      "Contexto → Alcance → Auditoría → Informe.",
+      "Política → Objetivo → Riesgo → Control → Justificación SoA.",
+      "Métrica → Umbral → Alerta → Ticket.",
+      "Programa → Plan → Muestreo → Hallazgo."
+    ],
+    "answer": 1,
+    "explanation": "El material define esta cadena como eje del Dominio C. Una ruptura en cualquiera de sus eslabones se formula como hallazgo sistémico, no como incidencia aislada.",
+    "tags": ["iso42001", "trazabilidad", "soa", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q029",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.104 — Riesgos y oportunidades en IA",
+    "type": "single-choice",
+    "question": "Según el material, ¿qué advertencia específica se hace sobre las **oportunidades** en el contexto de IA?",
+    "options": [
+      "Las oportunidades no forman parte del alcance de 6.1.",
+      "Las oportunidades mal gestionadas pueden convertirse en riesgos reputacionales o regulatorios.",
+      "Las oportunidades solo aplican a organizaciones proveedoras de IA.",
+      "Las oportunidades deben excluirse de la SoA."
+    ],
+    "answer": 1,
+    "explanation": "6.1.1 exige determinar riesgos Y oportunidades. El material advierte que en IA las oportunidades mal gestionadas pueden convertirse en riesgos reputacionales o regulatorios, y que la organización debe distinguir claramente ambos conceptos.",
+    "tags": ["iso42001", "clause:6.1", "riesgos", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q030",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.101 — Integración del SGIA",
+    "type": "single-choice",
+    "question": "El material afirma que \"un SGIA desconectado produce objetivos formales sin impacto real\". ¿Qué debe analizar el auditor para evaluar la integración estratégica?",
+    "options": [
+      "El número de sistemas de IA registrados en el inventario.",
+      "Si el SGIA está integrado con la gestión de riesgos corporativos, el cumplimiento normativo y la estrategia digital.",
+      "La antigüedad del responsable del SGIA en la organización.",
+      "El presupuesto de formación del área técnica."
+    ],
+    "answer": 1,
+    "explanation": "5.1 exige asegurar la integración de los requisitos del SGIA en los procesos de negocio de la organización. El auditor verifica que el SGIA no opere como sistema aislado sino conectado a riesgos corporativos, compliance y estrategia digital.",
+    "tags": ["iso42001", "clause:5.1", "gobernanza", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q031",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.101-102 — Vigencia de la política",
+    "type": "single-choice",
+    "question": "Al auditar la vigencia de la política de IA, ¿qué evidencia revisa el auditor y por qué importa?",
+    "options": [
+      "El diseño gráfico y la maquetación del documento, para verificar su formalidad.",
+      "La fecha de actualización y la evidencia de revisión periódica, porque una política desactualizada puede invalidar la coherencia del SGIA completo.",
+      "El número de descargas del documento en la intranet.",
+      "La aprobación por parte del auditor interno del ciclo anterior."
+    ],
+    "answer": 1,
+    "explanation": "La política debe mantenerse actualizada según cambios regulatorios o tecnológicos. El control A.2.4 (Revisión de la política de IA) del Anexo A respalda este requisito.",
+    "tags": ["iso42001", "clause:5.2", "politica", "anexo-a", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "iso42001-d2-q032",
+    "domainId": "domain-2",
+    "source": "MATERIALES p.106 — Activación de la evaluación de impacto",
+    "type": "single-choice",
+    "question": "¿Cuándo aplica la evaluación de impacto del sistema de IA, y qué debe haber definido la organización?",
+    "options": [
+      "Siempre que se contrate un nuevo proveedor; los criterios los define el proveedor.",
+      "Cuando los sistemas de IA pueden afectar derechos o intereses de personas; la organización debe haber definido criterios de activación.",
+      "Únicamente cuando lo solicite un regulador.",
+      "Solo al final del ciclo de vida, antes del retiro del sistema."
+    ],
+    "answer": 1,
+    "explanation": "Aplica cuando los sistemas de IA pueden afectar derechos o intereses de personas. El auditor verifica que existan criterios de activación definidos, análisis formal, participación interdisciplinaria, medidas de mitigación y registro formal aprobado.",
+    "tags": ["iso42001", "clause:6.1.4", "evaluacion-impacto", "difficulty:advanced", "module:m02"]
+  }
+]

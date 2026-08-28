@@ -1,0 +1,530 @@
+[
+  {
+    "id": "iso42001-d3-q001",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.22 — Cláusula 7.1",
+    "type": "single-choice",
+    "question": "¿Qué exige la Cláusula 7.1 (Recursos)?",
+    "options": [
+      "Contratar al menos un especialista en IA a tiempo completo.",
+      "Determinar y proporcionar los recursos necesarios para el establecimiento, implementación, mantenimiento y mejora continua del SGIA.",
+      "Destinar un porcentaje fijo del presupuesto de TI al SGIA.",
+      "Externalizar los recursos técnicos a un proveedor certificado."
+    ],
+    "answer": 1,
+    "explanation": "7.1 exige determinar y proporcionar los recursos necesarios para establecer, implementar, mantener y mejorar continuamente el SGIA. Los controles asociados están en A.4 (Recursos para sistemas de IA), con guía en B.4.",
+    "tags": ["iso42001", "clause:7.1", "recursos", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q002",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.32 — Anexo A.4",
+    "type": "multiple-choice",
+    "question": "El grupo de controles **A.4 Recursos para sistemas de IA** cubre varias categorías de recursos. ¿Cuáles de las siguientes pertenecen a ese grupo? *(selecciona todas las correctas)*",
+    "options": [
+      "Recursos de datos",
+      "Recursos de herramientas",
+      "Recursos de sistema y computación",
+      "Recursos financieros de terceros"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "A.4 incluye A.4.2 Documentación de recursos, A.4.3 Recursos de datos, A.4.4 Recursos de herramientas, A.4.5 Recursos de sistema y computación, y A.4.6 Recursos humanos. No contempla una categoría de recursos financieros de terceros.",
+    "tags": ["iso42001", "anexo-a", "recursos", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q003",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.22 — Cláusula 7.2",
+    "type": "single-choice",
+    "question": "Según 7.2, ¿sobre qué base debe asegurarse que las personas son competentes?",
+    "options": [
+      "Únicamente sobre la base de certificaciones oficiales vigentes.",
+      "Sobre la base de educación, formación o experiencia apropiada, con información documentada disponible como evidencia.",
+      "Sobre la base de la antigüedad en el puesto.",
+      "Sobre la base de la evaluación anual de desempeño de recursos humanos."
+    ],
+    "answer": 1,
+    "explanation": "7.2 exige determinar la competencia necesaria, asegurar que las personas sean competentes con base en educación, formación o experiencia apropiada, y cuando aplique tomar acciones para adquirirla y evaluar su eficacia. La información documentada apropiada debe estar disponible como evidencia.",
+    "tags": ["iso42001", "clause:7.2", "competencia", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q004",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.110-111 — Competencia como control preventivo",
+    "type": "single-choice",
+    "question": "El material describe la competencia como \"un control preventivo, no un requisito administrativo\". ¿Qué evidencia va más allá del certificado de formación?",
+    "options": [
+      "El listado de asistentes a la última capacitación.",
+      "Aplicación práctica, experiencia verificable y resultados consistentes en decisiones sobre datos, modelos, supervisión y monitoreo.",
+      "El contrato laboral de la persona evaluada.",
+      "La descripción del puesto publicada en la intranet."
+    ],
+    "answer": 1,
+    "explanation": "El material advierte que un modelo técnicamente correcto puede generar riesgo sistémico si quienes lo gestionan no comprenden sus implicaciones regulatorias. La evidencia debe demostrar competencia aplicada, no solo formación recibida.",
+    "tags": ["iso42001", "clause:7.2", "competencia", "evidencia", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q005",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.23 — Cláusula 7.3",
+    "type": "multiple-choice",
+    "question": "Según 7.3, ¿de qué deben ser conscientes las personas que realizan trabajos bajo el control de la organización? *(selecciona todas las correctas)*",
+    "options": [
+      "De la política de IA.",
+      "De su contribución a la eficacia del SGIA, incluidos los beneficios de mejorar el desempeño de la IA.",
+      "De las implicaciones de no cumplir con los requisitos del SGIA.",
+      "Del contenido íntegro del Anexo B de la norma."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "7.3 lista exactamente esos tres puntos de concienciación. El Anexo B es orientación de implementación dirigida a quienes despliegan controles, no un requisito de concienciación general.",
+    "tags": ["iso42001", "clause:7.3", "concienciacion", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q006",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.111 — Concienciación en auditoría",
+    "type": "single-choice",
+    "question": "Al auditar la concienciación (7.3), el material recomienda ir más allá del registro de capacitaciones. ¿Cómo?",
+    "options": [
+      "Solicitando el examen final de cada participante y su calificación.",
+      "Evaluando comprensión real mediante entrevistas estructuradas, revisión de decisiones tomadas y coherencia entre discurso y práctica operativa.",
+      "Contando el número de horas de formación por empleado.",
+      "Verificando que la capacitación fue impartida por un instructor certificado."
+    ],
+    "answer": 1,
+    "explanation": "Un SGIA puede fallar no por ausencia de controles sino por desconocimiento de su propósito. En auditoría basada en evidencia, la entrevista es válida cuando se triangula con documentación y registros.",
+    "tags": ["iso42001", "clause:7.3", "concienciacion", "triangulacion", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q007",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.23 — Cláusula 7.4",
+    "type": "single-choice",
+    "question": "¿Qué cuatro elementos debe determinar la organización sobre las comunicaciones del SGIA (7.4)?",
+    "options": [
+      "Presupuesto, canal, idioma y formato.",
+      "Qué comunicará, cuándo comunicar, con quién comunicar y cómo comunicar.",
+      "Quién aprueba, quién redacta, quién revisa y quién archiva.",
+      "Riesgo, control, evidencia y hallazgo."
+    ],
+    "answer": 1,
+    "explanation": "7.4 exige determinar las comunicaciones internas y externas relevantes para el SGIA, incluyendo qué, cuándo, con quién y cómo comunicar.",
+    "tags": ["iso42001", "clause:7.4", "comunicacion", "difficulty:basic", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q008",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.112 — Comunicación e incidentes",
+    "type": "single-choice",
+    "question": "El material señala que \"la ausencia de protocolo formal de comunicación ante incidentes puede ser hallazgo mayor\". ¿En qué condición?",
+    "options": [
+      "Cuando la organización tiene más de 500 empleados.",
+      "Cuando el sistema de IA afecta derechos.",
+      "Cuando el sistema de IA es de desarrollo propio.",
+      "Cuando el incidente ocurre fuera del horario laboral."
+    ],
+    "answer": 1,
+    "explanation": "El material vincula la severidad al impacto: si el sistema de IA afecta derechos, la falta de protocolo formal de comunicación ante incidentes puede escalar a hallazgo mayor. Una falla comunicacional amplifica el impacto de un riesgo ya materializado.",
+    "tags": ["iso42001", "clause:7.4", "incidentes", "severidad", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q009",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.23 — Cláusula 7.5.1",
+    "type": "single-choice",
+    "question": "Según 7.5.1, ¿qué debe incluir la información documentada del SGIA?",
+    "options": [
+      "Solo la información documentada requerida explícitamente por la norma.",
+      "La información documentada requerida por la norma y la determinada por la organización como necesaria para la eficacia del SGIA.",
+      "Toda la documentación técnica de los sistemas de IA, sin excepción.",
+      "Únicamente los documentos aprobados por la alta dirección."
+    ],
+    "answer": 1,
+    "explanation": "7.5.1 incluye a) la información documentada requerida por el documento y b) la determinada por la organización como necesaria para la eficacia del SGIA. La extensión varía según tamaño, complejidad de procesos y competencia de las personas.",
+    "tags": ["iso42001", "clause:7.5.1", "informacion-documentada", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q010",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.24 — Cláusula 7.5.2",
+    "type": "multiple-choice",
+    "question": "Al crear y actualizar información documentada (7.5.2), ¿qué debe asegurar la organización? *(selecciona todas las correctas)*",
+    "options": [
+      "Identificación y descripción apropiadas (título, fecha, autor o número de referencia).",
+      "Formato y medio apropiados (idioma, versión del software, gráficos; papel o electrónico).",
+      "Revisión y aprobación para idoneidad y adecuación.",
+      "Traducción a todos los idiomas de las jurisdicciones donde opera."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "7.5.2 exige exactamente esos tres aspectos. La traducción multiidioma no es un requisito normativo, aunque el idioma sí forma parte de las consideraciones de formato.",
+    "tags": ["iso42001", "clause:7.5.2", "informacion-documentada", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q011",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.24 — Cláusula 7.5.3",
+    "type": "multiple-choice",
+    "question": "Para el control de la información documentada (7.5.3), ¿qué actividades debe abordar la organización según corresponda? *(selecciona todas las correctas)*",
+    "options": [
+      "Distribución, acceso, recuperación y uso.",
+      "Almacenamiento y preservación, incluyendo la preservación de la legibilidad.",
+      "Control de cambios (por ejemplo, control de versiones), y retención y disposición.",
+      "Destrucción anual obligatoria de todos los registros operativos."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "7.5.3 lista distribución/acceso/recuperación/uso, almacenamiento y preservación (incluida legibilidad), control de cambios y retención y disposición. Además exige asegurar disponibilidad y protección adecuada (confidencialidad, uso indebido, integridad).",
+    "tags": ["iso42001", "clause:7.5.3", "informacion-documentada", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q012",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.25 — Cláusula 7.5.3 origen externo",
+    "type": "single-choice",
+    "question": "¿Qué exige 7.5.3 sobre la información documentada de **origen externo**?",
+    "options": [
+      "Debe rechazarse por no estar bajo control de la organización.",
+      "La determinada como necesaria para la planificación y operación del SGIA debe ser identificada, según corresponda, y controlada.",
+      "Debe traducirse y reeditarse con el formato corporativo.",
+      "Solo se controla si proviene de un organismo de normalización."
+    ],
+    "answer": 1,
+    "explanation": "La información documentada de origen externo que la organización determine necesaria para la planificación y operación del SGIA debe ser identificada, según corresponda, y controlada.",
+    "tags": ["iso42001", "clause:7.5.3", "informacion-documentada", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q013",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.25 — Cláusula 8.1",
+    "type": "single-choice",
+    "question": "Según 8.1, ¿mediante qué dos acciones debe la organización planificar, implementar y controlar los procesos necesarios?",
+    "options": [
+      "Contratando auditores externos y publicando indicadores.",
+      "Estableciendo criterios para los procesos e implementando el control de los procesos de acuerdo con esos criterios.",
+      "Definiendo la política y comunicando los objetivos.",
+      "Documentando el alcance y aprobando la SoA."
+    ],
+    "answer": 1,
+    "explanation": "8.1 exige establecer criterios para los procesos e implementar el control de los procesos de acuerdo con los criterios, además de implementar los controles determinados en 6.1.3 relacionados con la operación.",
+    "tags": ["iso42001", "clause:8.1", "operacion", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q014",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.25 — Cláusula 8.1 eficacia",
+    "type": "single-choice",
+    "question": "¿Qué exige 8.1 respecto a la eficacia de los controles operacionales implementados?",
+    "options": [
+      "Debe ser certificada anualmente por un organismo externo.",
+      "Debe ser monitoreada, y deben considerarse acciones correctivas si no se logran los resultados previstos.",
+      "Debe medirse únicamente durante las auditorías internas.",
+      "Se presume mientras no exista un incidente reportado."
+    ],
+    "answer": 1,
+    "explanation": "8.1 establece que la eficacia de estos controles debe ser monitoreada y deben considerarse acciones correctivas si no se logran los resultados previstos. Este vínculo conecta la Cláusula 8 con la 10.",
+    "tags": ["iso42001", "clause:8.1", "eficacia", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q015",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.25-26 — Cláusula 8.1 cambios y externalización",
+    "type": "multiple-choice",
+    "question": "Además del control de procesos, ¿qué otras obligaciones establece 8.1? *(selecciona todas las correctas)*",
+    "options": [
+      "Controlar los cambios planificados y revisar las consecuencias de los cambios no intencionados, tomando acciones para mitigar efectos adversos.",
+      "Asegurar que los procesos, productos o servicios proporcionados externamente relevantes para el SGIA sean controlados.",
+      "Mantener información documentada disponible en la medida necesaria para confiar en que los procesos se llevaron a cabo según lo planificado.",
+      "Auditar internamente cada proceso operativo al menos una vez al mes."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "8.1 cubre control de cambios planificados y no intencionados, control de procesos/productos/servicios externalizados relevantes, e información documentada suficiente para confiar en la ejecución planificada. La frecuencia de auditoría se define en 9.2, no en 8.1.",
+    "tags": ["iso42001", "clause:8.1", "gestion-cambios", "terceros", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q016",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.26 — Cláusula 8.2",
+    "type": "single-choice",
+    "question": "¿Con qué periodicidad exige 8.2 realizar las evaluaciones de riesgos de IA?",
+    "options": [
+      "Anualmente, sin excepciones.",
+      "En intervalos planificados o cuando se propongan u ocurran cambios significativos.",
+      "Solo antes de cada auditoría de certificación.",
+      "Cuando lo solicite el proveedor del sistema de IA."
+    ],
+    "answer": 1,
+    "explanation": "8.2 exige realizar evaluaciones de riesgos de IA conforme a 6.1.2 en intervalos planificados o cuando se propongan o ocurran cambios significativos, conservando información documentada de todos los resultados.",
+    "tags": ["iso42001", "clause:8.2", "riesgos", "intervalos", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q017",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.26 — Cláusula 8.3",
+    "type": "single-choice",
+    "question": "Según 8.3, ¿qué debe ocurrir cuando las opciones de tratamiento definidas en el plan **no sean eficaces**?",
+    "options": [
+      "Deben aceptarse como riesgo residual con aprobación de la dirección.",
+      "Deben ser revisadas y validadas nuevamente siguiendo el proceso de 6.1.3, y el plan de tratamiento debe actualizarse.",
+      "Debe iniciarse una auditoría de tercera parte.",
+      "Debe retirarse el sistema de IA de producción de forma inmediata."
+    ],
+    "answer": 1,
+    "explanation": "8.3 exige implementar el plan y verificar su eficacia. Si las opciones no son eficaces, deben revisarse y validarse nuevamente conforme a 6.1.3 y el plan debe actualizarse. Todos los resultados se conservan como información documentada.",
+    "tags": ["iso42001", "clause:8.3", "tratamiento-riesgo", "eficacia", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q018",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.26 — Cláusula 8.4",
+    "type": "single-choice",
+    "question": "¿Qué establece la Cláusula 8.4 sobre la evaluación de impacto del sistema de IA?",
+    "options": [
+      "Se realiza una sola vez, antes del despliegue inicial.",
+      "Se realiza conforme a 6.1.4 en intervalos planificados o cuando se propongan cambios significativos, conservando información documentada de todos los resultados.",
+      "Se sustituye por la evaluación de riesgos cuando el sistema es de terceros.",
+      "Solo se realiza si un regulador la exige formalmente."
+    ],
+    "answer": 1,
+    "explanation": "8.4 traslada 6.1.4 a la operación: evaluaciones de impacto en intervalos planificados o ante cambios significativos propuestos, con retención de información documentada de todos los resultados.",
+    "tags": ["iso42001", "clause:8.4", "evaluacion-impacto", "intervalos", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q019",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.31-32 — Anexo A estructura",
+    "type": "single-choice",
+    "question": "¿Cuántos grupos de controles y cuántos controles contiene el Anexo A de ISO/IEC 42001?",
+    "options": [
+      "5 grupos y 24 controles.",
+      "9 grupos y 38 controles.",
+      "14 grupos y 93 controles.",
+      "10 grupos y 42 controles."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo A organiza 38 controles en 9 grupos: A.2 Políticas relacionadas con IA, A.3 Organización interna, A.4 Recursos, A.5 Evaluación de impactos, A.6 Ciclo de vida, A.7 Datos, A.8 Información para partes interesadas, A.9 Uso de sistemas de IA y A.10 Relaciones con terceros y clientes.",
+    "tags": ["iso42001", "anexo-a", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q020",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.33 — Anexo A.7",
+    "type": "single-choice",
+    "question": "El grupo **A.7 Datos para sistemas de IA** incluye controles sobre adquisición, calidad, preparación y otro aspecto clave. ¿Cuál?",
+    "options": [
+      "Cifrado de datos en reposo.",
+      "Procedencia de los datos.",
+      "Anonimización obligatoria de datos personales.",
+      "Retención de datos por diez años."
+    ],
+    "answer": 1,
+    "explanation": "A.7 incluye A.7.2 Datos para el desarrollo y mejora, A.7.3 Adquisición de datos, A.7.4 Calidad de datos, A.7.5 Procedencia de los datos y A.7.6 Preparación de datos.",
+    "tags": ["iso42001", "anexo-a", "datos", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q021",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.33 — Anexo A.8",
+    "type": "single-choice",
+    "question": "¿Qué control del grupo **A.8 Información para partes interesadas** cubre la notificación de eventos adversos relacionados con el sistema de IA?",
+    "options": [
+      "A.8.2 Documentación del sistema e información para usuarios",
+      "A.8.3 Reporte externo",
+      "A.8.4 Comunicación de incidentes",
+      "A.8.5 Información para partes interesadas"
+    ],
+    "answer": 2,
+    "explanation": "A.8 agrupa A.8.2 Documentación del sistema e información para usuarios, A.8.3 Reporte externo, A.8.4 Comunicación de incidentes y A.8.5 Información para partes interesadas. La notificación de eventos adversos corresponde a A.8.4.",
+    "tags": ["iso42001", "anexo-a", "incidentes", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q022",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.33 — Anexo A.10",
+    "type": "single-choice",
+    "question": "Una organización subcontrata parte del ciclo de vida de su sistema de IA. ¿Qué grupo del Anexo A aporta los controles de referencia más pertinentes?",
+    "options": [
+      "A.6 Ciclo de vida del sistema de IA",
+      "A.9 Uso de sistemas de IA",
+      "A.10 Relaciones con terceros y clientes",
+      "A.3 Organización interna"
+    ],
+    "answer": 2,
+    "explanation": "A.10 incluye A.10.2 Asignación de responsabilidades, A.10.3 Proveedores y A.10.4 Clientes. B.10 aporta la orientación para gestionar responsabilidades, riesgos y obligaciones cuando terceros participan en el ciclo de vida.",
+    "tags": ["iso42001", "anexo-a", "terceros", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q023",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.115 — Naturaleza del Anexo A",
+    "type": "single-choice",
+    "question": "Una organización declara haber implementado los 38 controles del Anexo A sin análisis de aplicabilidad. Según el material, ¿qué indica esto?",
+    "options": [
+      "Máxima madurez del SGIA, al no haber exclusiones que justificar.",
+      "Puede indicar falta de madurez metodológica: la auditoría evalúa la lógica de selección, no la cantidad de controles adoptados.",
+      "Conformidad automática con 6.1.3.",
+      "Que la organización no necesita evaluación de riesgos."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo A no es un checklist obligatorio ni exige implementación total. El criterio clave es pertinencia y coherencia con el contexto y los riesgos; aplicar todos los controles sin análisis puede indicar falta de madurez metodológica.",
+    "tags": ["iso42001", "anexo-a", "soa", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q024",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.116 — Controles vs objetivos de control",
+    "type": "single-choice",
+    "question": "¿Cuál es la diferencia entre un **control** y un **objetivo de control**?",
+    "options": [
+      "El control es el resultado esperado y el objetivo es la medida aplicada.",
+      "El control es una medida específica que modifica un riesgo; el objetivo de control es el resultado esperado que el control pretende lograr.",
+      "Son sinónimos dentro del Anexo A.",
+      "El control lo define la norma y el objetivo lo define el auditor."
+    ],
+    "answer": 1,
+    "explanation": "Confundir objetivo con control genera debilidad conceptual en la SoA. Un control sin objetivo definido impide evaluar su eficacia real. La NOTA 2 de 6.1.3 aclara que los objetivos de control están implícitamente incluidos en los controles elegidos.",
+    "tags": ["iso42001", "controles", "soa", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q025",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.117 — Contenido mínimo de la SoA",
+    "type": "multiple-choice",
+    "question": "Según el material, ¿qué debe incluir el contenido técnico mínimo de una SoA? *(selecciona todas las correctas)*",
+    "options": [
+      "Lista de controles seleccionados.",
+      "Justificación de inclusión y exclusión.",
+      "Referencia al riesgo asociado y estado de implementación.",
+      "Coste unitario de implementación de cada control."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "La SoA es documento estratégico, no inventario administrativo: el auditor debe poder reconstruir el razonamiento detrás de cada decisión. Una SoA sin vínculo explícito a la matriz de riesgos debilita la defensa técnica del SGIA.",
+    "tags": ["iso42001", "soa", "trazabilidad", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q026",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.117 — Determinación de aplicabilidad",
+    "type": "single-choice",
+    "question": "El material advierte sobre una exclusión \"frecuente en auditorías IA\" que suele ser injustificada. ¿Cuál?",
+    "options": [
+      "La exclusión de controles de calidad de datos.",
+      "La exclusión de controles de supervisión humana.",
+      "La exclusión de controles de reporte externo.",
+      "La exclusión de controles de documentación de recursos."
+    ],
+    "answer": 1,
+    "explanation": "El material señala explícitamente que la exclusión injustificada de controles de supervisión humana es frecuente en auditorías de IA. La aplicabilidad no puede fundamentarse en conveniencia operativa ni en 'confianza en el proveedor'.",
+    "tags": ["iso42001", "soa", "supervision-humana", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q027",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.114 — Procesos externalizados",
+    "type": "single-choice",
+    "question": "Si un sistema de IA es SaaS o tercerizado, ¿qué debe demostrar la organización según el material?",
+    "options": [
+      "Que el contrato transfiere la responsabilidad del SGIA al proveedor.",
+      "Evaluación, selección, monitoreo y control continuo del proveedor, con evidencia en contratos, cláusulas de control, SLA y seguimiento periódico.",
+      "Que el proveedor está certificado en alguna norma ISO.",
+      "Que el sistema no se usa para decisiones automatizadas."
+    ],
+    "answer": 1,
+    "explanation": "ISO/IEC 42001 no permite transferir la responsabilidad del SGIA a proveedores externos. La externalización no elimina la obligación de control (8.1). Una exclusión en la SoA basada únicamente en 'confianza en proveedor' es técnicamente débil.",
+    "tags": ["iso42001", "clause:8.1", "terceros", "soa", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q028",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.114 — Gestión de cambios en sistemas de IA",
+    "type": "multiple-choice",
+    "question": "¿Qué debe incluir un procedimiento formal de gestión de cambios en sistemas de IA según el material? *(selecciona todas las correctas)*",
+    "options": [
+      "Análisis de impacto y aprobación previa.",
+      "Actualización de la evaluación de riesgos.",
+      "Revisión de la SoA cuando corresponda.",
+      "Reentrenamiento obligatorio del modelo en cada cambio."
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Un cambio no controlado puede invalidar el tratamiento de riesgos previamente aprobado, y muchos incidentes algorítmicos se originan en cambios no evaluados adecuadamente. El reentrenamiento no es un requisito universal.",
+    "tags": ["iso42001", "gestion-cambios", "soa", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q029",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.118 — Diseño vs implementación vs resultado",
+    "type": "single-choice",
+    "question": "Evaluar la eficacia de un control requiere analizar tres niveles. ¿Cuáles son?",
+    "options": [
+      "Coste, plazo y alcance.",
+      "Diseño adecuado del control, implementación consistente en operación y resultado observable en reducción de riesgo.",
+      "Política, objetivo y métrica.",
+      "Criterio, condición y evidencia."
+    ],
+    "answer": 1,
+    "explanation": "Un control puede estar bien diseñado pero mal ejecutado, o ejecutado pero ineficaz. El examen evalúa esta distinción con casos situacionales del Dominio C (competencia C11).",
+    "tags": ["iso42001", "eficacia", "controles", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q030",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.119-120 — Caso control declarado no operativo",
+    "type": "single-choice",
+    "question": "Una SoA declara el control \"supervisión humana obligatoria en decisiones críticas\". En auditoría se observa procedimiento documentado, ausencia de registros de revisión humana, actualización reciente del modelo sin gestión formal de cambio y riesgo residual declarado \"aceptable\". Según la resolución del material, ¿cuál es el diagnóstico?",
+    "options": [
+      "Diseño deficiente, implementación adecuada, resultado eficaz.",
+      "Diseño adecuado, implementación deficiente (sin registros), resultado ineficaz (no se demuestra mitigación).",
+      "Diseño y implementación adecuados; solo falta medir el resultado.",
+      "Oportunidad de mejora, sin no conformidad."
+    ],
+    "answer": 1,
+    "explanation": "La resolución técnica clasifica el caso como No Conformidad Mayor por falla sistémica de operación, impactando 8.1 (control operacional) y 6.1.3 (tratamiento del riesgo), evaluada bajo la competencia C11.",
+    "tags": ["iso42001", "caso-aplicado", "eficacia", "clause:8.1", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q031",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.119 — Muestreo basado en riesgo",
+    "type": "single-choice",
+    "question": "Al evaluar la aplicabilidad de controles, ¿cómo debería priorizar el muestreo un auditor interno del SGIA?",
+    "options": [
+      "Revisando el mismo número de controles por cada grupo del Anexo A.",
+      "Priorizando controles asociados a riesgos altos, sistemas críticos o impactos regulatorios, con justificación metodológica.",
+      "Empezando por los controles con documentación más completa.",
+      "Seleccionando controles al azar para evitar sesgo del auditor."
+    ],
+    "answer": 1,
+    "explanation": "El muestreo debe justificarse metodológicamente. Auditar controles de bajo riesgo sin revisar los críticos puede distorsionar las conclusiones. El enfoque basado en riesgo optimiza el tiempo y fortalece el juicio técnico.",
+    "tags": ["iso19011", "muestreo", "enfoque-riesgo", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q032",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.116 — Anexo A y matriz de riesgos",
+    "type": "single-choice",
+    "question": "Durante la auditoría detectas un riesgo clasificado como alto sin ningún control asignado en la SoA. ¿Cómo lo califica el material?",
+    "options": [
+      "Oportunidad de mejora, porque el riesgo aún no se ha materializado.",
+      "Hallazgo crítico: la falta de correspondencia entre riesgo alto y ausencia de control rompe la integridad lógica del sistema.",
+      "Observación menor, si el riesgo está documentado en la matriz.",
+      "No es auditable hasta que exista un incidente asociado."
+    ],
+    "answer": 1,
+    "explanation": "La trazabilidad riesgo → control → evidencia es eje central del Dominio C. Sin trazabilidad documentada, el sistema pierde integridad lógica, y la ausencia de control frente a un riesgo alto es hallazgo crítico.",
+    "tags": ["iso42001", "trazabilidad", "soa", "hallazgos", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "iso42001-d3-q033",
+    "domainId": "domain-3",
+    "source": "MATERIALES p.115-116 — Riesgo residual",
+    "type": "single-choice",
+    "question": "¿Qué diferencia práctica establece el material entre \"riesgo mitigado\" y \"riesgo aceptado\"?",
+    "options": [
+      "Ninguna: ambos términos describen el resultado del tratamiento.",
+      "El riesgo mitigado se redujo mediante controles con evidencia posterior de eficacia; el riesgo aceptado se retiene conscientemente y requiere criterios documentados de aceptación y aprobación.",
+      "El riesgo mitigado requiere aprobación de dirección y el aceptado no.",
+      "El riesgo aceptado se elimina de la matriz de riesgos."
+    ],
+    "answer": 1,
+    "explanation": "El tratamiento solo es eficaz si el riesgo residual se reduce a niveles aceptables definidos por la organización. Sin medición posterior no existe confirmación de eficacia, y aceptar riesgo residual sin análisis documentado puede derivar en no conformidad mayor.",
+    "tags": ["iso42001", "riesgo-residual", "eficacia", "difficulty:advanced", "module:m03"]
+  }
+]
