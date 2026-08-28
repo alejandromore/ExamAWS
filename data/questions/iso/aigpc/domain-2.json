@@ -1,0 +1,886 @@
+[
+  {
+    "id": "aigpc-d2-q001",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.22 — Cláusula 5.1",
+    "type": "single-choice",
+    "question": "Según la cláusula 5.1, ¿cómo demuestra la alta dirección liderazgo y compromiso con el SGIA?",
+    "options": [
+      "Aprobando formalmente la política de IA una vez al año.",
+      "Asegurando que política y objetivos de IA sean compatibles con la dirección estratégica, integrando los requisitos en los procesos de negocio y disponiendo recursos.",
+      "Delegando la conducción del sistema en el área de innovación o analítica.",
+      "Firmando el acta de constitución del comité de IA."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula 5.1 contiene un programa completo de responsabilidad directiva: compatibilidad estratégica, integración en procesos de negocio, disponibilidad de recursos, comunicación de la importancia del sistema, apoyo a las personas, promoción de la mejora continua y respaldo a otros roles.",
+    "tags": [
+      "iso42001",
+      "clause:5.1",
+      "liderazgo",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q002",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.22 — negocio en sentido amplio",
+    "type": "single-choice",
+    "question": "La norma aclara que el término \"negocio\" en 5.1 debe entenderse de forma amplia. ¿Qué implica esa aclaración para el SGIA?",
+    "options": [
+      "Que el SGIA solo aplica a las líneas de negocio que generan ingresos.",
+      "Que el SGIA debe insertarse en las actividades fundamentales para la existencia de la organización, no quedar aislado en un espacio técnico o documental.",
+      "Que el SGIA debe replicarse por separado en cada unidad comercial.",
+      "Que las organizaciones sin ánimo de lucro quedan fuera del requisito."
+    ],
+    "answer": 1,
+    "explanation": "\"Negocio\" abarca las actividades fundamentales para la existencia de la organización, sean públicas, privadas o sin ánimo de lucro. El SGIA debe insertarse allí donde se crea valor, se decide, se presta servicio y se gestionan riesgos relevantes.",
+    "tags": [
+      "iso42001",
+      "clause:5.1",
+      "integracion",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q003",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.22 — cultura",
+    "type": "single-choice",
+    "question": "Una organización cuenta con política, controles y matrices de riesgo, pero premia informalmente la velocidad de despliegue sobre la trazabilidad. ¿Qué manifestación de liderazgo está fallando?",
+    "options": [
+      "La asignación presupuestaria al SGIA.",
+      "La aprobación documental de la política.",
+      "El establecimiento y modelado de una cultura de enfoque responsable hacia el uso, desarrollo y gobernanza de la IA.",
+      "La designación del responsable del sistema."
+    ],
+    "answer": 2,
+    "explanation": "Muchas fallas de control no provienen de la ausencia de normas, sino de una cultura que premia velocidad sin trazabilidad, despliegue sin revisión o experimentación sin criterios de responsabilidad. Modelar esa cultura es una manifestación explícita del liderazgo de la alta dirección.",
+    "tags": [
+      "iso42001",
+      "clause:5.1",
+      "cultura",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q004",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.23 — Cláusula 5.2",
+    "type": "single-choice",
+    "question": "¿Qué debe incluir necesariamente la política de IA según la cláusula 5.2?",
+    "options": [
+      "El inventario de sistemas de IA y sus responsables técnicos.",
+      "El plan de tratamiento de riesgos aprobado por la dirección.",
+      "El detalle de los controles del Anexo A seleccionados.",
+      "Ser apropiada al propósito de la organización, proporcionar marco para los objetivos de IA, comprometerse a cumplir requisitos aplicables y a mejorar continuamente el SGIA."
+    ],
+    "answer": 3,
+    "explanation": "Esos cuatro elementos son los requisitos explícitos de 5.2. El inventario, los controles seleccionados y el plan de tratamiento son artefactos distintos que la política enmarca pero no sustituye.",
+    "tags": [
+      "iso42001",
+      "clause:5.2",
+      "politica-ia",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q005",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.23 — política apropiada al propósito",
+    "type": "single-choice",
+    "question": "Una organización adopta como política de IA un texto genérico copiado de otra entidad del sector. ¿Cuál es la objeción principal desde gobernanza?",
+    "options": [
+      "Solo sería objetable si existiera un conflicto de propiedad intelectual.",
+      "El problema es únicamente de extensión: el texto debe ser más detallado.",
+      "Toda política de IA debe redactarse desde cero por exigencia normativa.",
+      "La política debe ser apropiada al propósito de la organización: su contexto, su uso real de IA, su perfil de riesgo y las expectativas de sus partes interesadas."
+    ],
+    "answer": 3,
+    "explanation": "Una política demasiado abstracta aporta poca capacidad de guía. La norma exige que sea apropiada al propósito de la organización, lo que impide adoptar lenguaje genérico sin anclarlo al contexto real.",
+    "tags": [
+      "iso42001",
+      "clause:5.2",
+      "politica-ia",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q006",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.23-24 — disponibilidad y comunicación de la política",
+    "type": "single-choice",
+    "question": "Además de mantenerse como información documentada, ¿qué exige la norma respecto de la política de IA?",
+    "options": [
+      "Publicarla íntegramente en el sitio web corporativo.",
+      "Traducirla a todos los idiomas en que opere la organización.",
+      "Someterla a aprobación de un organismo de certificación.",
+      "Referenciar, cuando corresponda, otras políticas de la organización; comunicarla internamente y ponerla a disposición de partes interesadas relevantes según sea apropiado."
+    ],
+    "answer": 3,
+    "explanation": "La política gana valor cuando dialoga con las demás políticas (calidad, seguridad, privacidad, ética, cumplimiento) y llega a quienes deben usarla. No se trata de hacer pública toda la arquitectura del sistema, sino de demostrar una postura institucional clara y trazable.",
+    "tags": [
+      "iso42001",
+      "clause:5.2",
+      "comunicacion",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q007",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.24-25 — Cláusula 5.3",
+    "type": "single-choice",
+    "question": "La cláusula 5.3 exige asignar responsabilidad y autoridad para, como mínimo, dos funciones críticas. ¿Cuáles son?",
+    "options": [
+      "Asegurar que el SGIA cumple los requisitos de la norma e informar sobre el desempeño del sistema a la alta dirección.",
+      "Aprobar presupuestos y contratar proveedores de IA.",
+      "Entrenar modelos y validar su exactitud estadística.",
+      "Representar a la organización ante el organismo de certificación y firmar la SoA."
+    ],
+    "answer": 0,
+    "explanation": "La primera función protege la conformidad y solidez técnica del sistema; la segunda asegura que la dirección no gobierne a ciegas. Lo decisivo no es la etiqueta del cargo, sino la claridad de la función.",
+    "tags": [
+      "iso42001",
+      "clause:5.3",
+      "roles",
+      "accountability",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q008",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.24 — roles en organizaciones pequeñas",
+    "type": "single-choice",
+    "question": "Una organización mediana no puede crear un cargo dedicado de responsable del SGIA. ¿Qué solución es compatible con la cláusula 5.3?",
+    "options": [
+      "Prescindir de la asignación formal hasta alcanzar mayor tamaño.",
+      "Trasladar la función al proveedor tecnológico principal.",
+      "Integrar la función en una estructura existente de riesgo, cumplimiento, calidad o gobierno tecnológico, con responsabilidad y autoridad claras.",
+      "Rotar la responsabilidad mensualmente entre las áreas usuarias."
+    ],
+    "answer": 2,
+    "explanation": "No siempre se necesita una estructura compleja, pero sí una asignación visible y comprensible. La función puede integrarse en estructuras existentes; lo que no admite la norma es dejar las responsabilidades flotando entre áreas.",
+    "tags": [
+      "iso42001",
+      "clause:5.3",
+      "roles",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q009",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.28 — criterios de riesgo de IA",
+    "type": "single-choice",
+    "question": "¿Qué función de gobernanza cumplen los **criterios de riesgo de IA** exigidos por 6.1.1?",
+    "options": [
+      "Sustituyen la evaluación de riesgos por una clasificación automática.",
+      "Determinan qué controles del Anexo A son obligatorios.",
+      "Traducen el apetito y la tolerancia institucional al lenguaje del SGIA y permiten distinguir riesgos aceptables de no aceptables.",
+      "Establecen la frecuencia mínima de las revisiones internas."
+    ],
+    "answer": 2,
+    "explanation": "Sin criterios, cada equipo interpreta de forma distinta qué es grave, tolerable o escalable. Con criterios, las decisiones ganan trazabilidad y coherencia. La norma remite a ISO/IEC 38507 e ISO/IEC 23894 para las consideraciones sobre cantidad y tipo de riesgo que la organización está dispuesta a asumir.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.1",
+      "criterios-riesgo",
+      "apetito-riesgo",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q010",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.28-29 — determinación por dominio y contexto",
+    "type": "single-choice",
+    "question": "¿Cómo debe determinar la organización los riesgos y oportunidades cuando existen varios sistemas de IA dentro del alcance?",
+    "options": [
+      "Con una única matriz corporativa aplicable a todos los sistemas por igual.",
+      "Únicamente cuando un sistema haya generado un incidente previo.",
+      "Solo para los sistemas desarrollados internamente.",
+      "Por cada sistema o por agrupaciones de sistemas cuando resulte apropiado, según su dominio, contexto de aplicación y uso previsto."
+    ],
+    "answer": 3,
+    "explanation": "La norma aclara que pueden existir varios sistemas dentro del alcance y que la determinación se hace por sistema o por agrupaciones apropiadas. Esa lógica de proporcionalidad evita tanto la sobrerregulación como la subestimación de exposiciones relevantes.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.1",
+      "proporcionalidad",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q011",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.35 — Cláusula 6.2",
+    "type": "single-choice",
+    "question": "¿Qué condiciones definen la calidad mínima de un objetivo de IA según la cláusula 6.2?",
+    "options": [
+      "Ser coherente con la política, medible cuando sea practicable, tener en cuenta los requisitos aplicables y ser monitoreado.",
+      "Ser ambicioso, público y revisado anualmente.",
+      "Estar aprobado por el comité técnico y expresado en términos financieros.",
+      "Estar vinculado a un control del Anexo A y a un proveedor responsable."
+    ],
+    "answer": 0,
+    "explanation": "Un objetivo que no puede seguirse, que no conversa con la política o que ignora requisitos relevantes tiene poco valor dentro del SGIA. La norma añade que los objetivos deben comunicarse, actualizarse y mantenerse como información documentada.",
+    "tags": [
+      "iso42001",
+      "clause:6.2",
+      "objetivos",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q012",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.36 — despliegue operativo de objetivos",
+    "type": "single-choice",
+    "question": "Al planificar cómo lograr los objetivos de IA, ¿qué debe determinar la organización?",
+    "options": [
+      "Únicamente el responsable y la fecha límite.",
+      "El retorno de inversión esperado y su método de cálculo.",
+      "Qué se hará, qué recursos se requerirán, quién será responsable, cuándo se completará y cómo se evaluarán los resultados.",
+      "La lista de partes interesadas que aprobarán el resultado."
+    ],
+    "answer": 2,
+    "explanation": "Esos cinco elementos convierten la meta en un compromiso ejecutable y conectan objetivos con recursos, tiempos, responsables y métricas de resultado.",
+    "tags": [
+      "iso42001",
+      "clause:6.2",
+      "objetivos",
+      "planificacion",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q013",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.36 — Cláusula 6.3",
+    "type": "single-choice",
+    "question": "Una organización decide ampliar el alcance del SGIA a dos nuevas filiales en pleno ciclo operativo. ¿Qué exige la cláusula 6.3?",
+    "options": [
+      "Que se documente únicamente después de completado.",
+      "Que se posponga hasta la siguiente revisión por la dirección.",
+      "Que el cambio se ejecute de manera planificada.",
+      "Que se apruebe por el organismo de certificación antes de aplicarlo."
+    ],
+    "answer": 2,
+    "explanation": "El SGIA cambia cuando evolucionan sistemas, procesos, obligaciones, riesgos o prioridades. La cláusula 6.3, aunque breve, exige que esos cambios se evalúen, ordenen y ejecuten con disciplina para preservar coherencia, trazabilidad y eficacia.",
+    "tags": [
+      "iso42001",
+      "clause:6.3",
+      "gestion-cambio",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q014",
+    "domainId": "domain-2",
+    "source": "Syllabus AIGPC p.6 — Módulo 2, resultado esperado",
+    "type": "single-choice",
+    "question": "¿Cuál es el resultado esperado del módulo de liderazgo, accountability y dirección estratégica?",
+    "options": [
+      "Saber ejecutar revisiones internas con evidencia objetiva.",
+      "Poder seleccionar controles del Anexo A y justificar exclusiones.",
+      "Poder traducir principios de liderazgo en una arquitectura de gobernanza clara, medible y alineada con la estrategia corporativa.",
+      "Poder diseñar indicadores técnicos de desempeño de modelos."
+    ],
+    "answer": 2,
+    "explanation": "El módulo convierte liderazgo y dirección estratégica en mecanismos concretos de gobernanza: política, objetivos, roles, priorización y accountability.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q015",
+    "domainId": "domain-2",
+    "source": "Sample exam AIGPC — patrón de accountability difusa",
+    "type": "single-choice",
+    "question": "En un comité de IA participan tecnología, legal, riesgos y negocio. Ante una desviación relevante, ninguna de las cuatro áreas se considera responsable de responder. ¿Qué falta principalmente?",
+    "options": [
+      "Un procedimiento de comunicación de incidentes.",
+      "La asignación explícita de autoridad para responder por el proceso, no solo de participación en él.",
+      "Mayor frecuencia de reuniones del comité.",
+      "Un acuerdo de nivel de servicio con el proveedor."
+    ],
+    "answer": 1,
+    "explanation": "Participar en una decisión no equivale a responder por ella. La cláusula 5.3 exige asignar y comunicar responsabilidades y autoridades; sin autoridad definida, la coordinación no produce accountability.",
+    "tags": [
+      "iso42001",
+      "clause:5.3",
+      "accountability",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q016",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.21-22 — liderazgo como conducción",
+    "type": "single-choice",
+    "question": "Un director general declara públicamente su apoyo al programa de IA responsable, pero no exige información periódica ni valida prioridades. Desde la cláusula 5.1, ¿cómo se califica esa situación?",
+    "options": [
+      "No cumple: el liderazgo exige presencia en la arquitectura del sistema, incluida la exigencia de información, la validación de prioridades y la remoción de barreras.",
+      "Cumple el requisito: la norma solo exige apoyo declarado de la alta dirección.",
+      "Cumple parcialmente, siempre que exista un responsable del SGIA designado.",
+      "Es irrelevante mientras los controles operen correctamente."
+    ],
+    "answer": 0,
+    "explanation": "Liderazgo no significa apoyo verbal. Significa presencia en política, compromiso, integración en procesos, comunicación, recursos, definición de roles y trazabilidad de responsabilidades.",
+    "tags": [
+      "iso42001",
+      "clause:5.1",
+      "liderazgo",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q017",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.27-28 — Cláusula 6.1.1",
+    "type": "single-choice",
+    "question": "¿Qué entradas conecta explícitamente la cláusula 6.1.1 con la planificación del SGIA?",
+    "options": [
+      "Las cuestiones identificadas en 4.1 y los requisitos identificados en 4.2.",
+      "El presupuesto aprobado y el plan de capacitación.",
+      "Los resultados de la última revisión interna y del monitoreo.",
+      "El catálogo de controles del Anexo A y la guía del Anexo B."
+    ],
+    "answer": 0,
+    "explanation": "La planificación no puede hacerse en abstracto: riesgos y oportunidades deben surgir del contexto real y de los requisitos de partes interesadas, para evitar matrices genéricas desconectadas de la realidad.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.1",
+      "planificacion",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q018",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.29 — planificación de acciones",
+    "type": "single-choice",
+    "question": "Una organización mantiene un registro de riesgos de IA actualizado, pero no ha definido cómo se integran las acciones en sus procesos ni cómo se evaluará su eficacia. ¿Qué requisito incumple?",
+    "options": [
+      "6.1.1, que exige planificar las acciones, su integración e implementación en los procesos del SGIA y la evaluación de su eficacia.",
+      "5.2, porque la política no menciona el registro de riesgos.",
+      "9.3, porque la dirección no ha revisado el registro.",
+      "7.5, porque el registro debería tener control de versiones."
+    ],
+    "answer": 0,
+    "explanation": "Identificar no basta. Un sistema inmaduro registra riesgos; uno maduro los convierte en gestión activa integrada en los procesos, con verificación de que la acción adoptada fue suficiente.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.1",
+      "acciones",
+      "eficacia",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q019",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.29-30 — adaptación sectorial del riesgo",
+    "type": "single-choice",
+    "question": "La norma admite que la definición de riesgo varíe entre sectores. ¿Qué límite impone esa flexibilidad?",
+    "options": [
+      "Ninguno: cada área puede adoptar la definición que prefiera.",
+      "La organización debe justificar la perspectiva adoptada y mantener consistencia interna.",
+      "Solo se admite en sectores regulados con supervisor formal.",
+      "Obliga a adoptar la definición del regulador sectorial correspondiente."
+    ],
+    "answer": 1,
+    "explanation": "La norma combina flexibilidad con rigor: reconoce lenguajes sectoriales distintos, pero esa flexibilidad no autoriza arbitrariedad. La perspectiva adoptada debe justificarse y aplicarse de forma consistente.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.1",
+      "sectorial",
+      "difficulty:advanced",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q020",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.30-31 — Cláusula 6.1.2",
+    "type": "single-choice",
+    "question": "El proceso de evaluación de riesgos de IA debe diseñarse de modo que evaluaciones repetidas produzcan resultados consistentes, válidos y comparables. ¿Por qué importa esa exigencia desde gobernanza?",
+    "options": [
+      "Porque permite reducir el número de evaluaciones anuales.",
+      "Porque garantiza que el nivel de riesgo residual sea siempre bajo.",
+      "Porque evita tener que documentar el proceso de evaluación.",
+      "Porque permite observar evolución, justificar decisiones y sostener revisiones posteriores sobre información estable."
+    ],
+    "answer": 3,
+    "explanation": "La comparabilidad impide que el análisis dependa de juicios cambiantes o intuiciones individuales, y es lo que hace posible detectar tendencias y sostener decisiones ante la dirección.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.2",
+      "consistencia",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q021",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.30-31 — análisis de consecuencias",
+    "type": "single-choice",
+    "question": "¿Qué distingue el análisis de riesgos de IA respecto de un análisis de riesgo puramente organizacional?",
+    "options": [
+      "Que se limita a la probabilidad de fallo técnico del modelo.",
+      "Que sustituye la probabilidad por la severidad reputacional.",
+      "Que evalúa las posibles consecuencias para la organización, los individuos y las sociedades.",
+      "Que solo considera riesgos con impacto financiero cuantificable."
+    ],
+    "answer": 2,
+    "explanation": "Esta amplitud convierte al SGIA en un sistema sensible a la naturaleza socio-técnica de la IA: la organización debe examinar qué podría ocurrir, a quién afectaría, con qué intensidad y con qué probabilidad realista.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.2",
+      "consecuencias",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q022",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.31 — comparación con criterios",
+    "type": "single-choice",
+    "question": "Tras analizar un riesgo de IA, ¿cuál es el paso que convierte ese análisis en base real para decidir?",
+    "options": [
+      "Comunicar el resultado a las partes interesadas.",
+      "Seleccionar un control del Anexo A que se le aproxime.",
+      "Comparar los resultados del análisis con los criterios establecidos en 6.1.1 y priorizar los riesgos para su tratamiento.",
+      "Documentar el riesgo en la SoA."
+    ],
+    "answer": 2,
+    "explanation": "La comparación con criterios previamente establecidos evita respuestas improvisadas o basadas en la presión del momento, y permite decidir qué se acepta, qué se trata con prioridad y qué se escala.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.2",
+      "priorizacion",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q023",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.33 — Cláusula 6.1.3, riesgo residual",
+    "type": "single-choice",
+    "question": "¿Qué exige la norma respecto del riesgo residual de IA?",
+    "options": [
+      "Que se reduzca siempre a un nivel bajo antes del despliegue.",
+      "Que sea aceptado conscientemente por la dirección designada, junto con la aprobación del plan de tratamiento.",
+      "Que se comunique a todas las partes interesadas externas.",
+      "Que se elimine mediante controles adicionales del Anexo A."
+    ],
+    "answer": 1,
+    "explanation": "El riesgo residual no puede asumirse de manera tácita o accidental. Debe ser aceptado por una instancia con autoridad suficiente, lo que obliga a explicitar la exposición remanente y vincularla con el apetito institucional.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.3",
+      "riesgo-residual",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q024",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.34 — Cláusula 6.1.4",
+    "type": "single-choice",
+    "question": "¿Qué relación existe entre la evaluación de impacto del sistema de IA y la evaluación de riesgos?",
+    "options": [
+      "La evaluación de impacto complementa a la de riesgos, y sus resultados deben considerarse dentro de ella.",
+      "La evaluación de impacto sustituye a la de riesgos cuando hay personas afectadas.",
+      "Son procesos independientes que no deben cruzarse para preservar objetividad.",
+      "La evaluación de impacto solo se realiza si el regulador la exige."
+    ],
+    "answer": 0,
+    "explanation": "Riesgo e impacto no operan de manera separada: se alimentan mutuamente. La norma indica que al evaluar consecuencias puede utilizarse la evaluación de impacto de 6.1.4, y que sus resultados se consideran dentro de la evaluación de riesgos.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.4",
+      "evaluacion-impacto",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q025",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.34 — uso indebido previsible",
+    "type": "single-choice",
+    "question": "La evaluación de impacto debe considerar el despliegue, el uso previsto y un tercer elemento. ¿Cuál?",
+    "options": [
+      "El coste total de propiedad del sistema.",
+      "El uso indebido razonablemente previsible del sistema.",
+      "La cuota de mercado del proveedor.",
+      "La disponibilidad histórica de la plataforma."
+    ],
+    "answer": 1,
+    "explanation": "No basta con examinar el escenario ideal. La organización debe preguntarse cómo podría utilizarse indebidamente el sistema de manera razonablemente previsible y qué efectos se derivarían sobre individuos, grupos y sociedades.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.4",
+      "uso-indebido",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q026",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.34-35 — contexto de la evaluación de impacto",
+    "type": "single-choice",
+    "question": "Un mismo sistema de IA se despliega en dos países con marcos regulatorios y sensibilidades sociales distintas. ¿Qué exige la evaluación de impacto?",
+    "options": [
+      "Tener en cuenta el contexto técnico y social específico de cada despliegue, así como las jurisdicciones aplicables.",
+      "Una única evaluación corporativa aplicable a ambos despliegues.",
+      "Evaluar solo el país con regulación más estricta y extrapolar el resultado.",
+      "Delegar el análisis en el equipo local sin integrarlo al SGIA."
+    ],
+    "answer": 0,
+    "explanation": "Un mismo sistema puede producir consecuencias muy distintas según el entorno de uso, el tipo de usuarios, la cultura, la sensibilidad del dominio o el marco regulatorio. El análisis debe situarse en una realidad concreta.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.4",
+      "jurisdicciones",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q027",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.35 — disponibilidad de la evaluación de impacto",
+    "type": "single-choice",
+    "question": "¿Qué establece la norma sobre el resultado de la evaluación de impacto del sistema de IA?",
+    "options": [
+      "Debe publicarse siempre de forma íntegra.",
+      "Se documenta y, cuando sea apropiado, puede ponerse a disposición de partes interesadas relevantes definidas por la organización.",
+      "Se conserva de forma estrictamente confidencial sin excepción.",
+      "Se entrega obligatoriamente al organismo de certificación."
+    ],
+    "answer": 1,
+    "explanation": "La documentación aporta trazabilidad; la disponibilidad, cuando corresponde, puede fortalecer transparencia y confianza. La decisión sobre a quién se pone a disposición corresponde a la organización.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.4",
+      "transparencia",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q028",
+    "domainId": "domain-2",
+    "source": "Syllabus AIGPC p.6 — Módulo 2, planeación basada en riesgos",
+    "type": "single-choice",
+    "question": "Una organización quiere priorizar sus inversiones en gobernanza de IA para el próximo ejercicio. ¿Qué criterio es más consistente con el módulo de dirección estratégica?",
+    "options": [
+      "El orden de llegada de las solicitudes de las áreas usuarias.",
+      "El presupuesto disponible en cada unidad de negocio.",
+      "La complejidad tecnológica de cada sistema.",
+      "El impacto sobre personas, grupos y sociedad combinado con la exposición organizacional y los criterios de riesgo definidos."
+    ],
+    "answer": 3,
+    "explanation": "La planeación basada en riesgos, oportunidades e impactos exige priorizar según exposición real y efectos sobre personas y sociedad, comparados con los criterios de riesgo institucionales, no según orden de llegada, complejidad técnica o disponibilidad presupuestaria.",
+    "tags": [
+      "iso42001",
+      "priorizacion",
+      "clause:6.1",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q029",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.32 — Cláusula 6.1.3 y Anexo A",
+    "type": "single-choice",
+    "question": "Tras seleccionar los controles necesarios para tratar un riesgo, ¿qué exige la norma respecto del Anexo A?",
+    "options": [
+      "Comparar los controles determinados con los del Anexo A para verificar que no se haya omitido ningún control necesario.",
+      "Adoptar todos los controles del Anexo A sin excepción.",
+      "Sustituir los controles propios por los del Anexo A cuando exista equivalencia.",
+      "Usar el Anexo A únicamente si la organización busca certificarse."
+    ],
+    "answer": 0,
+    "explanation": "El Anexo A no sustituye el juicio organizacional: actúa como referencia estructurada para verificar suficiencia y detectar omisiones. La organización puede además identificar controles adicionales más allá del anexo cuando su contexto lo exija.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.3",
+      "annexA",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q030",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.29 — información documentada sobre acciones",
+    "type": "single-choice",
+    "question": "¿Por qué el material insiste en que la información documentada sobre riesgos y oportunidades no es burocracia?",
+    "options": [
+      "Porque es un requisito exigido por los organismos de certificación.",
+      "Porque sustituye la necesidad de revisión por la dirección.",
+      "Porque permite reducir el número de controles necesarios.",
+      "Porque es memoria de decisión: permite reconstruir qué se identificó, cómo se justificaron las prioridades y qué acciones se adoptaron."
+    ],
+    "answer": 3,
+    "explanation": "Sin esa trazabilidad la organización pierde continuidad, dificulta la revisión futura y reduce su capacidad de explicar por qué gobierna la IA de una determinada manera. No solo acredita que hubo análisis: evidencia que hubo criterio y que ese criterio quedó preservado.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.1",
+      "informacion-documentada",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q031",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.30 — Cláusula 6.1.2, alineación",
+    "type": "single-choice",
+    "question": "¿Con qué debe estar alineado el proceso de evaluación de riesgos de IA para no convertirse en un ejercicio aislado?",
+    "options": [
+      "Con la metodología del proveedor de la plataforma de IA.",
+      "Con los indicadores financieros del ejercicio.",
+      "Con el programa de revisión interna.",
+      "Con la política y los objetivos de IA de la organización."
+    ],
+    "answer": 3,
+    "explanation": "La cláusula 6.1.2 exige que el proceso esté informado y alineado con la política y los objetivos de IA. Así el riesgo no se analiza en abstracto, sino en función del propósito y las prioridades institucionales.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.2",
+      "alineacion",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q032",
+    "domainId": "domain-2",
+    "source": "Sample exam AIGPC — patrón de política sin control",
+    "type": "single-choice",
+    "question": "La política de IA de una organización compromete la supervisión humana en usos sensibles, pero no existe una definición de qué se considera \"uso sensible\". ¿Cuál es la lectura correcta?",
+    "options": [
+      "La política es suficiente mientras las áreas apliquen buen criterio.",
+      "Se trata de un problema de redacción sin efecto sobre el sistema.",
+      "El compromiso no es exigible ni verificable: falta el criterio operativo que conecta el principio con el control.",
+      "El proveedor debería definir qué usos son sensibles."
+    ],
+    "answer": 2,
+    "explanation": "Un compromiso de política solo se sostiene si se traduce en criterios operativos que permitan saber cuándo aplica el control, quién lo activa y cómo se verifica. Sin esa definición, la supervisión humana queda a discreción de cada área.",
+    "tags": [
+      "iso42001",
+      "politica-ia",
+      "brecha-control",
+      "clause:5.2",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q033",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.36 — comunicación y actualización de objetivos",
+    "type": "single-choice",
+    "question": "Los objetivos de IA de una organización se fijaron hace dos años y no se han revisado pese a cambios regulatorios y de casos de uso. ¿Qué requisito se está incumpliendo?",
+    "options": [
+      "Los objetivos deben comunicarse, actualizarse según corresponda y mantenerse como información documentada.",
+      "Los objetivos deben renovarse obligatoriamente cada doce meses.",
+      "Los objetivos deben ser aprobados por el organismo de certificación.",
+      "Los objetivos deben expresarse siempre en términos cuantitativos."
+    ],
+    "answer": 0,
+    "explanation": "La norma no fija una periodicidad rígida, pero exige que los objetivos se revisen cuando cambie el contexto. Solo así dejan de ser declaraciones estáticas y se convierten en instrumentos vivos del SGIA.",
+    "tags": [
+      "iso42001",
+      "clause:6.2",
+      "objetivos",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q034",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.36 — Anexo C y objetivos",
+    "type": "single-choice",
+    "question": "¿Qué aporta el Anexo C al proceso de fijación de objetivos de IA?",
+    "options": [
+      "Una lista cerrada de objetivos obligatorios para toda organización.",
+      "Ejemplos no exhaustivos de objetivos organizacionales relacionados con IA y de fuentes de riesgo, para ampliar criterio.",
+      "La orientación de implementación de los controles del Anexo A.",
+      "Los criterios de aceptación del riesgo residual."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo C ofrece ejemplos no exhaustivos que varían según el contexto: mejorar eficiencia de procesos, apoyar decisiones basadas en datos, mejorar productos o servicios, habilitar nuevas capacidades y mejorar la experiencia de usuario, entre otros.",
+    "tags": [
+      "iso42001",
+      "annexC",
+      "objetivos",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q035",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.25 — accountability y reporte a la dirección",
+    "type": "single-choice",
+    "question": "¿Qué riesgo de gobierno aparece cuando no existe una función explícita de reporte del desempeño del SGIA hacia la alta dirección?",
+    "options": [
+      "La organización incumple los plazos de certificación.",
+      "Los controles del Anexo A dejan de ser aplicables.",
+      "La dirección gobierna a ciegas: decide sin información fiable sobre el estado real del sistema.",
+      "Se duplica el esfuerzo documental entre áreas."
+    ],
+    "answer": 2,
+    "explanation": "La cláusula 5.3 exige asignar la autoridad para informar sobre el desempeño del SGIA a la alta dirección. Esa ruta de información es lo que convierte el liderazgo declarado en conducción efectiva.",
+    "tags": [
+      "iso42001",
+      "clause:5.3",
+      "reporte",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q036",
+    "domainId": "domain-2",
+    "source": "Syllabus AIGPC p.6 — Módulo 2, evaluación de impactos en la decisión",
+    "type": "single-choice",
+    "question": "Un comité debe decidir si aprueba el despliegue de un sistema de IA en un proceso de atención a población en situación de vulnerabilidad. ¿Qué insumo es indispensable desde la dirección estratégica?",
+    "options": [
+      "El acuerdo de nivel de servicio con el proveedor.",
+      "La evaluación de impacto sobre individuos, grupos y sociedad, considerada junto con la evaluación de riesgos.",
+      "El informe de exactitud del modelo en el conjunto de prueba.",
+      "El análisis de retorno de inversión del caso de uso."
+    ],
+    "answer": 1,
+    "explanation": "La evaluación de impactos sobre personas, grupos y sociedad forma parte de la toma de decisiones directiva según el módulo. La exactitud técnica y el retorno de inversión son insumos complementarios, no sustitutivos.",
+    "tags": [
+      "iso42001",
+      "evaluacion-impacto",
+      "decision",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q037",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.26-27 — planificación como núcleo de decisión",
+    "type": "single-choice",
+    "question": "¿Por qué el material describe la cláusula 6 como \"el corazón analítico y decisorio del SGIA\"?",
+    "options": [
+      "Porque concentra la mayor cantidad de información documentada exigida.",
+      "Porque describe la operación diaria de los controles.",
+      "Porque es la única cláusula que involucra a la alta dirección.",
+      "Porque allí se determinan criterios de riesgo, se evalúan consecuencias, se definen tratamientos, se seleccionan controles, se construye la SoA, se establecen objetivos y se ordenan cambios."
+    ],
+    "answer": 3,
+    "explanation": "Contexto y liderazgo preparan el terreno; la planificación define la arquitectura del criterio. La operación, la evaluación y la mejora se apoyan sobre las decisiones tomadas en la cláusula 6.",
+    "tags": [
+      "iso42001",
+      "clause:6",
+      "planificacion",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q038",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.28 — riesgos y oportunidades",
+    "type": "single-choice",
+    "question": "Según 6.1, ¿cómo deben entenderse las **oportunidades** en el SGIA?",
+    "options": [
+      "Como aspiraciones genéricas de innovación tecnológica.",
+      "Como excepciones autorizadas a los controles establecidos.",
+      "Como beneficios financieros esperados del uso de IA.",
+      "Como factores que, junto con los riesgos, pueden desviar los objetivos de IA y que deben relacionarse con el contexto real y los casos de uso."
+    ],
+    "answer": 3,
+    "explanation": "La norma pide determinar qué puede desviar los objetivos de IA en sentido adverso o favorable. Ni los riesgos se reducen a eventos negativos evidentes, ni las oportunidades a aspiraciones genéricas: ambos se anclan al contexto y a los casos de uso.",
+    "tags": [
+      "iso42001",
+      "clause:6.1",
+      "oportunidades",
+      "difficulty:intermediate",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q039",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.24 — señal de madurez organizacional",
+    "type": "single-choice",
+    "question": "Según el material, ¿cuál es uno de los signos más claros de madurez de una organización en materia de roles del SGIA?",
+    "options": [
+      "Poder explicar de manera sencilla quién hace qué, con qué autoridad y bajo qué criterio de reporte.",
+      "Disponer de un organigrama con más de tres niveles de aprobación.",
+      "Contar con un comité de IA de composición interdisciplinaria amplia.",
+      "Haber externalizado la coordinación del sistema a un consultor especializado."
+    ],
+    "answer": 0,
+    "explanation": "Una organización madura explica con claridad la distribución de responsabilidad, autoridad y reporte. Una inmadura deja esas responsabilidades flotando entre áreas, con independencia del tamaño de sus comités.",
+    "tags": [
+      "iso42001",
+      "clause:5.3",
+      "madurez",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  },
+  {
+    "id": "aigpc-d2-q040",
+    "domainId": "domain-2",
+    "source": "Material de Autoestudio AIGPC p.23 — función estratégica de la política",
+    "type": "single-choice",
+    "question": "¿Cuál es la función estratégica de la política de IA dentro del SGIA?",
+    "options": [
+      "Resolver por sí sola los desafíos operativos del uso de IA.",
+      "Alinear propósito, gobernanza y ejecución, y servir de referencia para objetivos, controles, decisiones de tratamiento, comunicación y revisión.",
+      "Sustituir el análisis técnico de los sistemas de IA.",
+      "Fijar los indicadores de desempeño de cada sistema en producción."
+    ],
+    "answer": 1,
+    "explanation": "La política no reemplaza el análisis técnico ni resuelve por sí sola los desafíos operativos, pero establece el tono institucional y se convierte en punto de referencia para el resto del sistema.",
+    "tags": [
+      "iso42001",
+      "clause:5.2",
+      "politica-ia",
+      "difficulty:basic",
+      "module:m02"
+    ]
+  }
+]

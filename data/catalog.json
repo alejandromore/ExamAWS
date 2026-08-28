@@ -278,6 +278,64 @@
           "kind": "practice-exam"
         }
       ]
+    },
+    {
+      "id": "iso-aigpc",
+      "code": "AIGPC",
+      "title": "AI Governance Professional Certification",
+      "vendor": "ISO",
+      "level": "Professional",
+      "roadmapIds": [
+        "ai-governance"
+      ],
+      "description": "Gobernanza del Sistema de Gestión de IA (SGIA) conforme a ISO/IEC 42001: contexto y alcance, liderazgo y accountability, arquitectura de control y SoA, riesgos e impactos, supervisión del desempeño y mejora de la madurez de gobernanza.",
+      "passingScore": 70,
+      "examDurationMinutes": 60,
+      "domains": [
+        {
+          "id": "domain-1",
+          "title": "Dominio 1: Contexto (Módulo 1)",
+          "weight": 10,
+          "dataUrl": "data/questions/iso/aigpc/domain-1.json",
+          "questionCount": 30
+        },
+        {
+          "id": "domain-2",
+          "title": "Dominio 2: Aseguramiento (Módulo 2)",
+          "weight": 20,
+          "dataUrl": "data/questions/iso/aigpc/domain-2.json",
+          "questionCount": 40
+        },
+        {
+          "id": "domain-3",
+          "title": "Dominio 3: Controles (Módulos 3 y 4)",
+          "weight": 30,
+          "dataUrl": "data/questions/iso/aigpc/domain-3.json",
+          "questionCount": 55
+        },
+        {
+          "id": "domain-4",
+          "title": "Dominio 4: Medición (Módulo 5)",
+          "weight": 25,
+          "dataUrl": "data/questions/iso/aigpc/domain-4.json",
+          "questionCount": 45
+        },
+        {
+          "id": "domain-5",
+          "title": "Dominio 5: Mejora (Módulo 6)",
+          "weight": 15,
+          "dataUrl": "data/questions/iso/aigpc/domain-5.json",
+          "questionCount": 30
+        },
+        {
+          "id": "sample-exam-1",
+          "title": "Examen de muestra oficial AIGPC",
+          "weight": 0,
+          "dataUrl": "data/questions/iso/aigpc/sample-exam-1.json",
+          "questionCount": 40,
+          "kind": "practice-exam"
+        }
+      ]
     }
   ]
 }

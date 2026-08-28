@@ -47,6 +47,9 @@ ExamAWS/
         42001-ia/
           domain-1.json ... domain-6.json
           sample-exam-1.json
+        aigpc/
+          domain-1.json ... domain-5.json
+          sample-exam-1.json
   tools/
     import-template.md
   images/              # ignorada por Git
@@ -64,6 +67,7 @@ La pantalla inicial permite elegir entre:
   - CLF-C02, SAA-C03 y SAP-C02 preparados (sin banco de preguntas todavía).
 - **Roadmap de Gobernanza y Auditoría de IA** (ISO)
   - I42001IA disponible: 6 módulos + examen de muestra oficial.
+  - AIGPC disponible: 5 dominios + examen de muestra oficial.
   - Estructura preparada para Lead Auditor e ISO/IEC 27001.
 
 La navegación es jerárquica y con migas de pan en cada nivel:
@@ -93,6 +97,33 @@ siguen la distribución del JTA declarada en el syllabus.
 El banco `sample-exam-1.json` reproduce las 40 preguntas del examen de muestra oficial
 con su hoja de respuestas publicada. El resto de preguntas se redactó a partir del
 material del curso, y cada una referencia su origen en el campo `source`.
+
+### AI Governance Professional Certification — AIGPC (200)
+
+Extraído del material oficial en `Documents/Cursos/ISO42001` (brochure, syllabus, material de
+autoestudio y examen de muestra V042026). AIGPC gobierna el SGIA desde la dirección: prioriza
+GRC y ética por encima de la mecánica de auditoría, y no evalúa ingeniería de modelos.
+
+Los dominios y sus pesos son los **dominios normalizados del esquema** declarados en el
+syllabus. Los seis módulos del temario se mapean sobre esos cinco dominios y quedan
+trazados en cada pregunta mediante la etiqueta `module:mNN`.
+
+| Dominio | Peso | Módulos del syllabus | Trazabilidad | Preguntas |
+| --- | ---: | --- | --- | ---: |
+| Contexto | 10% | M1 · Fundamentos y contexto | 42001 cl. 1–4; 22989 | 30 |
+| Aseguramiento | 20% | M2 · Liderazgo, accountability y dirección | 42001 cl. 5–6; 38507 | 40 |
+| Controles | 30% | M3 · Arquitectura de control, SoA y terceros<br>M4 · Riesgos, impactos, ética y confianza | 42001 cl. 6.1, 7, 8, Anexo A; 23894 | 55 |
+| Medición | 25% | M5 · Supervisión del desempeño y aseguramiento | 42001 cl. 9; 19011 | 45 |
+| Mejora | 15% | M6 · Mejora, brechas y madurez | 42001 cl. 9.3 y 10 | 30 |
+| — | — | Examen de muestra oficial (simulador) | — | 40 |
+
+El banco `sample-exam-1.json` reproduce las 40 preguntas del examen de muestra oficial con su
+tabla de respuestas publicada; cada una lleva explicación propia. El resto se redactó a partir
+del material de autoestudio y del syllabus, y cada pregunta referencia su origen en `source`.
+
+> **Supuestos:** el material oficial de AIGPC indica que el examen tiene 40 preguntas de opción
+> múltiple, pero no declara duración ni puntaje de aprobación. En `catalog.json` se asumieron
+> **60 min y 70%**. Los pesos por dominio sí provienen del syllabus.
 
 ## Funcionalidades de entrenamiento
 
@@ -141,9 +172,9 @@ data/questions/aws/saa-c03/domain-1.json
 ```
 
 Las etiquetas con prefijo se renderizan como distintivos con formato propio:
-`difficulty:` (básica / intermedia / avanzada), `module:`, `clause:`, y los nombres de
-norma (`iso42001`, `iso19011`, `iso22989`, `iso23894`). El resto se muestra como
-etiqueta general.
+`difficulty:` (básica / intermedia / avanzada), `module:`, `clause:`, los nombres de
+norma (`iso42001`, `iso19011`, `iso22989`, `iso23894`, `iso38507`), los anexos
+(`annexA`…`annexD`) y el esquema `aigpc`. El resto se muestra como etiqueta general.
 
 3. Actualiza `data/catalog.json`:
 

@@ -1,0 +1,663 @@
+[
+  {
+    "id": "aigpc-d1-q001",
+    "domainId": "domain-1",
+    "source": "Syllabus AIGPC p.5 — Módulo 1; Material p.9-10 Cláusula 1",
+    "type": "single-choice",
+    "question": "¿A qué organizaciones aplica ISO/IEC 42001 según su cláusula de alcance?",
+    "options": [
+      "A cualquier organización que proporcione o utilice productos o servicios que empleen sistemas de IA.",
+      "Solo a organizaciones que entrenan modelos propios desde cero.",
+      "Únicamente a proveedores de nube que alojen modelos fundacionales.",
+      "Solo a organizaciones del sector tecnológico con área de I+D formal."
+    ],
+    "answer": 0,
+    "explanation": "La norma está dirigida a organizaciones que proporcionan o utilizan productos o servicios que emplean sistemas de IA. Un hospital, un banco, una universidad o una administración pública pueden necesitar un SGIA aunque su negocio principal no sea tecnológico.",
+    "tags": [
+      "iso42001",
+      "clause:1",
+      "aplicabilidad",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q002",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.4 — SGIA",
+    "type": "single-choice",
+    "question": "Desde la perspectiva de gobernanza, ¿qué describe mejor un SGIA?",
+    "options": [
+      "Una plataforma de software que centraliza el inventario de modelos.",
+      "Un comité especializado que aprueba proyectos de IA.",
+      "El conjunto de elementos interrelacionados que permite dirigir, controlar y mejorar el uso de IA con disciplina de gestión.",
+      "Un documento de política publicado en la intranet corporativa."
+    ],
+    "answer": 2,
+    "explanation": "El SGIA no es un software, ni un comité aislado, ni una política colgada en la intranet. Es la arquitectura que convierte la intención organizacional en práctica consistente: liderazgo, política, responsabilidades, objetivos, riesgos, controles, recursos, documentación, seguimiento y mejora.",
+    "tags": [
+      "iso42001",
+      "sgia",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q003",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.8 — familia de normas",
+    "type": "single-choice",
+    "question": "¿Qué norma aporta específicamente los **conceptos y la terminología** de inteligencia artificial que ISO/IEC 42001 utiliza como referencia normativa?",
+    "options": [
+      "ISO/IEC 23894:2023",
+      "ISO/IEC 38507:2022",
+      "ISO 19011:2018",
+      "ISO/IEC 22989:2022"
+    ],
+    "answer": 3,
+    "explanation": "ISO/IEC 22989 proporciona conceptos y terminología de IA y es la referencia normativa citada en la cláusula 2. ISO/IEC 23894 orienta sobre gestión del riesgo, ISO/IEC 38507 sobre gobernanza desde el órgano de dirección e ISO 19011 sobre revisión de sistemas de gestión.",
+    "tags": [
+      "iso42001",
+      "iso22989",
+      "clause:2",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q004",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.8 — familia de normas",
+    "type": "single-choice",
+    "question": "Un consejo de administración quiere entender qué responsabilidades le corresponden como órgano de gobierno frente al uso de IA. ¿Qué norma de apoyo es más pertinente?",
+    "options": [
+      "ISO 19011, porque describe cómo revisar sistemas de gestión.",
+      "ISO/IEC 22989, porque define la terminología aplicable.",
+      "ISO/IEC 38507, que vincula la gobernanza de IA con las responsabilidades del órgano de dirección.",
+      "ISO/IEC 23894, porque enumera controles de referencia."
+    ],
+    "answer": 2,
+    "explanation": "ISO/IEC 38507 sitúa la IA en el nivel de dirección y supervisión, no solo de ejecución, y es la referencia natural para el órgano de gobierno. Además, ISO/IEC 38507 e ISO/IEC 23894 son las fuentes citadas para el apetito y la tolerancia al riesgo.",
+    "tags": [
+      "iso42001",
+      "iso38507",
+      "organo-de-gobierno",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q005",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.17 — Cláusula 4.1",
+    "type": "single-choice",
+    "question": "La cláusula 4.1 exige, además de identificar cuestiones internas y externas, determinar un elemento que condiciona directamente qué responsabilidades asume la organización. ¿Cuál es?",
+    "options": [
+      "El presupuesto anual asignado a proyectos de IA.",
+      "El número de modelos en producción.",
+      "El rol de la organización respecto de los sistemas de IA que desarrolla, proporciona o utiliza.",
+      "La arquitectura técnica de los modelos empleados."
+    ],
+    "answer": 2,
+    "explanation": "La cláusula 4.1 pide examinar el propósito previsto de los sistemas de IA y definir los roles de la organización respecto de ellos. Una misma organización puede ser desarrolladora, proveedora, integradora y usuaria, y cada rol activa responsabilidades y controles distintos.",
+    "tags": [
+      "iso42001",
+      "clause:4.1",
+      "rol-organizacion",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q006",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.17 — Cláusula 4.1",
+    "type": "single-choice",
+    "question": "¿Cuál de estas cuestiones corresponde al **contexto externo** relevante para el SGIA?",
+    "options": [
+      "La madurez documental de las áreas de negocio.",
+      "La cultura interna respecto a la experimentación tecnológica.",
+      "Las capacidades técnicas del equipo de datos.",
+      "La sensibilidad pública y el debate social sobre el uso de IA en el sector."
+    ],
+    "answer": 3,
+    "explanation": "Las cuestiones externas incluyen legislación, expectativas regulatorias, dinámica competitiva, evolución tecnológica, estándares sectoriales, contexto geopolítico, sensibilidad pública y exigencias éticas. Cultura, madurez documental y capacidades del equipo son cuestiones internas.",
+    "tags": [
+      "iso42001",
+      "clause:4.1",
+      "contexto-externo",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q007",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.18 — Cláusula 4.2",
+    "type": "single-choice",
+    "question": "Según la cláusula 4.2, el análisis de partes interesadas no se agota en enumerarlas. ¿Qué debe determinar además la organización?",
+    "options": [
+      "El presupuesto que cada parte interesada aporta al proyecto.",
+      "La representación jurídica formal de cada parte interesada.",
+      "El grado de satisfacción histórico de cada parte interesada.",
+      "Cuáles son relevantes, qué requisitos introducen y cuáles de esos requisitos se abordarán a través del SGIA."
+    ],
+    "answer": 3,
+    "explanation": "La cláusula 4.2 pide determinar las partes interesadas relevantes, sus requisitos relevantes y cuáles de esos requisitos se abordan mediante el SGIA. Sin ese filtro, el ejercicio queda en un listado sin consecuencias operativas.",
+    "tags": [
+      "iso42001",
+      "clause:4.2",
+      "partes-interesadas",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q008",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.12 — Definición de parte interesada (3.2)",
+    "type": "single-choice",
+    "question": "¿Qué definición de **parte interesada** se ajusta a la norma?",
+    "options": [
+      "Únicamente quienes tienen una relación contractual vigente con la organización.",
+      "Toda persona u organización que puede afectar, verse afectada o percibirse a sí misma como afectada por una decisión o actividad.",
+      "Los accionistas y el órgano de gobierno de la organización.",
+      "Los usuarios finales registrados del sistema de IA."
+    ],
+    "answer": 1,
+    "explanation": "La definición es deliberadamente amplia e incluye la autopercepción de afectación. Por eso abarca reguladores, clientes, proveedores críticos, personal interno y comunidades afectadas, más allá del vínculo contractual.",
+    "tags": [
+      "iso42001",
+      "iso22989",
+      "terminologia",
+      "clause:3.2",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q009",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.18-19 — Cláusula 4.3",
+    "type": "single-choice",
+    "question": "Una organización redacta un alcance de SGIA muy amplio pero no asigna recursos proporcionales. ¿Cuál es el riesgo principal desde gobernanza?",
+    "options": [
+      "El alcance amplio siempre es preferible porque cubre más riesgos.",
+      "No hay riesgo, porque el alcance es un documento declarativo.",
+      "El sistema resulta frágil: asume formalmente una responsabilidad que no puede sostener en la práctica.",
+      "El riesgo se limita a un mayor esfuerzo documental."
+    ],
+    "answer": 2,
+    "explanation": "El alcance fija el perímetro de accountability. Un alcance excesivamente amplio sin recursos suficientes genera fragilidad; uno estrecho mal justificado deja fuera riesgos significativos. La determinación del alcance exige criterio y debe mantenerse como información documentada.",
+    "tags": [
+      "iso42001",
+      "clause:4.3",
+      "alcance",
+      "accountability",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q010",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.18-19 — Cláusula 4.3",
+    "type": "single-choice",
+    "question": "¿Qué entradas debe considerar la organización al determinar el alcance del SGIA?",
+    "options": [
+      "Únicamente el organigrama vigente.",
+      "El resultado de la última revisión por la dirección.",
+      "El catálogo de proveedores tecnológicos aprobados.",
+      "Las cuestiones externas e internas de 4.1 y los requisitos relevantes de partes interesadas de 4.2."
+    ],
+    "answer": 3,
+    "explanation": "La norma encadena 4.1 y 4.2 como entradas de 4.3, y exige que el alcance se mantenga como información documentada. Esa secuencia impide definir el perímetro del sistema de forma arbitraria.",
+    "tags": [
+      "iso42001",
+      "clause:4.3",
+      "alcance",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q011",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.19 — Cláusula 4.4",
+    "type": "single-choice",
+    "question": "La cláusula 4.4 exige establecer el SGIA incluyendo \"los procesos necesarios y sus interacciones\". ¿Por qué importa la referencia a las interacciones?",
+    "options": [
+      "Porque obliga a documentar cada proceso por separado en formularios homogéneos.",
+      "Porque un sistema se fortalece por la coherencia entre procesos, no solo por la calidad de cada uno aislado.",
+      "Porque exige que todos los procesos sean automatizados.",
+      "Porque establece que los procesos deben revisarse simultáneamente una vez al año."
+    ],
+    "answer": 1,
+    "explanation": "La política se conecta con los objetivos, los objetivos con la planificación, la planificación con la operación, la operación con el seguimiento y el seguimiento con la revisión por la dirección y la mejora. El SGIA solo funciona plenamente cuando esa interacción se diseña de forma consciente.",
+    "tags": [
+      "iso42001",
+      "clause:4.4",
+      "coherencia",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q012",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.7 — Ciclo PHVA",
+    "type": "single-choice",
+    "question": "En la lógica PHVA aplicada al SGIA, ¿qué actividades corresponden a la fase **Verificar**?",
+    "options": [
+      "Monitorear, medir, revisar y analizar para obtener información sobre la eficacia del sistema.",
+      "Ejecutar procesos, asignar recursos y operar controles.",
+      "Comprender el contexto, identificar partes interesadas y definir criterios de riesgo.",
+      "Corregir, ajustar y fortalecer el sistema a partir de los hallazgos."
+    ],
+    "answer": 0,
+    "explanation": "Planificar comprende contexto, objetivos y criterios; Hacer ejecuta y opera; Verificar monitorea, mide, revisa y analiza; Actuar corrige y mejora. El ciclo evita tratar la gestión de IA como un esfuerzo puntual limitado al despliegue.",
+    "tags": [
+      "iso42001",
+      "phva",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q013",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.11 — Definición de organización (3.1)",
+    "type": "single-choice",
+    "question": "Un grupo empresarial implementa el SGIA únicamente en una de sus unidades de negocio. Según la definición de **organización** de la norma, ¿qué implica esto?",
+    "options": [
+      "El SGIA es inválido: la norma exige cubrir todo el grupo empresarial.",
+      "El término organización se refiere solo a la parte incluida dentro del alcance del SGIA.",
+      "La responsabilidad se transfiere automáticamente a la matriz del grupo.",
+      "La unidad deja de considerarse organización a efectos de la norma."
+    ],
+    "answer": 1,
+    "explanation": "Cuando la organización forma parte de una entidad mayor, el término se refiere solo a la parte incluida dentro del alcance. Esa precisión es clave en grupos, multinacionales e implementaciones parciales por unidad de negocio.",
+    "tags": [
+      "iso42001",
+      "terminologia",
+      "clause:3.1",
+      "alcance",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q014",
+    "domainId": "domain-1",
+    "source": "Syllabus AIGPC p.3-4 — Enfoque del rol",
+    "type": "single-choice",
+    "question": "¿Qué evalúa la certificación AIGPC según su enfoque de rol?",
+    "options": [
+      "La capacidad de diseñar arquitecturas de modelos y optimizar su entrenamiento.",
+      "La capacidad de emitir conclusiones formales de auditoría de certificación.",
+      "La capacidad de gobernar el SGIA, sostener decisiones estratégicas e interpretar la exposición organizacional.",
+      "La capacidad de programar pipelines de datos para sistemas de IA."
+    ],
+    "answer": 2,
+    "explanation": "AIGPC prioriza GRC y ética sobre la mecánica de auditoría, y no evalúa competencias de ingeniería de modelos ni desarrollo técnico. Su foco es gobernar, decidir y sostener la responsabilidad institucional sobre la IA.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q015",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.4 — características propias de la IA",
+    "type": "single-choice",
+    "question": "¿Por qué el SGIA no puede limitarse a replicar la lógica de otros sistemas de gestión?",
+    "options": [
+      "Porque su estructura de cláusulas es completamente distinta de la estructura armonizada.",
+      "Porque la IA presenta rasgos como aprendizaje continuo, opacidad, dependencia de datos y variabilidad del desempeño que exigen salvaguardas específicas.",
+      "Porque la norma prohíbe integrar el SGIA con sistemas de gestión existentes.",
+      "Porque la IA no admite indicadores de desempeño medibles."
+    ],
+    "answer": 1,
+    "explanation": "ISO/IEC 42001 sigue la estructura armonizada y puede integrarse con calidad, seguridad, privacidad o continuidad. Lo que la distingue es que adapta esos requisitos a las incertidumbres particulares de la IA: opacidad, dependencia de datos, autonomía parcial y sensibilidad al contexto de uso.",
+    "tags": [
+      "iso42001",
+      "hls",
+      "integracion",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q016",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.13-15 — Términos y definiciones",
+    "type": "single-choice",
+    "question": "¿Cuál enunciado diferencia correctamente **política** y **objetivo** dentro del SGIA?",
+    "options": [
+      "La política es un resultado a alcanzar y el objetivo es la intención declarada por la dirección.",
+      "La política expresa la intención y dirección de la organización; el objetivo es el resultado concreto que se busca lograr.",
+      "Ambos términos son equivalentes cuando los aprueba la alta dirección.",
+      "La política aplica a terceros y el objetivo solo a áreas internas."
+    ],
+    "answer": 1,
+    "explanation": "La política de IA proporciona el marco para establecer los objetivos de IA. Los objetivos traducen esa dirección en resultados coherentes con la política, medibles cuando sea practicable y sujetos a seguimiento.",
+    "tags": [
+      "iso42001",
+      "terminologia",
+      "politica-ia",
+      "objetivos",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q017",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.15 — Desempeño y mejora continua",
+    "type": "single-choice",
+    "question": "En terminología del SGIA, ¿qué distingue **desempeño** de **eficacia**?",
+    "options": [
+      "El desempeño permite observar resultados y tendencias; la eficacia juzga si el sistema alcanza los resultados previstos.",
+      "El desempeño es un juicio sobre suficiencia; la eficacia es un dato medible.",
+      "Son sinónimos dentro de los sistemas de gestión.",
+      "El desempeño aplica a personas y la eficacia a procesos."
+    ],
+    "answer": 0,
+    "explanation": "El desempeño describe lo observado; la eficacia emite un juicio sobre si el sistema, tal como está diseñado y operado, basta para lograr sus objetivos. La cláusula 9.1 exige evaluar ambos.",
+    "tags": [
+      "iso42001",
+      "terminologia",
+      "desempeno",
+      "eficacia",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q018",
+    "domainId": "domain-1",
+    "source": "Syllabus AIGPC p.5 — Módulo 1, subtemáticas",
+    "type": "single-choice",
+    "question": "Una aseguradora usa un modelo propio para detección de fraude, integra un modelo de terceros para atención al cliente y revende un servicio con IA embebida. Desde el contexto del SGIA, ¿qué conclusión es correcta?",
+    "options": [
+      "Puede desempeñar varios roles simultáneamente, y cada uno determina responsabilidades y controles distintos.",
+      "Debe elegir un único rol y aplicarlo de forma uniforme a todos los sistemas.",
+      "Solo los sistemas desarrollados internamente entran en el alcance del SGIA.",
+      "El rol solo importa para efectos contractuales, no para el diseño del sistema de gestión."
+    ],
+    "answer": 0,
+    "explanation": "Una misma organización puede ser desarrolladora de un sistema, usuaria de otro e integradora de un tercero, e incluso desempeñar varios roles sobre el mismo sistema en distintas etapas del ciclo de vida. Esa distinción determina qué responsabilidades aplican y qué controles se vuelven críticos.",
+    "tags": [
+      "iso42001",
+      "rol-organizacion",
+      "clause:4.1",
+      "difficulty:advanced",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q019",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.17-18 — contexto y exposición",
+    "type": "single-choice",
+    "question": "¿Cuál es el error costoso que la comprensión del contexto permite evitar, según el material?",
+    "options": [
+      "Documentar en exceso los procesos de bajo riesgo.",
+      "Tratar todos los sistemas de IA como si generaran la misma exposición.",
+      "Integrar el SGIA con otros sistemas de gestión ya existentes.",
+      "Considerar requisitos de partes interesadas no contractuales."
+    ],
+    "answer": 1,
+    "explanation": "No es lo mismo usar IA en una función auxiliar de baja criticidad que en decisiones con alto impacto sobre personas, privacidad, seguridad o derechos. El contexto es precisamente lo que permite distinguir una situación de la otra.",
+    "tags": [
+      "iso42001",
+      "contexto",
+      "exposicion",
+      "clause:4.1",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q020",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.5-6 — Historia y origen de la norma",
+    "type": "single-choice",
+    "question": "¿Qué comité elaboró ISO/IEC 42001 y por qué importa ese origen desde el punto de vista de gobernanza?",
+    "options": [
+      "Un consorcio industrial privado; importa porque refleja las prácticas de los mayores proveedores.",
+      "Un grupo de trabajo regional; importa porque adapta la norma a una jurisdicción concreta.",
+      "El ISO/IEC JTC 1/SC 42; importa porque acredita un consenso técnico internacional que refuerza su valor como referente de certificación.",
+      "El comité de seguridad de la información; importa porque la IA se gobierna como una extensión de ISO/IEC 27001."
+    ],
+    "answer": 2,
+    "explanation": "La norma fue preparada por el Comité Técnico Conjunto ISO/IEC JTC 1, Subcomité SC 42 (Inteligencia Artificial). Ese origen le da legitimidad institucional y permite que dialogue con normas complementarias de conceptos, riesgo y gobernanza.",
+    "tags": [
+      "iso42001",
+      "historia",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q021",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.17 — Cláusula 4.1, cambio climático",
+    "type": "single-choice",
+    "question": "Además de las cuestiones internas y externas habituales, ¿qué elemento pide considerar explícitamente la cláusula 4.1?",
+    "options": [
+      "Si el cambio climático es una cuestión relevante para la organización.",
+      "El número de incidentes de seguridad del último ejercicio.",
+      "La rentabilidad esperada de cada caso de uso de IA.",
+      "El nivel de madurez del proveedor de infraestructura."
+    ],
+    "answer": 0,
+    "explanation": "La cláusula 4.1 incorpora la consideración del cambio climático como posible cuestión relevante, y la 4.2 añade que las partes interesadas pueden tener requisitos asociados cuando resulte pertinente.",
+    "tags": [
+      "iso42001",
+      "clause:4.1",
+      "cambio-climatico",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q022",
+    "domainId": "domain-1",
+    "source": "Syllabus AIGPC p.5 — Módulo 1, terminología clave",
+    "type": "single-choice",
+    "question": "Dentro de la terminología clave del módulo de contexto, ¿qué es la **SoA**?",
+    "options": [
+      "El listado de sistemas de IA en producción y sus responsables.",
+      "El acta de la revisión por la dirección.",
+      "La declaración que recoge los controles necesarios y justifica su inclusión o exclusión.",
+      "El registro de incidentes reportados por partes interesadas."
+    ],
+    "answer": 2,
+    "explanation": "La Declaración de Aplicabilidad (SoA) contiene los controles necesarios y la justificación de inclusiones y exclusiones. Es el instrumento de trazabilidad entre riesgos, objetivos, controles y decisiones de dirección.",
+    "tags": [
+      "iso42001",
+      "soa",
+      "terminologia",
+      "clause:6.1.3",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q023",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.10 — alcance y sectores",
+    "type": "single-choice",
+    "question": "Una cadena logística no desarrolla IA, pero usa modelos de un proveedor para planificar rutas y asignar turnos al personal. ¿Qué postura corresponde al determinar la necesidad de un SGIA?",
+    "options": [
+      "No necesita SGIA porque no desarrolla modelos.",
+      "Necesita evaluar si la IA influye de forma significativa en decisiones, operaciones o exposición al riesgo, incluida la asignación de turnos.",
+      "Basta con exigir al proveedor una certificación vigente.",
+      "Solo necesitaría un SGIA si operara en el sector salud o financiero."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula de alcance pregunta en qué medida la IA forma parte del valor que la organización produce o del riesgo que debe gestionar. La asignación de turnos afecta a personas, de modo que genera exposición aunque el modelo sea de un tercero.",
+    "tags": [
+      "iso42001",
+      "clause:1",
+      "alcance",
+      "terceros",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q024",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.10-11 — referencias normativas y coherencia",
+    "type": "single-choice",
+    "question": "En una organización, el área legal, el área técnica y el área de negocio usan el término \"sistema de IA\" con significados distintos. Desde el SGIA, ¿cuál es la consecuencia más relevante?",
+    "options": [
+      "Es un problema semántico sin efecto sobre el sistema de gestión.",
+      "Obliga a duplicar la política de IA por área.",
+      "Solo afecta a la comunicación externa con reguladores.",
+      "Se fragmenta la evaluación del riesgo, se debilita la documentación y se dificulta la rendición de cuentas."
+    ],
+    "answer": 3,
+    "explanation": "Una base terminológica común no es una formalidad académica: es un requisito práctico de eficacia. Sin significados estables, el inventario, la evaluación de riesgo y la trazabilidad de decisiones pierden consistencia.",
+    "tags": [
+      "iso42001",
+      "iso22989",
+      "clause:2",
+      "terminologia",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q025",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.6 — estructura de la norma",
+    "type": "single-choice",
+    "question": "¿Cuál es la lectura correcta de la secuencia de cláusulas 4 a 10 de ISO/IEC 42001?",
+    "options": [
+      "Son compartimentos independientes que pueden implementarse en cualquier orden sin relación entre sí.",
+      "Describen un encadenamiento: contexto, dirección, criterio, habilitación, ejecución, evaluación y mejora.",
+      "Constituyen una lista de verificación de cumplimiento documental.",
+      "Reproducen literalmente la estructura de ISO/IEC 27001."
+    ],
+    "answer": 1,
+    "explanation": "Una evaluación de riesgos sin claridad de contexto será débil; una política sin liderazgo efectivo será decorativa; un control operacional sin recursos será inestable; una revisión por la dirección sin indicadores confiables será superficial. La fortaleza del SGIA depende de la interacción entre sus partes.",
+    "tags": [
+      "iso42001",
+      "estructura",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q026",
+    "domainId": "domain-1",
+    "source": "Syllabus AIGPC p.5 — Módulo 1, resultado esperado",
+    "type": "single-choice",
+    "question": "Al cerrar el módulo de fundamentos y contexto, ¿qué debe poder explicar la persona candidata?",
+    "options": [
+      "Cómo entrenar y validar técnicamente un modelo de IA.",
+      "Cómo negociar cláusulas contractuales con proveedores de nube.",
+      "Cómo emitir un informe de auditoría de certificación.",
+      "Qué debe gobernarse, por qué debe gobernarse y qué decisiones estratégicas condicionan el alcance y la responsabilidad del SGIA."
+    ],
+    "answer": 3,
+    "explanation": "El resultado esperado del módulo es exactamente ese: identificar el objeto de gobierno, su justificación y las decisiones estratégicas que fijan alcance y responsabilidad.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q027",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.18 — expectativas de partes interesadas",
+    "type": "single-choice",
+    "question": "Un regulador, un cliente corporativo y una comunidad afectada plantean exigencias distintas sobre el mismo sistema de IA. ¿Cómo debe tratarlas el SGIA?",
+    "options": [
+      "Traducir las expectativas relevantes en requisitos operativos: controles, canales de comunicación, documentación y mecanismos de supervisión.",
+      "Atender solo las exigencias con base legal explícita.",
+      "Consolidarlas en una única declaración pública y cerrar el análisis.",
+      "Priorizar siempre las exigencias del cliente por su valor comercial."
+    ],
+    "answer": 0,
+    "explanation": "Algunos requisitos serán formales (regulatorios o contractuales) y otros reputacionales, éticos, operativos o sociales. La cláusula 4.2 sirve para convertir esas expectativas en decisiones concretas de control, comunicación, documentación y supervisión.",
+    "tags": [
+      "iso42001",
+      "clause:4.2",
+      "partes-interesadas",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q028",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.4 — habilitar y controlar",
+    "type": "single-choice",
+    "question": "¿Cuál afirmación refleja mejor el equilibrio conceptual que propone ISO/IEC 42001?",
+    "options": [
+      "El SGIA busca frenar la adopción de IA hasta que desaparezcan los riesgos.",
+      "El SGIA busca trasladar la responsabilidad del uso de IA a los proveedores tecnológicos.",
+      "El SGIA busca maximizar el uso de IA reduciendo controles formales.",
+      "El SGIA busca hacer sostenible la innovación: identificar dónde la IA aporta valor y qué límites, evidencias y supervisión requiere."
+    ],
+    "answer": 3,
+    "explanation": "Una organización madura no renuncia a la IA por la existencia de riesgos: la gestiona mejor. Ese equilibrio entre habilitar y controlar es uno de los núcleos conceptuales de la norma.",
+    "tags": [
+      "iso42001",
+      "innovacion",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q029",
+    "domainId": "domain-1",
+    "source": "Syllabus AIGPC p.5 — distribución por dominios del esquema",
+    "type": "single-choice",
+    "question": "En la distribución por dominios normalizados del esquema AIGPC, ¿cuál concentra el mayor peso?",
+    "options": [
+      "Controles.",
+      "Medición.",
+      "Contexto.",
+      "Mejora."
+    ],
+    "answer": 0,
+    "explanation": "La distribución declarada es Contexto 10 %, Aseguramiento 20 %, Medición 25 %, Controles 30 % y Mejora 15 %. Controles es el dominio con mayor peso del esquema.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m01"
+    ]
+  },
+  {
+    "id": "aigpc-d1-q030",
+    "domainId": "domain-1",
+    "source": "Material de Autoestudio AIGPC p.83 — precisión final sobre el alcance",
+    "type": "single-choice",
+    "question": "¿Por qué el material advierte contra asimilar ISO/IEC 42001 a una extensión de seguridad de la información?",
+    "options": [
+      "Porque la IA introduce particularidades —dependencia de datos, opacidad, cambios de comportamiento, impacto sobre individuos y sociedad— que exigen un tratamiento específico.",
+      "Porque ambas normas usan estructuras de cláusulas incompatibles.",
+      "Porque ISO/IEC 42001 prohíbe integrarse con otros sistemas de gestión.",
+      "Porque la seguridad de la información no es relevante para los sistemas de IA."
+    ],
+    "answer": 0,
+    "explanation": "Aunque sus controles dialogan con seguridad, privacidad, calidad, cumplimiento o continuidad, el foco de la norma es el SGIA. Trasladar automáticamente la lógica de otros estándares produce una lectura reductiva.",
+    "tags": [
+      "iso42001",
+      "alcance",
+      "integracion",
+      "difficulty:intermediate",
+      "module:m01"
+    ]
+  }
+]

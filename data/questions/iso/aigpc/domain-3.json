@@ -1,0 +1,1212 @@
+[
+  {
+    "id": "aigpc-d3-q001",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.32-33 — Cláusula 6.1.3, SoA",
+    "type": "single-choice",
+    "question": "¿Qué debe contener la Declaración de Aplicabilidad (SoA) según la cláusula 6.1.3?",
+    "options": [
+      "El inventario completo de sistemas de IA y sus responsables.",
+      "Los controles necesarios y la justificación de su inclusión y exclusión.",
+      "Los resultados de las evaluaciones de impacto realizadas.",
+      "Los indicadores de desempeño del SGIA y su cadencia de medición."
+    ],
+    "answer": 1,
+    "explanation": "La SoA es el puente entre el análisis de riesgo y la arquitectura de control: demuestra la lógica con la que la organización relaciona riesgos, decisiones de tratamiento, objetivos de control y justificaciones de inclusión o exclusión.",
+    "tags": [
+      "iso42001",
+      "soa",
+      "clause:6.1.3",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q002",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.65 — Anexo A, estructura",
+    "type": "single-choice",
+    "question": "¿Cómo está organizado el Anexo A de ISO/IEC 42001?",
+    "options": [
+      "En cuatro dominios y veinte controles.",
+      "En nueve grupos que reúnen treinta y ocho controles.",
+      "En catorce cláusulas y noventa y tres controles.",
+      "En cinco categorías alineadas con el ciclo PHVA."
+    ],
+    "answer": 1,
+    "explanation": "El Anexo A se organiza en nueve grupos y reúne treinta y ocho controles: políticas relacionadas con IA, organización interna, recursos, evaluación de impactos, ciclo de vida, datos, información para partes interesadas, uso de sistemas de IA y relaciones con terceros y clientes.",
+    "tags": [
+      "iso42001",
+      "annexA",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q003",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.69 — relación Anexo A / Anexo B",
+    "type": "single-choice",
+    "question": "¿Cuál es la diferencia funcional entre el Anexo A y el Anexo B?",
+    "options": [
+      "El Anexo A es obligatorio y el Anexo B es opcional para organizaciones certificadas.",
+      "El Anexo A describe riesgos y el Anexo B describe objetivos organizacionales.",
+      "El Anexo A aplica a organizaciones desarrolladoras y el Anexo B a organizaciones usuarias.",
+      "El Anexo A aporta objetivos de control y controles de referencia (qué controlar); el Anexo B aporta orientación de implementación (cómo implementarlo)."
+    ],
+    "answer": 3,
+    "explanation": "Quedarse solo en el Anexo A lleva a adoptar controles sin comprender su propósito operativo; quedarse solo en el Anexo B sin anclarlo al marco del A hace perder consistencia estructural. La combinación fortalece diseño y justificación del SGIA.",
+    "tags": [
+      "iso42001",
+      "annexA",
+      "annexB",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q004",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.38-39 — Cláusula 7.1",
+    "type": "single-choice",
+    "question": "Una organización aprueba una política de IA ambiciosa y una matriz de controles amplia, pero no asigna personal, presupuesto ni herramientas. ¿Qué cláusula se está incumpliendo principalmente?",
+    "options": [
+      "5.2 Política de IA, porque la política resultó demasiado ambiciosa.",
+      "7.1 Recursos, que exige determinar y proporcionar los recursos necesarios para establecer, implementar, mantener y mejorar el SGIA.",
+      "9.1 Monitoreo, porque no se mide el avance.",
+      "10.1 Mejora continua, porque no se fortalecen capacidades."
+    ],
+    "answer": 1,
+    "explanation": "Muchas implementaciones fracasan no por desconocer los requisitos, sino por intentar sostener el sistema sin capacidades suficientes. La dirección demuestra compromiso real cuando dota al sistema de medios para operar y mejorar.",
+    "tags": [
+      "iso42001",
+      "clause:7.1",
+      "recursos",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q005",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.39 — Cláusula 7.2",
+    "type": "single-choice",
+    "question": "¿Qué exige la cláusula 7.2 respecto de la competencia de las personas que afectan el desempeño en IA?",
+    "options": [
+      "Que todas cuenten con certificación profesional en IA.",
+      "Determinar la competencia necesaria, asegurarla con base en educación, formación o experiencia, tomar acciones cuando falte y evaluar la eficacia de esas acciones.",
+      "Que exista un plan de formación anual con asistencia obligatoria.",
+      "Que las competencias técnicas se prioricen sobre las jurídicas o de cumplimiento."
+    ],
+    "answer": 1,
+    "explanation": "La competencia no se presume: se construye y se verifica. Las acciones pueden incluir formación, mentoría, reasignación de personas, contratación o subcontratación, y debe evaluarse si efectivamente cerraron la brecha.",
+    "tags": [
+      "iso42001",
+      "clause:7.2",
+      "competencia",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q006",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.40 — Cláusula 7.3",
+    "type": "single-choice",
+    "question": "Según la cláusula 7.3, ¿de qué deben ser conscientes las personas que realizan trabajos bajo el control de la organización?",
+    "options": [
+      "Únicamente de la existencia de la política de IA.",
+      "De la política de IA, de su contribución a la eficacia del SGIA y de las implicaciones de no cumplir los requisitos del sistema.",
+      "De la arquitectura técnica de los modelos que utilizan.",
+      "Del contenido íntegro de la SoA y del plan de tratamiento de riesgos."
+    ],
+    "answer": 1,
+    "explanation": "La concienciación va más allá de conocer la política: la norma espera que las personas entiendan cómo su trabajo afecta al sistema y qué consecuencias tiene incumplirlo. Eso distribuye responsabilidad y evita que la gestión dependa de un pequeño grupo de especialistas.",
+    "tags": [
+      "iso42001",
+      "clause:7.3",
+      "concienciacion",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q007",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.41 — Cláusula 7.4",
+    "type": "single-choice",
+    "question": "¿Qué debe determinar la organización respecto de las comunicaciones relevantes para el SGIA?",
+    "options": [
+      "Qué comunicará, cuándo, con quién y cómo lo hará, tanto interna como externamente.",
+      "Únicamente el responsable de vocería ante medios.",
+      "El presupuesto anual de comunicación institucional.",
+      "La política de redes sociales aplicable al personal técnico."
+    ],
+    "answer": 0,
+    "explanation": "La comunicación no es una función auxiliar: es un mecanismo de coordinación, transparencia y respuesta. La norma pide definir contenido, oportunidad, destinatarios y medios, evitando el desorden informativo.",
+    "tags": [
+      "iso42001",
+      "clause:7.4",
+      "comunicacion",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q008",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.41-42 — Cláusula 7.5.1",
+    "type": "single-choice",
+    "question": "¿Qué información documentada debe incluir el SGIA?",
+    "options": [
+      "Exclusivamente la exigida de forma explícita por la norma.",
+      "Solo la documentación que sea auditable por un tercero.",
+      "Toda la documentación técnica generada por los equipos de desarrollo.",
+      "La requerida por la norma y también la que la propia organización determine necesaria para la eficacia del sistema."
+    ],
+    "answer": 3,
+    "explanation": "La norma evita una interpretación mínima y rígida. La clave está en conservar información suficiente para sostener eficacia, control y mejora, sin caer en sobrecarga documental innecesaria.",
+    "tags": [
+      "iso42001",
+      "clause:7.5.1",
+      "informacion-documentada",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q009",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.42 — extensión de la documentación",
+    "type": "single-choice",
+    "question": "Dos organizaciones del mismo sector mantienen volúmenes muy distintos de información documentada del SGIA. ¿Cómo debe interpretarse esa diferencia?",
+    "options": [
+      "La extensión puede diferir legítimamente por tamaño, tipo de actividades, complejidad de interacciones y competencia de las personas, pero la proporcionalidad debe justificarse.",
+      "La que documenta más tiene necesariamente un sistema más maduro.",
+      "La norma exige un volumen mínimo homogéneo por sector.",
+      "La diferencia solo es aceptable si una de ellas no busca certificarse."
+    ],
+    "answer": 0,
+    "explanation": "Menos documentación no siempre significa mejor sistema, y más documentación tampoco garantiza madurez. Lo relevante es la suficiencia y utilidad de la información frente al contexto del SGIA.",
+    "tags": [
+      "iso42001",
+      "clause:7.5.1",
+      "proporcionalidad",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q010",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.42 — Cláusula 7.5.2",
+    "type": "single-choice",
+    "question": "Al crear y actualizar información documentada, ¿qué debe asegurar la organización?",
+    "options": [
+      "Que cada documento sea firmado por la alta dirección.",
+      "Que todos los documentos se publiquen en un repositorio único de acceso abierto.",
+      "Identificación y descripción apropiadas, formato y medio adecuados, y revisión y aprobación para idoneidad y adecuación.",
+      "Que se conserven exclusivamente en formato electrónico con firma digital."
+    ],
+    "answer": 2,
+    "explanation": "Título, fecha, autor o número de referencia permiten saber qué documento es y a qué versión corresponde; el formato y el medio lo hacen utilizable; la revisión y aprobación confirman su pertinencia.",
+    "tags": [
+      "iso42001",
+      "clause:7.5.2",
+      "informacion-documentada",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q011",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.43 — Cláusula 7.5.3",
+    "type": "single-choice",
+    "question": "¿Cuál es el equilibrio central que exige el control de la información documentada?",
+    "options": [
+      "Entre volumen y coste de almacenamiento.",
+      "Entre disponibilidad para quien la necesita y protección frente a pérdida de confidencialidad, uso indebido o pérdida de integridad.",
+      "Entre formato electrónico y formato impreso.",
+      "Entre documentación interna y documentación pública."
+    ],
+    "answer": 1,
+    "explanation": "En un SGIA la documentación puede involucrar riesgos, impactos, decisiones sensibles o relaciones con terceros, por lo que ese equilibrio entre disponibilidad y protección resulta especialmente delicado.",
+    "tags": [
+      "iso42001",
+      "clause:7.5.3",
+      "informacion-documentada",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q012",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.43-44 — información de origen externo",
+    "type": "single-choice",
+    "question": "Una organización basa parte de su operación de IA en especificaciones técnicas y lineamientos regulatorios emitidos por terceros. ¿Qué exige la cláusula 7.5.3?",
+    "options": [
+      "Que esa documentación quede fuera del SGIA por no ser de autoría propia.",
+      "Que se reproduzca íntegramente dentro de los procedimientos internos.",
+      "Que la información de origen externo determinada como necesaria se identifique y controle según corresponda, incluidas decisiones sobre visualización y autoridad de modificación.",
+      "Que se solicite autorización al emisor antes de utilizarla."
+    ],
+    "answer": 2,
+    "explanation": "El SGIA no depende solo de documentos internos: normas externas, lineamientos regulatorios, especificaciones de proveedores o documentación contractual influyen sobre la planificación y la operación, por lo que también deben quedar bajo control.",
+    "tags": [
+      "iso42001",
+      "clause:7.5.3",
+      "documentacion-externa",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q013",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.45-46 — Cláusula 8.1",
+    "type": "single-choice",
+    "question": "¿Qué exige la cláusula 8.1 sobre planificación y control operacional?",
+    "options": [
+      "Planificar, implementar y controlar los procesos necesarios estableciendo criterios para ellos e implementando el control de acuerdo con esos criterios.",
+      "Automatizar todos los procesos relevantes del SGIA.",
+      "Someter cada proceso a revisión interna antes de su puesta en marcha.",
+      "Documentar cada proceso en un procedimiento formal aprobado por la dirección."
+    ],
+    "answer": 0,
+    "explanation": "La operación del SGIA no puede dejarse al criterio informal de cada área. La organización define de antemano cómo deben funcionar los procesos, qué criterios aplican y cómo se verificará su ejecución.",
+    "tags": [
+      "iso42001",
+      "clause:8.1",
+      "control-operacional",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q014",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.47 — monitoreo de la eficacia de los controles",
+    "type": "single-choice",
+    "question": "Una organización verifica trimestralmente que sus controles de IA se ejecutaron, pero no analiza si produjeron el resultado previsto. ¿Qué está confundiendo?",
+    "options": [
+      "Cobertura con alcance.",
+      "Control preventivo con control detectivo.",
+      "Riesgo inherente con riesgo residual.",
+      "Instalación del control con eficacia del control."
+    ],
+    "answer": 3,
+    "explanation": "Un control puede existir formalmente y no funcionar: aplicarse de manera incompleta, quedar desactualizado o producir una falsa sensación de seguridad. La cláusula 8.1 exige monitorear su eficacia y considerar acciones correctivas cuando no se logren los resultados previstos.",
+    "tags": [
+      "iso42001",
+      "clause:8.1",
+      "eficacia-controles",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q015",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.48 — cambios planificados y no intencionados",
+    "type": "single-choice",
+    "question": "La cláusula 8.1 exige gobernar dos tipos de cambio. ¿Cuáles?",
+    "options": [
+      "Cambios planificados, cuyas consecuencias deben anticiparse, y cambios no intencionados, cuyas consecuencias deben revisarse mitigando efectos adversos.",
+      "Cambios contractuales y cambios presupuestarios.",
+      "Cambios técnicos y cambios organizativos.",
+      "Cambios internos y cambios exigidos por el regulador."
+    ],
+    "answer": 0,
+    "explanation": "Los cambios deliberados incluyen nuevas versiones de modelos, actualizaciones de datos o incorporación de proveedores. Los no intencionados incluyen variaciones inesperadas del comportamiento del sistema o desviaciones operativas no previstas. Ambos deben gobernarse, no tratarse como incidentes aislados.",
+    "tags": [
+      "iso42001",
+      "clause:8.1",
+      "gestion-cambio",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q016",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.48 — procesos provistos externamente",
+    "type": "single-choice",
+    "question": "¿Qué protege el requisito de controlar los procesos, productos o servicios proporcionados externamente que sean relevantes para el SGIA?",
+    "options": [
+      "Protege a la organización de tener que evaluar impactos sobre personas.",
+      "Protege el secreto comercial de los proveedores.",
+      "Protege frente al error de creer que el riesgo desaparece cuando una actividad es subcontratada.",
+      "Protege el presupuesto asignado al programa de IA."
+    ],
+    "answer": 2,
+    "explanation": "La externalización no puede convertirse en una zona ciega de responsabilidad. Controlar elementos externos puede requerir cláusulas contractuales, criterios de evaluación, mecanismos de supervisión, documentación de dependencia o revisión de desempeño.",
+    "tags": [
+      "iso42001",
+      "clause:8.1",
+      "terceros",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q017",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.49 — Cláusula 8.2",
+    "type": "single-choice",
+    "question": "¿Con qué periodicidad debe realizar la organización evaluaciones de riesgos de IA en la fase operativa?",
+    "options": [
+      "Una sola vez, antes del despliegue inicial.",
+      "En intervalos planificados o cuando se propongan u ocurran cambios significativos.",
+      "Exclusivamente cuando lo solicite la alta dirección.",
+      "Cada vez que se actualice la versión del modelo, sin excepción."
+    ],
+    "answer": 1,
+    "explanation": "El riesgo no se evalúa una sola vez. Los sistemas evolucionan, sus datos varían, sus casos de uso se amplían y su entorno regulatorio o social se modifica, de modo que una evaluación antigua puede dejar de ser suficiente.",
+    "tags": [
+      "iso42001",
+      "clause:8.2",
+      "reevaluacion",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q018",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.49-50 — Cláusula 8.3",
+    "type": "single-choice",
+    "question": "Además de implementar el plan de tratamiento de riesgos, ¿qué exige la cláusula 8.3?",
+    "options": [
+      "Comunicarlo a todas las partes interesadas externas.",
+      "Verificar su eficacia.",
+      "Someterlo a revisión interna antes de su ejecución.",
+      "Actualizar la SoA con cada acción ejecutada."
+    ],
+    "answer": 1,
+    "explanation": "Un plan sin verificación puede generar la ilusión de control sin aportar seguridad real. Implementar significa poner en marcha controles y responsables; verificar significa observar si las medidas logran manejar el riesgo según lo esperado.",
+    "tags": [
+      "iso42001",
+      "clause:8.3",
+      "eficacia",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q019",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.50 — opciones de tratamiento ineficaces",
+    "type": "single-choice",
+    "question": "Una opción de tratamiento definida en el plan resulta ineficaz al llevarse al entorno real. ¿Qué exige la norma?",
+    "options": [
+      "Revisar y revalidar esas opciones siguiendo el proceso de tratamiento de 6.1.3 y actualizar el plan.",
+      "Aceptar el riesgo residual resultante y documentarlo.",
+      "Escalar el caso al organismo de certificación.",
+      "Sustituir el control por otro del Anexo A sin revalidación."
+    ],
+    "answer": 0,
+    "explanation": "La norma incorpora una lógica explícita de aprendizaje: no todas las decisiones iniciales serán acertadas o suficientes en el entorno real. El sistema no se protege negando la ineficacia, sino corrigiéndola con método.",
+    "tags": [
+      "iso42001",
+      "clause:8.3",
+      "tratamiento-riesgo",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q020",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.50-51 — Cláusula 8.4",
+    "type": "single-choice",
+    "question": "¿Cuándo deben realizarse las evaluaciones de impacto del sistema de IA en la fase operativa?",
+    "options": [
+      "Solo cuando una parte interesada presente una reclamación.",
+      "Solo si el sistema opera en un sector regulado.",
+      "Únicamente al cierre de cada ejercicio anual.",
+      "En intervalos planificados o cuando se propongan cambios significativos."
+    ],
+    "answer": 3,
+    "explanation": "La cláusula 8.4 extiende al plano operativo la misma lógica dinámica exigida para el riesgo: a medida que cambian sistemas, usos, entornos y relaciones con partes interesadas, pueden cambiar las consecuencias sobre personas, grupos y sociedad.",
+    "tags": [
+      "iso42001",
+      "clause:8.4",
+      "evaluacion-impacto",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q021",
+    "domainId": "domain-3",
+    "source": "Sample exam AIGPC — patrón de justificación débil en SoA",
+    "type": "single-choice",
+    "question": "Una organización marca un control del Anexo A como no aplicable argumentando que \"el proveedor ya lo cubre\", sin describir cómo lo verifica. ¿Cómo debe calificarse esa entrada de la SoA?",
+    "options": [
+      "Aceptable, porque el proveedor asume el control contractualmente.",
+      "Justificación débil: la exclusión no está sustentada en evidencia de verificación y la responsabilidad sigue en la organización.",
+      "Aceptable si el proveedor está certificado en ISO/IEC 42001.",
+      "Irrelevante, porque la SoA solo debe justificar inclusiones."
+    ],
+    "answer": 1,
+    "explanation": "La SoA exige justificar tanto inclusiones como exclusiones. Una justificación sólida demuestra que el riesgo no existe en el rol actual, describe controles alternativos o documenta equivalencias funcionales; delegar sin verificación no cumple ninguna de esas condiciones.",
+    "tags": [
+      "iso42001",
+      "soa",
+      "terceros",
+      "clause:6.1.3",
+      "difficulty:advanced",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q022",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.65-66 — Anexo A, grupos de control",
+    "type": "single-choice",
+    "question": "¿Cuál de estos grupos de control **no** forma parte del Anexo A de ISO/IEC 42001?",
+    "options": [
+      "Datos para sistemas de IA.",
+      "Información para partes interesadas.",
+      "Continuidad del negocio y recuperación ante desastres.",
+      "Relaciones con terceros y clientes."
+    ],
+    "answer": 2,
+    "explanation": "Los nueve grupos son: políticas relacionadas con IA, organización interna, recursos para sistemas de IA, evaluación de impactos, ciclo de vida del sistema de IA, datos para sistemas de IA, información para partes interesadas, uso de sistemas de IA y relaciones con terceros y clientes.",
+    "tags": [
+      "iso42001",
+      "annexA",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q023",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.66 — Anexo A, ciclo de vida",
+    "type": "single-choice",
+    "question": "¿Qué tipo de controles agrupa el Anexo A bajo **ciclo de vida del sistema de IA**?",
+    "options": [
+      "Adquisición, calidad, procedencia y preparación de datos.",
+      "Documentación del sistema, reporte externo y comunicación de incidentes.",
+      "Gestión para el desarrollo, objetivos de desarrollo responsable, diseño, requisitos, documentación técnica, verificación, validación, despliegue, operación, monitoreo y registro de eventos.",
+      "Roles, responsabilidades y reporte de preocupaciones."
+    ],
+    "answer": 2,
+    "explanation": "Los controles de datos corresponden al grupo de datos para sistemas de IA; el reporte externo y la comunicación de incidentes al grupo de información para partes interesadas; los roles y el reporte de preocupaciones al grupo de organización interna.",
+    "tags": [
+      "iso42001",
+      "annexA",
+      "ciclo-de-vida",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q024",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.70 — Anexo B.9 y B.10",
+    "type": "single-choice",
+    "question": "¿A qué se orientan los apartados B.9 y B.10 del Anexo B?",
+    "options": [
+      "Al uso responsable de los sistemas de IA conforme a las políticas organizacionales y a la gestión de responsabilidades, riesgos y obligaciones cuando participan terceros.",
+      "A la gestión de datos y a la información para partes interesadas.",
+      "A las políticas relacionadas con IA y a la organización interna.",
+      "A la evaluación de impactos y al ciclo de vida del sistema."
+    ],
+    "answer": 0,
+    "explanation": "B.9 se centra en asegurar el uso responsable conforme a las políticas; B.10 aborda la participación de terceros en el ciclo de vida. Ambos recuerdan que el SGIA no termina en el diseño ni en la documentación técnica.",
+    "tags": [
+      "iso42001",
+      "annexB",
+      "terceros",
+      "difficulty:advanced",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q025",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.71 — Anexo C, fuentes de riesgo",
+    "type": "single-choice",
+    "question": "Entre las fuentes de riesgo relacionadas con IA que menciona el Anexo C se incluyen, entre otras:",
+    "options": [
+      "Conflictos laborales, litigios contractuales y cambios de accionariado.",
+      "Rotación de personal, retrasos de proveedores y variaciones cambiarias.",
+      "Fallos de red, indisponibilidad de servidores y errores de configuración.",
+      "Calidad insuficiente de los datos, falta de transparencia o explicabilidad, sesgos en datos o modelos, uso indebido del sistema y cambios inesperados en su comportamiento."
+    ],
+    "answer": 3,
+    "explanation": "El Anexo C amplía la mirada del riesgo más allá del fallo técnico: incluye calidad de información, opacidad, sesgo, comportamiento emergente y usos no previstos.",
+    "tags": [
+      "iso42001",
+      "annexC",
+      "fuentes-riesgo",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q026",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.71-72 — Anexo D",
+    "type": "single-choice",
+    "question": "¿Qué confirma el Anexo D respecto del SGIA?",
+    "options": [
+      "Que puede aplicarse en distintos dominios y sectores, y a lo largo de todo el ciclo de vida: diseño y desarrollo, integración en productos o servicios, operación y monitoreo.",
+      "Que solo aplica a organizaciones que desarrollan sistemas de IA.",
+      "Que la profundidad de implementación debe ser idéntica en todos los sectores.",
+      "Que los controles del Anexo A son obligatorios para el sector salud y financiero."
+    ],
+    "answer": 0,
+    "explanation": "La estructura del sistema es común, pero su profundidad, formalidad y nivel de supervisión deben responder al contexto real: el sector, el tipo de sistemas y los requisitos regulatorios aplicables.",
+    "tags": [
+      "iso42001",
+      "annexD",
+      "sectorial",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q027",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, evaluación y tratamiento del riesgo",
+    "type": "single-choice",
+    "question": "Una organización aplica el mismo conjunto de mitigaciones a todos sus sistemas de IA, con independencia de su severidad potencial. ¿Qué principio del módulo de riesgos e impactos incumple?",
+    "options": [
+      "La consistencia de las evaluaciones repetidas.",
+      "La independencia funcional de la revisión.",
+      "La conservación de información documentada.",
+      "La proporcionalidad y suficiencia de las mitigaciones."
+    ],
+    "answer": 3,
+    "explanation": "El resultado esperado del módulo es asegurar la proporcionalidad y suficiencia de las mitigaciones de impacto. Un conjunto uniforme sobreprotege lo trivial y deja insuficientemente tratado lo crítico.",
+    "tags": [
+      "iso42001",
+      "proporcionalidad",
+      "mitigaciones",
+      "difficulty:intermediate",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q028",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, sesgos y efectos adversos",
+    "type": "single-choice",
+    "question": "Un sistema de recomendación de vacantes muestra tasas de recomendación muy distintas entre grupos con perfiles equivalentes. ¿Qué debería activar este hallazgo desde gobernanza?",
+    "options": [
+      "Una reoptimización técnica del modelo sin más análisis.",
+      "La suspensión inmediata de todos los sistemas de IA de la organización.",
+      "Una comunicación pública anticipada del incidente.",
+      "La identificación de un posible sesgo o riesgo injusto, con análisis de impacto sobre los grupos afectados y revisión de la suficiencia de las mitigaciones."
+    ],
+    "answer": 3,
+    "explanation": "La identificación de sesgos, riesgos injustos y efectos adversos previsibles es una subtemática evaluable del módulo. La respuesta adecuada es analizar el impacto sobre los grupos afectados y verificar si las mitigaciones son proporcionales y suficientes.",
+    "tags": [
+      "iso42001",
+      "sesgo",
+      "equidad",
+      "difficulty:intermediate",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q029",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, transparencia y supervisión humana",
+    "type": "single-choice",
+    "question": "¿Qué controles agrupa el módulo de riesgos, impactos, ética y confianza como respuesta a la opacidad de los sistemas de IA?",
+    "options": [
+      "Controles de disponibilidad, capacidad y respaldo.",
+      "Controles de segregación de funciones y control de accesos.",
+      "Controles para transparencia, explicabilidad, supervisión humana y uso responsable.",
+      "Controles de continuidad y recuperación ante desastres."
+    ],
+    "answer": 2,
+    "explanation": "Transparencia, explicabilidad, supervisión humana y uso responsable son los controles que el módulo asocia a la construcción de confianza y legitimidad organizacional.",
+    "tags": [
+      "iso42001",
+      "transparencia",
+      "explicabilidad",
+      "supervision-humana",
+      "difficulty:basic",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q030",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, legitimidad y confianza",
+    "type": "single-choice",
+    "question": "Desde la lógica de AIGPC, ¿qué relación existe entre impacto social y legitimidad organizacional?",
+    "options": [
+      "Son dimensiones independientes: la legitimidad depende solo del cumplimiento regulatorio.",
+      "El impacto social solo es relevante para organizaciones del sector público.",
+      "La legitimidad se recupera automáticamente al corregir el desempeño técnico.",
+      "Los impactos adversos sobre personas y grupos erosionan la legitimidad y la confianza, aunque no exista incumplimiento formal."
+    ],
+    "answer": 3,
+    "explanation": "La certificación prioriza la protección reputacional y la alineación con valores corporativos. Un sistema puede ser técnicamente correcto y legalmente conforme, y aun así deteriorar la confianza si genera efectos adversos sobre personas o grupos.",
+    "tags": [
+      "iso42001",
+      "legitimidad",
+      "confianza",
+      "reputacion",
+      "difficulty:intermediate",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q031",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.47-48 — evidencia de ejecución",
+    "type": "single-choice",
+    "question": "¿Qué papel cumple la información documentada exigida por la cláusula 8.1?",
+    "options": [
+      "Sustituir la necesidad de monitorear la eficacia de los controles.",
+      "Demostrar que los procesos no solo estaban definidos, sino que se ejecutaron conforme a los criterios establecidos.",
+      "Servir exclusivamente como insumo para la certificación externa.",
+      "Documentar la arquitectura técnica de cada modelo desplegado."
+    ],
+    "answer": 1,
+    "explanation": "Esa evidencia puede adoptar formas diversas —registros de aprobación, evidencias de verificación, bitácoras de monitoreo, resultados de pruebas, actas o informes— y permite reconstruir la ejecución del sistema.",
+    "tags": [
+      "iso42001",
+      "clause:8.1",
+      "evidencia",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q032",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.46-47 — controles del ciclo de vida en operación",
+    "type": "single-choice",
+    "question": "¿Cuál es, según el material, la causa más frecuente de fallo organizacional en materia de IA?",
+    "options": [
+      "La ausencia total de análisis de riesgos.",
+      "La falta de herramientas tecnológicas de monitoreo.",
+      "Una mala transición entre análisis y ejecución: se identifican riesgos y se seleccionan medidas que no terminan incorporadas al trabajo cotidiano.",
+      "La rotación del personal técnico especializado."
+    ],
+    "answer": 2,
+    "explanation": "Los controles seleccionados durante el tratamiento del riesgo deben migrar del plano de la decisión al de la acción: actividades, secuencias de trabajo, puntos de verificación, responsabilidades de supervisión y flujos documentales.",
+    "tags": [
+      "iso42001",
+      "clause:8.1",
+      "implementacion",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q033",
+    "domainId": "domain-3",
+    "source": "Sample exam AIGPC — patrón de control discrecional",
+    "type": "single-choice",
+    "question": "Un control de revisión previa al despliegue se activa cuando el responsable de cada área \"lo considera necesario\". ¿Qué debilidad de arquitectura de control presenta?",
+    "options": [
+      "El control no es reproducible ni comparable entre áreas y desaparece con la persona que lo interpreta.",
+      "El control es demasiado costoso de operar.",
+      "El control debería estar automatizado por exigencia normativa.",
+      "El control duplica funciones ya cubiertas por el proveedor."
+    ],
+    "answer": 0,
+    "explanation": "Cuando la activación de un control depende de criterio discrecional, la organización no puede demostrar consistencia ni sostener la trazabilidad de sus decisiones. La respuesta es definir criterios operativos explícitos.",
+    "tags": [
+      "iso42001",
+      "controles",
+      "consistencia",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q034",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.6-7 — Módulo 3, responsabilidades con terceros",
+    "type": "single-choice",
+    "question": "Una organización contrata a un proveedor que a su vez subcontrata el reentrenamiento del modelo a un cuarto actor. ¿Qué exige la arquitectura de control del SGIA?",
+    "options": [
+      "Asignar responsabilidades dentro del ciclo de vida y supervisar las obligaciones con proveedores, socios y clientes, de modo que no queden vacíos de accountability.",
+      "Prohibir la subcontratación en el contrato marco.",
+      "Trasladar la supervisión al proveedor principal y documentarlo en la SoA.",
+      "Considerar el sistema fuera del alcance del SGIA por falta de control directo."
+    ],
+    "answer": 0,
+    "explanation": "El módulo exige asegurar mecanismos claros de coordinación con terceros, asignación de responsabilidades a lo largo del ciclo de vida y supervisión de obligaciones. La cadena de subcontratación no puede generar zonas ciegas de responsabilidad.",
+    "tags": [
+      "iso42001",
+      "terceros",
+      "ciclo-de-vida",
+      "difficulty:advanced",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q035",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.66 — controles de información para partes interesadas",
+    "type": "single-choice",
+    "question": "¿Qué controles incluye el Anexo A bajo el grupo de **información para partes interesadas**?",
+    "options": [
+      "Adquisición, calidad y procedencia de datos.",
+      "Roles, responsabilidades y reporte de preocupaciones.",
+      "Documentación del sistema, reporte externo, comunicación de incidentes e información relevante.",
+      "Verificación, validación y despliegue del sistema."
+    ],
+    "answer": 2,
+    "explanation": "Ese grupo cubre qué se comunica hacia fuera del sistema: documentación disponible, reporte externo, comunicación de incidentes e información relevante para usuarios y otras partes interesadas.",
+    "tags": [
+      "iso42001",
+      "annexA",
+      "partes-interesadas",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q036",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.70 — Anexo B.7, datos",
+    "type": "single-choice",
+    "question": "¿Por qué la gestión de datos ocupa un grupo de control propio en el Anexo A y una guía específica en B.7?",
+    "options": [
+      "Porque los datos son el único activo regulado en los sistemas de IA.",
+      "Porque el volumen de datos determina el nivel de control necesario.",
+      "Porque la norma exige anonimizar todos los datos de entrenamiento.",
+      "Porque los datos condicionan desempeño, sesgo, robustez y legitimidad del sistema, e incluyen adquisición, calidad, procedencia y preparación."
+    ],
+    "answer": 3,
+    "explanation": "La calidad de la base de datos y la calidad de la comunicación son las dos dimensiones que B.7 y B.8 vinculan con la confianza en la IA. Adquisición, calidad, procedencia y preparación son los ejes de la orientación sobre datos.",
+    "tags": [
+      "iso42001",
+      "annexB",
+      "datos",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q037",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, responsabilidad legal y ética",
+    "type": "single-choice",
+    "question": "Un caso de uso es legalmente admisible en la jurisdicción donde opera la organización, pero contradice un compromiso público de sus valores corporativos. Desde AIGPC, ¿cuál es la lectura adecuada?",
+    "options": [
+      "La conformidad legal cierra la discusión: el caso de uso puede desplegarse.",
+      "El compromiso público debe modificarse para acomodar el caso de uso.",
+      "La decisión corresponde exclusivamente al área jurídica.",
+      "Los criterios éticos y de alineación con valores corporativos forman parte de la decisión de gobernanza, junto con la responsabilidad legal."
+    ],
+    "answer": 3,
+    "explanation": "El módulo exige incorporar criterios éticos y de responsabilidad legal en las decisiones de gobernanza. La legalidad es condición necesaria, no suficiente, cuando está en juego la legitimidad y la confianza institucional.",
+    "tags": [
+      "iso42001",
+      "etica",
+      "valores-corporativos",
+      "difficulty:advanced",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q038",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.50 — nuevos riesgos identificados",
+    "type": "single-choice",
+    "question": "Durante la operación aparece un riesgo de IA no contemplado en la planificación inicial. ¿Qué debe hacer la organización?",
+    "options": [
+      "Registrarlo y esperar al siguiente ciclo anual de planificación.",
+      "Aplicarle un proceso de tratamiento de riesgos conforme a 6.1.3.",
+      "Escalarlo directamente a la revisión por la dirección sin tratamiento previo.",
+      "Considerarlo fuera de alcance si no estaba en la evaluación inicial."
+    ],
+    "answer": 1,
+    "explanation": "Un SGIA robusto no es el que presume haber previsto todo, sino el que cuenta con disciplina para responder cuando aparece algo no previsto. La cláusula 8.3 remite explícitamente al proceso de 6.1.3 para esos nuevos riesgos.",
+    "tags": [
+      "iso42001",
+      "clause:8.3",
+      "riesgos-nuevos",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q039",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.33 — alineación y comunicación de controles",
+    "type": "single-choice",
+    "question": "Según 6.1.3, los controles necesarios deben alinearse con los objetivos de 6.2, mantenerse documentados y además:",
+    "options": [
+      "Revisarse mensualmente por el comité técnico.",
+      "Someterse a aprobación del organismo de certificación.",
+      "Comunicarse dentro de la organización y ponerse a disposición de partes interesadas cuando corresponda.",
+      "Publicarse íntegramente junto con la SoA."
+    ],
+    "answer": 2,
+    "explanation": "Un control solo aporta valor real cuando tiene sentido dentro del marco de objetivos del SGIA, queda formalizado y es conocido por quienes deben aplicarlo o supervisarlo. De lo contrario existe en el papel pero no en la operación.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.3",
+      "controles",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q040",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.32 — controles adicionales al Anexo A",
+    "type": "single-choice",
+    "question": "¿Puede una organización necesitar controles adicionales a los del Anexo A?",
+    "options": [
+      "No: el Anexo A es exhaustivo por diseño.",
+      "Sí: la norma exige identificar si son necesarios controles adicionales por requisitos regulatorios, criticidad sectorial, sensibilidad de datos, dependencia de terceros o impacto potencial sobre personas.",
+      "Solo si el organismo de certificación lo requiere expresamente.",
+      "Solo en organizaciones que desarrollan modelos propios."
+    ],
+    "answer": 1,
+    "explanation": "No todos los entornos tienen las mismas obligaciones ni todos los riesgos quedan cubiertos por un conjunto estándar de controles. La norma permite y exige esa adaptación cuando resulte necesaria.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.3",
+      "annexA",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q041",
+    "domainId": "domain-3",
+    "source": "Sample exam AIGPC — patrón de brecha de trazabilidad",
+    "type": "single-choice",
+    "question": "Una organización quiere cerrar una brecha de trazabilidad en decisiones sensibles apoyadas por IA. ¿Qué diseño de control es más eficaz?",
+    "options": [
+      "Definir qué decisiones deben registrarse, quién lo hace y cómo se revisan las excepciones.",
+      "Emitir una directriz general que recuerde la importancia de documentar.",
+      "Aumentar la frecuencia de las reuniones de seguimiento del comité.",
+      "Solicitar a los equipos que documenten cuando su carga de trabajo lo permita."
+    ],
+    "answer": 0,
+    "explanation": "Un control verificable especifica objeto, responsable y tratamiento de excepciones. Las directrices genéricas y las buenas intenciones no producen registros ni permiten comprobar su existencia.",
+    "tags": [
+      "iso42001",
+      "trazabilidad",
+      "diseno-control",
+      "clause:7.5",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q042",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.40 — competencias interfuncionales",
+    "type": "single-choice",
+    "question": "Al determinar la competencia necesaria para el SGIA, ¿qué perfiles debe considerar la organización?",
+    "options": [
+      "Únicamente perfiles técnicos de ciencia de datos e ingeniería.",
+      "Solo perfiles de auditoría interna certificados.",
+      "Perfiles técnicos y también jurídicos, de cumplimiento, de gestión del riesgo, de ética aplicada, de supervisión y de coordinación interfuncional.",
+      "Solo los perfiles con responsabilidad presupuestaria."
+    ],
+    "answer": 2,
+    "explanation": "La IA no se gestiona únicamente con documentos ni herramientas: se gestiona con personas capaces de interpretar requisitos, comprender riesgos, aplicar controles, documentar decisiones y ejercer juicio en distintas disciplinas.",
+    "tags": [
+      "iso42001",
+      "clause:7.2",
+      "competencia",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q043",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.6-7 — Módulo 3, SoA como trazabilidad",
+    "type": "single-choice",
+    "question": "Desde la perspectiva de gobernanza, ¿cuál es el valor principal de mantener actualizada la SoA?",
+    "options": [
+      "Sostener la trazabilidad entre riesgos, objetivos, controles y decisiones de dirección.",
+      "Reducir el número de controles necesarios.",
+      "Cumplir un requisito formal del proceso de certificación.",
+      "Sustituir el plan de tratamiento de riesgos."
+    ],
+    "answer": 0,
+    "explanation": "El syllabus describe la SoA como mecanismo de trazabilidad entre riesgos, objetivos, controles y decisiones de gobierno. Su valor no está en enumerar controles, sino en evidenciar la lógica que los conecta.",
+    "tags": [
+      "iso42001",
+      "soa",
+      "trazabilidad",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q044",
+    "domainId": "domain-3",
+    "source": "Sample exam AIGPC — patrón de uso fuera de propósito",
+    "type": "single-choice",
+    "question": "Para tratar el riesgo de uso de un sistema de IA fuera de su propósito previsto, ¿qué combinación de control resulta más pertinente?",
+    "options": [
+      "Un tablero con el volumen total de uso por área.",
+      "Definición de usos permitidos, responsables de autorización y un flujo para escalar desvíos.",
+      "Una sesión anual de formación general sobre IA.",
+      "Un reporte trimestral de costos asociados al sistema."
+    ],
+    "answer": 1,
+    "explanation": "El control debe delimitar el uso previsto, asignar autoridad de excepción y prever la ruta de escalamiento. El volumen de uso, la formación genérica y los costos no restringen ni detectan el uso fuera de propósito.",
+    "tags": [
+      "iso42001",
+      "uso-previsto",
+      "controles",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q045",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, resultados consistentes",
+    "type": "single-choice",
+    "question": "Dos equipos evalúan el mismo riesgo de IA en momentos distintos y obtienen niveles de riesgo muy diferentes sin que el contexto haya cambiado. ¿Qué requisito no se está satisfaciendo?",
+    "options": [
+      "Que el proceso de evaluación produzca resultados consistentes, válidos y comparables.",
+      "La conservación de información documentada de la evaluación.",
+      "La aprobación del riesgo residual por la dirección designada.",
+      "La comparación de los controles con el Anexo A."
+    ],
+    "answer": 0,
+    "explanation": "La cláusula 6.1.2 exige que evaluaciones repetidas produzcan resultados consistentes y comparables. Una divergencia sin cambio de contexto indica que el proceso depende del juicio individual y no de criterios estables.",
+    "tags": [
+      "iso42001",
+      "clause:6.1.2",
+      "consistencia",
+      "difficulty:intermediate",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q046",
+    "domainId": "domain-3",
+    "source": "Sample exam AIGPC — patrón de supervisión humana opcional",
+    "type": "single-choice",
+    "question": "Algunos equipos tratan la revisión humana como opcional cuando el modelo \"ha demostrado estabilidad\". ¿Qué respuesta de control corresponde?",
+    "options": [
+      "Aceptar la práctica como una optimización basada en desempeño.",
+      "Delegar en el proveedor la decisión sobre cuándo aplica la supervisión.",
+      "Cerrar la brecha entre el principio de gobernanza y su interpretación operativa, precisando cuándo el control es obligatorio y cómo se verifica.",
+      "Sustituir la revisión humana por un umbral automático de confianza."
+    ],
+    "answer": 2,
+    "explanation": "La estabilidad técnica no exime del control cuando la política lo exige para usos sensibles. La brecha está en la interpretación operativa, y se cierra precisando criterios de obligatoriedad y verificación.",
+    "tags": [
+      "iso42001",
+      "supervision-humana",
+      "brecha-control",
+      "difficulty:intermediate",
+      "module:m04"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q047",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.68-69 — Anexo B, propósito",
+    "type": "single-choice",
+    "question": "¿Qué debilidad frecuente de los sistemas de gestión busca evitar el Anexo B?",
+    "options": [
+      "Excluir controles sin justificación en la SoA.",
+      "Documentar en exceso los procesos de bajo riesgo.",
+      "Seleccionar controles sin comprender realmente cómo integrarlos al funcionamiento de la organización.",
+      "Confundir riesgo inherente con riesgo residual."
+    ],
+    "answer": 2,
+    "explanation": "El Anexo B no ofrece una receta única, pero facilita una interpretación operativa: cómo operará el control, qué evidencias generará, qué responsables tendrá y cómo se integrará con procesos y recursos existentes.",
+    "tags": [
+      "iso42001",
+      "annexB",
+      "implementacion",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q048",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.69 — Anexo B.2, B.3 y B.4",
+    "type": "single-choice",
+    "question": "Los apartados B.2, B.3 y B.4 del Anexo B refuerzan tres pilares del SGIA. ¿Cuáles?",
+    "options": [
+      "Dirección (políticas), estructura (organización interna y gobernanza) y capacidad (recursos).",
+      "Datos, modelos y despliegue.",
+      "Riesgo, impacto y mejora.",
+      "Monitoreo, medición y revisión."
+    ],
+    "answer": 0,
+    "explanation": "B.2 orienta sobre políticas relacionadas con IA; B.3 sobre responsabilidades, estructuras de gobernanza y mecanismos para reportar preocupaciones; B.4 sobre identificación, documentación y gestión de recursos.",
+    "tags": [
+      "iso42001",
+      "annexB",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q049",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 3, información relevante",
+    "type": "single-choice",
+    "question": "Una autoridad solicita información sobre cómo la organización supervisa un sistema de IA que afecta a usuarios finales. ¿Qué elemento del SGIA sostiene esa respuesta?",
+    "options": [
+      "El acuerdo de confidencialidad con el proveedor.",
+      "El presupuesto asignado al programa de IA.",
+      "El informe de exactitud del modelo emitido por el equipo técnico.",
+      "La información documentada y los controles sobre información relevante para usuarios, autoridades y otras partes interesadas."
+    ],
+    "answer": 3,
+    "explanation": "El módulo incluye entre sus subtemáticas la información relevante para usuarios, autoridades y otras partes interesadas, sostenida por la información documentada que da trazabilidad, control y responsabilidad.",
+    "tags": [
+      "iso42001",
+      "partes-interesadas",
+      "informacion-documentada",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q050",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.51 — conservación de resultados de impacto",
+    "type": "single-choice",
+    "question": "¿Qué valor de gobernanza aporta conservar el histórico de evaluaciones de impacto del sistema de IA?",
+    "options": [
+      "Permite reducir la frecuencia de las evaluaciones futuras.",
+      "Sustituye la necesidad de evaluar riesgos periódicamente.",
+      "Permite a la dirección comprender la evolución de los efectos potenciales y la solidez con que la organización gobierna esas consecuencias.",
+      "Habilita la exclusión de controles del Anexo A en la SoA."
+    ],
+    "answer": 2,
+    "explanation": "El histórico fortalece trazabilidad, transparencia interna y capacidad de revisión, y ofrece a la dirección una lectura del sistema que va más allá del desempeño técnico puntual.",
+    "tags": [
+      "iso42001",
+      "clause:8.4",
+      "evaluacion-impacto",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q051",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 3, resultado esperado",
+    "type": "single-choice",
+    "question": "¿Cuál es el resultado esperado del módulo de arquitectura de control, SoA y responsabilidades con terceros?",
+    "options": [
+      "Poder conducir revisiones internas con independencia funcional.",
+      "Poder asegurar que la organización cuenta con una arquitectura de control trazable, justificable y alineada con sus responsabilidades internas y externas.",
+      "Poder calcular el riesgo residual de cada sistema de IA.",
+      "Poder redactar la política de IA y sus objetivos asociados."
+    ],
+    "answer": 1,
+    "explanation": "El objetivo del módulo es asegurar controles suficientes, criterios de aplicabilidad y mecanismos claros de coordinación con terceros y stakeholders, con trazabilidad y justificación.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q052",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.43 — ciclo de vida documental",
+    "type": "single-choice",
+    "question": "¿Qué riesgo aparece cuando el SGIA carece de control de versiones y de criterios de retención y disposición?",
+    "options": [
+      "La organización puede operar con documentos obsoletos y criterios contradictorios, o perder trazabilidad y acumular información sin valor.",
+      "Aumenta el coste de almacenamiento de los repositorios.",
+      "Se incumple automáticamente la cláusula 9.2.",
+      "Se pierde la posibilidad de excluir controles en la SoA."
+    ],
+    "answer": 0,
+    "explanation": "El control del ciclo de vida documental —distribución, acceso, recuperación, uso, almacenamiento, preservación de la legibilidad, control de cambios, retención y disposición— es un componente real del SGIA, no un formalismo.",
+    "tags": [
+      "iso42001",
+      "clause:7.5.3",
+      "versionado",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q053",
+    "domainId": "domain-3",
+    "source": "Sample exam AIGPC — patrón de ciclo de vida",
+    "type": "single-choice",
+    "question": "Varios equipos usan IA en distintas etapas del ciclo de vida, pero la gobernanza solo se revisa en el despliegue inicial. ¿Cuál es el riesgo principal?",
+    "options": [
+      "Que los equipos pierdan autonomía en el uso del sistema.",
+      "Que el proveedor asuma demasiada influencia en la operación.",
+      "Que los cambios posteriores en uso o contexto queden fuera del control previsto.",
+      "Que las métricas técnicas se vuelvan demasiado numerosas."
+    ],
+    "answer": 2,
+    "explanation": "El Anexo D subraya que el SGIA aplica a lo largo de todo el ciclo de vida: diseño y desarrollo, integración, operación y monitoreo. Revisar solo el despliegue deja sin cobertura la etapa donde suelen aparecer las desviaciones.",
+    "tags": [
+      "iso42001",
+      "ciclo-de-vida",
+      "annexD",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q054",
+    "domainId": "domain-3",
+    "source": "Material de Autoestudio AIGPC p.67 — interdependencia de controles",
+    "type": "single-choice",
+    "question": "El material afirma que \"la política sin control operativo es insuficiente; el control operativo sin gobierno de datos es frágil\". ¿Qué idea ilustra esa secuencia?",
+    "options": [
+      "Que los controles del Anexo A deben implementarse en un orden fijo.",
+      "Que la política debe redactarse después de seleccionar los controles.",
+      "Que el gobierno de datos es el único control realmente indispensable.",
+      "Que la gestión de IA se construye mediante un sistema de controles articulados, no mediante acciones aisladas."
+    ],
+    "answer": 3,
+    "explanation": "La virtud pedagógica del Anexo A es hacer visibles esas interdependencias: el tratamiento de riesgos sin documentación y sin comunicación a partes relevantes queda incompleto, igual que la política sin control operativo.",
+    "tags": [
+      "iso42001",
+      "annexA",
+      "coherencia",
+      "difficulty:intermediate",
+      "module:m03"
+    ]
+  },
+  {
+    "id": "aigpc-d3-q055",
+    "domainId": "domain-3",
+    "source": "Syllabus AIGPC p.7 — Módulo 4, proporcionalidad de mitigaciones",
+    "type": "single-choice",
+    "question": "Un sistema con impacto potencial alto sobre personas recibe como única mitigación una advertencia en la interfaz de usuario. ¿Cómo debe valorarse desde gobernanza?",
+    "options": [
+      "Es suficiente si la advertencia es visible y comprensible.",
+      "Debe evaluarse solo si el regulador exige medidas adicionales.",
+      "Es adecuada mientras no se registren reclamaciones.",
+      "La mitigación resulta desproporcionada respecto de la severidad del impacto: falta suficiencia en el tratamiento."
+    ],
+    "answer": 3,
+    "explanation": "La proporcionalidad opera en ambos sentidos: evita sobrerreaccionar ante riesgos menores y evita respuestas insuficientes ante impactos severos. Una advertencia no sustituye supervisión, criterios de uso ni mecanismos de respuesta.",
+    "tags": [
+      "iso42001",
+      "proporcionalidad",
+      "mitigaciones",
+      "difficulty:advanced",
+      "module:m04"
+    ]
+  }
+]

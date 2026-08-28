@@ -1,0 +1,642 @@
+[
+  {
+    "id": "aigpc-se1-q001",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.1 — pregunta 1",
+    "type": "single-choice",
+    "question": "Una organización va a usar IA para apoyar decisiones de elegibilidad crediticia y, al mismo tiempo, para recomendar contenidos de formación interna. ¿En cuál de los dos casos se justifica una estructura de gobernanza más robusta?",
+    "options": [
+      "En el sistema de formación interna, porque suele tener más usuarios.",
+      "En ambos por igual, para mantener uniformidad organizacional.",
+      "En el sistema de elegibilidad crediticia, por su impacto sobre personas y decisiones sensibles.",
+      "En ninguno, hasta que se observe un incidente formal."
+    ],
+    "answer": 2,
+    "explanation": "La gobernanza debe ser proporcional al riesgo y al impacto. La elegibilidad crediticia afecta derechos y oportunidades de personas concretas, mientras que la recomendación de formación interna tiene consecuencias mucho menores. Aplicar el mismo nivel a ambos ignora el principio de proporcionalidad; esperar a un incidente es una postura reactiva.",
+    "tags": ["iso42001", "proporcionalidad", "impacto", "clause:6.1.4", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "aigpc-se1-q002",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.1 — pregunta 2",
+    "type": "single-choice",
+    "question": "Una empresa ya utiliza IA en varios procesos, pero no ha definido quién puede aprobar excepciones cuando un sistema se usa fuera del contexto inicialmente previsto. ¿Qué debilidad principal existe?",
+    "options": [
+      "Falta de criterios técnicos de entrenamiento del modelo.",
+      "Falta de claridad en accountability y escalamiento.",
+      "Falta de capacidad de procesamiento.",
+      "Falta de integración con infraestructura de datos."
+    ],
+    "answer": 1,
+    "explanation": "No saber quién puede autorizar una excepción es un vacío de responsabilidad y autoridad (cláusula 5.3) y de ruta de escalamiento. Las otras opciones describen carencias técnicas que no explican el problema de gobierno planteado.",
+    "tags": ["iso42001", "accountability", "escalamiento", "clause:5.3", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q003",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.1 — pregunta 3",
+    "type": "single-choice",
+    "question": "Una organización usa IA de un tercero para filtrar candidatos. El proveedor afirma que el sistema ya cumple con buenas prácticas. ¿Cuál es la postura más adecuada desde gobernanza?",
+    "options": [
+      "La organización conserva responsabilidad sobre cómo supervisa y usa el sistema en su contexto.",
+      "La responsabilidad recae completamente en el proveedor, porque diseñó el modelo.",
+      "RR. HH. debe decidir por sí solo, ya que es el área usuaria.",
+      "No se requiere una estructura adicional mientras el contrato esté firmado."
+    ],
+    "answer": 0,
+    "explanation": "La externalización no transfiere la accountability. La cláusula 8.1 exige controlar procesos, productos o servicios provistos externamente, y el Anexo A incluye controles sobre relaciones con terceros. La organización sigue respondiendo por el uso del sistema en su contexto.",
+    "tags": ["iso42001", "terceros", "accountability", "clause:8.1", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q004",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.2 — pregunta 4",
+    "type": "single-choice",
+    "question": "Un comité revisa el uso de IA en casos sensibles, pero los criterios para elevar casos al comité no están definidos. ¿Cuál es la consecuencia más probable?",
+    "options": [
+      "Mejora la flexibilidad del sistema de gobernanza.",
+      "Los equipos técnicos ganan más autonomía de decisión.",
+      "Se fortalece la transparencia al evitar reglas rígidas.",
+      "La supervisión puede aplicarse de manera inconsistente entre áreas."
+    ],
+    "answer": 3,
+    "explanation": "Sin criterios de escalamiento cada área decide por su cuenta qué eleva y qué no. El resultado es una supervisión desigual y no comparable, no una flexibilidad deseable.",
+    "tags": ["iso42001", "escalamiento", "supervision", "consistencia", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q005",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.2 — pregunta 5",
+    "type": "single-choice",
+    "question": "¿Cuál situación refleja mejor un problema de accountability en gobernanza de IA?",
+    "options": [
+      "Existen varios indicadores técnicos del modelo.",
+      "Diferentes áreas participan en decisiones, pero ninguna tiene autoridad clara para responder ante desvíos.",
+      "El proveedor envía reportes mensuales de desempeño.",
+      "La política de IA fue aprobada por la dirección."
+    ],
+    "answer": 1,
+    "explanation": "Accountability es la capacidad de identificar quién responde por una decisión o desviación. Participación difusa sin autoridad asignada es exactamente la falla que la cláusula 5.3 busca evitar.",
+    "tags": ["iso42001", "accountability", "roles", "clause:5.3", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q006",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.2 — pregunta 6",
+    "type": "single-choice",
+    "question": "Una organización define que todos los sistemas de IA, sin importar su uso, tendrán exactamente el mismo nivel de supervisión. ¿Qué debilidad refleja esto?",
+    "options": [
+      "Exceso de seguimiento técnico.",
+      "Falta de formación del equipo.",
+      "Ausencia de un enfoque proporcional al riesgo e impacto.",
+      "Dependencia contractual del proveedor."
+    ],
+    "answer": 2,
+    "explanation": "La norma pide determinar riesgos y oportunidades según el dominio, el contexto de aplicación y el uso previsto de cada sistema. Un nivel uniforme de supervisión sobrecontrola lo trivial y subcontrola lo crítico.",
+    "tags": ["iso42001", "proporcionalidad", "riesgo", "clause:6.1.1", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "aigpc-se1-q007",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.2 — pregunta 7",
+    "type": "single-choice",
+    "question": "Una empresa quiere monitorear si su mecanismo de oversight funciona en sistemas de IA usados en decisiones sensibles. ¿Qué indicador sería más útil?",
+    "options": [
+      "Tiempo promedio de respuesta del sistema.",
+      "Cantidad de usuarios activos al mes.",
+      "Número de versiones del modelo desplegadas en el año.",
+      "Porcentaje de casos sensibles que siguieron el flujo de revisión definido."
+    ],
+    "answer": 3,
+    "explanation": "El porcentaje de casos sensibles que siguieron el flujo de revisión definido es el único indicador que mide el funcionamiento del control de supervisión. Los otros tres son métricas operativas o técnicas: informan sobre el sistema, no sobre si el oversight se está ejerciendo.",
+    "tags": ["iso42001", "indicadores", "supervision-humana", "clause:9.1", "difficulty:intermediate", "module:m05"]
+  },
+  {
+    "id": "aigpc-se1-q008",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.2 — pregunta 8",
+    "type": "single-choice",
+    "question": "En un sistema de IA, la precisión global se mantiene estable, pero aumentan las decisiones corregidas manualmente en un segmento específico. ¿Qué interpretación es más adecuada?",
+    "options": [
+      "No hay problema mientras el promedio general siga estable.",
+      "Puede existir una señal de riesgo o control insuficiente que el promedio oculta.",
+      "Solo debe analizarse si el proveedor lo confirma.",
+      "Es una variación normal si el número total de casos también aumentó."
+    ],
+    "answer": 1,
+    "explanation": "Las métricas agregadas pueden enmascarar efectos concentrados en un subgrupo. El aumento de correcciones manuales en un segmento es precisamente la señal que exige análisis segmentado de impacto y posible sesgo.",
+    "tags": ["iso42001", "sesgo", "metricas-segmentadas", "clause:9.1", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q009",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.3 — pregunta 9",
+    "type": "single-choice",
+    "question": "Una organización revisa mensualmente volumen de uso, costos y tiempos de respuesta de sus sistemas de IA. Sin embargo, no mide si los casos relevantes están siendo escalados según lo previsto. ¿Qué falta principalmente?",
+    "options": [
+      "Una métrica de innovación.",
+      "Una señal operativa de rendimiento.",
+      "Un indicador de gobernanza vinculado con supervisión y control.",
+      "Un indicador de productividad del proveedor."
+    ],
+    "answer": 2,
+    "explanation": "Volumen, costo y latencia son señales operativas y ya existen. Lo ausente es un indicador que informe si los mecanismos de gobierno (escalamiento, revisión) están funcionando.",
+    "tags": ["iso42001", "indicadores", "gobernanza", "clause:9.1", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "aigpc-se1-q010",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.3 — pregunta 10",
+    "type": "single-choice",
+    "question": "Un sistema de IA empieza a utilizarse en una nueva región con reglas más estrictas sobre transparencia. ¿Qué acción es más adecuada desde gobernanza?",
+    "options": [
+      "Mantener el mismo esquema mientras el modelo técnico no cambie.",
+      "Actualizar controles, criterios de información y responsabilidades para el nuevo contexto.",
+      "Esperar a que aparezcan observaciones regulatorias antes de actuar.",
+      "Cambiar únicamente el idioma de la documentación."
+    ],
+    "answer": 1,
+    "explanation": "Un cambio de jurisdicción es un cambio de contexto externo (4.1) que altera requisitos de partes interesadas (4.2). La evaluación de impacto debe considerar las jurisdicciones aplicables, y los controles y responsabilidades deben ajustarse en consecuencia.",
+    "tags": ["iso42001", "contexto", "transparencia", "clause:4.1", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "aigpc-se1-q011",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.3 — pregunta 11",
+    "type": "single-choice",
+    "question": "La política de IA de una organización establece que debe existir transparencia hacia personas afectadas. En la práctica, no está definido qué información se entrega cuando una decisión relevante fue influenciada por IA. ¿Qué refleja esto?",
+    "options": [
+      "Una brecha entre el principio declarado y la práctica operativa.",
+      "Una debilidad exclusiva del proveedor tecnológico.",
+      "Una situación aceptable mientras no haya quejas.",
+      "Un problema de comunicación interna, pero no de gobernanza."
+    ],
+    "answer": 0,
+    "explanation": "La política declara un compromiso que no se ha traducido en control operativo. Esa distancia entre principio y práctica es una brecha de control clásica del SGIA, no un asunto del proveedor ni algo que dependa de que existan quejas.",
+    "tags": ["iso42001", "politica-ia", "transparencia", "brecha-control", "clause:5.2", "difficulty:basic", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q012",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.3 — pregunta 12",
+    "type": "single-choice",
+    "question": "Una empresa identifica el riesgo de uso de IA fuera de su propósito previsto. ¿Cuál control responde mejor a ese riesgo?",
+    "options": [
+      "Una sesión anual de formación general sobre IA.",
+      "Un tablero con volumen total de uso por área.",
+      "La definición de usos permitidos, responsables de autorización y un flujo para escalar desvíos.",
+      "Un reporte trimestral de costos asociados al sistema."
+    ],
+    "answer": 2,
+    "explanation": "El control debe atacar el riesgo concreto: delimitar el uso previsto, asignar quién autoriza excepciones y definir cómo se escalan los desvíos. Formación genérica, volumen de uso y costos no restringen ni detectan el uso fuera de propósito.",
+    "tags": ["iso42001", "uso-previsto", "controles", "annexA", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q013",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.4 — pregunta 13",
+    "type": "single-choice",
+    "question": "Una revisión detecta que el mecanismo de revisión humana existe, pero cada área lo activa con criterios distintos. ¿Cuál sería el siguiente paso más adecuado?",
+    "options": [
+      "Eliminar la revisión humana y sustituirla por automatización.",
+      "Analizar el impacto de esa diferencia y unificar criterios operativos.",
+      "Esperar a que las áreas converjan naturalmente en una práctica común.",
+      "Trasladar la decisión al proveedor para ganar uniformidad."
+    ],
+    "answer": 1,
+    "explanation": "El control existe pero se activa de forma discrecional. La respuesta proporcional es entender qué efecto tiene esa variabilidad y homologar los criterios, no suprimir el control ni delegarlo fuera de la organización.",
+    "tags": ["iso42001", "supervision-humana", "consistencia", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q014",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.4 — pregunta 14",
+    "type": "single-choice",
+    "question": "Una organización observa que las decisiones de un sistema de IA son técnicamente consistentes, pero no puede explicar con claridad quién aprueba excepciones ni cómo se escalan. ¿Qué lectura es más adecuada?",
+    "options": [
+      "El problema es secundario mientras el sistema mantenga precisión estable.",
+      "La gobernanza puede estar debilitada aunque el desempeño técnico sea aceptable.",
+      "El asunto solo afecta documentación y no control real.",
+      "La situación es normal en organizaciones con varios equipos."
+    ],
+    "answer": 1,
+    "explanation": "Desempeño técnico y solidez de gobierno son dimensiones distintas. Un modelo estable con responsabilidades indefinidas sigue siendo un sistema mal gobernado: ante una desviación no habría quién responda ni por qué vía.",
+    "tags": ["iso42001", "accountability", "desempeno-vs-gobernanza", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q015",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.4 — pregunta 15",
+    "type": "single-choice",
+    "question": "¿Cuál de estas situaciones debería priorizarse primero desde gobernanza?",
+    "options": [
+      "Un retraso menor en la actualización de un reporte.",
+      "Una diferencia de formato entre dos documentos de control.",
+      "La falta de definición sobre quién puede suspender temporalmente un sistema sensible.",
+      "Una etiqueta desactualizada en un tablero interno."
+    ],
+    "answer": 2,
+    "explanation": "La priorización se hace por criticidad e impacto. No saber quién puede detener un sistema sensible deja a la organización sin capacidad de respuesta ante un incidente; las demás son inconsistencias cosméticas.",
+    "tags": ["iso42001", "priorizacion", "criticidad", "difficulty:basic", "module:m06"]
+  },
+  {
+    "id": "aigpc-se1-q016",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.4 — pregunta 16",
+    "type": "single-choice",
+    "question": "Una organización usa IA para apoyo interno, pero planea extender el sistema a decisiones que afectarán directamente a clientes. ¿Qué debería hacerse antes de esa expansión?",
+    "options": [
+      "Mantener el esquema actual si la solución ya estaba aprobada.",
+      "Revisar si el nuevo uso exige cambios en supervisión, roles y controles.",
+      "Cambiar el proveedor por uno con más experiencia.",
+      "Esperar a que el uso se estabilice antes de revisar la gobernanza."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula 8.2 y 8.4 exigen reevaluar riesgo e impacto cuando se proponen cambios significativos. Ampliar el alcance a decisiones que afectan a clientes cambia la población afectada y, por tanto, el marco de control necesario.",
+    "tags": ["iso42001", "cambio-significativo", "clause:8.2", "difficulty:basic", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q017",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.5 — pregunta 17",
+    "type": "single-choice",
+    "question": "Se detecta una brecha de trazabilidad en decisiones sensibles apoyadas por IA. ¿Cuál respuesta es más adecuada?",
+    "options": [
+      "Incrementar el número de reuniones de seguimiento.",
+      "Pedir a los equipos que documenten mejor cuando tengan disponibilidad.",
+      "Publicar una directriz general sobre trazabilidad.",
+      "Definir qué decisiones deben registrarse, quién lo hace y cómo se revisan excepciones."
+    ],
+    "answer": 3,
+    "explanation": "Una brecha de trazabilidad se cierra con un control específico y verificable: qué se registra, quién lo registra y cómo se tratan las excepciones. Más reuniones, buenas intenciones o una directriz genérica no producen registros.",
+    "tags": ["iso42001", "trazabilidad", "informacion-documentada", "clause:7.5", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q018",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.5 — pregunta 18",
+    "type": "single-choice",
+    "question": "Una mejora en el flujo de escalamiento produjo mejores resultados durante dos semanas, pero luego el uso del mecanismo volvió al patrón anterior. ¿Qué indica esto?",
+    "options": [
+      "Que la mejora no parece haberse consolidado de forma sostenible.",
+      "Que el cambio ya fue suficiente, aunque el seguimiento sea irregular.",
+      "Que el problema original dejó de ser relevante.",
+      "Que no debería hacerse ninguna evaluación adicional todavía."
+    ],
+    "answer": 0,
+    "explanation": "La cláusula 10.2 exige revisar la eficacia de las acciones tomadas. Un efecto que desaparece al poco tiempo indica que la acción no atacó la causa estructural y que la mejora no está consolidada.",
+    "tags": ["iso42001", "eficacia", "mejora", "clause:10.2", "difficulty:basic", "module:m06"]
+  },
+  {
+    "id": "aigpc-se1-q019",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.5 — pregunta 19",
+    "type": "single-choice",
+    "question": "Una organización documenta que su política de IA promueve equidad, pero en la práctica solo monitorea métricas agregadas de rendimiento y no revisa resultados por segmentos. ¿Qué debilidad aparece?",
+    "options": [
+      "La política es demasiado ambiciosa para el nivel actual de madurez.",
+      "Falta conectar el principio declarado con controles y seguimiento relevantes.",
+      "El problema es puramente técnico y no de gobernanza.",
+      "Es aceptable si no se han recibido reclamos formales."
+    ],
+    "answer": 1,
+    "explanation": "Un compromiso de equidad exige medición segmentada; sin ella el principio no es verificable. La debilidad no está en la ambición de la política sino en la ausencia de controles y métricas que la sostengan.",
+    "tags": ["iso42001", "equidad", "politica-ia", "metricas-segmentadas", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q020",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.5 — pregunta 20",
+    "type": "single-choice",
+    "question": "¿Cuál decisión refleja mejor una gobernanza de IA madura?",
+    "options": [
+      "Aplicar el mismo nivel de control a cualquier uso de IA para asegurar uniformidad.",
+      "Ajustar supervisión, responsabilidades y controles según el contexto de uso y su impacto.",
+      "Dejar que cada área defina sus propios criterios mientras informe resultados.",
+      "Basar la intensidad de gobierno principalmente en la complejidad tecnológica del modelo."
+    ],
+    "answer": 1,
+    "explanation": "La madurez se expresa en proporcionalidad: el nivel de gobierno se calibra por contexto de uso e impacto, no por uniformidad, ni por autonomía sin marco común, ni por complejidad técnica del modelo.",
+    "tags": ["iso42001", "madurez", "proporcionalidad", "difficulty:basic", "module:m01"]
+  },
+  {
+    "id": "aigpc-se1-q021",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.6 — pregunta 21",
+    "type": "single-choice",
+    "question": "Una organización revisa sus sistemas de IA únicamente cuando surge una queja formal. ¿Qué debilidad principal refleja este enfoque?",
+    "options": [
+      "Exceso de dependencia de métricas operativas.",
+      "Falta de una supervisión proactiva de la gobernanza.",
+      "Exceso de autonomía de las áreas usuarias.",
+      "Falta de actualización del inventario de modelos."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula 9.1 exige determinar cuándo se monitorea y se mide: una cadencia planificada. Revisar solo ante quejas convierte la supervisión en reactiva y deja las desviaciones sin queja fuera del radar.",
+    "tags": ["iso42001", "supervision-proactiva", "cadencia", "clause:9.1", "difficulty:basic", "module:m05"]
+  },
+  {
+    "id": "aigpc-se1-q022",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.6 — pregunta 22",
+    "type": "single-choice",
+    "question": "Un sistema de IA fue aprobado para uso interno, pero comienza a influir indirectamente en decisiones que afectan a clientes. ¿Cuál es la mejor lectura desde gobernanza?",
+    "options": [
+      "No hay cambio relevante mientras el modelo sea el mismo.",
+      "El sistema debería considerarse externo y pasar a gestión del proveedor.",
+      "El cambio de impacto y de población afectada exige revisar el marco de gobernanza.",
+      "Solo deben ajustarse métricas técnicas para reflejar el nuevo uso."
+    ],
+    "answer": 2,
+    "explanation": "Lo que cambió no es el modelo sino a quién afecta y con qué consecuencias. La evaluación de impacto (6.1.4) se define sobre individuos, grupos y sociedad, de modo que un cambio de población afectada obliga a revisar el marco.",
+    "tags": ["iso42001", "evaluacion-impacto", "clause:6.1.4", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q023",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.6 — pregunta 23",
+    "type": "single-choice",
+    "question": "Una organización identifica que varios controles existen formalmente, pero no está claro quién debe activarlos cuando cambia el contexto de uso. ¿Qué problema describe mejor esta situación?",
+    "options": [
+      "Una debilidad de accountability asociada al funcionamiento del control.",
+      "Un problema de capacidad computacional del sistema.",
+      "Un defecto menor de documentación sin impacto real.",
+      "Una señal de que el proveedor no está cumpliendo su contrato."
+    ],
+    "answer": 0,
+    "explanation": "Un control sin responsable de activación no opera cuando se le necesita. Es una falla de accountability sobre el funcionamiento del control, no un defecto documental menor ni un asunto del proveedor.",
+    "tags": ["iso42001", "accountability", "controles", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q024",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.6 — pregunta 24",
+    "type": "single-choice",
+    "question": "En un sistema de IA sensible, el número de casos escalados disminuye de forma abrupta después de una reestructuración organizativa. No se han cambiado los criterios formales de escalamiento. ¿Qué interpretación es más adecuada?",
+    "options": [
+      "La disminución sugiere que el sistema está funcionando mejor.",
+      "Puede existir una desconexión entre el diseño del mecanismo y los nuevos roles operativos.",
+      "El efecto es positivo porque reduce carga administrativa.",
+      "No debería revisarse mientras no existan incidentes visibles."
+    ],
+    "answer": 1,
+    "explanation": "Si los criterios no cambiaron pero el comportamiento sí, la explicación más plausible es que la reestructuración rompió la correspondencia entre el mecanismo y los roles que debían ejecutarlo. Interpretar la caída como mejora es un error de lectura.",
+    "tags": ["iso42001", "escalamiento", "cambio-organizacional", "clause:9.1", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "aigpc-se1-q025",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.7 — pregunta 25",
+    "type": "single-choice",
+    "question": "Una empresa usa IA para priorizar solicitudes de soporte. Quiere identificar si su monitoreo está demasiado orientado a operación y poco a gobernanza. ¿Qué combinación revela mejor ese problema?",
+    "options": [
+      "Solo revisa tiempos de respuesta, volumen y ahorro operativo.",
+      "Mide también decisiones revertidas y casos fuera del flujo previsto.",
+      "Analiza segmentos afectados y uso fuera del contexto esperado.",
+      "Relaciona resultados con criterios de escalamiento definidos."
+    ],
+    "answer": 0,
+    "explanation": "La pregunta pide la combinación que evidencia el problema, no la que lo resuelve. Un tablero compuesto exclusivamente por tiempos, volumen y ahorro es la señal de un monitoreo puramente operativo; las otras tres opciones ya incorporan señales de gobernanza.",
+    "tags": ["iso42001", "monitoreo", "indicadores", "clause:9.1", "difficulty:advanced", "module:m05"]
+  },
+  {
+    "id": "aigpc-se1-q026",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.7 — pregunta 26",
+    "type": "single-choice",
+    "question": "Una organización detecta que la política de IA exige supervisión humana en usos sensibles, pero algunos equipos consideran que la revisión humana es opcional cuando el modelo \"ha demostrado estabilidad\". ¿Qué muestra este caso?",
+    "options": [
+      "Una política demasiado estricta para el nivel de madurez organizacional.",
+      "Una brecha entre el principio de gobernanza y la interpretación operativa del control.",
+      "Una señal de que el proveedor debería decidir cuándo aplica supervisión.",
+      "Un problema técnico relacionado con precisión del modelo."
+    ],
+    "answer": 1,
+    "explanation": "El requisito existe y es claro; lo que falla es cómo se interpreta en la operación. Tratar como opcional un control obligatorio es una brecha entre principio declarado e implementación, no una política excesiva.",
+    "tags": ["iso42001", "supervision-humana", "brecha-control", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q027",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.7 — pregunta 27",
+    "type": "single-choice",
+    "question": "Después de una revisión, la dirección recibe tres propuestas: (1) cambiar el formato de los reportes; (2) redefinir quién puede aprobar excepciones; (3) aumentar el número de reuniones de seguimiento. Si el objetivo es fortalecer el gobierno de IA, ¿cuál acción parece más estructural?",
+    "options": [
+      "La propuesta 1: cambiar el formato de los reportes.",
+      "La propuesta 2: redefinir quién puede aprobar excepciones.",
+      "La propuesta 3: aumentar el número de reuniones de seguimiento.",
+      "Todas son igualmente estructurales."
+    ],
+    "answer": 1,
+    "explanation": "Redefinir la autoridad de aprobación cambia la arquitectura de responsabilidades del sistema. Formato de reportes y frecuencia de reuniones son ajustes de forma o de cadencia que no modifican quién responde por qué.",
+    "tags": ["iso42001", "causa-estructural", "accountability", "clause:10.2", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "aigpc-se1-q028",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.8 — pregunta 28",
+    "type": "single-choice",
+    "question": "¿Cuál situación representa mejor una justificación débil de no aplicabilidad de un control?",
+    "options": [
+      "La organización explica que el control no aplica porque no desarrolla internamente modelos y demuestra qué controles alternativos sí usa.",
+      "La organización demuestra que el riesgo asociado no existe en su rol actual dentro del ecosistema.",
+      "La organización marca el control como no aplicable porque \"el proveedor ya lo cubre\", sin explicar cómo lo verifica.",
+      "La organización documenta equivalencias funcionales entre un control requerido y otro ya implementado."
+    ],
+    "answer": 2,
+    "explanation": "La SoA exige justificar inclusiones y exclusiones. Delegar la cobertura en el proveedor sin evidencia de verificación no es una justificación: deja el control sin trazabilidad y mantiene la responsabilidad en la organización.",
+    "tags": ["iso42001", "soa", "aplicabilidad", "terceros", "clause:6.1.3", "difficulty:advanced", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q029",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.8 — pregunta 29",
+    "type": "single-choice",
+    "question": "Una organización quiere decidir si una brecha de gobernanza ya está suficientemente tratada. ¿Qué evidencia sería más útil?",
+    "options": [
+      "Que la acción correctiva haya sido aprobada por la dirección.",
+      "Que la documentación haya sido actualizada y distribuida.",
+      "Que el mecanismo ajustado opere consistentemente y reduzca la recurrencia del problema.",
+      "Que el proveedor haya aceptado los cambios propuestos."
+    ],
+    "answer": 2,
+    "explanation": "La eficacia se demuestra con resultado sostenido, no con aprobación ni con actualización documental. La cláusula 10.2 pide revisar la eficacia de las acciones tomadas y verificar que la desviación no se repita.",
+    "tags": ["iso42001", "eficacia", "remediacion", "clause:10.2", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "aigpc-se1-q030",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.8 — pregunta 30",
+    "type": "single-choice",
+    "question": "En un sistema de IA usado para selección de personal, aumentan las solicitudes de explicación por parte de candidatos, aunque el desempeño agregado del sistema se mantiene estable. ¿Qué lectura es más adecuada?",
+    "options": [
+      "Puede existir una brecha de transparencia aunque no haya deterioro técnico.",
+      "No es un tema de gobernanza mientras no haya sanciones regulatorias.",
+      "La situación indica principalmente un problema de capacidad del modelo.",
+      "El aumento de solicitudes demuestra que el sistema está siendo más utilizado y eso es suficiente."
+    ],
+    "answer": 0,
+    "explanation": "El aumento de solicitudes de explicación es una señal de que la información entregada a las personas afectadas resulta insuficiente. Es un problema de transparencia y confianza, independiente del rendimiento técnico.",
+    "tags": ["iso42001", "transparencia", "explicabilidad", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q031",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.8-9 — pregunta 31",
+    "type": "single-choice",
+    "question": "Una organización detecta que un control relevante depende de la interpretación del \"líder más experimentado\" en cada área. ¿Cuál es la principal debilidad?",
+    "options": [
+      "El control es demasiado costoso de implementar a escala.",
+      "La activación del control depende de criterio discrecional y poco uniforme.",
+      "La estructura técnica del sistema es demasiado compleja.",
+      "La organización no ha centralizado suficientemente su infraestructura."
+    ],
+    "answer": 1,
+    "explanation": "Cuando un control depende del juicio personal de quien esté al frente, deja de ser reproducible y comparable entre áreas, y desaparece con la persona. La debilidad es la discrecionalidad, no el costo ni la infraestructura.",
+    "tags": ["iso42001", "controles", "consistencia", "discrecionalidad", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q032",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.9 — pregunta 32",
+    "type": "single-choice",
+    "question": "Una revisión identifica una brecha en la consistencia de la información entregada a personas afectadas por decisiones asistidas con IA. ¿Cuál sería la respuesta más adecuada?",
+    "options": [
+      "Publicar una declaración general sobre uso responsable de IA.",
+      "Solicitar al proveedor una nota técnica adicional.",
+      "Establecer qué información debe entregarse, por qué canal y bajo qué criterio.",
+      "Esperar a observar si las consultas disminuyen por sí solas."
+    ],
+    "answer": 2,
+    "explanation": "La inconsistencia se corrige definiendo el contenido, el canal y el criterio de entrega, que es justamente lo que pide el control de información para partes interesadas. Una declaración general no elimina la variabilidad.",
+    "tags": ["iso42001", "transparencia", "partes-interesadas", "annexA", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q033",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.9 — pregunta 33",
+    "type": "single-choice",
+    "question": "Una organización desea saber si su marco de gobernanza sigue siendo apropiado después de incorporar IA generativa en procesos ya existentes. ¿Qué debería analizar primero?",
+    "options": [
+      "Si el proveedor ofrece suficiente soporte posventa.",
+      "Si el nuevo uso modifica riesgos, controles y responsabilidades previamente definidos.",
+      "Si la nueva solución procesa más volumen de información.",
+      "Si el sistema mantiene niveles aceptables de disponibilidad."
+    ],
+    "answer": 1,
+    "explanation": "Incorporar una nueva capacidad es un cambio significativo: obliga a reevaluar riesgos (8.2), impactos (8.4) y la vigencia de controles y responsabilidades. Soporte, volumen y disponibilidad son consideraciones operativas posteriores.",
+    "tags": ["iso42001", "cambio-significativo", "ia-generativa", "clause:8.2", "difficulty:intermediate", "module:m04"]
+  },
+  {
+    "id": "aigpc-se1-q034",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.9 — pregunta 34",
+    "type": "single-choice",
+    "question": "¿Cuál práctica fortalece más la capacidad de una organización para operar dentro de un sistema estructurado de gobernanza de IA?",
+    "options": [
+      "Permitir que cada área defina sus propios criterios de control para ganar agilidad.",
+      "Basar la supervisión únicamente en recomendaciones del proveedor.",
+      "Mantener una política general y evitar adaptaciones frecuentes.",
+      "Relacionar roles, controles, monitoreo y escalamiento bajo un marco común."
+    ],
+    "answer": 3,
+    "explanation": "Un SGIA se fortalece por la coherencia entre sus partes: la política se conecta con objetivos, estos con controles, los controles con seguimiento y el seguimiento con escalamiento y mejora. Las otras tres opciones fragmentan o congelan el sistema.",
+    "tags": ["iso42001", "marco-comun", "coherencia", "clause:4.4", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q035",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.9-10 — pregunta 35",
+    "type": "single-choice",
+    "question": "En una organización, varios equipos usan IA en diferentes etapas del ciclo de vida, pero solo se revisa la gobernanza al momento del despliegue inicial. ¿Qué riesgo principal existe?",
+    "options": [
+      "Que los cambios posteriores en uso o contexto queden fuera del control previsto.",
+      "Que el proveedor asuma demasiada influencia en la operación.",
+      "Que los equipos pierdan autonomía en el uso del sistema.",
+      "Que las métricas técnicas se vuelvan demasiado numerosas."
+    ],
+    "answer": 0,
+    "explanation": "El Anexo D subraya que el SGIA aplica a lo largo de todo el ciclo de vida. Revisar solo en el despliegue deja sin cobertura la evolución del uso, del contexto y de los datos, que es donde suelen aparecer las desviaciones.",
+    "tags": ["iso42001", "ciclo-de-vida", "annexD", "difficulty:intermediate", "module:m03"]
+  },
+  {
+    "id": "aigpc-se1-q036",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.10 — pregunta 36",
+    "type": "single-choice",
+    "question": "Una empresa detecta que un mecanismo de escalamiento existe, pero los equipos rara vez lo usan porque consideran que \"interrumpe demasiado la operación\". ¿Qué interpretación es más adecuada?",
+    "options": [
+      "El mecanismo probablemente es innecesario si genera fricción.",
+      "La organización debería eliminarlo y sustituirlo por seguimiento informal.",
+      "Puede haber una tensión entre disciplina de gobernanza y conveniencia operativa que debe resolverse.",
+      "El problema se limita a cultura organizacional, no a gobernanza."
+    ],
+    "answer": 2,
+    "explanation": "El desuso no prueba que el control sobre; al contrario, revela un conflicto entre exigencia de gobierno y comodidad operativa que la organización debe resolver rediseñando el mecanismo o reforzando su exigibilidad.",
+    "tags": ["iso42001", "cultura", "escalamiento", "difficulty:intermediate", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q037",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.10 — pregunta 37",
+    "type": "single-choice",
+    "question": "¿Cuál situación refleja mejor una gobernanza de IA orientada a accountability?",
+    "options": [
+      "Las decisiones críticas se documentan, se asignan a roles definidos y pueden rastrearse.",
+      "Las decisiones se delegan al proveedor para evitar conflictos internos.",
+      "La organización reduce el número de aprobadores para ganar velocidad.",
+      "Los equipos comparten decisiones de forma colaborativa sin necesidad de responsables explícitos."
+    ],
+    "answer": 0,
+    "explanation": "Accountability requiere tres elementos juntos: registro de la decisión, rol responsable identificado y trazabilidad. La colaboración sin responsables explícitos y la delegación al proveedor la debilitan.",
+    "tags": ["iso42001", "accountability", "trazabilidad", "clause:5.3", "difficulty:basic", "module:m02"]
+  },
+  {
+    "id": "aigpc-se1-q038",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.10 — pregunta 38",
+    "type": "single-choice",
+    "question": "Una organización quiere priorizar una mejora. ¿Cuál frente debería atender primero?",
+    "options": [
+      "Un ajuste visual en el tablero de seguimiento.",
+      "Una inconsistencia en el nombre de dos reportes.",
+      "La falta de segmentación en métricas de impacto para grupos afectados.",
+      "Una reducción menor en la velocidad de carga del sistema."
+    ],
+    "answer": 2,
+    "explanation": "La priorización de oportunidades de optimización se hace según impacto organizacional y social. Sin métricas segmentadas la organización no puede detectar efectos adversos sobre grupos; el resto son detalles cosméticos.",
+    "tags": ["iso42001", "priorizacion", "metricas-segmentadas", "clause:10.1", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "aigpc-se1-q039",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.10-11 — pregunta 39",
+    "type": "single-choice",
+    "question": "Después de una mejora en el mecanismo de transparencia, disminuyen las consultas de usuarios, pero aún existen diferencias entre áreas sobre qué se comunica. ¿Qué conclusión es más adecuada?",
+    "options": [
+      "La mejora es completa porque ya hubo una señal positiva inicial.",
+      "La mejora muestra avance, pero no está completamente consolidada.",
+      "Las diferencias entre áreas son normales y no requieren acción.",
+      "El resultado basta para cerrar definitivamente la acción de mejora."
+    ],
+    "answer": 1,
+    "explanation": "Hay evidencia de avance, pero la inconsistencia entre áreas sigue siendo una brecha abierta. Cerrar la acción con esa variabilidad pendiente sería declarar eficacia sin haberla verificado del todo.",
+    "tags": ["iso42001", "eficacia", "consolidacion", "clause:10.2", "difficulty:intermediate", "module:m06"]
+  },
+  {
+    "id": "aigpc-se1-q040",
+    "domainId": "sample-exam-1",
+    "source": "Sample_Exam_AIGPC_V042026_SP.pdf p.11 — pregunta 40",
+    "type": "single-choice",
+    "question": "¿Cuál decisión refleja mejor una gobernanza madura frente a un sistema de IA cuyo uso acaba de expandirse a una población más vulnerable?",
+    "options": [
+      "Mantener el mismo esquema mientras no cambie el algoritmo.",
+      "Transferir toda la responsabilidad de revisión al proveedor.",
+      "Limitarse a comunicar el cambio en el siguiente informe anual.",
+      "Revaluar supervisión, riesgos, controles y mecanismos de respuesta para el nuevo contexto."
+    ],
+    "answer": 3,
+    "explanation": "Una población más vulnerable eleva la severidad potencial del impacto aunque el modelo sea idéntico. La respuesta madura es reevaluar el conjunto —supervisión, riesgos, controles y capacidad de respuesta— antes de sostener el uso.",
+    "tags": ["iso42001", "poblacion-vulnerable", "evaluacion-impacto", "clause:8.4", "difficulty:intermediate", "module:m04"]
+  }
+]

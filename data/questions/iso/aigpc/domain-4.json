@@ -1,0 +1,978 @@
+[
+  {
+    "id": "aigpc-d4-q001",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.53 — Cláusula 9.1",
+    "type": "single-choice",
+    "question": "¿Qué debe determinar la organización según la cláusula 9.1 antes de empezar a medir?",
+    "options": [
+      "El presupuesto de la herramienta de monitoreo.",
+      "Qué necesita ser monitoreado y medido, y los métodos de monitoreo, medición, análisis y evaluación que aseguren resultados válidos.",
+      "El número de indicadores que reportará al comité.",
+      "Los responsables de cada control del Anexo A."
+    ],
+    "answer": 1,
+    "explanation": "La organización no debe medir por inercia ni por acumulación de datos. La palabra clave es validez: los resultados solo aportan valor si son confiables, relevantes y utilizables para decidir.",
+    "tags": [
+      "iso42001",
+      "clause:9.1",
+      "monitoreo",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q002",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.53 — temporalidad del seguimiento",
+    "type": "single-choice",
+    "question": "Además de qué y cómo medir, ¿qué dimensión exige determinar la cláusula 9.1?",
+    "options": [
+      "Quién financia la infraestructura de medición.",
+      "Cuándo se realizan el monitoreo y la medición, y cuándo se analizan y evalúan sus resultados.",
+      "Qué proveedor certifica la exactitud de las métricas.",
+      "Cuántas métricas debe contener el tablero directivo."
+    ],
+    "answer": 1,
+    "explanation": "La cadencia debe ser coherente con el nivel de riesgo, la criticidad de los procesos, la naturaleza de los sistemas de IA y la dinámica del entorno. Su existencia muestra que la organización no espera a tener problemas visibles para mirar el sistema.",
+    "tags": [
+      "iso42001",
+      "clause:9.1",
+      "cadencia",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q003",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.54 — desempeño y eficacia",
+    "type": "single-choice",
+    "question": "La cláusula 9.1 exige evaluar el desempeño y la eficacia del SGIA. ¿Qué aporta cada término?",
+    "options": [
+      "El desempeño permite observar resultados y tendencias; la eficacia permite juzgar si el sistema, tal como está diseñado y operado, basta para alcanzar sus objetivos.",
+      "El desempeño mide costos y la eficacia mide beneficios.",
+      "El desempeño aplica a los controles y la eficacia a las personas.",
+      "Son términos equivalentes en la práctica del SGIA."
+    ],
+    "answer": 0,
+    "explanation": "Esa combinación transforma información en criterio de gestión: monitorear y medir no son fines en sí mismos, sino el medio para entender si el sistema produce los efectos previstos.",
+    "tags": [
+      "iso42001",
+      "clause:9.1",
+      "eficacia",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q004",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.52-53 — actividad vs eficacia",
+    "type": "single-choice",
+    "question": "Un SGIA genera abundante documentación, muchas reuniones y numerosos controles, pero no logra sus resultados previstos. ¿Qué riesgo ilustra este caso?",
+    "options": [
+      "Incumplir la cláusula de información documentada.",
+      "Exceder el alcance definido del sistema.",
+      "Confundir actividad con eficacia.",
+      "Desalinear la política respecto de la dirección estratégica."
+    ],
+    "answer": 2,
+    "explanation": "La evaluación del desempeño existe precisamente para corregir ese riesgo: obliga a observar qué está ocurriendo y a generar una lectura estructurada, en lugar de medir el esfuerzo invertido.",
+    "tags": [
+      "iso42001",
+      "clause:9",
+      "eficacia",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q005",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.53 — indicadores del SGIA",
+    "type": "single-choice",
+    "question": "¿Cuál de estos indicadores informa mejor sobre la **gobernanza** de un sistema de IA, y no solo sobre su operación?",
+    "options": [
+      "Porcentaje de decisiones sensibles que siguieron el flujo de revisión definido.",
+      "Número de consultas atendidas por mes.",
+      "Latencia media de respuesta del servicio.",
+      "Coste de infraestructura por millar de inferencias."
+    ],
+    "answer": 0,
+    "explanation": "Los indicadores de gobernanza informan sobre el funcionamiento de los mecanismos de supervisión y control. Latencia, volumen y coste describen la operación del servicio, no si el sistema está siendo gobernado.",
+    "tags": [
+      "iso42001",
+      "indicadores",
+      "clause:9.1",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q006",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.53-54 — evidencia documentada del monitoreo",
+    "type": "single-choice",
+    "question": "¿Qué exige la norma respecto de la evidencia de monitoreo, medición, análisis y evaluación?",
+    "options": [
+      "Que la información documentada esté disponible como evidencia de sus resultados.",
+      "Que se publique un informe anual accesible a partes interesadas externas.",
+      "Que se conserve por un mínimo de cinco años.",
+      "Que sea validada por un tercero independiente."
+    ],
+    "answer": 0,
+    "explanation": "No basta con afirmar que se revisó el desempeño. La organización debe conservar evidencia de qué observó, qué midió, qué interpretó y qué conclusiones extrajo, como insumo para la dirección, la mejora y la certificación.",
+    "tags": [
+      "iso42001",
+      "clause:9.1",
+      "evidencia",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q007",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.54-55 — Cláusula 9.2.1",
+    "type": "single-choice",
+    "question": "¿Cuál es la función básica de la revisión interna del SGIA según 9.2.1?",
+    "options": [
+      "Contrastar la realidad del sistema frente a los requisitos propios de la organización y los de ISO/IEC 42001.",
+      "Detectar responsables de incumplimientos para aplicar medidas disciplinarias.",
+      "Sustituir la revisión por la dirección cuando esta no puede reunirse.",
+      "Certificar la conformidad del SGIA ante terceros."
+    ],
+    "answer": 0,
+    "explanation": "La revisión no se hace sobre percepciones vagas, sino respecto de criterios concretos. De ese contraste surge información valiosa para comprender si el SGIA está alineado con lo que afirma ser.",
+    "tags": [
+      "iso42001",
+      "clause:9.2.1",
+      "revision-interna",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q008",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.55 — implementación y mantenimiento eficaz",
+    "type": "single-choice",
+    "question": "Además de verificar conformidad formal, ¿qué debe observar la revisión interna según 9.2.1?",
+    "options": [
+      "Si el número de controles implementados supera un umbral mínimo.",
+      "Si la documentación cumple el formato corporativo aprobado.",
+      "Si el SGIA está implementado y mantenido eficazmente: si los procesos operan, los controles se sostienen y las responsabilidades están activas.",
+      "Si los proveedores han renovado sus certificaciones."
+    ],
+    "answer": 2,
+    "explanation": "Un sistema puede cumplir en apariencia con requisitos documentales y no estar funcionando con eficacia. Por eso la revisión debe mirar más allá de la existencia de documentos o estructuras.",
+    "tags": [
+      "iso42001",
+      "clause:9.2.1",
+      "eficacia",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q009",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.55 — Cláusula 9.2.2",
+    "type": "single-choice",
+    "question": "¿Qué debe incluir el programa de revisión interna del SGIA?",
+    "options": [
+      "El listado de personas a entrevistar y sus disponibilidades.",
+      "El presupuesto anual de la función de aseguramiento.",
+      "La frecuencia, los métodos, las responsabilidades, los requisitos de planificación y la elaboración de informes.",
+      "La certificación profesional exigida a quienes lo ejecutan."
+    ],
+    "answer": 2,
+    "explanation": "Ese contenido convierte la revisión interna en una práctica organizada y no ocasional. Contar con un programa significa haber institucionalizado el aprendizaje y el aseguramiento del sistema.",
+    "tags": [
+      "iso42001",
+      "clause:9.2.2",
+      "programa-revision",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q010",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.55-56 — priorización del programa",
+    "type": "single-choice",
+    "question": "Al establecer el programa de revisión interna, ¿qué criterios de priorización exige considerar la norma?",
+    "options": [
+      "La importancia de los procesos involucrados y los resultados de revisiones previas.",
+      "La disponibilidad de los responsables de cada área.",
+      "El orden alfabético de las unidades organizativas.",
+      "El volumen de información documentada de cada proceso."
+    ],
+    "answer": 0,
+    "explanation": "No todos los procesos tienen el mismo peso ni el mismo nivel de criticidad, y no todas las áreas evolucionan igual. Considerar relevancia e historial permite orientar el esfuerzo hacia donde más valor aporta.",
+    "tags": [
+      "iso42001",
+      "clause:9.2.2",
+      "priorizacion",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q011",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.56 — objetividad e imparcialidad",
+    "type": "single-choice",
+    "question": "Una organización pequeña asigna la revisión interna del SGIA a la misma persona que diseñó y opera los controles. ¿Cuál es la objeción?",
+    "options": [
+      "La norma prohíbe la revisión interna en organizaciones pequeñas.",
+      "Solo un tercero certificado puede ejecutar revisiones internas.",
+      "Se compromete la objetividad e imparcialidad exigidas en la selección de quienes realizan la revisión.",
+      "El programa de revisión pierde validez si lo ejecuta una sola persona."
+    ],
+    "answer": 2,
+    "explanation": "La norma admite revisiones conducidas por una sola persona según la complejidad del sistema, pero exige esfuerzos razonables para proteger la independencia funcional respecto del objeto revisado.",
+    "tags": [
+      "iso42001",
+      "iso19011",
+      "clause:9.2.2",
+      "objetividad",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q012",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.56 — comunicación de resultados",
+    "type": "single-choice",
+    "question": "¿Por qué la norma exige informar los resultados de las revisiones internas a los responsables pertinentes?",
+    "options": [
+      "Porque es el paso que activa accountability y permite que el SGIA aprenda de su propia observación estructurada.",
+      "Para cumplir un requisito de registro documental.",
+      "Para que los responsables validen las conclusiones antes de emitirlas.",
+      "Para trasladar la responsabilidad de la desviación al área revisada."
+    ],
+    "answer": 0,
+    "explanation": "Una revisión solo genera valor real cuando sus resultados llegan a quienes pueden decidir, corregir, reforzar o escalar acciones. Informar no es un cierre administrativo.",
+    "tags": [
+      "iso42001",
+      "clause:9.2.2",
+      "accountability",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q013",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.57 — Cláusula 9.3.1",
+    "type": "single-choice",
+    "question": "¿Qué debe asegurar la alta dirección al revisar el SGIA a intervalos planificados?",
+    "options": [
+      "Su conveniencia, adecuación y eficacia continuas.",
+      "Su conformidad documental con el Anexo A.",
+      "La renovación del certificado ante el organismo acreditado.",
+      "El cumplimiento del presupuesto asignado al programa de IA."
+    ],
+    "answer": 0,
+    "explanation": "La revisión por la dirección no se limita a verificar que el SGIA existe: confirma si sigue siendo pertinente para el contexto, útil en la práctica y capaz de producir los resultados esperados. Es un juicio de vigencia sobre el sistema.",
+    "tags": [
+      "iso42001",
+      "clause:9.3.1",
+      "revision-direccion",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q014",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.57 — Cláusula 9.3.2, entradas",
+    "type": "single-choice",
+    "question": "¿Cuál de estos elementos es una **entrada** obligatoria de la revisión por la dirección?",
+    "options": [
+      "El presupuesto de infraestructura del siguiente ejercicio.",
+      "El listado de proveedores homologados.",
+      "El plan de formación técnica del equipo de datos.",
+      "El estado de las acciones de revisiones anteriores."
+    ],
+    "answer": 3,
+    "explanation": "Entre las entradas figuran el estado de acciones previas, los cambios en cuestiones externas e internas, los cambios en expectativas de partes interesadas, la información de desempeño con tendencias en desviaciones y remediación, los resultados de monitoreo y de revisiones internas, y las oportunidades de mejora.",
+    "tags": [
+      "iso42001",
+      "clause:9.3.2",
+      "revision-direccion",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q015",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.58 — tendencias en desviaciones",
+    "type": "single-choice",
+    "question": "¿Por qué la norma pide llevar a la revisión por la dirección las **tendencias** en desviaciones del estándar, y no solo los casos individuales?",
+    "options": [
+      "Porque las desviaciones individuales no requieren corrección.",
+      "Porque las tendencias simplifican el informe presentado a la dirección.",
+      "Porque una desviación aislada puede requerir corrección, mientras que una tendencia puede exigir una decisión estructural.",
+      "Porque solo las tendencias son evidencia admisible en certificación."
+    ],
+    "answer": 2,
+    "explanation": "La noción de tendencia amplía la mirada ejecutiva: distingue entre un incidente puntual y un patrón que revela una debilidad de diseño del sistema.",
+    "tags": [
+      "iso42001",
+      "clause:9.3.2",
+      "tendencias",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q016",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.58 — Cláusula 9.3.3",
+    "type": "single-choice",
+    "question": "¿Qué deben incluir los resultados de la revisión por la dirección?",
+    "options": [
+      "Un acta de asistencia y los temas tratados.",
+      "Decisiones relacionadas con oportunidades de mejora continua y cualquier necesidad de cambios en el SGIA.",
+      "La aprobación del presupuesto del siguiente ejercicio.",
+      "La designación del equipo de revisión interna."
+    ],
+    "answer": 1,
+    "explanation": "La revisión no es meramente informativa: debe producir decisiones. Mantener el rumbo, priorizar ajustes, reforzar controles, redefinir responsabilidades, revisar recursos o introducir modificaciones estructurales.",
+    "tags": [
+      "iso42001",
+      "clause:9.3.3",
+      "decisiones",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q017",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.58 — evidencia de la revisión por la dirección",
+    "type": "single-choice",
+    "question": "¿Qué exige la norma respecto de la evidencia de la revisión por la dirección?",
+    "options": [
+      "Que la información documentada esté disponible como evidencia de sus resultados.",
+      "Que se publique un resumen ejecutivo a las partes interesadas.",
+      "Que se firme por todos los miembros del comité de dirección.",
+      "Que se realice al menos dos veces por ejercicio."
+    ],
+    "answer": 0,
+    "explanation": "La organización necesita registro de qué analizó la dirección, qué decisiones tomó y cómo se conectan con la evolución posterior del SGIA. Esa trazabilidad protege accountability y continuidad directiva.",
+    "tags": [
+      "iso42001",
+      "clause:9.3.3",
+      "evidencia",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q018",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.76 — artefactos de gestión",
+    "type": "single-choice",
+    "question": "En el enfoque de aseguramiento del SGIA, ¿qué son los **artefactos de gestión y registros de valor**?",
+    "options": [
+      "La información verificable que permite sostener una lectura confiable sobre cómo funciona el sistema, cómo se aplican los controles y qué decisiones se han tomado.",
+      "Los indicadores financieros asociados a los sistemas de IA.",
+      "Las herramientas de software utilizadas para monitorear modelos.",
+      "Los documentos emitidos por el organismo de certificación."
+    ],
+    "answer": 0,
+    "explanation": "Pueden incluir políticas, procedimientos, matrices de riesgo, resultados de monitoreo, decisiones de dirección, evaluaciones de impacto, planes de tratamiento, registros de remediación e informes internos.",
+    "tags": [
+      "iso19011",
+      "registros-de-valor",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q019",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.75-76 — referentes de evaluación",
+    "type": "single-choice",
+    "question": "¿Qué son los **referentes de evaluación del SGIA** en una revisión estructurada?",
+    "options": [
+      "Los indicadores de desempeño acordados con el proveedor.",
+      "El conjunto de requisitos usados como referencia frente a los cuales se compara la evidencia: políticas, procedimientos, requisitos de ISO/IEC 42001, obligaciones legales, compromisos contractuales y decisiones de la dirección.",
+      "Las conclusiones de la revisión anterior.",
+      "Los umbrales de riesgo aceptables definidos por la dirección."
+    ],
+    "answer": 1,
+    "explanation": "Corresponden a lo que ISO 19011 denomina criterios de auditoría. Definirlos con claridad es indispensable: sin referentes no hay base sólida para emitir conclusiones.",
+    "tags": [
+      "iso19011",
+      "referentes",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q020",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.76 — diagnóstico y juicio de eficacia",
+    "type": "single-choice",
+    "question": "¿Qué diferencia el **diagnóstico de situación del SGIA** del **juicio de eficacia del SGIA**?",
+    "options": [
+      "El diagnóstico es cualitativo y el juicio de eficacia es cuantitativo.",
+      "El diagnóstico lo emite la dirección y el juicio de eficacia el equipo de revisión.",
+      "El diagnóstico confirma hechos y los relaciona con criterios aplicables; el juicio de eficacia es la síntesis interpretativa sobre si el sistema es consistente, suficiente y útil.",
+      "Son dos nombres para el mismo resultado de la revisión."
+    ],
+    "answer": 2,
+    "explanation": "El diagnóstico corresponde a los hallazgos: hechos verificados frente a criterios. El juicio de eficacia corresponde a las conclusiones, tras revisar objetivos, criterios, evidencia y resultados en conjunto.",
+    "tags": [
+      "iso19011",
+      "diagnostico",
+      "juicio-eficacia",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q021",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.76 — resultados de la revisión",
+    "type": "single-choice",
+    "question": "¿Cómo pueden expresarse los resultados de una revisión estructurada del SGIA?",
+    "options": [
+      "Únicamente como conformidades y no conformidades.",
+      "Como recomendaciones no vinculantes sin clasificación.",
+      "Exclusivamente como puntuaciones numéricas de madurez.",
+      "Como fortalezas, brechas de control, desviaciones del estándar, oportunidades de optimización o buenas prácticas."
+    ],
+    "answer": 3,
+    "explanation": "Lo decisivo es que el resultado no se limite a clasificaciones formales: debe convertirse en información útil para comprender el estado del sistema y orientar decisiones posteriores.",
+    "tags": [
+      "iso19011",
+      "resultados-revision",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q022",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.79 — desviación y brecha de control",
+    "type": "single-choice",
+    "question": "En la semántica de aseguramiento del SGIA, ¿a qué corresponde la noción tradicional de **no conformidad**?",
+    "options": [
+      "Al registro de valor para la revisión.",
+      "Al juicio de eficacia del sistema.",
+      "A la desviación del estándar o brecha de control.",
+      "Al programa de aseguramiento interno."
+    ],
+    "answer": 2,
+    "explanation": "La reformulación mantiene el rigor técnico pero favorece una lectura orientada a la mejora y a la remediación proporcional, en lugar de a la sanción. La conformidad, a su vez, se expresa como alineación con los referentes del sistema.",
+    "tags": [
+      "iso19011",
+      "terminologia",
+      "desviacion",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q023",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.79-80 — principios de aseguramiento",
+    "type": "single-choice",
+    "question": "¿Cuáles son los principios de aseguramiento del SGIA derivados de ISO 19011?",
+    "options": [
+      "Planificar, hacer, verificar y actuar.",
+      "Eficiencia, economía, eficacia, equidad y ética.",
+      "Integridad, presentación justa, debido cuidado profesional, confidencialidad, independencia, enfoque basado en la evidencia y enfoque basado en el riesgo.",
+      "Transparencia, explicabilidad, supervisión humana y trazabilidad."
+    ],
+    "answer": 2,
+    "explanation": "Estos siete principios son condiciones de confianza: permiten que una revisión sea creíble, útil y técnicamente sólida. Sin ellos el proceso pierde legitimidad y sus resultados dejan de ser base segura para la mejora.",
+    "tags": [
+      "iso19011",
+      "principios",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q024",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.80-81 — enfoque basado en riesgo",
+    "type": "single-choice",
+    "question": "El principio de **enfoque basado en riesgo** aplicado al aseguramiento del SGIA implica que la revisión debe concentrarse en:",
+    "options": [
+      "Los procesos con mayor volumen de información documentada.",
+      "Los procesos críticos, controles relevantes, áreas sensibles, cambios significativos e impactos potenciales.",
+      "Las áreas que solicitaron voluntariamente ser revisadas.",
+      "Los sistemas de IA desarrollados internamente."
+    ],
+    "answer": 1,
+    "explanation": "El principio se traduce en una priorización del aseguramiento por criticidad y contexto: se revisa aquello que más afecta la capacidad del SGIA para alcanzar sus resultados previstos.",
+    "tags": [
+      "iso19011",
+      "principios",
+      "riesgo",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q025",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.80 — presentación clara y fiel",
+    "type": "single-choice",
+    "question": "El principio de **presentación clara y fiel** exige que los resultados del diagnóstico se comuniquen de forma:",
+    "options": [
+      "Estrictamente cuantitativa para evitar interpretaciones.",
+      "Resumida y positiva para facilitar su aceptación.",
+      "Anónima para proteger a los responsables de proceso.",
+      "Veraz, precisa, objetiva, oportuna, clara y completa."
+    ],
+    "answer": 3,
+    "explanation": "Solo con esas características los resultados pueden convertirse en insumo real para la dirección y para la mejora. Suavizar el diagnóstico lo vuelve inútil como base de decisión.",
+    "tags": [
+      "iso19011",
+      "principios",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q026",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.78 — programa de aseguramiento interno",
+    "type": "single-choice",
+    "question": "¿Qué es el **programa de aseguramiento interno del SGIA**?",
+    "options": [
+      "El plan detallado de una revisión concreta.",
+      "El informe consolidado que se presenta a la dirección.",
+      "El listado de referentes de evaluación aplicables.",
+      "El conjunto organizado de revisiones, actividades y seguimientos que la organización planifica en un período determinado para obtener una visión estructurada del estado del sistema."
+    ],
+    "answer": 3,
+    "explanation": "El programa permite priorizar esfuerzos, distribuir recursos y sostener una disciplina periódica alineada con riesgos, cambios y necesidades de dirección. El plan de revisión, en cambio, organiza cómo se desarrollará una revisión concreta.",
+    "tags": [
+      "iso19011",
+      "programa",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q027",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.78 — alcance y plan de revisión",
+    "type": "single-choice",
+    "question": "¿Qué distingue el **alcance de la revisión** del **plan de revisión** del SGIA?",
+    "options": [
+      "El alcance delimita qué partes del sistema se analizan, en qué contextos, sobre qué procesos y durante qué período; el plan organiza cómo se desarrollará el trabajo.",
+      "El alcance lo fija el patrocinador y el plan el organismo certificador.",
+      "El alcance es documental y el plan es operativo únicamente en revisiones externas.",
+      "Ambos términos designan el mismo artefacto en distintos momentos."
+    ],
+    "answer": 0,
+    "explanation": "Definir el alcance con claridad asegura una revisión focalizada, proporcional y útil. El plan es la herramienta de coordinación: qué temas se cubrirán, qué actividades, quiénes participarán y qué recursos se necesitan.",
+    "tags": [
+      "iso19011",
+      "alcance",
+      "plan-revision",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q028",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.77 — roles de la revisión",
+    "type": "single-choice",
+    "question": "En la semántica de aseguramiento del SGIA, ¿quién es el **patrocinador de la revisión**?",
+    "options": [
+      "Quien impulsa o solicita la revisión y recibe sus resultados como insumo para dirección, control o mejora.",
+      "La persona que conduce metodológicamente el proceso.",
+      "El responsable del proceso revisado.",
+      "El apoyo técnico especializado convocado para el análisis."
+    ],
+    "answer": 0,
+    "explanation": "Corresponde a lo que la terminología tradicional llama cliente de auditoría. Puede situarse en la alta dirección, en aseguramiento, cumplimiento, calidad o en la coordinación del SGIA.",
+    "tags": [
+      "iso19011",
+      "roles",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q029",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.77 — facilitador y apoyo técnico",
+    "type": "single-choice",
+    "question": "¿Cuál es la función del **apoyo técnico especializado** en una revisión del SGIA?",
+    "options": [
+      "Conducir la revisión y emitir el juicio de eficacia.",
+      "Observar el proceso con fines de aprendizaje o supervisión.",
+      "Facilitar el acceso a personas, ubicaciones y documentación.",
+      "Aportar conocimiento profundo cuando el sistema incluye componentes complejos o requisitos que exigen interpretación experta, sin sustituir la responsabilidad metodológica de quien conduce."
+    ],
+    "answer": 3,
+    "explanation": "El apoyo técnico fortalece la calidad del diagnóstico. Facilitar accesos corresponde a la figura de facilitación logística, y observar sin conducir corresponde al acompañamiento al proceso.",
+    "tags": [
+      "iso19011",
+      "roles",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q030",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.79 — métodos de revisión",
+    "type": "single-choice",
+    "question": "¿Qué métodos puede combinar una revisión estructurada del SGIA?",
+    "options": [
+      "Pruebas técnicas automatizadas sobre los modelos en producción.",
+      "Exclusivamente revisión documental para preservar la objetividad.",
+      "Únicamente entrevistas con la alta dirección.",
+      "Revisión documental, entrevistas, observación, muestreo y contraste de evidencia."
+    ],
+    "answer": 3,
+    "explanation": "La selección adecuada de métodos fortalece profundidad, eficiencia y trazabilidad. Ningún método por separado ofrece una lectura completa del funcionamiento del sistema.",
+    "tags": [
+      "iso19011",
+      "metodos",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q031",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.75 — revisiones internas y externas",
+    "type": "single-choice",
+    "question": "¿Cómo se distinguen las revisiones internas de las externas del SGIA?",
+    "options": [
+      "Las internas revisan procesos y las externas revisan documentos.",
+      "Las internas evalúan eficacia y las externas únicamente conformidad documental.",
+      "Las internas son obligatorias y las externas voluntarias en todos los casos.",
+      "Las internas son realizadas por o en nombre de la propia organización; las externas por partes con interés en ella, como clientes, o por organismos independientes como entidades de certificación o autoridades."
+    ],
+    "answer": 3,
+    "explanation": "La revisión interna fortalece aprendizaje y control desde dentro; la externa puede responder a exigencias contractuales, regulatorias o de certificación. Ambas pueden coexistir y complementarse.",
+    "tags": [
+      "iso19011",
+      "tipos-revision",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q032",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.81 — integración metodológica",
+    "type": "single-choice",
+    "question": "¿Qué lugar ocupa el aseguramiento interno dentro del SGIA?",
+    "options": [
+      "Es un bloque independiente que no se relaciona con las cláusulas del sistema.",
+      "Es una prolongación de la cláusula 9 y un soporte metodológico para la cláusula 10: alimenta la evaluación del desempeño, fortalece la revisión por la dirección y produce información para la mejora.",
+      "Sustituye la revisión por la dirección cuando esta se realiza con periodicidad anual.",
+      "Solo aplica a organizaciones que buscan certificarse ante un tercero."
+    ],
+    "answer": 1,
+    "explanation": "La revisión estructurada del SGIA no es una inspección punitiva, sino un mecanismo de disciplina, aprendizaje y visibilidad institucional integrado en el ciclo de evaluación y mejora.",
+    "tags": [
+      "iso19011",
+      "clause:9.2",
+      "integracion",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q033",
+    "domainId": "domain-4",
+    "source": "Syllabus AIGPC p.8 — Módulo 5, resultado esperado",
+    "type": "single-choice",
+    "question": "¿Cuál es el resultado esperado del módulo de supervisión del desempeño y aseguramiento institucional?",
+    "options": [
+      "Poder emitir conclusiones de auditoría de certificación.",
+      "Poder sostener una supervisión ejecutiva del SGIA, usando información relevante para decidir, ajustar prioridades y fortalecer la confianza institucional.",
+      "Poder diseñar la arquitectura de control y la SoA.",
+      "Poder redactar la política y los objetivos de IA."
+    ],
+    "answer": 1,
+    "explanation": "El módulo convierte seguimiento, medición, análisis y revisión por la dirección en una capacidad de supervisión ejecutiva y aseguramiento institucional.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q034",
+    "domainId": "domain-4",
+    "source": "Sample exam AIGPC — patrón de métrica agregada",
+    "type": "single-choice",
+    "question": "El desempeño agregado de un sistema de IA se mantiene estable, pero un segmento concreto muestra un aumento sostenido de correcciones manuales. ¿Qué exige esa señal desde medición?",
+    "options": [
+      "Ninguna acción mientras el promedio general no se deteriore.",
+      "Analizar el segmento afectado: el promedio puede estar ocultando una señal de riesgo o de control insuficiente.",
+      "Esperar la confirmación del proveedor del modelo.",
+      "Normalizar la métrica por el volumen total de casos."
+    ],
+    "answer": 1,
+    "explanation": "Las métricas agregadas enmascaran efectos concentrados. La medición del SGIA debe permitir observar resultados por segmento cuando existan impactos diferenciados sobre grupos.",
+    "tags": [
+      "iso42001",
+      "metricas-segmentadas",
+      "clause:9.1",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q035",
+    "domainId": "domain-4",
+    "source": "Syllabus AIGPC p.8 — Módulo 5, priorización para escalamiento",
+    "type": "single-choice",
+    "question": "Una función de supervisión recibe simultáneamente cuatro señales del SGIA. ¿Cuál debería escalarse primero a la alta dirección?",
+    "options": [
+      "Un retraso en la publicación del informe mensual de uso.",
+      "Una diferencia de nomenclatura entre dos tableros internos.",
+      "Un incremento moderado del coste de inferencia.",
+      "La ausencia de criterios para suspender un sistema con impacto directo sobre personas."
+    ],
+    "answer": 3,
+    "explanation": "La priorización de temas críticos para escalamiento y decisión se hace por criticidad e impacto. La incapacidad de detener un sistema sensible deja a la organización sin mecanismo de respuesta.",
+    "tags": [
+      "iso42001",
+      "escalamiento",
+      "priorizacion",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q036",
+    "domainId": "domain-4",
+    "source": "Syllabus AIGPC p.8 — Módulo 5, coordinación entre funciones",
+    "type": "single-choice",
+    "question": "En una organización, riesgo, cumplimiento y tecnología miden aspectos del SGIA sin compartir criterios ni consolidar resultados. ¿Qué capacidad falta?",
+    "options": [
+      "La externalización de la medición a un tercero independiente.",
+      "Un tablero técnico unificado gestionado por el área de datos.",
+      "Un aumento de la frecuencia de medición en cada función.",
+      "Coordinación entre funciones de control, cumplimiento, riesgo y liderazgo para integrar resultados de desempeño, riesgos, controles y tendencias."
+    ],
+    "answer": 3,
+    "explanation": "La integración de resultados de desempeño, riesgos, controles y tendencias es una subtemática evaluable del módulo. Sin coordinación, la dirección recibe fragmentos y no una lectura del estado del sistema.",
+    "tags": [
+      "iso42001",
+      "coordinacion",
+      "clause:9.1",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q037",
+    "domainId": "domain-4",
+    "source": "Sample exam AIGPC — patrón de supervisión reactiva",
+    "type": "single-choice",
+    "question": "Una organización solo revisa sus sistemas de IA cuando recibe una queja formal. Desde la cláusula 9.1, ¿cuál es la debilidad?",
+    "options": [
+      "Depende en exceso de métricas operativas.",
+      "Carece de una cadencia planificada de monitoreo y medición: la supervisión es reactiva y no detecta desviaciones sin queja asociada.",
+      "Concede demasiada autonomía a las áreas usuarias.",
+      "No mantiene actualizado el inventario de modelos."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula 9.1 exige determinar cuándo se monitorea, se mide, se analiza y se evalúa. Una disciplina periódica de observación es lo que distingue la supervisión proactiva de la reacción ante incidentes visibles.",
+    "tags": [
+      "iso42001",
+      "clause:9.1",
+      "supervision-proactiva",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q038",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.74 — proporcionalidad del aseguramiento",
+    "type": "single-choice",
+    "question": "¿Qué flexibilidad admite el enfoque de aseguramiento del SGIA basado en ISO 19011?",
+    "options": [
+      "Permite prescindir de referentes de evaluación en organizaciones pequeñas.",
+      "Puede aplicarse a organizaciones de todos los tamaños y a revisiones conducidas por equipos amplios o por una sola persona, según la complejidad del programa y del SGIA.",
+      "Autoriza a omitir el informe de resultados cuando no hay desviaciones.",
+      "Permite que el responsable del proceso revise su propia área si no hay alternativa."
+    ],
+    "answer": 1,
+    "explanation": "La flexibilidad se refiere a escala y formato, no a la disciplina metodológica: siempre deben mantenerse claridad de roles, objetividad suficiente y trazabilidad de resultados.",
+    "tags": [
+      "iso19011",
+      "proporcionalidad",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q039",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.74 — estructura de ISO 19011:2018",
+    "type": "single-choice",
+    "question": "¿Qué bloques incluye la estructura de ISO 19011:2018 relevantes para el aseguramiento del SGIA?",
+    "options": [
+      "Objetivos de control, controles de referencia y guía de implementación.",
+      "Contexto, liderazgo, planificación, soporte, operación, evaluación y mejora.",
+      "Principios de auditoría, gestión de un programa de auditoría, realización de una auditoría y competencia y evaluación de los auditores.",
+      "Alcance, referencias normativas, términos y anexos sectoriales."
+    ],
+    "answer": 2,
+    "explanation": "Esa estructura ofrece una ruta metodológica para organizar revisiones internas: establecer principios, definir programas, estructurar actividades y comprender las capacidades necesarias.",
+    "tags": [
+      "iso19011",
+      "estructura",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q040",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.75 — ISO 19011 y ISO/IEC 42001",
+    "type": "single-choice",
+    "question": "¿Qué relación tiene ISO 19011 con los requisitos de ISO/IEC 42001?",
+    "options": [
+      "Los sustituye en materia de revisión interna.",
+      "Define los controles de referencia aplicables al SGIA.",
+      "Es una referencia normativa obligatoria citada en la cláusula 2.",
+      "No los reemplaza, pero aporta una base metodológica para organizar el aseguramiento interno del SGIA."
+    ],
+    "answer": 3,
+    "explanation": "ISO 19011 da consistencia a las revisiones internas, ayuda a definir criterios de planificación, mejora la recolección de evidencia y fortalece la credibilidad de las conclusiones, sin sustituir los requisitos de la norma.",
+    "tags": [
+      "iso19011",
+      "iso42001",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q041",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.80 — confidencialidad",
+    "type": "single-choice",
+    "question": "¿Por qué el principio de confidencialidad tiene especial relevancia en el aseguramiento del SGIA?",
+    "options": [
+      "Porque impide compartir los resultados con la alta dirección.",
+      "Porque en el SGIA pueden aparecer datos sensibles sobre riesgos, incidentes, controles, decisiones o relaciones con terceros.",
+      "Porque la norma prohíbe documentar hallazgos con nombres de áreas.",
+      "Porque los resultados solo pueden conocerse tras la certificación."
+    ],
+    "answer": 1,
+    "explanation": "El tratamiento responsable de esa información forma parte de la calidad del proceso de aseguramiento. La confidencialidad protege la información obtenida, no impide informar a quienes deben decidir.",
+    "tags": [
+      "iso19011",
+      "principios",
+      "confidencialidad",
+      "difficulty:basic",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q042",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.80 — debido cuidado profesional",
+    "type": "single-choice",
+    "question": "El principio de **debido cuidado profesional** resulta indispensable en un SGIA porque:",
+    "options": [
+      "Exige que quien revisa tenga certificación técnica en aprendizaje automático.",
+      "Obliga a documentar cada paso de la revisión en formularios estandarizados.",
+      "Los riesgos e impactos de IA pueden ser complejos, y sin diligencia y juicio razonado se producen interpretaciones superficiales o conclusiones apresuradas.",
+      "Garantiza la independencia del equipo de aseguramiento."
+    ],
+    "answer": 2,
+    "explanation": "El debido cuidado implica diligencia, criterio técnico y juicio razonado durante la revisión. La independencia se protege con un principio distinto, el de objetividad e independencia funcional.",
+    "tags": [
+      "iso19011",
+      "principios",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q043",
+    "domainId": "domain-4",
+    "source": "Sample exam AIGPC — patrón de caída abrupta de escalamientos",
+    "type": "single-choice",
+    "question": "Tras una reestructuración organizativa, el número de casos escalados cae abruptamente sin que hayan cambiado los criterios formales. ¿Cómo debe leerse la señal?",
+    "options": [
+      "Como evidencia de que el sistema mejoró.",
+      "Como una reducción deseable de carga administrativa.",
+      "Como posible desconexión entre el diseño del mecanismo de escalamiento y los nuevos roles operativos.",
+      "Como un dato irrelevante mientras no haya incidentes visibles."
+    ],
+    "answer": 2,
+    "explanation": "Si el criterio no cambió pero el comportamiento sí, la explicación más plausible es un cambio en quién ejecuta el mecanismo. Interpretar la caída como mejora es un error de lectura de la métrica.",
+    "tags": [
+      "iso42001",
+      "escalamiento",
+      "interpretacion-metricas",
+      "difficulty:advanced",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q044",
+    "domainId": "domain-4",
+    "source": "Material de Autoestudio AIGPC p.57 — revisión por la dirección como gobierno",
+    "type": "single-choice",
+    "question": "Desde la lógica de AIGPC, ¿qué convierte a la revisión por la dirección en un mecanismo de gobierno y no en un trámite?",
+    "options": [
+      "Que el desempeño del SGIA se convierta en decisión ejecutiva: resultados de monitoreo, revisiones internas, cambios de contexto y oportunidades pasan a formar parte de la agenda directiva.",
+      "Su periodicidad anual fijada en el procedimiento.",
+      "La asistencia obligatoria de todos los directores.",
+      "La firma del acta por el responsable del SGIA."
+    ],
+    "answer": 0,
+    "explanation": "La revisión por la dirección es el punto de convergencia del SGIA: allí se reúnen indicadores, hallazgos, señales de alerta y posibilidades de fortalecimiento, y de allí deben salir decisiones.",
+    "tags": [
+      "iso42001",
+      "clause:9.3",
+      "gobierno",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  },
+  {
+    "id": "aigpc-d4-q045",
+    "domainId": "domain-4",
+    "source": "Syllabus AIGPC p.8 — Módulo 5, registros de valor para decisiones",
+    "type": "single-choice",
+    "question": "¿Qué caracteriza a un buen conjunto de indicadores y registros de valor para decisiones ejecutivas sobre el SGIA?",
+    "options": [
+      "Su cantidad: cuantos más indicadores, mayor visibilidad.",
+      "Su alineación con los indicadores publicados por el proveedor tecnológico.",
+      "Su origen exclusivamente automatizado, sin intervención humana.",
+      "Su capacidad para iluminar el comportamiento del sistema y sostener decisiones, más que su volumen."
+    ],
+    "answer": 3,
+    "explanation": "Lo importante no es la cantidad de datos, sino que cada uno permita comprender el comportamiento del sistema: cumplimiento de objetivos, eficacia de controles, tratamiento de riesgos, incidentes, ejecución de revisiones y resultados de remediación.",
+    "tags": [
+      "iso42001",
+      "indicadores",
+      "clause:9.1",
+      "difficulty:intermediate",
+      "module:m05"
+    ]
+  }
+]

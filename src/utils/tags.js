@@ -32,8 +32,14 @@ export function renderTagBadges(tags = []) {
     } else if (tag.startsWith("clause:")) {
       label = `📑 Cláusula ${tag.replace("clause:", "")}`;
       badgeClass = "badge-tag clause";
-    } else if (tag.toLowerCase() === "iso42001" || tag.toLowerCase() === "iso19011" || tag.toLowerCase() === "iso22989" || tag.toLowerCase() === "iso23894") {
+    } else if (["iso42001", "iso19011", "iso22989", "iso23894", "iso38507"].includes(tag.toLowerCase())) {
       label = `📕 ${tag.replace(/iso/i, "ISO ")}`;
+      badgeClass = "badge-tag standard";
+    } else if (["annexa", "annexb", "annexc", "annexd"].includes(tag.toLowerCase())) {
+      label = `📎 Anexo ${tag.slice(-1).toUpperCase()}`;
+      badgeClass = "badge-tag clause";
+    } else if (tag.toLowerCase() === "aigpc") {
+      label = "🏛️ Esquema AIGPC";
       badgeClass = "badge-tag standard";
     } else if (tag.toLowerCase() === "jemjaf") {
       label = "🌐 Banco Jemjaf";

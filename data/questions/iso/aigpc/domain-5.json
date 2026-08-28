@@ -1,0 +1,658 @@
+[
+  {
+    "id": "aigpc-d5-q001",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.61 — Cláusula 10.1",
+    "type": "single-choice",
+    "question": "¿Qué debe mejorar continuamente la organización según la cláusula 10.1?",
+    "options": [
+      "La idoneidad, adecuación y eficacia del SGIA.",
+      "El rendimiento técnico de los modelos en producción.",
+      "El número de controles implementados del Anexo A.",
+      "La cobertura documental del sistema de gestión."
+    ],
+    "answer": 0,
+    "explanation": "Mejorar continuamente significa revisar si el sistema sigue siendo pertinente para el contexto, suficiente para los riesgos e impactos que enfrenta y eficaz para lograr los resultados previstos.",
+    "tags": [
+      "iso42001",
+      "clause:10.1",
+      "mejora-continua",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q002",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.61 — Cláusula 10.2",
+    "type": "single-choice",
+    "question": "Ante una desviación del estándar, ¿qué respuesta exige la cláusula 10.2?",
+    "options": [
+      "Registrarla y llevarla a la siguiente revisión por la dirección.",
+      "Notificarla a las partes interesadas externas relevantes.",
+      "Suspender el sistema de IA implicado hasta su reevaluación.",
+      "Reaccionar a ella, controlarla y corregirla, y tratar sus consecuencias."
+    ],
+    "answer": 3,
+    "explanation": "Controlar significa contener el efecto inmediato; corregir significa resolver la situación observada; tratar consecuencias implica reconocer que la desviación puede haber afectado procesos, controles, personas, resultados o confianza.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "desviacion",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q003",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.61-62 — análisis de causas",
+    "type": "single-choice",
+    "question": "¿Por qué la cláusula 10.2 exige evaluar la necesidad de eliminar las causas de una desviación?",
+    "options": [
+      "Para determinar responsabilidades disciplinarias.",
+      "Para justificar la exclusión del control asociado en la SoA.",
+      "Para evitar que la desviación vuelva a ocurrir o se produzca en otra parte del sistema.",
+      "Para reducir el número de revisiones internas necesarias."
+    ],
+    "answer": 2,
+    "explanation": "Corregir el síntoma no basta. La organización debe comprender por qué apareció la desviación y qué condiciones del sistema la permitieron; esa comprensión es la base de una remediación durable.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "causa-raiz",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q004",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.62 — alcance sistémico",
+    "type": "single-choice",
+    "question": "Una desviación se detecta en un proceso concreto. ¿Qué exige adicionalmente la cláusula 10.2?",
+    "options": [
+      "Determinar si existen desviaciones similares o si podrían ocurrir en otras áreas, y revisar la eficacia de las acciones tomadas.",
+      "Extender la corrección automáticamente a todos los procesos del SGIA.",
+      "Suspender el programa de revisión interna hasta cerrar el caso.",
+      "Reportar el hecho al organismo de certificación."
+    ],
+    "answer": 0,
+    "explanation": "Una desviación observada en un punto puede ser señal de una debilidad más amplia. La norma invita a una mirada sistémica y a verificar si la remediación implementada resolvió realmente el problema.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "alcance-sistemico",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q005",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.62 — proporcionalidad de la remediación",
+    "type": "single-choice",
+    "question": "¿Qué criterio establece la norma sobre la magnitud de las acciones de remediación?",
+    "options": [
+      "Deben ser siempre las más exhaustivas posibles.",
+      "Deben limitarse a corregir la situación observada sin modificar el sistema.",
+      "Deben ser apropiadas a los efectos de las desviaciones encontradas, evitando tanto la respuesta insuficiente como la sobrerreacción.",
+      "Deben ser aprobadas previamente por todas las partes interesadas."
+    ],
+    "answer": 2,
+    "explanation": "No todas las desviaciones tienen la misma magnitud o criticidad. La remediación debe guardar correspondencia con el impacto real de la brecha observada: la mejora eficaz es la que ajusta con criterio.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "proporcionalidad",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q006",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.62 — cambios en el SGIA",
+    "type": "single-choice",
+    "question": "¿Puede una desviación del estándar obligar a modificar el propio SGIA?",
+    "options": [
+      "No: los cambios en el sistema solo se deciden en la revisión por la dirección.",
+      "Solo si lo requiere una autoridad competente.",
+      "Solo si la desviación se repite en más de un ejercicio.",
+      "Sí: la norma establece que la organización realiza cambios en el SGIA cuando sea necesario, lo que puede implicar rediseñar procesos, revisar controles, ajustar roles o reforzar recursos."
+    ],
+    "answer": 3,
+    "explanation": "No todas las desviaciones se resuelven con una corrección menor. Algunas obligan a modificar documentación, replantear mecanismos de seguimiento o rediseñar procesos; el SGIA debe tener la flexibilidad y la disciplina para hacerlo.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "cambio-sistemico",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q007",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.63 — evidencia documentada de la mejora",
+    "type": "single-choice",
+    "question": "¿Qué información documentada exige la cláusula 10.2?",
+    "options": [
+      "Evidencia de la naturaleza de las desviaciones, de las acciones posteriores tomadas y de los resultados de la remediación.",
+      "Un informe anual consolidado de mejoras aprobadas por la dirección.",
+      "El registro de asistencia a las sesiones de análisis de causa.",
+      "La actualización de la SoA por cada desviación registrada."
+    ],
+    "answer": 0,
+    "explanation": "Esa memoria fortalece continuidad, aprendizaje y capacidad de revisión futura, y permite a la dirección comprender si el sistema está corrigiendo sus brechas con eficacia.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "evidencia",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q008",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — patrón de mejora no consolidada",
+    "type": "single-choice",
+    "question": "Una acción de mejora produce buenos resultados durante dos semanas y después el comportamiento vuelve al patrón anterior. ¿Qué conclusión corresponde?",
+    "options": [
+      "La mejora fue suficiente aunque el seguimiento sea irregular.",
+      "La mejora no se ha consolidado de forma sostenible y probablemente no atacó la causa estructural.",
+      "El problema original dejó de ser relevante.",
+      "No procede ninguna evaluación adicional por el momento."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula 10.2 exige revisar la eficacia de las acciones tomadas. Un efecto que desaparece indica que la acción fue superficial respecto de las condiciones que originaron la desviación.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "eficacia",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q009",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — evidencia de tratamiento suficiente",
+    "type": "single-choice",
+    "question": "Para decidir si una brecha de gobernanza está suficientemente tratada, ¿qué evidencia resulta más útil?",
+    "options": [
+      "La aprobación de la acción correctiva por la dirección.",
+      "La actualización y distribución de la documentación afectada.",
+      "La aceptación de los cambios por parte del proveedor.",
+      "Que el mecanismo ajustado opere consistentemente y reduzca la recurrencia del problema."
+    ],
+    "answer": 3,
+    "explanation": "La eficacia se demuestra con resultado sostenido en la operación real. Aprobación, actualización documental y aceptación de terceros son pasos del proceso, no prueba de que la brecha se haya cerrado.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "eficacia",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q010",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.8 — Módulo 6, priorización de oportunidades",
+    "type": "single-choice",
+    "question": "¿Con qué criterio deben priorizarse las oportunidades de optimización según el módulo de mejora?",
+    "options": [
+      "Según su impacto organizacional y social.",
+      "Según su facilidad de implementación y coste.",
+      "Según el orden en que fueron identificadas.",
+      "Según el área que las propuso."
+    ],
+    "answer": 0,
+    "explanation": "El módulo exige determinar la criticidad de brechas de control y oportunidades de optimización según su impacto en personas, sociedad, negocio y reputación.",
+    "tags": [
+      "iso42001",
+      "priorizacion",
+      "impacto",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q011",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.8 — Módulo 6, causa estructural",
+    "type": "single-choice",
+    "question": "Un plan de remediación se limita a corregir el caso detectado sin revisar el mecanismo que lo permitió. ¿Qué le falta según el módulo de mejora?",
+    "options": [
+      "Un cronograma de implementación detallado.",
+      "Aprobación formal de la alta dirección.",
+      "Enfoque en la causa estructural y no solo en la corrección inmediata.",
+      "La designación de un responsable de seguimiento."
+    ],
+    "answer": 2,
+    "explanation": "El módulo exige planes de remediación con enfoque en causa estructural. Sin esa mirada, el SGIA se fortalece apagando incendios en lugar de revisar procesos, criterios, competencias, controles o mecanismos de coordinación.",
+    "tags": [
+      "iso42001",
+      "causa-estructural",
+      "remediacion",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q012",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — acción estructural vs cosmética",
+    "type": "single-choice",
+    "question": "Entre cambiar el formato de los reportes, redefinir quién puede aprobar excepciones y aumentar la frecuencia de las reuniones de seguimiento, ¿cuál es la acción más estructural para el gobierno de IA?",
+    "options": [
+      "Cambiar el formato de los reportes.",
+      "Las tres tienen el mismo carácter estructural.",
+      "Aumentar la frecuencia de las reuniones de seguimiento.",
+      "Redefinir quién puede aprobar excepciones."
+    ],
+    "answer": 3,
+    "explanation": "Redefinir la autoridad de aprobación modifica la arquitectura de responsabilidades. El formato y la cadencia de reuniones son ajustes de forma que no alteran quién responde por qué.",
+    "tags": [
+      "iso42001",
+      "causa-estructural",
+      "accountability",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q013",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.8-9 — Módulo 6, escalamiento y compromisos",
+    "type": "single-choice",
+    "question": "¿Qué elemento del módulo de mejora conecta la detección de una debilidad con la decisión ejecutiva?",
+    "options": [
+      "El escalamiento a la alta dirección y el seguimiento de compromisos.",
+      "La actualización del inventario de sistemas de IA.",
+      "La revisión del contrato con el proveedor.",
+      "La ampliación del alcance del SGIA."
+    ],
+    "answer": 0,
+    "explanation": "El escalamiento a la alta dirección y el seguimiento de los compromisos adquiridos son subtemáticas evaluables del módulo: sin ellos, la señal de debilidad no se transforma en decisión de fortalecimiento.",
+    "tags": [
+      "iso42001",
+      "escalamiento",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q014",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.9 — Módulo 6, resultado esperado",
+    "type": "single-choice",
+    "question": "¿Cuál es el resultado esperado del módulo de mejora, respuesta a brechas y madurez de gobernanza?",
+    "options": [
+      "Poder documentar todas las desviaciones detectadas en un ejercicio.",
+      "Poder diseñar la SoA y justificar sus exclusiones.",
+      "Poder conducir revisiones internas con independencia funcional.",
+      "Poder convertir una señal de debilidad del sistema en una decisión de fortalecimiento institucional, con acciones verificables, responsables definidos y efecto medible sobre la gobernanza de IA."
+    ],
+    "answer": 3,
+    "explanation": "El módulo transforma desviaciones, brechas de control y señales de desempeño insuficiente en decisiones de mejora, remediación y fortalecimiento reputacional.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q015",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.60-61 — mejora como filosofía de madurez",
+    "type": "single-choice",
+    "question": "Según el material, ¿cómo se demuestra la gestión responsable de la IA?",
+    "options": [
+      "Por la ausencia total de problemas en el sistema.",
+      "Por la capacidad institucional de aprender, corregir y evolucionar con rigor cada vez que el sistema lo necesita.",
+      "Por el número de controles del Anexo A implementados.",
+      "Por la obtención de un certificado emitido por un tercero."
+    ],
+    "answer": 1,
+    "explanation": "El SGIA nunca queda terminado de forma definitiva: cambian los riesgos, las expectativas, los usos y el entorno. La mejora expresa una filosofía de madurez, no un mecanismo de corrección de errores.",
+    "tags": [
+      "iso42001",
+      "madurez",
+      "clause:10",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q016",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.61 — mejora más allá de la corrección",
+    "type": "single-choice",
+    "question": "Además de resolver fallas puntuales, ¿qué incluye la mejora continua del SGIA?",
+    "options": [
+      "Sustituir progresivamente los controles manuales por automatizados.",
+      "Reducir el número de indicadores para simplificar el reporte directivo.",
+      "Ampliar el alcance del SGIA en cada ciclo anual.",
+      "Fortalecer capacidades, refinar procesos, optimizar controles, enriquecer documentación, desarrollar competencias y elevar la madurez general del sistema."
+    ],
+    "answer": 3,
+    "explanation": "Cada revisión, indicador, evaluación de riesgo, resultado de impacto y decisión de la dirección puede convertirse en insumo para robustecer el sistema. Ese aprendizaje acumulativo convierte al SGIA en una estructura que aprende.",
+    "tags": [
+      "iso42001",
+      "clause:10.1",
+      "mejora-continua",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q017",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — priorización de mejoras",
+    "type": "single-choice",
+    "question": "Entre un ajuste visual del tablero, una inconsistencia de nombres entre reportes, la falta de segmentación en métricas de impacto y una leve caída de velocidad de carga, ¿qué debería atenderse primero?",
+    "options": [
+      "El ajuste visual del tablero.",
+      "La inconsistencia de nombres entre reportes.",
+      "La falta de segmentación en métricas de impacto para grupos afectados.",
+      "La caída de velocidad de carga del sistema."
+    ],
+    "answer": 2,
+    "explanation": "Sin métricas segmentadas la organización no puede detectar efectos adversos sobre grupos concretos. Las otras tres son mejoras cosméticas u operativas sin impacto sobre personas.",
+    "tags": [
+      "iso42001",
+      "priorizacion",
+      "metricas-segmentadas",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q018",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — mejora parcialmente consolidada",
+    "type": "single-choice",
+    "question": "Tras mejorar el mecanismo de transparencia, disminuyen las consultas de usuarios pero persisten diferencias entre áreas sobre qué se comunica. ¿Qué corresponde concluir?",
+    "options": [
+      "La mejora está completa: hubo una señal positiva medible.",
+      "La mejora muestra avance, pero no está completamente consolidada mientras subsista la inconsistencia entre áreas.",
+      "Las diferencias entre áreas son normales y no requieren acción.",
+      "El resultado basta para cerrar definitivamente la acción de mejora."
+    ],
+    "answer": 1,
+    "explanation": "Cerrar la acción con una brecha de consistencia abierta equivale a declarar eficacia sin haberla verificado. La revisión de eficacia debe considerar si el mecanismo opera de manera uniforme.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "consolidacion",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q019",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.8-9 — Módulo 6, aprendizaje organizacional",
+    "type": "single-choice",
+    "question": "¿Qué indica un mayor nivel de madurez de gobernanza de IA en el tratamiento de brechas?",
+    "options": [
+      "Cerrar las brechas en el menor tiempo posible sin analizar su origen.",
+      "Convertir cada brecha en aprendizaje organizacional que fortalece procesos, criterios, competencias o mecanismos de coordinación.",
+      "Delegar la remediación en las áreas donde se detectó la brecha.",
+      "Reducir el número de brechas reportadas por ejercicio."
+    ],
+    "answer": 1,
+    "explanation": "El aprendizaje organizacional y la madurez del SGIA son subtemáticas del módulo. Un sistema maduro utiliza la desviación como oportunidad de revisión estructural, no como incidente a cerrar rápido.",
+    "tags": [
+      "iso42001",
+      "madurez",
+      "aprendizaje",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q020",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.9 — Módulo 6, protección reputacional",
+    "type": "single-choice",
+    "question": "¿Qué papel cumple la mejora continua en la protección reputacional de la organización?",
+    "options": [
+      "Permite responder públicamente a las críticas sobre el uso de IA.",
+      "Sustituye la necesidad de evaluar impactos sobre personas.",
+      "Sostiene la alineación con los valores corporativos y demuestra que la organización corrige y fortalece su gobierno de IA de forma verificable.",
+      "Garantiza que no se produzcan incidentes reputacionales."
+    ],
+    "answer": 2,
+    "explanation": "El módulo vincula explícitamente la mejora continua con la protección reputacional y la alineación con valores corporativos: la confianza se sostiene demostrando capacidad de corrección, no ausencia de problemas.",
+    "tags": [
+      "iso42001",
+      "reputacion",
+      "valores-corporativos",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q021",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.60 — mejora y ciclo PHVA",
+    "type": "single-choice",
+    "question": "¿Qué fase del ciclo PHVA cierra la cláusula 10 de ISO/IEC 42001?",
+    "options": [
+      "Actuar.",
+      "Hacer.",
+      "Verificar.",
+      "Planificar."
+    ],
+    "answer": 0,
+    "explanation": "No basta con planificar, hacer y verificar: hay que actuar sobre lo aprendido. Esa capacidad de reacción y fortalecimiento convierte al SGIA en una estructura viva y no en un mecanismo estático de control.",
+    "tags": [
+      "iso42001",
+      "phva",
+      "clause:10",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q022",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.61 — función integradora de la cláusula 10",
+    "type": "single-choice",
+    "question": "¿Qué ocurre cuando un SGIA detecta desviaciones y genera información, pero no la convierte en fortalecimiento?",
+    "options": [
+      "El sistema se mantiene estable porque la información queda documentada.",
+      "La capacidad de gestión se debilita y la mejora continua queda vacía.",
+      "Se incumple exclusivamente la cláusula 7.5.",
+      "Se pierde la validez de las revisiones internas realizadas."
+    ],
+    "answer": 1,
+    "explanation": "La cláusula 10 cumple una función integradora: todo lo que el SGIA aprende en sus etapas anteriores debe poder traducirse en ajustes reales. Si el sistema detecta y no cambia, su capacidad de gestión se erosiona.",
+    "tags": [
+      "iso42001",
+      "clause:10",
+      "integracion",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q023",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — falta de definición sobre suspensión",
+    "type": "single-choice",
+    "question": "Una revisión identifica que no está definido quién puede suspender temporalmente un sistema de IA sensible. Desde la lógica de mejora, ¿cómo debe tratarse?",
+    "options": [
+      "Como una observación documental de baja prioridad.",
+      "Como una brecha crítica de gobernanza que debe priorizarse: la organización carece de capacidad de respuesta ante un incidente.",
+      "Como un asunto que corresponde resolver al proveedor del sistema.",
+      "Como un tema a incluir en la revisión del próximo ejercicio."
+    ],
+    "answer": 1,
+    "explanation": "La criticidad se mide por el efecto de la brecha. No poder detener un sistema sensible deja la organización sin mecanismo de contención, lo que la sitúa por encima de cualquier inconsistencia formal.",
+    "tags": [
+      "iso42001",
+      "priorizacion",
+      "criticidad",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q024",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.58 — de la revisión a la decisión",
+    "type": "single-choice",
+    "question": "La cláusula 9.3 exige que la revisión por la dirección produzca decisiones. ¿Cómo se conecta con la cláusula 10?",
+    "options": [
+      "Son procesos independientes que se documentan por separado.",
+      "La cláusula 9.3 solo alimenta la evaluación del desempeño, no la mejora.",
+      "La cláusula 10 sustituye a la revisión por la dirección cuando existen desviaciones.",
+      "Las decisiones sobre oportunidades de mejora continua y cambios necesarios en el SGIA son la entrada directa del proceso de mejora."
+    ],
+    "answer": 3,
+    "explanation": "El módulo de mejora tiene trazabilidad con las cláusulas 9.3 y 10 precisamente porque la revisión por la dirección convierte el análisis en decisiones que la cláusula 10 traduce en fortalecimiento del sistema.",
+    "tags": [
+      "iso42001",
+      "clause:9.3",
+      "clause:10",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q025",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.8 — Módulo 6, revisión de eficacia",
+    "type": "single-choice",
+    "question": "¿Qué debe verificar la organización después de implementar acciones de remediación?",
+    "options": [
+      "La eficacia de las acciones implementadas: si resolvieron el problema y redujeron su recurrencia.",
+      "Que las acciones se ejecutaron dentro del plazo previsto.",
+      "Que los responsables asignados aceptaron formalmente la acción.",
+      "Que la documentación afectada fue distribuida a todas las áreas."
+    ],
+    "answer": 0,
+    "explanation": "La revisión de eficacia de las acciones implementadas es una subtemática explícita del módulo. Ejecución dentro de plazo y distribución documental son condiciones de proceso, no evidencia de eficacia.",
+    "tags": [
+      "iso42001",
+      "clause:10.2",
+      "eficacia",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q026",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — expansión a población vulnerable",
+    "type": "single-choice",
+    "question": "El uso de un sistema de IA se expande a una población más vulnerable sin cambios en el algoritmo. ¿Qué decisión refleja una gobernanza madura?",
+    "options": [
+      "Mantener el mismo esquema mientras el algoritmo no cambie.",
+      "Transferir la responsabilidad de revisión al proveedor.",
+      "Revaluar supervisión, riesgos, controles y mecanismos de respuesta para el nuevo contexto.",
+      "Comunicar el cambio en el siguiente informe anual."
+    ],
+    "answer": 2,
+    "explanation": "Una población más vulnerable eleva la severidad potencial del impacto aunque el modelo sea idéntico. La cláusula 8.4 exige reevaluar el impacto ante cambios significativos, y la mejora traduce esa reevaluación en ajustes del sistema.",
+    "tags": [
+      "iso42001",
+      "poblacion-vulnerable",
+      "clause:8.4",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q027",
+    "domainId": "domain-5",
+    "source": "Sample exam AIGPC — tensión entre gobernanza y conveniencia operativa",
+    "type": "single-choice",
+    "question": "Un mecanismo de escalamiento existe pero los equipos rara vez lo usan porque \"interrumpe demasiado la operación\". ¿Qué acción de mejora corresponde?",
+    "options": [
+      "Resolver la tensión entre disciplina de gobernanza y conveniencia operativa, rediseñando el mecanismo o reforzando su exigibilidad.",
+      "Sustituirlo por un seguimiento informal más ágil.",
+      "Eliminar el mecanismo por generar fricción innecesaria.",
+      "Trasladar la responsabilidad de escalamiento al comité directivo."
+    ],
+    "answer": 0,
+    "explanation": "El desuso no prueba que el control sea innecesario. Revela un conflicto que la organización debe resolver de forma explícita, ajustando el diseño o las condiciones de uso del mecanismo.",
+    "tags": [
+      "iso42001",
+      "escalamiento",
+      "cultura",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q028",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.8 — Módulo 6, identificación de brechas",
+    "type": "single-choice",
+    "question": "¿Qué distingue una **brecha de control** de una **desviación del estándar**?",
+    "options": [
+      "Son términos equivalentes que la norma usa indistintamente.",
+      "La brecha de control indica que el control no existe, es insuficiente o no opera; la desviación indica un apartamiento respecto de un requisito o referente aplicable.",
+      "La brecha de control solo aplica a controles del Anexo A y la desviación a las cláusulas.",
+      "La desviación es siempre más grave que la brecha de control."
+    ],
+    "answer": 1,
+    "explanation": "Ambas nociones se usan en el material como reformulación de la no conformidad, pero apuntan a matices distintos: la insuficiencia o inoperancia de un control frente al apartamiento respecto de un referente. Ninguna es intrínsecamente más grave: la criticidad depende del impacto.",
+    "tags": [
+      "iso42001",
+      "iso19011",
+      "terminologia",
+      "difficulty:advanced",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q029",
+    "domainId": "domain-5",
+    "source": "Syllabus AIGPC p.4 — competencias observables",
+    "type": "single-choice",
+    "question": "El esquema AIGPC declara evaluar competencias observables y medibles. ¿Qué implica esto para las decisiones de mejora?",
+    "options": [
+      "Que toda mejora debe expresarse en indicadores financieros.",
+      "Que las acciones deben ser verificables, con responsables definidos y efecto medible sobre la gobernanza de IA.",
+      "Que las mejoras deben validarse ante un organismo externo.",
+      "Que solo se evalúan mejoras implementadas en el ejercicio en curso."
+    ],
+    "answer": 1,
+    "explanation": "La evaluación se fundamenta en competencias observables y medibles, con foco en criterio, priorización, suficiencia de decisiones y desempeño organizacional. Una mejora sin responsable ni efecto medible no satisface ese estándar.",
+    "tags": [
+      "aigpc",
+      "esquema",
+      "difficulty:intermediate",
+      "module:m06"
+    ]
+  },
+  {
+    "id": "aigpc-d5-q030",
+    "domainId": "domain-5",
+    "source": "Material de Autoestudio AIGPC p.82-83 — síntesis integradora",
+    "type": "single-choice",
+    "question": "Según la síntesis final del material, ¿cuál es el gran valor del SGIA?",
+    "options": [
+      "Reducir el coste operativo de los sistemas de IA.",
+      "Acreditar el cumplimiento regulatorio ante autoridades.",
+      "Convertir la IA en una capacidad gobernable, con consistencia, responsabilidad y visión de largo plazo.",
+      "Estandarizar la arquitectura técnica de los modelos empleados."
+    ],
+    "answer": 2,
+    "explanation": "El recorrido contexto → liderazgo → planificación → soporte → operación → evaluación → mejora no construye una lógica de revisión de cumplimiento, sino una capacidad institucional para gestionar la IA con consistencia y responsabilidad.",
+    "tags": [
+      "iso42001",
+      "sintesis",
+      "difficulty:basic",
+      "module:m06"
+    ]
+  }
+]
